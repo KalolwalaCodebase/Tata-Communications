@@ -1,34 +1,68 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import "./Carosoule.css";
+import './Carouseldown.css'
 const Carouseldown = () => {
   return (
-    <Carousel fade>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src="/landing-page-slider-01.png"
-        alt=""
-      />
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src="/landing-page-slider-02.png"
-        alt=""
-      />
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src="/landing-page-slider-03.png"
-        alt=""
-      />
-    </Carousel.Item>
-  </Carousel>
-  
+    <Carousel className="carousel-awards" indicators={false} interval={2000}>
+      <Carousel.Item>
+        <div className="d-flex justify-content-around">
+          <img
+            className="carousel-image"
+            src="./award1.svg"
+            alt=""
+          />
+          <img
+            className="carousel-image"
+            src="./award2.svg"
+            alt=""
+          />
+          <img
+            className="carousel-image"
+            src="./award3.svg"
+            alt=""
+          />
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="d-flex justify-content-around">
+          <img
+            className="carousel-image"
+            src="./award2.svg"
+            alt=""
+          />
+          <img
+            className="carousel-image"
+            src="./award3.svg"
+            alt=""
+          />
+          <img
+            className="carousel-image"
+            src="./award1.svg"
+            alt=""
+          />
+        </div>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div className="d-flex justify-content-around">
+          <img
+            className="carousel-image"
+            src="./award3.svg"
+            alt=""
+          />
+          <img
+            className="carousel-image"
+            src="./award1.svg"
+            alt=""
+          />
+          <img
+            className="carousel-image"
+            src="./award2.svg"
+            alt=""
+          />
+        </div>
+      </Carousel.Item>
+    </Carousel>
   );
 };
 
 export default Carouseldown;
-
