@@ -1,0 +1,548 @@
+.climate-change-intro-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.climate-change-intro-paragraph-inside-container {
+  font-family: var(--font-replacment);
+  color: #123c61;
+  font-size: 16px;
+  width: 55%;
+  margin: auto;
+  text-align: justify;
+}
+.climate-change-intro-photos-inside-container {
+  width: 35%;
+  height: 400px;
+  margin-right: 3%;
+  margin-top: 2%;
+}
+.intro-climate-image {
+  width: 450px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+/*   intro section for button */
+
+.plannet-climate-focus-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  margin-top: 5%;
+}
+.focus-heading-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.focus-heading-section .parent-child-component {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  margin-right: 6px;
+  text-transform: uppercase;
+}
+.focus-heading-section .parent-child-component img {
+  width: 58px;
+  height: 35px;
+}
+.focus-heading-section .parent-child-component .focus-heading1 {
+  text-align: justify;
+  background-color: #d6d795;
+}
+.focus-heading-section .parent-child-component .focus-heading2 {
+  text-align: justify;
+  background-color: #7b8422;
+}
+.focus-heading-section .parent-child-component .focus-heading1 {
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  color: #123c61;
+  font-family: var(--font-replacment);
+  font-size: 20px;
+  font-weight: 400;
+}
+.focus-heading-section .parent-child-component .focus-heading2 {
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: var(--font-replacment);
+  font-size: 20px;
+  font-weight: 400;
+}
+.focus-heading-section .parent-child-component img {
+  margin-left: 20px;
+  margin-top: -4px;
+}
+.focus-main-content-container {
+  height: 650px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-left: 2%;
+  align-items: center;
+}
+.focus-main-content-container .mainContainer-focus-sectin {
+  width: 25%;
+  height: 100%;
+  margin-right: 5px;
+}
+.focus-main-content-container .div-focus1 {
+  background-color: #d6d795;
+}
+.focus-main-content-container .div-focus2 {
+  background-color: #7b8422;
+}
+
+.single-focus-container {
+  width: 100%;
+  height: 50%;
+  border-bottom: 0.01px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  padding-left: 20px;
+  padding-top: 4%;
+}
+.single-focus-container b {
+  width: 90%;
+  color: #123c61;
+  font-weight: 700;
+  font-family: var(--font-replacment);
+  letter-spacing: 0.04em;
+  font-size: 18px;
+}
+.single-focus-container p {
+  width: 95%;
+  font-weight: 420;
+  color: #123c61;
+  font-size: 15px;
+  font-family: var(--font-replacment);
+  letter-spacing: 0.04em;
+}
+.single-focus-container img {
+  margin-top: 5px;
+  width: 152px;
+}
+.single-focus-container .single-compo-image {
+  width: 20%;
+  height: 20%;
+}
+.single-focus-container a {
+  margin-top: 5%;
+  text-decoration: none;
+  width: 192px;
+  background: #123c61;
+  color: #fff;
+  border-radius: 14px;
+  letter-spacing: 0.5em;
+  padding: 1px 8px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-family: var(--font-replacment);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.single-focus-container-specail a,
+.single-focus-container-specail p,
+.single-focus-container-specail b {
+  color: white;
+}
+.single-focus-container-specail a {
+  background: #fff;
+  color: #123c61;
+}
+.planet-climate-last-section-parent {
+  display: flex;
+  justify-content: center;
+  width: 98%;
+  align-self: center;
+  align-items: flex-start;
+  margin-top: 3%;
+}
+.planet-climate-last-section-parent .main-section-climate-change {
+  width: 73%;
+  height: 1200px;
+  background: url(/Community-student-overlay.png);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: hidden;
+}
+.planet-climate-last-section-parent .quick-link-sections {
+  margin-top: 150px;
+  font-family: var(--font-replacment);
+  font-size: 14px;
+  width: 27%;
+}
+.planet-climate-last-section-parent .quick-link-sections a
+{
+  font-size: 14px;
+}.description-main-section {
+  margin: 30px;
+  margin-left: 60px;
+  
+}
+.yellowish-background-container{
+  background-color: rgba(255, 255, 8, 0.04);
+}
+.description-main-section b {
+  color: #b0bc25;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-replacment);
+  letter-spacing: 0.04em;
+  font-size: 26px;
+}
+.description-main-section p{
+  width: 95%;
+  font-weight: 400;
+  color: #151515;
+  font-size: 15px;
+  font-family: var(--font-replacment);
+  letter-spacing: 0.04em;
+}
+.small-square-btn-png {
+  width: 30px;
+  height: 10px;
+}
+.description-main-section-climate-change b{
+  color: #151515;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: none;
+  font-family: var(--font-replacment);
+}
+.accordian-main-section-climate-change{
+  width: 94%;
+  height: 1600px;
+  background: white;
+  border-radius: 20px;
+  margin-left: 35px;
+  border: 0.5px solid rgb(216, 205, 205);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+.heading-accrodian{
+  color: #fff;
+  background: #B0BC25;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--font-replacment);
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 0 50px;
+  justify-content: center;
+  align-self: center;
+  margin: 10px auto;
+}
+.accrodian-parent-element{
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.graph-parent-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+.graph-parent-container img{
+ width: 400px;
+ height: 400px;margin-right: 40px;
+}
+.transioning-main-container{
+  background:rgb(255, 213, 0,0.04);
+  width:100%;
+  height: 700px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 50px;
+  padding: 40px;
+}
+.small-accrodian-container{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+   background-color: rgba(4, 85, 125, 0.08);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  margin-left: 2%;
+  padding-left: 2%;
+  padding-top: 4%;
+}
+.accrodian-main-small-height{
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.accrodian-main-small-height b{
+ align-self: center;
+ justify-self: center;
+ margin-left: 35%;
+}
+.small-paragraph-inside-small-accrodian-container{
+  font-family: var(--font-replacment);
+}
+.small-paragraph-inside-small-accrodian-container .small-paragraph-heading{
+font-size: 30px;
+font-weight: 700;
+letter-spacing: 0.03em;
+}
+.small-paragraph-inside-small-accrodian-container .specail-small-font-headings, .specail-transitioning{
+ color: var(--people);
+ font-size: 26px;
+ font-weight: 300;
+}
+.planet-green-solutions{
+  background-color: rgba(4, 37, 95, 0.04);
+  width: 100%;
+  margin-left: 0;
+  padding: 20px 25px;
+}
+.specail-accrodian{
+height: auto;
+justify-content: center;
+align-items: center;
+width: 96%;
+margin: 0;
+}
+.specail-accrodian .heading-accrodian {
+  color: #fff;
+  background: #B0BC25;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--font-replacment);
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 0 50px;
+  justify-content: center;
+  align-self: center;
+  margin: 10px auto;
+}
+.specail-image-div{
+  width: 100%;
+ height: auto;
+}
+.cutting-down-value-container{
+  background-color: rgba(255, 115, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+.cutting-down-value-container .heading-main-section-climate-change{
+  text-align: left;
+  align-self: flex-start;
+  color: #b0bc25;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-replacment);
+  letter-spacing: 0.04em;
+  font-size: 26px;
+}
+.description-main-section-climate-change{
+  font-family: var(--font-replacment);
+  font-size: 18px;
+  font-weight: 300;
+}
+.specail-bold-planet-cutting-down{
+  color: #b0bc25;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-replacment);
+  font-size: 35px;
+}
+.regards b {
+  font-weight: 600;
+  font-family: var(--font-replacment);
+  text-transform: capitalize;
+}
+.greensih-environment-section{
+  color: #b0bc25 !important;
+  font-weight: 600 !important;
+  font-family: var(--font-replacment);
+  font-size: 28px !important;
+}
+.three-componet-parent-container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.three-componet-parent-container .three-component-child-container{
+  display: flex;
+  width: 98%;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 10px;
+}
+.three-componet-parent-container .three-component-child-container .child-componet-descriptions{
+  width: 60%;
+  text-align: justify;
+}
+.three-componet-parent-container .three-component-child-container .child-componet-descriptions .heading-child-component{
+  color: #b0bc25;
+  font-weight: 400 ;
+  font-family: var(--font-replacment);
+  text-transform: uppercase;
+  line-height: 35px;
+  width: 70%;
+  font-size: 30px !important;
+}
+.small-size-component-image{
+  height: 307px;
+  margin: auto 30px;
+}
+.child-componet-descriptions .small-square-btn-png{
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.heading-child-component{
+  width: 60%;
+}
+.description-child-component{
+  font-size: 16px;
+  line-height: 30px;
+  font-family: var(--font-replacment);
+}
+.conatiner-1, .conatiner-3{
+  background: rgba(18, 60, 97,0.04);
+}
+.conatiner-2{
+  background:  rgba(234, 121, 38,0.08);
+}
+.evs-child-component{
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: rgba(234, 121, 38,0.08);
+}
+.introducing-evs-parent-container{
+  width: 100%;
+}
+.spaical-last-accrodian{
+  height: 500px;
+  width: 40%;
+  margin-right: 5%;
+}
+.wrapper-evs-intro{
+  width: 50%;
+  padding: 20px;
+}
+.specail-circular-economy{
+  width: 80%;
+  justify-self: center;
+  margin: auto;
+  text-align: justify;
+  
+}
+.specail-circular-economy .climate-change-intro-paragraph-inside-container {
+ margin-bottom: 13%;
+ color: #123C61;
+}
+.specail-circular-economy .climate-change-intro-paragraph-inside-container p {
+ color: #123C61;
+ font-size: 18px;
+
+}
+.specail-circular-economy-img img{
+  height: 320px;
+
+}
+.water-mamngment-intro{
+  background: #F7F7F7;
+  padding-bottom: 30px;
+}
+.water-mamngment-intro .climate-change-intro-paragraph-inside-container .paragraph-inside-climate-change{
+  color:#123c61 !important;
+}
+.specail-water-mamngment-para{
+  color:#B0BC25 ;
+  font-size: 18px;
+  font-weight: 600;
+}
+.bold-span{
+  font-size: 34px;
+}
+.specail-para-small{
+  line-height: 8px;
+  font-size: 20px;
+}
+.img-container-circular-economy{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-container-circular-economy img{
+ width: 97%;
+ align-self: center;
+}
+.last-section-water-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+.main-section-last-part-managment{
+  width: 68%;
+  padding: 30px;
+  padding-top: 40px;
+ background:  rgba(122, 99, 171,0.08);
+}
+.last-section-water-container .quick-link-sections{
+  width: 30%;
+  margin-left: 1%;
+  padding-top: 15%;
+
+}
+.greenish-planet-heading{
+  text-align: left;
+  align-self: flex-start;
+  color: #b0bc25;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: var(--font-replacment);
+  letter-spacing: 0.04em;
+  font-size: 26px;
+}
+.main-section-last-part-managment .small-square-btn-png{
+margin-top: 20px;
+}
+.main-big-img-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-big-img-container img{
+  width: 95%;
+  padding-top: 30px;
+  margin-left: 1%;
+}

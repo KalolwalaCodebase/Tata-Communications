@@ -1,0 +1,70 @@
+.container-sustainability {
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+  max-width: 98%;
+  margin-top: 10%;
+  padding: 0 20px;
+}
+.card-container::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  background: url("/Rectangleoverlay.png");
+}
+.cardcustome {
+  height: 300px;
+  padding: 13px;
+  border-radius: 16px;
+  color: #ffffff;
+  font-size: small;
+  transition: all 0.3s ease-out;
+  text-align: center;
+}
+.card-container {
+  border-radius: 16px;
+}
+.card2 {
+  height: 604px;
+  padding: 13px;
+  z-index: 100;
+  border-radius: 16px;
+  font-size: small;
+  transition: all 0.3s ease-out;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cardcustome:hover {
+  /*  background-color: #7A63AB; */
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+.cardcustome .globe {
+  width: 100px;
+  margin: 20px 0;
+}
+.cardcustome.dotted-line {
+  font-size: medium;
+  color: #fff;
+}
+.cardcustome a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1ch;
+  text-decoration: none;
+  cursor: pointer;
+}
+.CardHeading {
+  text-transform: uppercase;
+}
+.CardHeading-second-specail{
+    font-size: 35px;
+    width: 80%;
+    text-align: left;
+}

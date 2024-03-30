@@ -1,0 +1,47 @@
+.accrodian-main{
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       width: 400px;
+       height:220px;
+       margin-left: 10px;
+       margin:auto 20px;
+       font-family: var(--font-replacment);
+}
+.container-heading{
+       border-radius: 20px;
+       width: 100%;
+       margin-top: 10px;
+       z-index: 100;
+       height: 68px;
+       background: white;
+       border: 2px solid #D6D795;
+}
+.container-heading p{
+       text-align: justify;
+       width: 100%;
+       font-size: 15px;
+       font-weight: 600;
+       padding-bottom: 3px;
+       text-align: left; 
+       padding-left: 10px;
+}
+.cointainer-description{
+      background: rgba(184, 190, 96, 0.5);
+       width: 97%;
+       height: 70%;
+       margin-top: -30px;
+       margin-left: 7px;
+       border-radius: 15px;
+}
+.cointainer-description p{
+       margin-top:35px ;
+       width: 90%;
+       font-size: 16px;
+       font-family: var(--font-replacment);
+}
+.cointainer-description p span{
+       color:#7B8422 ;
+       font-weight: 600;
+       font-size: 20px;
+}

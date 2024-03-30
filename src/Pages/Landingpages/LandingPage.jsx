@@ -1,0 +1,154 @@
+import React from "react";
+import CarouselMain from "../../Components/CarouselSection/CarouselMain";
+import "./Landingpages.css";
+import Cards from "../../Components/Card";
+import Carouseldown from "../../Components/CarouselSection/Carouseldown";
+import Resources from "../../Components/Resources/Resources";
+import Resourcesnew from "../../Components/Resources/Resourcesnew";
+const LandingPage = ({ activeTab }) => {
+  const headingarr = [
+    "Long-term commitments",
+    "short-term commitments",
+    "fY 2024 goals & Progress",
+  ];
+  return (
+    <div className="landing-page-container-parent">
+      <CarouselMain />
+
+      <br />
+      <div className="heading-main-section-landing-page">
+        <img
+          className="small-square-btn-png landing-page-small-square-btn"
+          src="/small-square-btn.png"
+          alt=""
+        />{" "}
+        <b className="heading-main-section">THE PILLARS OF</b>
+        <b className="heading-main-section">OUR STRATEGY</b>
+        <br />
+        <b className="small-heading-landing-page">
+          Our sustainability strategy has a 360-degree focus, comprising three
+          dimensions –
+        </b>
+        <b className="small-heading-landing-page small-heading-landing-page-second">
+          <span className="people-heading-color">People,</span>{" "}
+          <span className="planet-heading-color">Planet </span> and{" "}
+          <span className="community-heading-color">Community.</span>
+        </b>
+      </div>
+      {/* triangle --section -- start--from--here */}
+      <div className="traingle-parent-container">
+        <div className="traingle-descriptions">
+          <p className="people-color-heading-landing-page">
+            Te vitiore serrora que enihillab inverferum fuga. Nem lam volupta
+            spitia consect emporit ea de nes esequis verro dolorioritas estrunt
+            et molorat.
+          </p>
+          <p className="normal-color-heading-landing-page">
+            Nem repudam que intiore mporepe rspeles sin necum reptibu
+            sanducietur, coreped molupta veratin nimus parchilit quodi qui bea
+            corioss imenit, sustius aut quaecea tuscitas peruptatur acimagnim
+            dia comnist plaut apedisint fuga. Ulpa iditium nobis a inctur.
+            <br />
+            Venditae non pliquibusdae ipsam verfernat aperibusdani quatur
+            <br />
+            Vendite mpella is simpore nditate mperiorum remoluptatio ex
+            everemquodis eatem fugia netur as aut archilit qui il iumqui
+            omniscidio molent eatiore, consequia vero earitae porpos seque cum
+            qui repuda quos ullabore voluptaepero
+          </p>
+        </div>
+      </div>
+      {/* triangle --section -- end--from--here */}
+      <div className="landing-page-card-container">
+        <img
+          className="small-square-btn-png landing-page-small-square-btn"
+          src="/small-square-btn.png"
+          alt=""
+        />{" "}
+        <br />
+        <b className="heading-main-section-down">sustainability goals:</b>
+        <b className="heading-main-section-down">long and short-term</b>
+        <br />
+        <img
+          className="landing-page-section-heading-down"
+          src="/landing-page-heading.png"
+          alt=""
+        />
+        <div className="three-card-conatiner">
+          {headingarr.map((heading, id) => (
+            <Cards
+              activeTab={activeTab}
+              hoverCardColor={"#6c1b54"}
+              cardsColor={"#ad3088"}
+              key={id}
+              heading={heading}
+              cardWidth={headingarr.length}
+            /> // Pass the heading directly as a string
+          ))}
+        </div>
+      </div>
+      {/* card component ends here */}
+      <div className="landing-page-second-caresoules">
+        <img
+          className="small-square-btn-png landing-page-small-square-btn"
+          src="/small-square-btn.png"
+          alt=""
+        />{" "}
+        <br />
+        <b className="heading-main-section-down">Message from</b>
+        <b className="heading-main-section-down">Managing director</b>
+        <br />
+        <Carouseldown/>
+        {/*  <div className="carousel-container-main">
+           <Carouseldown/>
+        </div> */}
+       <br />
+        <img
+          className="small-square-btn-png landing-page-small-square-btn"
+          src="/small-square-btn.png"
+          alt=""
+        />{" "}
+      </div>
+      <div className="sdg-wheell-heading-upper">
+      <b className="heading-main-section-down">CONTRIBUTING</b>
+        <b className="heading-main-section-down">TO UN SDGS</b>
+      </div>
+      <div className="sdg-wheel-landing-page-container">
+        <img src="/sdg-wheel-landing-page.png" alt="" className="sdg-wheels" />
+        <div className="sdg-wheel-descriptions">
+          <p className="smae-font-para-sdg">
+          Our sustainability strategy, focusing on  <span className="people-span">People</span> , <span className="planet-span">Planet</span> , <span className="community-span">Community</span> ,
+          and <span className="governance-span"> Governance</span> , aims to create long-term stakeholder value and
+          sustainable growth for our business. It aligns with the UN Sustainable
+          Development Goals, the Tata Group Sustainability Strategy, and our
+          company’s assessment of critical issues and their impact on the
+          external environment.
+          <br />
+          This approach ensures we address the broad spectrum of sustainability,
+          encompassing social well-being, environmental stewardship, community
+          engagement, and ethical governance, thereby fostering a holistic
+          development framework for enduring success.
+          </p>
+          <br />
+          <img className="line-image-dashed" src="/line-dark.png" alt="" />
+          <br />
+          <button className="readmore-blue">read more {'>'}</button>
+        </div>
+      </div>
+      <div className="resources-wrapper-parent">
+      <img
+          className="small-square-btn-png landing-page-small-square-btn"
+          src="/small-square-btn.png"
+          alt=""
+        />{" "}
+        <br />
+      <Resourcesnew/>
+      <br />
+      <br />
+      </div>
+      
+    </div>
+  );
+};
+
+export default LandingPage;

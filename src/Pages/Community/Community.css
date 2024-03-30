@@ -1,0 +1,118 @@
+.community-student-container{
+       overflow-x: hidden;
+}
+.Student-section-container{
+       background: url('/Community-student-overlay.png');
+       width:75%;
+       height: 600px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       flex-direction: column;
+       overflow-x: hidden !important;
+}
+.student-section-text{
+       text-align: justify;
+}
+.wrapper-student-container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+.section-one-photo-text{
+       display: flex;
+       justify-content: center;
+       width: 95%;
+       align-items: center;
+       align-items: center;
+       color: #AD3088;
+       font-size: 28px;
+       font-weight: 300;
+       font-family: var(--font-replacment);
+}
+.student-image-section{
+       width: 450px;
+       height: 302px;
+       margin-right: 15px;
+       margin-left: 20px;
+}
+.quick-link-sections{
+width: 25%;
+padding-left: 30px;
+}
+.quick-link-sections b{
+       color: black;
+       font-size: 20px;
+       font-family: var(--font-replacment);
+       font-weight: 450;
+       letter-spacing: 0.2em;
+}
+.quick-link-sections a{
+       text-decoration: none;
+       color: #134673;
+       font-size: 18px;
+       letter-spacing: 0.02em;
+}
+.quicklinks-button-div{
+       width: 100%;
+       justify-content: space-between;
+       margin-bottom: 15px;
+       margin-top: 10px;
+       margin-left: 20px;
+}
+.quicklinks-button-div img{
+   margin-right: 20px;
+}
+.data-student-community-container{
+       width: 95%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-left: 23px;
+}
+.data-set-conatiner-below{
+       width: 22%;
+       margin-right: 18px;
+}
+.data-set-conatiner-below b{
+font-size: 48px;
+font-weight: 700;
+color: #008189;
+font-family: var(--font-replacment);
+}
+.data-set-conatiner-below p{
+       font-family: var(--font-replacment);
+       font-size: 18px;
+}
+.Student-section-container-environment{
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       background: url('/Community-student-overlay.png');
+       width:75%;
+       height: 600px;
+}
+.section-one-photo-text-specail{
+       width: 75%;
+       color: #7A63AB;
+       font-size: 26px;
+       font-weight: 250;
+       font-family: var(--font-replacment);
+       margin: auto 30px;
+       margin-top: 0;
+}
+.data-student-community-container-environment{
+       width: 25%;
+}
+.data-student-community-container-environment .data-set-conatiner-below{
+       width: 100%;
+}
+.data-student-community-container-environment .data-set-conatiner-below p{
+       margin: 0;
+       margin-bottom: 10px;
+       color: #123C61;
+}
+.small-size-paragraph-environment{
+       width: 80%;
+}

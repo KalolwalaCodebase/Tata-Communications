@@ -1,0 +1,184 @@
+/* .landing-page-container-parent{
+       width: 100%;
+       overflow-x: hidden;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+} */
+.traingle-parent-container{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       justify-content: center;
+       align-items: flex-start;
+       justify-self: center;
+       background: url('/TrainglePhotos.svg');
+       background-size: contain;
+       height: 600px;
+       overflow-x: hidden;
+       background-clip: border-box;
+       background-repeat: no-repeat;
+       overflow-y: hidden;
+}
+.traingle-parent-container .traingle-descriptions{
+        width: 55%;
+        padding: 5%;
+        padding-top: 6%;
+        
+}
+.landing-page-small-square-btn{
+       margin-top: 30px;
+       margin-bottom: 10px;
+}
+.heading-main-section-landing-page{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       gap: 30px;
+       justify-content: center;
+       align-items: center;
+}
+.heading-main-section-landing-page .heading-main-section{
+       font-size: 60px;
+       font-weight: 360;
+       letter-spacing: 0.3em;
+       line-height: 40px;
+}
+.heading-main-section-down{
+       font-size: 60px;
+       font-weight: 360;
+       letter-spacing: 0.3em;
+       line-height: 70px;
+       text-transform: uppercase;
+}
+.landing-page-section-heading-down{
+       margin: 40px auto;
+}
+.heading-main-section-landing-page .small-heading-landing-page{
+       color: var(--c61);
+       font-size: 35px;
+       font-weight: 500;
+       margin-top: 20px;
+       line-height: 10px;
+}
+.planet-heading-color ,.people-heading-color ,.community-heading-color{
+       font-size: 40px;
+}
+.planet-heading-color{
+       color: var(--b0bc25);
+}
+.people-heading-color{
+       color: var(--people);
+}
+.community-heading-color{
+       color: var(--community);
+}
+.traingle-parent-container .traingle-descriptions .people-color-heading-landing-page{
+       color: var(--people);
+       font-size: 25px;
+}
+.traingle-parent-container .traingle-descriptions .normal-color-heading-landing-page{
+       font-size: 20px;
+}
+.landing-page-card-container{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-top: 20px;
+}
+.three-card-conatiner{
+       display: flex;
+       width: 100%;
+       padding: 3%;
+       justify-content: space-between;
+       background:rgba(223, 214, 214, 0.12);
+       
+}
+.three-card-conatiner .card-container{
+       margin-left: 35px;
+}
+.landing-page-second-caresoules{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+}
+@media only screen and (min-width: 1700px) {
+       .traingle-parent-container{
+              background-size: cover;
+              height: 650px;
+       }
+       .traingle-parent-container .traingle-descriptions .people-color-heading-landing-page{
+              font-size: 30px;
+       }
+       .traingle-parent-container .traingle-descriptions .normal-color-heading-landing-page{
+              font-size: 25px;   
+       }
+     }
+       
+.sdg-wheel-landing-page-container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background: #f1f1f1;
+       width: 100%;
+}
+.sdg-wheel-landing-page-container img{
+       padding: 30px;
+}
+.sdg-wheel-descriptions{
+       width: 38%; 
+       margin-left: 5%;  
+}
+.sdg-wheell-heading-upper{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+}
+.smae-font-para-sdg{
+       font-size: 22px;
+       line-height: 30px;
+}
+.people-span ,.planet-span,.community-span,.governance-span{
+       font-size: 24px;
+       font-weight: 500;
+}
+.people-span{
+color: var(--people);
+}
+.planet-span{
+color: var(--b0bc25);
+}
+.community-span{
+       color: var(--community);
+}
+.governance-span{
+       color: var(--ea7926);
+}
+.readmore-blue{
+       background: var(--planet-color-text);
+       border: none;
+       border-radius: 30px;
+       color: white;
+       font-size: 14px;
+       letter-spacing: 0.3em;
+       padding: 0px 20px;
+       justify-self: center;
+       padding-bottom: 4px;
+       margin-left: 20px;
+       text-transform: uppercase;
+       font-weight: 500;
+}
+.resources-wrapper-parent{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+}
