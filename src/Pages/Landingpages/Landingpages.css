@@ -212,7 +212,7 @@ color: var(--b0bc25);
 }
 .carousel-img-container-content{
        position: absolute;
-       width: 33%;
+       width: 35%;
        margin: 7%;
 }
 .quote-icon1{
@@ -224,12 +224,12 @@ color: var(--b0bc25);
 .quote-icon2{
        position: absolute;
        width: 7%;
-       bottom: 27%;
-       right: 13%;
+       bottom: 20%;
+       right: 8%;
        
 }
 .carousel-img-container-content .md-msg{
-       font-size: .9rem;
+       font-size: 1.4rem;
        text-align: justify;
 }
 .carousel-img-container-content h6{
