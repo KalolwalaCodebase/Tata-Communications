@@ -13,7 +13,7 @@
 .carousel-image {
     max-width: calc(31.3333% - 10px);
     margin: 0 5px; /* Adjust the gap between images */
-    height: auto;
+    height: 300px;
   }
   
   /* .carousel-image.expand {

@@ -27,17 +27,17 @@ const Carouseldown = () => {
         <div className="d-flex justify-content-around">
           <img
             className="carousel-image"
-            src="./award2.svg"
+            src="./award4.svg"
             alt=""
           />
           <img
             className="carousel-image"
-            src="./award3.svg"
+            src="./award5.svg"
             alt=""
           />
           <img
             className="carousel-image"
-            src="./award1.svg"
+            src="./award6.svg"
             alt=""
           />
         </div>
@@ -46,17 +46,17 @@ const Carouseldown = () => {
         <div className="d-flex justify-content-around">
           <img
             className="carousel-image"
-            src="./award3.svg"
+            src="./award7.svg"
             alt=""
           />
           <img
             className="carousel-image"
-            src="./award1.svg"
+            src="./award8.svg"
             alt=""
           />
           <img
             className="carousel-image"
-            src="./award2.svg"
+            src="./award9.svg"
             alt=""
           />
         </div>
