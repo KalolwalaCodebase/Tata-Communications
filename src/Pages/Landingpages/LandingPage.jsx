@@ -164,10 +164,8 @@ const LandingPage = ({ activeTab }) => {
           alt=""
         />{" "}
         <br />
-      <Resourcesnew/>
-      <br />
-      <br />
-      <Shadedcontainer/>
+      {/* <Resourcesnew/> */}
+      
       <b className="heading-main-section-down">Awards</b>
 
       <p className="awards-green-title poppins-semibold">SUSTAINABILITY</p>
@@ -183,10 +181,15 @@ const LandingPage = ({ activeTab }) => {
         {/* <CardCarousel/> */}
         <Resourcesnew />
         <br />
+      <br />
+        <Shadedcontainer/>
+        <br />
         <br />
       </div>
 
     </div>
+    </div>
+ 
   );
 };
 

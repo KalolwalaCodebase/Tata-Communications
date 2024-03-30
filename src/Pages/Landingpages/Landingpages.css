@@ -182,7 +182,6 @@ color: var(--b0bc25);
        justify-content: center;
        align-items: center;
 }
-<<<<<<< HEAD
 .parent-shaded-container {
        display: flex;
        justify-content: center;
@@ -205,7 +204,6 @@ color: var(--b0bc25);
        color: #4d8ac0;
        text-decoration: underline;
    }
-=======
 .carousel-img-container{
        margin: auto;
        position: relative;
@@ -271,4 +269,3 @@ color: var(--b0bc25);
        border-radius: 50px;
        padding: 0 3%;
 }
->>>>>>> 96f72ea48e187eca53060dafff0b2a947019ec81
