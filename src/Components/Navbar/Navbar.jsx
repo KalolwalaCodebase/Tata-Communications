@@ -4,19 +4,35 @@ import "./Navbar.css";
 const Navbar = ({ activeTab, setActivetab }) => {
   return (
     <div className="Navbar-parent">
-      <div className="logo">
-        <img src="/Logo-main.png" alt="" />
-        <span className="logo-small">SUSTAINABLITY</span>
-        <img src="/Navbarseprator.png" alt="" />
-      </div>
-      <div className="navbar-elements">
-        
+       <div className="upper-navbar-logo-container">
+        <div className="mainlogo-image">
+          <img src="/mainlogoleft.png" alt="" />
+        </div>
+        <div className="parent-logo-image">
+        <input type="text" placeholder="Search..." class="search-input"/>
+          <img src="/main-parent-logo.svg" alt="" />
+        </div>
+       </div>
+       <div className="parent-down-navbar-conatiner">
+       <li className={`Sustainability specail-sustainablity ${activeTab === "Sustainability" ? "active-tab" : " "}`}>
+          <Link
+            to="/Sustainability"
+            className={`Sustainability ${
+              activeTab === "Sustainability" ? "active-tab" : ""
+            }`}
+            onClick={() => setActivetab("Sustainability")}
+          >
+            Sustainability
+          </Link>
+        </li>
+        <div className="navbar-elements"> 
         <li className={`Peoples ${activeTab === "People" ? "active-tab" : " "}`}>
           {" "}
           <Link to="/People" onClick={() => setActivetab("People")}>
             People
           </Link>
         </li>
+        <li>|</li>
         <li className={`Planet ${activeTab === "Planet" ? "active-tab" : " "}`}>
           <Link
             to="/Planet"
@@ -26,6 +42,7 @@ const Navbar = ({ activeTab, setActivetab }) => {
             Planet
           </Link>
         </li>
+        <li>|</li>
         <li className={`Community ${activeTab === "Community" ? "active-tab" : " "}`}>
           <Link
             to="/Community"
@@ -37,6 +54,7 @@ const Navbar = ({ activeTab, setActivetab }) => {
             Community
           </Link>
         </li>
+        <li>|</li>
         <li className={`Governance ${activeTab === "Governance" ? "active-tab" : " "}`}>
           <Link
             to="/Governance"
@@ -48,18 +66,8 @@ const Navbar = ({ activeTab, setActivetab }) => {
             Governance
           </Link>
         </li>
-        <li className={`Sustainability ${activeTab === "Sustainability" ? "active-tab" : " "}`}>
-          <Link
-            to="/Sustainability"
-            className={`Sustainability ${
-              activeTab === "Sustainability" ? "active-tab" : ""
-            }`}
-            onClick={() => setActivetab("Sustainability")}
-          >
-            Sustainability
-          </Link>
-        </li>
       </div>
+       </div> 
     </div>
   );
 };

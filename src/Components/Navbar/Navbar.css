@@ -1,10 +1,17 @@
+#root ,body{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+}
 .Navbar-parent{
        display: flex;
        flex-direction: column;
-       justify-content: center;
+       justify-content: flex-start;
        align-items: center;
        font-family: Arial, Helvetica, sans-serif;
        height: 15%;
+       width: 100%;
+      background: white;
 }
 .Navbar-parent .logo{
        display: flex;
@@ -25,9 +32,8 @@
 }
 .Navbar-parent .navbar-elements {
   display: flex;
-  height: 68px;
-  width: 50%;
   justify-content: space-between;
+  gap: 10px;
 }
 .Navbar-parent .navbar-elements li{
        list-style: none;
@@ -35,6 +41,7 @@
        text-transform: uppercase;
        font-family: var(--font-replacment);
        cursor: pointer;
+       color: var(--d86c6);
 }
 .Navbar-parent .navbar-elements li a {
   text-decoration: none;
@@ -68,4 +75,69 @@
      .People , .Peoples{
       color: var(--d86c6);
      }
-    
+.upper-navbar-logo-container{
+       width: 100%;
+       padding:10px 20px;
+       height: 80%;
+       display: flex;
+       border-bottom: 1px solid rgb(241, 237, 237);
+       justify-content: space-between;
+}
+.parent-logo-image{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 1rem;
+}
+.parent-down-navbar-conatiner{
+       width: 100%;
+       padding:10px 20px;
+       display: flex;
+      align-items: center;
+       justify-content: space-between;
+       position: sticky;
+       z-index: 1000; 
+       top: 0; 
+}
+.specail-sustainablity{
+       font-weight: bold;
+       text-transform: uppercase;
+       font-family: var(--font-replacment);
+       cursor: pointer;
+       list-style: none;
+       text-decoration: none !important;
+}
+.specail-sustainablity a,.Peoples a{
+       color: var(--d86c6);
+       text-decoration: none;
+    letter-spacing: 0.05em;
+ }
+ .Navbar-parent {
+       display: flex;
+       flex-direction: column;
+       font-family: Arial, Helvetica, sans-serif;
+       position: fixed;
+       z-index: 10;
+       width: 100%;
+       background: white;
+     }
+     
+     .upper-navbar-logo-container {
+       width: 100%;
+       padding: 10px 20px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+     }
+     
+     .parent-down-navbar-container {
+       width: 100%;
+       padding: 10px 20px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       position: sticky;
+       z-index: 1000;
+       top: 0;
+     }
+     

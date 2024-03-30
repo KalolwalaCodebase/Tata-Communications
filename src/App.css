@@ -4,6 +4,6 @@ body{
   margin: 0;
   padding: 0;
 }
-.app-container{
-  margin: 10px 0;
+.main-container{
+  padding-top: 10%;
 }

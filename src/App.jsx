@@ -68,6 +68,7 @@ function App() {
       <div className="app-container">
       <BrowserRouter>
       <Navbar activeTab={activeTab} setActivetab={setActivetab}  />
+      <div className="main-container">
       <Routes>
       <Route
               path="/"
@@ -146,8 +147,10 @@ function App() {
             element={<Community activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           />  */}
       </Routes>
+      </div>
       </BrowserRouter>
       <Footer/>
+      
       </div>
     </>
   );
