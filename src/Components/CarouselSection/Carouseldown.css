@@ -1,0 +1,21 @@
+
+.carousel-awards{
+    width: 100%;
+    margin: 2% auto 0;
+    padding: 4% 0;
+    background-color: rgb(128, 142, 219,0.08);
+}
+/* .carousel-item {
+    margin: 0 10px;
+    
+} */
+  
+.carousel-image {
+    max-width: calc(31.3333% - 10px);
+    margin: 0 5px; /* Adjust the gap between images */
+    height: auto;
+  }
+  
+  /* .carousel-image.expand {
+    transform: scale(1.2); 
+  }    */

@@ -5,6 +5,7 @@ import Cards from "../../Components/Card";
 import Carouseldown from "../../Components/CarouselSection/Carouseldown";
 import Resources from "../../Components/Resources/Resources";
 import Resourcesnew from "../../Components/Resources/Resourcesnew";
+// import CardCarousel from "../../Components/CardCarousel/CardCarousel";
 const LandingPage = ({ activeTab }) => {
   const headingarr = [
     "Long-term commitments",
@@ -98,11 +99,26 @@ const LandingPage = ({ activeTab }) => {
         <b className="heading-main-section-down">Message from</b>
         <b className="heading-main-section-down">Managing director</b>
         <br />
-        <Carouseldown/>
+        <div className="carousel-img-container flex">
+          <img
+            className="d-block w-100"
+            src="/landing-page-slider-01.png"
+            alt=""
+          />
+          <div className="carousel-img-container-content">
+            <img className="quote-icon1" src="./quote-icon.svg" alt="" />
+            <img className="quote-icon2" src="./quote-icon2.svg" alt="" />
+            <p className="poppins-light md-msg">At Tata Communications, we believe in creating <br /> a world where everyone has equal access to <br />technology and can thrive in a sustainable and <br />interconnected manner. By embracing Inclusivity,<br /> Sustainability, and Hyperconnectivity, we<br /> envision a future that is conducive for individuals<br /> and communities. This includes access to clean<br /> energy, transforming existing production chains<br /> into circular processes, bringing innovations to<br /> future-proof our solutions and enhancing our<br /> operations towards sustainable development.</p>
+            <h6 className="poppins-bold">Amur S Lakshminarayanan</h6>
+            <p className="poppins-medium managing-director">Managing Director</p>
+            <button className="poppins-medium">WATCH VIDEO</button>
+          </div>
+        </div>
+        {/* <Carouseldown/> */}
         {/*  <div className="carousel-container-main">
            <Carouseldown/>
         </div> */}
-       <br />
+        <br />
         <img
           className="small-square-btn-png landing-page-small-square-btn"
           src="/small-square-btn.png"
@@ -110,24 +126,24 @@ const LandingPage = ({ activeTab }) => {
         />{" "}
       </div>
       <div className="sdg-wheell-heading-upper">
-      <b className="heading-main-section-down">CONTRIBUTING</b>
+        <b className="heading-main-section-down">CONTRIBUTING</b>
         <b className="heading-main-section-down">TO UN SDGS</b>
       </div>
       <div className="sdg-wheel-landing-page-container">
         <img src="/sdg-wheel-landing-page.png" alt="" className="sdg-wheels" />
         <div className="sdg-wheel-descriptions">
           <p className="smae-font-para-sdg">
-          Our sustainability strategy, focusing on  <span className="people-span">People</span> , <span className="planet-span">Planet</span> , <span className="community-span">Community</span> ,
-          and <span className="governance-span"> Governance</span> , aims to create long-term stakeholder value and
-          sustainable growth for our business. It aligns with the UN Sustainable
-          Development Goals, the Tata Group Sustainability Strategy, and our
-          company’s assessment of critical issues and their impact on the
-          external environment.
-          <br />
-          This approach ensures we address the broad spectrum of sustainability,
-          encompassing social well-being, environmental stewardship, community
-          engagement, and ethical governance, thereby fostering a holistic
-          development framework for enduring success.
+            Our sustainability strategy, focusing on  <span className="people-span">People</span> , <span className="planet-span">Planet</span> , <span className="community-span">Community</span> ,
+            and <span className="governance-span"> Governance</span> , aims to create long-term stakeholder value and
+            sustainable growth for our business. It aligns with the UN Sustainable
+            Development Goals, the Tata Group Sustainability Strategy, and our
+            company’s assessment of critical issues and their impact on the
+            external environment.
+            <br />
+            This approach ensures we address the broad spectrum of sustainability,
+            encompassing social well-being, environmental stewardship, community
+            engagement, and ethical governance, thereby fostering a holistic
+            development framework for enduring success.
           </p>
           <br />
           <img className="line-image-dashed" src="/line-dark.png" alt="" />
@@ -135,18 +151,32 @@ const LandingPage = ({ activeTab }) => {
           <button className="readmore-blue">read more {'>'}</button>
         </div>
       </div>
-      <div className="resources-wrapper-parent">
+      <div className="awards-wrapper-parent">
       <img
           className="small-square-btn-png landing-page-small-square-btn"
           src="/small-square-btn.png"
           alt=""
         />{" "}
         <br />
-      <Resourcesnew/>
-      <br />
-      <br />
+      <b className="heading-main-section-down">Awards</b>
+
+      <p className="awards-green-title poppins-semibold">SUSTAINABILITY</p>
+
+        <Carouseldown />
       </div>
-      
+      <div className="resources-wrapper-parent">
+        <img
+          className="small-square-btn-png landing-page-small-square-btn"
+          src="/small-square-btn.png"
+          alt=""
+        />{" "}
+        <br />
+        {/* <CardCarousel/> */}
+        <Resourcesnew />
+        <br />
+        <br />
+      </div>
+
     </div>
   );
 };
