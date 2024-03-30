@@ -8,6 +8,7 @@
 .parent-resources-component .resources-heading-tab{
   display: flex;
   width: 90%;
+  cursor: pointer;
 }
 .parent-resources-component .resources-heading-tab .resources-heading-tab-heading{
 width: 33.3%;
@@ -33,6 +34,7 @@ border-top-right-radius: 0.9rem; /* Adjust the radius value as needed */
   min-height: 310px;
   max-height: 320px;
   overflow: hidden;
+ 
 }
 .resources-main-section-tab-container .resources-content{
   display: flex;

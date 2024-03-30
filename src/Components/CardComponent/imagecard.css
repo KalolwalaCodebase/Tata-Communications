@@ -1,0 +1,92 @@
+.parent-image-card-component{
+    width: 30%;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.image-container-card {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image-container-card img {
+    transition: transform 0.3s ease; /* Apply transition for smooth animation */
+}
+
+.image-container-card img:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+.image-container-card-heading{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    z-index:-1;
+}
+.image-container-card-heading .span-inital{
+    position: absolute;
+    bottom: -20px;
+    color: white;
+    width: 70%;
+    font-size: 32px;
+    letter-spacing: 0.02em;
+    padding: 4%;
+    text-transform: uppercase;
+    transition: bottom 0.3s ease;
+}
+.image-container-card {
+    position: relative; /* Ensure that positioning of the absolute element is relative to this container */
+    width: 90%;
+    overflow: hidden;
+    transition: all 0.3s ease; 
+}
+
+.image-container-card img {
+    transition: transform 0.3s ease; /* Apply transition for smooth zoom-in animation */
+}
+
+.parent-image-card-component:hover .image-container-card img {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+.image-container-card-heading {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Apply transition for smooth fade-in animation */
+    pointer-events: none; /* Prevent interaction with the content when hidden */
+}
+
+.parent-image-card-component:hover .image-container-card-heading {
+    pointer-events: auto; /* Enable interaction with the content when visible */
+    opacity: 1; /* Show content on hover */
+    z-index: 1;
+    transition-delay: 0.3s; /* Delay the visibility after the zoom-in animation */
+}
+.parent-image-card-component:hover .span-inital{
+    bottom: 10px;
+    transition-delay: 0.1s;  
+}
+.parent-image-card-component:hover .image-container-card{
+    background: url("/overlayvoilet.svg");
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
+.specail-btn-show-on-hover{
+    background: transparent;
+    opacity: -1;
+    transform: translateY(-20px);
+    transition: all 0.4s ease;
+}
+.parent-image-card-component:hover .specail-btn-show-on-hover{
+    opacity: 1;
+    transform: translateY(-10px);
+    cursor: pointer;
+    margin-left: 0;
+    padding-left: 0;
+}

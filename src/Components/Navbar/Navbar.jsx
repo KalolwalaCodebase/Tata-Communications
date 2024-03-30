@@ -11,7 +11,7 @@ const Navbar = ({ activeTab, setActivetab }) => {
       </div>
       <div className="navbar-elements">
         
-        <li className={`People ${activeTab === "People" ? "active-tab" : " "}`}>
+        <li className={`Peoples ${activeTab === "People" ? "active-tab" : " "}`}>
           {" "}
           <Link to="/People" onClick={() => setActivetab("People")}>
             People

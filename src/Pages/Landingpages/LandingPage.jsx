@@ -5,7 +5,14 @@ import Cards from "../../Components/Card";
 import Carouseldown from "../../Components/CarouselSection/Carouseldown";
 import Resources from "../../Components/Resources/Resources";
 import Resourcesnew from "../../Components/Resources/Resourcesnew";
+import Shadedcontainer from "../../Components/specailcontainer/Shadedcontainer";
+import ImageCard from "../../Components/CardComponent/ImageCard";
 const LandingPage = ({ activeTab }) => {
+  const imageUrlarr = [
+    "/landingpagecard1.png",
+    "/landingpagecard2.png",
+    "/landingpagecard3.png",
+  ];
   const headingarr = [
     "Long-term commitments",
     "short-term commitments",
@@ -39,22 +46,23 @@ const LandingPage = ({ activeTab }) => {
       <div className="traingle-parent-container">
         <div className="traingle-descriptions">
           <p className="people-color-heading-landing-page">
-            Te vitiore serrora que enihillab inverferum fuga. Nem lam volupta
-            spitia consect emporit ea de nes esequis verro dolorioritas estrunt
-            et molorat.
+          Our holistic sustainability strategy is grounded in the pillars of People, Planet and Community
+           with corporate governance at the heart of it.
           </p>
           <p className="normal-color-heading-landing-page">
-            Nem repudam que intiore mporepe rspeles sin necum reptibu
-            sanducietur, coreped molupta veratin nimus parchilit quodi qui bea
-            corioss imenit, sustius aut quaecea tuscitas peruptatur acimagnim
-            dia comnist plaut apedisint fuga. Ulpa iditium nobis a inctur.
-            <br />
-            Venditae non pliquibusdae ipsam verfernat aperibusdani quatur
-            <br />
-            Vendite mpella is simpore nditate mperiorum remoluptatio ex
-            everemquodis eatem fugia netur as aut archilit qui il iumqui
-            omniscidio molent eatiore, consequia vero earitae porpos seque cum
-            qui repuda quos ullabore voluptaepero
+          It is meticulously crafted to 
+          foster our long-term success and deliver
+           value to our stakeholders. Aligned with
+            the UN Sustainable Development Goals, 
+            the Tata Group Sustainability Strategy and 
+            our own assessment of critical concerns,
+             it reflects our commitment to addressing 
+             diverse aspects such as social well-being, 
+             environmental stewardship, community engagement
+              and ethical governance. This comprehensive 
+              framework serves as the foundation for our growth,
+               ensuring that our business remains resilient and
+                positively impacts the world around us.
           </p>
         </div>
       </div>
@@ -75,14 +83,12 @@ const LandingPage = ({ activeTab }) => {
           alt=""
         />
         <div className="three-card-conatiner">
-          {headingarr.map((heading, id) => (
-            <Cards
-              activeTab={activeTab}
-              hoverCardColor={"#6c1b54"}
-              cardsColor={"#ad3088"}
-              key={id}
-              heading={heading}
-              cardWidth={headingarr.length}
+          {imageUrlarr.map((imageurl, id) => (
+            <ImageCard
+            key={id}
+            color={"#6c1b54"}
+              imageurl={imageurl}
+              heading={headingarr[id]}
             /> // Pass the heading directly as a string
           ))}
         </div>
@@ -145,6 +151,7 @@ const LandingPage = ({ activeTab }) => {
       <Resourcesnew/>
       <br />
       <br />
+      <Shadedcontainer/>
       </div>
       
     </div>

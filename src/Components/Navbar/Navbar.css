@@ -54,18 +54,18 @@
        background-color:#ea7926;  
      }
      .Governance{
-      color: #ea7926;
+      color: var(--d86c6);
      }
      .Sustainability{
-       color: #7a63ab;
+      color: var(--d86c6);
      }
      .Planet{
-       color: #b0bc25;
+      color: var(--d86c6);
      }
      .Community{
-       color:#00b3bd;
+      color: var(--d86c6);
      }
-     .People{
-            color:var(--people);
+     .People , .Peoples{
+      color: var(--d86c6);
      }
     

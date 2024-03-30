@@ -10,12 +10,13 @@
        display: flex;
        flex-direction: column;
        width: 100%;
-       justify-content: center;
+       justify-content: flex-start;
+       padding: 4%;
        align-items: flex-start;
        justify-self: center;
-       background: url('/TrainglePhotos.svg');
-       background-size: contain;
-       height: 600px;
+       background: url('/trainglebackgroundimg.svg');
+       background-size: cover;
+       height: 536px;
        overflow-x: hidden;
        background-clip: border-box;
        background-repeat: no-repeat;
@@ -23,9 +24,7 @@
 }
 .traingle-parent-container .traingle-descriptions{
         width: 55%;
-        padding: 5%;
-        padding-top: 6%;
-        
+        padding: 2%;        
 }
 .landing-page-small-square-btn{
        margin-top: 30px;
@@ -43,7 +42,7 @@
        font-size: 60px;
        font-weight: 360;
        letter-spacing: 0.3em;
-       line-height: 40px;
+       line-height: 35px;
 }
 .heading-main-section-down{
        font-size: 60px;
@@ -75,7 +74,7 @@
        color: var(--community);
 }
 .traingle-parent-container .traingle-descriptions .people-color-heading-landing-page{
-       color: var(--people);
+       color: #005199;
        font-size: 25px;
 }
 .traingle-parent-container .traingle-descriptions .normal-color-heading-landing-page{
@@ -91,9 +90,10 @@
 }
 .three-card-conatiner{
        display: flex;
-       width: 100%;
-       padding: 3%;
-       justify-content: space-between;
+       width: 100vw;
+       flex-wrap: nowrap;
+       justify-content: center;
+       padding-left: 15px;
        background:rgba(223, 214, 214, 0.12);
        
 }
@@ -182,3 +182,25 @@ color: var(--b0bc25);
        justify-content: center;
        align-items: center;
 }
+.parent-shaded-container {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100vw;
+       background: rgba(45, 154, 197, 0.08); /* Use rgba() with alpha value as decimal */
+       height: 120px;
+   }
+   
+   .description-shaded-container {
+       width: 60%;
+       margin: auto 20%;
+       color: #123c61;
+       letter-spacing: 0.02em;
+       font-size: 24px;
+       font-weight: 200;
+       text-align: center; /* Center-align text */
+   }
+   .description-shaded-container span{
+       color: #4d8ac0;
+       text-decoration: underline;
+   }
