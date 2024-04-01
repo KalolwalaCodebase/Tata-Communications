@@ -26,7 +26,7 @@ body {
     color: #228291;
     line-height: 30px;
     margin-top: 85px;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .arrow-right {

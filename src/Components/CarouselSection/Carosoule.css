@@ -8,16 +8,16 @@
        
 }
 .carousel-indicators ,.carousel-control-prev,.carousel-control-prev{
-       z-index: 3;
+       z-index: 1;
 }
 .absolute-video-description{
        font-family: var(--font-replacment);
        color: white;
        display: flex;
        flex-direction: column;
-       padding: 40px;
+       padding: 20px 40px;
        width: 70%;
-       padding-top: 5%;
+       padding-top: 3%;
 }
 .heading-caresoules{
  font-weight: 600;
@@ -37,6 +37,8 @@
 .video-container{
        width: 100%;
        overflow-x: hidden;
+       display: flex;
+       justify-content: center;
 }
 .image-container{
        width: 100%;
@@ -61,6 +63,8 @@ img{
        letter-spacing: 0.08em;
        border-radius: 15px;
        border:1px solid #EA7926 ;
+       font-weight: 600;
+       text-transform: uppercase;
 }
 .carousel-control-next-icon ,.carousel-control-prev-icon{
 display: none !important;
@@ -117,7 +121,7 @@ display: none !important;
    }
    
    .carousel-fade .carousel-control {
-       z-index: 2;
+       z-index: 1;
    }
    
    @media all and (transform-3d),

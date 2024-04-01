@@ -60,7 +60,7 @@ const LandingPage = ({ activeTab }) => {
              it reflects our commitment to addressing 
              diverse aspects such as social well-being, 
              environmental stewardship, community engagement
-              and ethical governance. This comprehensive 
+              and ethical governance.This comprehensive 
               framework serves as the foundation for our growth,
                ensuring that our business remains resilient and
                 positively impacts the world around us.

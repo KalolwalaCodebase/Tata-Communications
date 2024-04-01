@@ -189,6 +189,7 @@ color: var(--b0bc25);
        width: 100vw;
        background: rgba(45, 154, 197, 0.08); /* Use rgba() with alpha value as decimal */
        height: 120px;
+       bottom: 0;
    }
    
    .description-shaded-container {
@@ -224,12 +225,11 @@ color: var(--b0bc25);
 .quote-icon2{
        position: absolute;
        width: 7%;
-       bottom: 20%;
-       right: 8%;
-       
+       bottom: 22%;
+       right: 3%;     
 }
 .carousel-img-container-content .md-msg{
-       font-size: 1.4rem;
+       font-size: 1.3rem;
        text-align: justify;
 }
 .carousel-img-container-content h6{

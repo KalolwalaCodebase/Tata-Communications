@@ -24,15 +24,17 @@
     height: 100%;
     border-radius: 25px;
     z-index:-1;
+    display: flex;
+    align-items: flex-end;
 }
 .image-container-card-heading .span-inital{
     position: absolute;
-    bottom: -20px;
+    bottom: -40px;
     color: white;
-    width: 70%;
+    width: 75%;
     font-size: 32px;
     letter-spacing: 0.02em;
-    padding: 4%;
+    padding: 3% 6%;
     text-transform: uppercase;
     transition: bottom 0.3s ease;
 }
@@ -87,6 +89,6 @@
     opacity: 1;
     transform: translateY(-10px);
     cursor: pointer;
-    margin-left: 0;
+    margin-left: 1%;
     padding-left: 0;
 }

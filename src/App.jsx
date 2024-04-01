@@ -22,6 +22,8 @@ import LandingPage from './Pages/Landingpages/LandingPage';
 import Governance from "./Pages/Governance/Governance";
 import People from "./Pages/People/People";
 import Footer from "./Components/footer/Footer";
+import LoadingScreen from "./Components/Loading/Loading";
+import Shadedcontainer from "./Components/specailcontainer/Shadedcontainer";
 function App() {
   const [activeTab, setActivetab] = useState("Home");
   const [Videokey, SetVideoKey] = useState(null);
@@ -66,6 +68,7 @@ function App() {
   return (
     <>
       <div className="app-container">
+        <LoadingScreen isloading={true}/>
       <BrowserRouter>
       <Navbar activeTab={activeTab} setActivetab={setActivetab}  />
       <div className="main-container">

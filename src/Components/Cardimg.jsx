@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./Cardimg.css"
 const Cardimg = ({activeTab,heading,cardWidth,hoverCardColor}) => {
        const [isHovered, setIsHovered] = useState(false);
-
+    
        const handleMouseOver = () => {
          setIsHovered(true);
        };

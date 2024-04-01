@@ -2,12 +2,6 @@ import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 
 const PlanetCilcularEconomy = () => {
-
-
-
-
-
-
   return (
     <div>
       <HeadBar

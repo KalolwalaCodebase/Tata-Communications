@@ -2,9 +2,11 @@ import React from 'react'
 import { Mainsection } from '../../Components/HeroSection/Mainsection';
 import Cards from '../../Components/Card';
 import Cardimg from './../../Components/Cardimg';
+import ImageCard from '../../Components/CardComponent/ImageCard';
 
 const Community = ({activeTab,HeroSectionContent}) => {
-       const headingarr = [ ['Education','/planetStudent.png'], ['Sustainable Livelihoods',"/planetNaturesmall.png"], ['Healthcare and disaster relief','/PlanetHealthsmall.png'],['Environment','/planetEnvironmentsmall.png']];
+       const headingarr = [ ['Education','/communitycard1.png'], ['Sustainable Livelihoods',"/communitycard2.png"],['Environment','/communitycard3.png']];
+       const imageurl=["communitycard1.png","communitycard2.png","communitycard3.png"]
        return (
          <>
          <div className="wrapper-community-cards">
@@ -13,7 +15,7 @@ const Community = ({activeTab,HeroSectionContent}) => {
          </div>
          <div className='container-sustainability'>
            {headingarr.map((heading, id) => (
-             <Cardimg activeTab={activeTab} hoverCardColor={'#00B3BD'} cardsColor={'#38D1DA'} key={id} heading={heading} cardWidth={headingarr.length} /> // Pass the heading directly as a string
+             <ImageCard activeTab={activeTab} hoverCardColor={'#00B3BD'} cardsColor={'#38D1DA'} key={id} heading={heading} imageurl={heading[1]}  /> // Pass the heading directly as a string
            ))}
          </div>
          </div>
