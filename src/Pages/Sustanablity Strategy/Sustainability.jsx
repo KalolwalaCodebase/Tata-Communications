@@ -1,12 +1,12 @@
 import React from "react";
-import "./Sustainability.css";
+//import "./Sustainability.css";
 import Cards from "./../../Components/Card";
 import { Mainsection } from "../../Components/HeroSection/Mainsection";
 
 const Sustainability = ({ activeTab, HeroSectionContent }) => {
   const headingarr = [
-    "SUSTAINABILITY STRATEGY",
-    "SUSTAINABILITY VISION",
+    "SUSTAINABILITY GOVERNANCE",
+    "Sustainability commitments",
     "FY24 GOALS & PROGRESS",
     "UNSUSTAINABLE DEVELOPMENT GOALS",
     "MATERIALITY",
@@ -29,7 +29,7 @@ const Sustainability = ({ activeTab, HeroSectionContent }) => {
             heading={heading}
             cardsColor={"#9E92B4"}
             cardWidth={headingarr.length}
-          /> // Pass the heading directly as a string
+          /> 
         ))}
       </div>
     </>

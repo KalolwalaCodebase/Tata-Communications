@@ -1,0 +1,46 @@
+.card-container-div-main-gov{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    height: 350px;
+    position: relative;
+    font-family: var(--font-replacment);
+    padding-bottom: 1.5rem;
+    cursor: pointer;
+    transition: background 0.8s ease-in-out, color 1s ease-in-out;
+
+}
+.card-container-div-main-gov img{
+    width: 38%;
+    height: 120px;
+}
+.card-container-div-main-gov b{
+    width: 60%;
+font-size: 20px;
+font-weight: 700;
+line-height: 28px;
+text-align: left;
+
+}
+.card-container-div-main-gov button{
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 3%;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    letter-spacing: 0.35em;
+    text-align: left; 
+    text-transform: uppercase; 
+}
+.wrapper-card-container{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    align-items: center;
+    padding: 1%;
+}

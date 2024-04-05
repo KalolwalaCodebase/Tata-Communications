@@ -8,7 +8,7 @@ import Resourcesnew from "../../Components/Resources/Resourcesnew";
 import Shadedcontainer from "../../Components/specailcontainer/Shadedcontainer";
 import ImageCard from "../../Components/CardComponent/ImageCard";
 // import CardCarousel from "../../Components/CardCarousel/CardCarousel";
-const LandingPage = ({ activeTab }) => {
+const LandingPage = ({ activeTab,setActivetab }) => {
   const imageUrlarr = [
     "/landingpagecard1.png",
     "/landingpagecard2.png",
@@ -21,7 +21,7 @@ const LandingPage = ({ activeTab }) => {
   ];
   return (
     <div className="landing-page-container-parent">
-      <CarouselMain />
+      <CarouselMain setActivetab={setActivetab} />
 
       <br />
       <div className="heading-main-section-landing-page">

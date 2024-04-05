@@ -1,0 +1,117 @@
+.container-Governance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2%;
+  margin-top: 2%;
+  position: relative;
+}
+.leadership-integrity-container-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
+
+.main-conter-wrapper-main-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  align-items: flex-start;
+  font-family: var(--font-replacment);
+}
+.main-scrollabale-container-leadership-integrity {
+  width: 80%;
+}
+.main-conter-wrapper-main-section .quick-link-sections {
+  width: 18%;
+}
+.upper-section-leadership-and-integrity {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 42px;
+  text-align: left;
+  color: #005199;
+  margin-bottom: 2%;
+}
+.deep-background-description-leadership-and-integrity-container{
+    background:rgb(220, 217, 217,0.08);
+    padding: 2%;
+
+}
+.heading-blue {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: left;
+  color: #3D86C6;
+  margin-bottom: 3%;
+}
+.normal-paragraph-leadership-and-integrity{
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+color: #606060;
+}
+.flexbox-board-of-director-image-photos{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  flex-wrap: wrap;
+  margin-top: 3%;
+}
+.board-of-director-images-container{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.image-container-single-div{
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: 260px;
+}
+.image-container-single-div img{
+  width: 75%;
+}
+.image-container-single-div .person-name-bold{
+font-size: 16px;
+font-weight: 700;
+line-height: 32px;
+text-align: center;
+color: #2A5F8F;
+width: 100%;
+}
+.image-container-single-div  .person-position{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #606060;
+}
+.line1{
+  width: 1%;
+  color: #606060;
+  height: 500px;
+}
+.graph-image-conatainer-board-of-director{
+  width: 25%;
+  margin-top: 0;
+  overflow: hidden;
+}
+.graph-image-conatainer-board-of-director img{
+  width: 100%;
+  height: 100%;
+}

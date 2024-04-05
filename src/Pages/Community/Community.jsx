@@ -19,7 +19,6 @@ const Community = ({activeTab,HeroSectionContent}) => {
            ))}
          </div>
          </div>
-        
          </>
          
        )

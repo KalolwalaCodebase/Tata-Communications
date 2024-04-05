@@ -24,6 +24,16 @@ import People from "./Pages/People/People";
 import Footer from "./Components/footer/Footer";
 import LoadingScreen from "./Components/Loading/Loading";
 import Shadedcontainer from "./Components/specailcontainer/Shadedcontainer";
+import PeopleSupplychain from "./Pages/People/PeopleSupplychain";
+import PeopleEmployes from "./Pages/People/PeopleEmployes";
+import PeopleCustomers from "./Pages/People/PeopleCustomers";
+import PressRelease from "./Pages/Sliderpages/PressRelease";
+import GriIndex from "./Pages/Sliderpages/GriIndex";
+import CardContainergov from "./Components/CardContainerGovernance/CardContainergov";
+import LeadershipAndIntegrity from "./Pages/Governance/LeadershipAndIntegrity";
+import RiskandResilance from "./Pages/Governance/RiskandResilance";
+import SustanablityGovernance from "./Pages/Sustanablity Strategy/SustanablityGovernance";
+import SustanablityCommitment from "./Pages/Sustanablity Strategy/SustanablityCommitment";
 function App() {
   const [activeTab, setActivetab] = useState("Home");
   const [Videokey, SetVideoKey] = useState(null);
@@ -75,7 +85,7 @@ function App() {
       <Routes>
       <Route
               path="/"
-              element={<LandingPage activeTab={activeTab} />}
+              element={<LandingPage setActivetab={setActivetab} activeTab={activeTab} />}
             />
           <Route
             path="/Planet"
@@ -141,6 +151,42 @@ function App() {
             path="/People"
             element={<People activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           /> 
+          <Route
+            path="/People/employee"
+            element={<PeopleEmployes activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          /> 
+          <Route
+            path="/People/supply-chain"
+            element={<PeopleSupplychain activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          /> 
+          <Route
+            path="/People/customer"
+            element={<PeopleCustomers activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          /> 
+          <Route
+            path="/press/release"
+            element={<PressRelease activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          /> 
+          <Route
+            path="/gri-index"
+            element={<GriIndex activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          /> 
+          <Route
+            path="/Governance/leadership-and-integrity-at-the-core"
+            element={<LeadershipAndIntegrity activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          /> 
+          <Route
+            path="/Governance/risk-and-risilience"
+            element={<RiskandResilance activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          /> 
+          {/* <Route
+            path="/Sustainability/sustainability-governance"
+            element={<SustanablityGovernance activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          /> 
+          <Route
+            path="/Sustainability/sustainability-commitments"
+            element={<SustanablityCommitment activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />  */}
           {/* <Route
             path="/Community/education"
             element={<Community activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}

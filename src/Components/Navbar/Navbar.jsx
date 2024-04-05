@@ -1,16 +1,48 @@
-import React from "react";
+import React,{useState,useEffect,useRef} from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = ({ activeTab, setActivetab }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const navbarRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset >= (navbarRef.current.offsetTop+50)) {
+        navbarRef.current.classList.add("stickyparent");
+      } else {
+        console.log("removing.......");
+        navbarRef.current.classList.remove("stickyparent");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="Navbar-parent">
-       <div className="upper-navbar-logo-container">
-        <div className="mainlogo-image">
+    <div ref={navbarRef} id="navbar" className="Navbar-parent">
+    <div  className="upper-navbar-logo-container">
+       <Link
+            to="/"
+          
+            onClick={() => setActivetab("Home")}
+          ><div className="mainlogo-image">
           <img src="/mainlogoleft.png" alt="" />
         </div>
+        </Link>  
         <div className="parent-logo-image">
         <input type="text" placeholder="Search..." class="search-input"/>
-          <img src="/main-parent-logo.svg" alt="" />
+        <Link
+            to="/"
+            onClick={() => setActivetab("Home")}
+          ><div className="mainlogo-image">
+           <img src="/main-parent-logo.svg" alt="" />
+        </div>
+        </Link> 
+         
         </div>
        </div>
        <div className="parent-down-navbar-conatiner">

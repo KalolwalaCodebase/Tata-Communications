@@ -1,7 +1,8 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import "./Carosoule.css";
-const CarouselMain = () => {
+import { Link } from "react-router-dom";
+const CarouselMain = ({setActivetab}) => {
   return (
     <div className="carousel-container-down-flex">
       <Carousel>
@@ -29,9 +30,9 @@ const CarouselMain = () => {
                   doluptatur molenimus abores maiore niet doloribus ipsaepe
                   raescie nimpore rentur? Fero que eatem
                 </p>
-                <button className="view-release-part">
+                <Link  to="/press/release" className="view-release-part">
                   view press release
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -57,7 +58,9 @@ const CarouselMain = () => {
                 Empower enterprises through Climate Action, Customer GHG
                 Savings, and Circular Economies in India
               </p>
-              <button className="view-release-part">view press release</button>
+              <Link  to="/press/release" className="view-release-part">
+                  view press release
+                </Link>
             </div>
           </div>
         </Carousel.Item>
@@ -151,9 +154,9 @@ const CarouselMain = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-              <button className="view-release-part">
-              view community page
-              </button>
+              <Link  onClick={()=>setActivetab("Community")} to="/Community" className="view-release-part">
+                  view Community page
+                </Link>
             </div>
           </div>
         </Carousel.Item>

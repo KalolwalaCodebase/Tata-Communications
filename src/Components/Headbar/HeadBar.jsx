@@ -6,7 +6,7 @@ const HeadBar = ({ index , heading , icon, theme }) => {
     console.log(index , heading , icon, theme);
     return (
         <div>
-            <div className="head-bar" style={{background: `linear-gradient(to right, #3D86C6, ${theme})`}}>
+            <div className="head-bar" style={{background: `linear-gradient(to right, #3D86C6,  ${theme})`}}>
                 <div className='hb-2'>
                     <img src="/small-square-btn.png" alt="" />
                     <motion.h1 className='poppins-light'
@@ -24,9 +24,12 @@ const HeadBar = ({ index , heading , icon, theme }) => {
                     >
                         { heading }</motion.h1>
                 </div>
-                <div className='head-icon'>
+                {
+                    icon&&<div className='head-icon'>
                     <img src={icon} alt="" />
                 </div>
+                }
+                
             </div>
         </div>
     )

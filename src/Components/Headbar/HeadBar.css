@@ -5,6 +5,7 @@
        height: 160px;
        text-align: left;
        display: flex;
+       text-transform: uppercase;
    }
    .head-bar .hb-2{
        width: 800px;

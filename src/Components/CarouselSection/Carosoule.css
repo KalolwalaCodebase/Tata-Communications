@@ -65,9 +65,15 @@ img{
        border:1px solid #EA7926 ;
        font-weight: 600;
        text-transform: uppercase;
+       z-index: 10;
+       text-decoration: none;
+}
+.carousel-control-prev, .carousel-control-next{
+    width: 4% !important;
 }
 .carousel-control-next-icon ,.carousel-control-prev-icon{
 display: none !important;
+
 }
 .carousel-indicators [data-bs-target]{
        border-radius: 50% !important;
