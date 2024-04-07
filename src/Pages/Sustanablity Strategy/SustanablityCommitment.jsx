@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-//import Carouselsus from '../../Components/Carousel/Carouselsus';
 import HeadBar from '../../Components/Headbar/HeadBar';
+import CarosuselSusta from '../../Components/CarouselX/CarosuselSusta';
 //import "./sustabablitrygov.css"
 const SustanablityCommitment = () => {
     const [activeHeading, setActiveHeading] = useState('CLIMATE CHANGE');
@@ -8,7 +8,6 @@ const SustanablityCommitment = () => {
     const toggleHeading = (heading) => {
         setActiveHeading(activeHeading === heading ? heading : heading);
     };
-
     const dataArr = {
         'CLIMATE CHANGE': {
             "Specific Goal": "Carbon Neutral by FY 2030 Net Zero by 2035",
@@ -44,9 +43,10 @@ const SustanablityCommitment = () => {
         if (activeHeading === heading) {
             const data = dataArr[heading];
             return (
-                <div className='data-row-wrapper'>
+                <div className='data-row-wrapper-x' style={{ backgroundColor: '#F1F1F1' }}>
+
                     {Object.entries(data).map(([key, value], index) => (
-                        <div className='data-row' key={key}>
+                        <div className='data-row-x' key={key} style={{ backgroundColor: '#F1F1F1' }}>
                             <h3 className='poppins-medium'>{key}</h3>
                             <p className={`poppins-light ${index === 0 ? 'poppins-medium first-child-color' : ''}`}>{value}</p>
                         </div>
@@ -75,17 +75,20 @@ const SustanablityCommitment = () => {
                 </section>
             </div>
             <section className='cmmt2'>
-                <h3 className='bar-heading-sec poppins-medium'>LONG-TERM COMMITMENTS</h3>
+                <div className='bar-heading-parent' style={{ display: "flex", width: '100%', justifyContent: 'center' }}>
+
+                    <h3 className='bar-heading-sec poppins-medium'>LONG-TERM COMMITMENTS</h3>
+                </div>
                 <div className='table'>
                     <div className='table-head-wrapper'>
                         <div className='table-head-wrapper2 '>
-                            <h3 className={`poppins-medium ${activeHeading !== 'CLIMATE CHANGE' ? 'inactive-heading' : 'active-heading'}`} onClick={() => toggleHeading('CLIMATE CHANGE')}>CLIMATE CHANGE</h3>
-                            <h3 className={`poppins-medium ${activeHeading !== 'WATER CONSUMPTION' ? 'inactive-heading' : 'active-heading'}`} onClick={() => toggleHeading('WATER CONSUMPTION')}>WATER CONSUMPTION</h3>
-                            <h3 className={`poppins-medium ${activeHeading !== 'CHG REDUCTION' ? 'inactive-heading' : 'active-heading'}`} onClick={() => toggleHeading('CHG REDUCTION')}>CHG REDUCTION</h3>
-                            <h3 className={`poppins-medium ${activeHeading !== 'ZERO WASTE' ? 'inactive-heading' : 'active-heading'}`} onClick={() => toggleHeading('ZERO WASTE')}>ZERO WASTE</h3>
+                            <h3 className={`poppins-medium ${activeHeading !== 'CLIMATE CHANGE' ? 'inactive-heading-x' : 'active-heading-x'}`} onClick={() => toggleHeading('CLIMATE CHANGE')}>CLIMATE CHANGE</h3>
+                            <h3 className={`poppins-medium ${activeHeading !== 'WATER CONSUMPTION' ? 'inactive-heading-x' : 'active-heading-x'}`} onClick={() => toggleHeading('WATER CONSUMPTION')}>WATER CONSUMPTION</h3>
+                            <h3 className={`poppins-medium ${activeHeading !== 'CHG REDUCTION' ? 'inactive-heading-x' : 'active-heading-x'}`} onClick={() => toggleHeading('CHG REDUCTION')}>CHG REDUCTION</h3>
+                            <h3 className={`poppins-medium ${activeHeading !== 'ZERO WASTE' ? 'inactive-heading-x' : 'active-heading-x'}`} onClick={() => toggleHeading('ZERO WASTE')}>ZERO WASTE</h3>
                         </div>
                     </div>
-                    <div>
+                    <div className='cmmt-table-data-rows'>
                         {renderDataRows('CLIMATE CHANGE')}
                         {renderDataRows('WATER CONSUMPTION')}
                         {renderDataRows('CHG REDUCTION')}
@@ -93,9 +96,9 @@ const SustanablityCommitment = () => {
                     </div>
                 </div>
             </section>
-            
+
             <section>
-                <Carouselsus/>
+                <CarosuselSusta />
             </section>
         </div>
     );

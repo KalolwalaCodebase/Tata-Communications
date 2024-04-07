@@ -269,13 +269,15 @@ width: 100%;
   padding: 15% 0;
 }
 .hr-sticky-links h4{
-  border-bottom: 1px solid;
+  padding-bottom: 5%;
+  border-bottom: 1px solid grey;
   margin: 4%;
   letter-spacing: 0.5cqmin;
 }
 .hr-sticky-links li{
   list-style-image: url('/quick-links-icon.png');
   margin-bottom: 4%;
+  color: #123C61;
   /* width: 5px; */
  }
 .hr-sticky-links ul li a {
@@ -517,13 +519,15 @@ width: 100%;
   padding: 15% 0;
 }
 .pp-sticky-links h4{
-  border-bottom: 1px solid;
+  padding-bottom: 5%;
+  border-bottom: 1px solid gray;
   margin: 4%;
   letter-spacing: 0.5cqmin;
 }
 .pp-sticky-links li{
   list-style-image: url('/quick-links-icon.png');
   margin-bottom: 4%;
+  color: #123C61;
   /* width: 5px; */
  }
 .pp-sticky-links ul li a {
@@ -678,13 +682,15 @@ width: 100%;
   padding: 15% 0;
 }
 .ep-sticky-links h4{
+  padding-bottom: 5%;
   margin: 4%;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid grey;
   letter-spacing: 0.5cqmin;
 }
 .ep-sticky-links li{
   list-style-image: url('/quick-links-icon.png');
   margin-bottom: 4%;
+  color: #123C61;
   /* width: 5px; */
  }
 .ep-sticky-links ul li a {
@@ -797,6 +803,7 @@ width: 100%;
   padding: 15% 0;
 }
 .ci-sticky-links h4{
+  padding-bottom: 5%;
   margin: 4%;
   border-bottom: 1px solid;
   letter-spacing: 0.5cqmin;
@@ -804,6 +811,7 @@ width: 100%;
 .ci-sticky-links li{
   list-style-image: url('/quick-links-icon.png');
   margin-bottom: 4%;
+  color: #123C61;
   /* width: 5px; */
  }
 .ci-sticky-links ul li a {
