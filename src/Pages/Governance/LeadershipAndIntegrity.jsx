@@ -47,7 +47,7 @@ const LeadershipAndIntegrity = () => {
                     A.S. Lakshminarayanan
                     </b>
                     <p className="person-position">
-                    Managing Director &
+                    Managing Director & <br />
                     Chief Executive Officer
                     </p>
                   </div>
@@ -119,24 +119,24 @@ const LeadershipAndIntegrity = () => {
               <div className="normal-paragraph-leadership-and-integrity">
               These committees meticulously analyze relevant matters within their spheres of influence and provide well-thought-out recommendations for the Board's evaluation and endorsement. The Statutory Committees established by the Board consist of:
               </div>
-              <img src="" alt="board commiteee images" />
+              <img className="govn-board-committee-img" src="/govn-board-committee.png" alt="board commiteee images" />
             </div>
             <div className="board-ofdirector-container">
-              <b className="heading-blue">Nominations, Evaluation and Performance</b>
+              <b className="heading-blue"> <br />Nominations, Evaluation and Performance</b>
               <br />
               <br />
               
               <div className="normal-paragraph-leadership-and-integrity">
-              At our organization, we uphold a structured and systematic protocol for Board nominations, evaluations, and performance evaluations. Each nomination undergoes rigorous examination by the Nomination and Remuneration Committee to confirm its alignment with our strategic direction. Furthermore, the Board conducts annual assessments of its own performance, as well as that of its committees and individual Directors.              </div>
+              At our organization, we uphold a structured and systematic protocol for Board nominations, evaluations, and performance evaluations. Each nomination undergoes rigorous examination by the Nomination and Remuneration Committee to confirm its alignment with our strategic direction. Furthermore, the Board conducts annual assessments of its own performance, as well as that of its committees and individual Directors.  <br /> <br />            </div>
             </div>
             <div className="board-ofdirector-container">
-              <b className="heading-blue">Remuneration and Conflict of Interest</b>
+              <b className="heading-blue"> <br /> Remuneration and Conflict of Interest</b>
               <br />
               <br />
               <div className="upper-section-leadership-and-integrity">
               The Board upholds a transparent and principled approach to remuneration and conflict of interest, guided by our strong corporate governance framework.
               </div>
-              <br />
+            
               <div className="normal-paragraph-leadership-and-integrity">
               Compensation is judiciously set based on the performance of both the individual and the company, as assessed by the Nomination and Remuneration Committee alongside the Board. Our conflict of interest policy guarantees that the Board’s decisions consistently align with the organization’s best interests. This methodical practice affirms our commitment to transparency, accountability, and active stakeholder participation in our governance processes—key factors for achieving sustainable development and creating enduring value.
               </div>
