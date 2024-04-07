@@ -1,6 +1,7 @@
 import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./Community.css";
+import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
 const CommunityHealthCare = () => {
   return (
     <div className="community-student-container">
@@ -34,7 +35,7 @@ const CommunityHealthCare = () => {
           </div>
           <div className="data-student-community-container">
             <div className="data-set-conatiner-below">
-              <b className="big-size-data">11,840</b>
+              <b className="big-size-data"><AnimatedCounter finalValue={11840} /></b>
               <p className="small-size-paragraph">Lives impacted</p>
             </div>
             <div className="data-set-conatiner-below">
@@ -45,7 +46,7 @@ const CommunityHealthCare = () => {
               </p>
             </div>
             <div className="data-set-conatiner-below">
-              <b className="big-size-data">27</b>
+              <b className="big-size-data"><AnimatedCounter finalValue={27} /></b>
               <p className="small-size-paragraph">
               Medical equipment provided for primary health care
               </p>

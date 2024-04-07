@@ -167,12 +167,11 @@
   align-self: center;
   align-items: flex-start;
   margin-top: 3%;
+ 
 }
 .planet-climate-last-section-parent .main-section-climate-change {
   width: 73%;
-  height: 1200px;
   background: url(/Community-student-overlay.png);
-  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

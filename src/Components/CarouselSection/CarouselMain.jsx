@@ -2,6 +2,9 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import "./Carosoule.css";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
+import TextAnimation from "../Animatedcounter/TextAnimation";
+import Textanimation2 from "../Animatedcounter/Textanimation2";
 const CarouselMain = ({setActivetab}) => {
   return (
     <div className="carousel-container-down-flex">
@@ -12,7 +15,11 @@ const CarouselMain = ({setActivetab}) => {
               <source src="/Home.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="absolute-video-description">
+            <motion.div 
+            initial={{ opacity: 0, x:"-40px" }}
+            whileInView={{ opacity: 1, x:"0%" }}
+            transition={{ duration: 0.2, ease:"easeIn",delay:0.5 }}
+             className="absolute-video-description">
               <img
                 className="small-square-btn-png"
                 src="/small-square-btn.png"
@@ -24,17 +31,21 @@ const CarouselMain = ({setActivetab}) => {
                 climate targets <br />
                 approved by SBTi
               </p>
-              <div className="carosoules-last-container">
-                <p className="description-last-carosoule">
+              <motion.div 
+              
+              className="carosoules-last-container">
+                <motion.p
+               className="description-last-carosoule">
                   Iqui ut vel eati dolupta temquia tusciassi beris ulpa sit pra
                   doluptatur molenimus abores maiore niet doloribus ipsaepe
                   raescie nimpore rentur? Fero que eatem
-                </p>
+                </motion.p>
                 <Link  to="/press/release" className="view-release-part">
-                  view press release
+                view press release
+                 {/* <TextAnimation text={'view press release'} /> */}
                 </Link>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </Carousel.Item>
         <Carousel.Item interval={4000}>
@@ -42,7 +53,11 @@ const CarouselMain = ({setActivetab}) => {
             <source src="/Main2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="absolute-video-description">
+          <motion.div 
+          initial={{ opacity: 0, x:"-100px" }}
+          whileInView={{ opacity: 1, x:"0%" }}
+          transition={{ duration: 0.2, ease:"easeIn",delay:0.5 }}
+          className="absolute-video-description">
             <img
               className="small-square-btn-png"
               src="/small-square-btn.png"
@@ -53,16 +68,18 @@ const CarouselMain = ({setActivetab}) => {
             <p className="heading-description-carosoule">
               Accelerating the <br /> 3C Sustainability <br /> strategy
             </p>
-            <div className="carosoules-last-container">
+            <motion.div initial={{ opacity: 0, x:"-40px" }}
+            whileInView={{ opacity: 1, x:"1%" }}
+            transition={{ duration: 0.4, ease:"easeIn",delay:0.5 }} className="carosoules-last-container">
               <p className="description-last-carosoule">
                 Empower enterprises through Climate Action, Customer GHG
                 Savings, and Circular Economies in India
               </p>
               <Link  to="/press/release" className="view-release-part">
-                  view press release
+              <TextAnimation text={'view press release'} />
                 </Link>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </Carousel.Item>
         <Carousel.Item interval={4000}>
           <div className="video-container">
@@ -72,7 +89,10 @@ const CarouselMain = ({setActivetab}) => {
             </video>
           </div>
 
-          <div className="absolute-video-description">
+          <motion.div initial={{ opacity: 0, x:"-100px" }}
+            whileInView={{ opacity: 1, x:"0%" }}
+            transition={{ duration: 0.2, ease:"easeIn",delay:0.5 }}
+             className="absolute-video-description">
             <img
               className="small-square-btn-png"
               src="/small-square-btn.png"
@@ -83,17 +103,20 @@ const CarouselMain = ({setActivetab}) => {
               Inclusive. <br /> sustainable. <br />
               hyperconnected.
             </p>
-            <div className="carosoules-last-container">
+            <motion.div initial={{ opacity: 0, x:"-40px" }}
+            whileInView={{ opacity: 1, x:"1%" }}
+            transition={{ duration: 0.4, ease:"easeIn",delay:0.5 }} className="carosoules-last-container">
               <p className="description-last-carosoule">
                 Focusing on new ways of harnessing technology, we combine our
                 global scale and expertise to create Hyperconnected ecosystems
                 to reimagine a landscape for an Inclusive and Sustainable future
               </p>
               <button className="view-release-part">
-                view sustainability development report 2023
+              <Textanimation2 text={'view sustainability development report 2023'} />
+                
               </button>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </Carousel.Item>
         <Carousel.Item interval={4000}>
           <div className="video-container">
@@ -103,7 +126,10 @@ const CarouselMain = ({setActivetab}) => {
             </video>
           </div>
 
-          <div className="absolute-video-description">
+          <motion.div initial={{ opacity: 0, x:"-40px" }}
+            whileInView={{ opacity: 1, x:"0%" }}
+            transition={{ duration: 0.2, ease:"easeIn",delay:0.5 }}
+           className="absolute-video-description">
             <img
               className="small-square-btn-png"
               src="/small-square-btn.png"
@@ -115,16 +141,16 @@ const CarouselMain = ({setActivetab}) => {
               Enhancing the <br /> Sustainability <br />
               Disclosures
             </p>
-            <div className="carosoules-last-container">
+            <motion.div initial={{ opacity: 0, x:"-40px" }}
+            whileInView={{ opacity: 1, x:"1%" }}
+            transition={{ duration: 0.4, ease:"easeIn",delay:0.5 }} className="carosoules-last-container">
               <p className="description-last-carosoule">
                 Increasing transparency that augments the accountability to our
                 stakeholders
               </p>
-              <button className="view-release-part">
-                View sustainability disclosures
-              </button>
-            </div>
-          </div>
+              <Link className="view-release-part" to={'/sustainability-disclosures'}><TextAnimation text={'View sustainability disclosures'} /></Link>
+            </motion.div>
+          </motion.div>
         </Carousel.Item>
         <Carousel.Item interval={4000}>
           <div className="video-container">
@@ -134,7 +160,9 @@ const CarouselMain = ({setActivetab}) => {
             </video>
           </div>
 
-          <div className="absolute-video-description">
+          <motion.div initial={{ opacity: 0, x:"-40px" }}
+            whileInView={{ opacity: 1, x:"1%" }}
+            transition={{ duration: 0.2, ease:"easeIn",delay:0.5 }} className="absolute-video-description">
             <img
               className="small-square-btn-png"
               src="/small-square-btn.png"
@@ -144,7 +172,11 @@ const CarouselMain = ({setActivetab}) => {
             <p className="heading-description-carosoule">
               Corporate social <br /> Responsibility
             </p>
-            <div className="carosoules-last-container">
+            < motion.div 
+            initial={{ opacity: 0, x:"-40px" }}
+            whileInView={{ opacity: 1, x:"1%" }}
+            transition={{ duration: 0.4, ease:"easeIn",delay:0.5 }}
+            className="carosoules-last-container">
               <p className="description-last-carosoule">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -155,10 +187,11 @@ const CarouselMain = ({setActivetab}) => {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <Link  onClick={()=>setActivetab("Community")} to="/Community" className="view-release-part">
-                  view Community page
+                              <TextAnimation text={' view Community page '} />
+
                 </Link>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </Carousel.Item>
       </Carousel>
     </div>

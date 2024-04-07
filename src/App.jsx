@@ -38,6 +38,7 @@ import { HumanRights } from "./Pages/Governance/HumanRights";
 import { PoliciesAndProcedures } from "./Pages/Governance/PoliciesAndProcedures";
 import EconomicPerformance from "./Pages/Governance/EconomicPerformance";
 import CultivatingInnovation from "./Pages/Governance/CultivatingInnovation";
+import SustaniblityDisclosures from "./Pages/Sliderpages/SustaniblityDisclosures";
 function App() {
   const [activeTab, setActivetab] = useState("Home");
   const [Videokey, SetVideoKey] = useState(null);
@@ -170,6 +171,10 @@ function App() {
           <Route
             path="/press/release"
             element={<PressRelease activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          /> 
+          <Route
+            path="/sustainability-disclosures"
+            element={<SustaniblityDisclosures activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           /> 
           <Route
             path="/gri-index"

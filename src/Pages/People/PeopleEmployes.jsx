@@ -1,6 +1,10 @@
 import React from "react";
 import "./People.css";
 import HeadBar from "../../Components/Headbar/HeadBar";
+import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
+import { motion } from 'framer-motion';
+import Textanimation2 from "../../Components/Animatedcounter/Textanimation2";
+import TextAnimation from "../../Components/Animatedcounter/TextAnimation";
 const PeopleEmployes = () => {
   return (
     <div className="people-supply-chain-intro-parent-container">
@@ -68,7 +72,7 @@ const PeopleEmployes = () => {
                   className="big-size-data people-big-data"
                   style={{ color: " #AD3088" }}
                 >
-                  26%
+                  <AnimatedCounter finalValue={26} />%
                 </b>
                 <p className="small-size-paragraph">
                   Women Colleagues Hired <br />
@@ -150,7 +154,7 @@ const PeopleEmployes = () => {
           <div className="data-student-community-container people-data-set">
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-                73496
+              <AnimatedCounter finalValue={73496} />
               </b>
               <p className="small-size-paragraph">
                 Total learning person days in FY2024
@@ -158,7 +162,7 @@ const PeopleEmployes = () => {
             </div>
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-                2326
+              <AnimatedCounter finalValue={2326} />
               </b>
               <p className="small-size-paragraph">
                 Total Targeted Skill Development in FY2024
@@ -166,7 +170,7 @@ const PeopleEmployes = () => {
             </div>
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-                87
+              <AnimatedCounter finalValue={87} />
               </b>
               <p className="small-size-paragraph">
                 Net promoter score for L&D in FY2024
@@ -174,7 +178,7 @@ const PeopleEmployes = () => {
             </div>
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-                7290
+              <AnimatedCounter finalValue={7290} />
               </b>
               <p className="small-size-paragraph">
                 Repeat learners on TCLA in FY2024
@@ -209,7 +213,7 @@ const PeopleEmployes = () => {
                 >
                   <div className="data-set-conatiner-below">
                     <b className="big-size-data" style={{ color: "#9F0C73" }}>
-                      6351
+                    <AnimatedCounter finalValue={6351} />
                     </b>
                     <p className="small-size-paragraph">
                       Total Certification Courses across all Categories in
@@ -240,13 +244,13 @@ const PeopleEmployes = () => {
           <div className="data-student-community-container people-data-set">
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-                42+
+                <AnimatedCounter finalValue={42} />+
               </b>
               <p className="small-size-paragraph">Subject matter experts</p>
             </div>
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-                58
+              <AnimatedCounter finalValue={58} />
               </b>
               <p className="small-size-paragraph">
                 Learning Session Conducted in FY2024
@@ -254,7 +258,7 @@ const PeopleEmployes = () => {
             </div>
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-                4349+
+              <AnimatedCounter finalValue={4349} />+
               </b>
               <p className="small-size-paragraph">
                 Participants from Various Categories in FY2024
@@ -262,7 +266,7 @@ const PeopleEmployes = () => {
             </div>
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-                7501.3
+              <AnimatedCounter finalValue={7501} />.<AnimatedCounter finalValue={3} />
               </b>
               <p className="small-size-paragraph">
                 Learning person days in FY2024
@@ -301,7 +305,7 @@ const PeopleEmployes = () => {
 
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-                87%
+              <AnimatedCounter finalValue={87} />%
               </b>
               <p className="small-size-paragraph">
                 Employee Engagement Survey Score
@@ -476,13 +480,13 @@ const PeopleEmployes = () => {
           <div className="data-student-community-container people-data-set">
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-              676
+              <AnimatedCounter finalValue={676} />
               </b>
               <p className="small-size-paragraph">Safety observations reported</p>
             </div>
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-              8,782
+              <AnimatedCounter finalValue={8} />,<AnimatedCounter finalValue={782} />
               </b>
               <p className="small-size-paragraph">
               Training sessions conducted
@@ -490,7 +494,7 @@ const PeopleEmployes = () => {
             </div>
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-              53,883
+              <AnimatedCounter finalValue={53} />,<AnimatedCounter finalValue={883} />
               </b>
               <p className="small-size-paragraph">
               Participants trained
@@ -500,8 +504,8 @@ const PeopleEmployes = () => {
           </div>
          
         </div>
-        <div className="quick-link-sections">
-          <b className="heading-links">QUICK LINKS</b>
+        < motion.div initial={{x:"100px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:0.5,delay:0.3, type:"spring"}} className="quick-link-sections">
+          <b className="heading-links"><TextAnimation text={'Quick Links'}/></b>
           <br />
           <img src="/quick-link-underline.png" alt="" />
           <div className="quicklinks-button-div">
@@ -576,7 +580,7 @@ const PeopleEmployes = () => {
             />
             <a href="">Case Studies</a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

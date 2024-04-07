@@ -1,6 +1,7 @@
 import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./Community.css";
+import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
 const CommunityEductaions = () => {
   return (
     <div className="community-student-container">
@@ -39,13 +40,13 @@ const CommunityEductaions = () => {
             </div>
             <div className="data-student-community-container">
               <div className="data-set-conatiner-below">
-                <b className="big-size-data">173,843</b>
+                <b className="big-size-data"><AnimatedCounter finalValue={17} />,<AnimatedCounter finalValue={3} />,<AnimatedCounter finalValue={843} /></b>
                 <p className="small-size-paragraph">
                   Reduction in water consumption by 2030
                 </p>
               </div>
               <div className="data-set-conatiner-below">
-                <b className="big-size-data">53%</b>
+                <b className="big-size-data"><AnimatedCounter finalValue={53} />%</b>
                 <p className="small-size-paragraph">Girls benefitted</p>
               </div>
             </div>
@@ -84,13 +85,13 @@ const CommunityEductaions = () => {
                 </div>
                 <div className="description-flex-row2">
                 <div className="data-set-conatiner-below">
-              <b className="big-size-data">30,000+</b>
+              <b className="big-size-data"><AnimatedCounter finalValue={30} />,000+</b>
               <p className="small-size-paragraph">
               Students benefited through this programme
               </p>
             </div>
             <div className="data-set-conatiner-below">
-              <b className="big-size-data">120</b>
+              <b className="big-size-data"><AnimatedCounter finalValue={120} /></b>
               <p className="small-size-paragraph">
               Rural communities impacted
               </p>

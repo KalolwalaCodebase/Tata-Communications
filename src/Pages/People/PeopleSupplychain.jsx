@@ -1,6 +1,8 @@
 import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./People.css";
+import { motion } from 'framer-motion';
+import TextAnimation from "../../Components/Animatedcounter/TextAnimation";
 const PeopleSupplychain = () => {
   return (
     <div className="people-supply-chain-intro-parent-container">
@@ -222,8 +224,8 @@ const PeopleSupplychain = () => {
           </div>
         </div>
 
-        <div className="quick-link-sections">
-          <b className="heading-links">QUICK LINKS</b>
+        < motion.div initial={{x:"100px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:0.5,delay:0.3, type:"spring"}} className="quick-link-sections">
+          <b className="heading-links"><TextAnimation text={'QUICK LINKS'}/> </b>
           <br />
           <img src="/quick-link-underline.png" alt="" />
           <div className="quicklinks-button-div">
@@ -290,7 +292,7 @@ const PeopleSupplychain = () => {
             />
             <a href="">GRI index</a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
