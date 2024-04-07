@@ -14,7 +14,7 @@ const SustaniblityDisclosures = ({activeTab}) => {
     <HeadBar  heading={"sustainability disclosures"} theme={ "#3D86C6"} />
     <div className='container-Governance'>
            {headingarr.map((heading, id) => (
-                        <CardContainergov activeTab={activeTab} hoverCardColor={'#3D86C6'} cardsColor={'#3D86C6'} key={id} heading={heading} />
+                        <CardContainergov activeTab={activeTab} hoverCardColor={'#7A63AB'} cardsColor={'#3D86C6'} key={id} heading={heading} />
                           
            
            ))}

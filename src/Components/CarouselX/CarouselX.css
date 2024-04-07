@@ -1,0 +1,81 @@
+.carousel-x-container{
+    background-color: #F1F1F1;
+    padding: 20px;
+    
+}
+
+.carousel-x {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    width: 100%;
+    /* box-shadow: slategray; */
+}
+
+.bar {
+    position: relative;
+    width: 6%;
+    height: 400px;
+    /* color: #fff; */
+    margin-right: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    align-items: center;
+    cursor: pointer;
+    transition: width 0.6s cubic-bezier(0, 0, 0, 0.9);;
+}
+.bar-image{
+    position: absolute;
+    top: 20px;
+    width: 50px;
+    height: 40px;
+}
+.bar-title {
+    transform: rotate(-90deg);
+    color: #fff;
+    text-align: end;
+    font-size: 12px;
+    letter-spacing: 1cqmin;
+    position: absolute;
+    top: 60%;
+    /* transition: transform 0.3s ease-in-out;  */
+}
+
+.activeis {
+    width: 60%; /* Adjust width as needed */
+    /* transition: width 0.2s ease-in-out; */
+}
+.card-x{
+    width: 100%;
+    padding: 2%;
+    
+    background-color: blue;
+    height: 100%;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in;
+}
+.carousel-x-data{
+    text-align: left;
+    font-size: 1rem;
+}
+.card-x table{
+    margin: 10px;
+    padding: 10px;
+}
+.card-x tr th,td{
+    border-bottom: 1px solid #F1F1F1;
+    /* margin: 10px; */
+}
+.table-heading{
+    color: #7A63AB;
+    font-size: 1.3rem;
+    letter-spacing: 1cqmin;
+    text-align: left;
+}
+.card-heading-x{
+    text-align: left;
+    font-size: 1.5rem;
+    letter-spacing: 1cqmin;
+}

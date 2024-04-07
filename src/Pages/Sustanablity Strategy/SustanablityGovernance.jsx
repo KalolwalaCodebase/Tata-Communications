@@ -4,6 +4,12 @@ import HeadBar from '../../Components/Headbar/HeadBar';
 const SustanablityGovernance = () => {
     return (
         <div>
+            
+            {/* <HeadBar
+        icon={"/Demologo.png"}
+        heading={"Leadership and Integrity"}
+        theme={"#123C61"}
+      /> */}
             <HeadBar heading={'SUSTAINABILITY GOVERNANCE'} icon={'/sus-governance-icon.png'} theme={'#7A63AB'} />
             <div className="sus-gov-container1">
                 <img src="/small-square-btn.png" alt="" />

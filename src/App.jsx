@@ -39,6 +39,9 @@ import { HumanRights } from './Pages/Governance/HumanRights';
 import { PoliciesAndProcedures } from './Pages/Governance/PoliciesAndProcedures';
 import EconomicPerformance from './Pages/Governance/EconomicPerformance';
 import CultivatingInnovation from './Pages/Governance/CultivatingInnovation';
+import Materiality from "./Pages/Sustanablity Strategy/Materiality";
+import StakeholderEngg from "./Pages/Sustanablity Strategy/StakeholderEngagement";
+import StakeholderEngagement from "./Pages/Sustanablity Strategy/StakeholderEngagement";
 function App() {
   const [activeTab, setActivetab] = useState("Home");
   const [Videokey, SetVideoKey] = useState(null);
@@ -207,6 +210,30 @@ function App() {
           <Route
             path="/Governance/cultavating-inovations"
             element={<CultivatingInnovation activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />
+          <Route
+            path="/Sustainability/sustainability-governance"
+            element={<SustanablityGovernance activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />
+          <Route
+            path="/Sustainability/sustainability-commitments"
+            element={<SustanablityCommitment activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />
+          <Route
+            path="/Sustainability/fy24-goals-&-progress"
+            element={<SustanablityFyGoals activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />
+          <Route
+            path="/Sustainability/unsustainable-development-goals"
+            element={<SustanablityFyGoals activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />
+          <Route
+            path="/Sustainability/stakeholder-engagement"
+            element={<StakeholderEngagement activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />
+          <Route
+            path="/Sustainability/materiality"
+            element={<Materiality activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           />
           {/* <Route
             path="/Sustainability/sustainability-governance"
