@@ -1075,4 +1075,6 @@ font-size: 1.5REM;
  text-decoration: none;
  color: #3D86C6;
 }
-
+.hr-quick-links-section .quick-link-sections{
+ width: 100%;
+}
