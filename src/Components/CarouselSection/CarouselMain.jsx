@@ -34,12 +34,12 @@ const CarouselMain = ({setActivetab}) => {
               <motion.div 
               
               className="carosoules-last-container">
-                <motion.p
+                {/* <motion.p
                className="description-last-carosoule">
                   Iqui ut vel eati dolupta temquia tusciassi beris ulpa sit pra
                   doluptatur molenimus abores maiore niet doloribus ipsaepe
                   raescie nimpore rentur? Fero que eatem
-                </motion.p>
+                </motion.p> */}
                 <Link  to="/press/release" className="view-release-part">
                 view press release
                  {/* <TextAnimation text={'view press release'} /> */}
@@ -111,10 +111,9 @@ const CarouselMain = ({setActivetab}) => {
                 global scale and expertise to create Hyperconnected ecosystems
                 to reimagine a landscape for an Inclusive and Sustainable future
               </p>
-              <button className="view-release-part">
-              <Textanimation2 text={'view sustainability development report 2023'} />
-                
-              </button>
+              <Link target="blank" to={'https://www.tatacommunications.com/apps/online-sustainable-development-report-2023/index.php'} className="view-release-part">
+              <Textanimation2 text={'view sustainability development report 2023'} />   
+              </Link>
             </motion.div>
           </motion.div>
         </Carousel.Item>

@@ -1,12 +1,8 @@
-.community-student-container{
-  overflow: hidden;
-  overflow-x: hidden;
-}
+
 .slide-left-container{
        width: 75%;
        display: flex;
-       flex-direction: column; 
-      overflow-y: scroll;  
+       flex-direction: column;  
 }
 .Student-section-container {
   background: url("/Community-student-overlay.png");
@@ -161,10 +157,8 @@
 .second-section-student-community{
   margin-top: 5%;
   width: 100%;
-  height: 100vh;
   gap: 0px;
  background: rgb(79, 209, 226,0.04);
- overflow-x: hidden;
 }
 .container-one-second-section{
   padding: 4% 6%;

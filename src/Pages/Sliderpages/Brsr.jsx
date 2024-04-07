@@ -1,38 +1,26 @@
 import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./sliderpages.css";
-const GriIndex = () => {
+const Brsr = () => {
   return (
     <div>
-      <HeadBar heading={"GRI INDEX"} theme={"#AD3088"} />
+      <HeadBar heading={"BRSR"} theme={"#AD3088"} />
       <div className="gri-index-flex-container">
         <div className="flex-conatiner-wrapper">
+        
         <p className="gri-index-decription-main">
-        We apply the 
-        <span className="bold-span-gri-index">GRI (Global Reporting Initiative)</span>  standards to report on
-        economic, environmental, and social impacts, showcasing our commitment
-        to transparency and accountability in our sustainability practices. This
-        enables us to effectively communicate how we contribute toward
-        sustainable development goals and demonstrate our dedication to
-        responsible corporate citizenship.
+        SEBI introduced the
+        <span className="bold-span-gri-index">Business Responsibility and Sustainability Reporting (BRSR)</span>  standards to report on
+          framework, which mandates certain listed companies, including ours, to disclose their ESG-related information as a mandatory process. This initiative aims to enhance transparency and encourages companies to adopt responsible and sustainable business practices.
       </p>
-      <div className="table-design-gri-index">
-        <div className="table-heading-gri-index">
-          <li>GRI Standard</li>
-          <li>Disclosure</li>
-          <li>Location</li>
-        </div>
-        <div className="table-description-gri-index">
-          <div className="small-descp">
-          <li>GRI 1: Foundation</li>
-          <li>2-1 Organizational details</li>
-          </div>
-          <div className="large-descp"> 
-          <li>2-2 Entities included <br />
-             in the organization’s <br /> sustainability reporting</li>
-          </div>
-        </div>
-      </div>
+      <p className="normal-text">
+      By adhering to the BRSR framework, we ensure stakeholders have access to standardized disclosures on ESG parameters. This transparent communication fosters trust among investors, customers, and the wider stakeholder community, strengthening our reputation as a responsible organization committed to a sustainable future.
+      </p>
+      <br />
+      <br />
+      <li className="section-list-brsr">Section A (General Disclosures)</li>
+      <li className="section-list-brsr">Section B (Management and Process Disclosures)</li>
+      <li className="section-list-brsr">Section C (Principle-Wise Performance Disclosures)</li>
         </div>
       
       <div className="quick-link-sections">
@@ -94,4 +82,4 @@ const GriIndex = () => {
   );
 };
 
-export default GriIndex;
+export default Brsr;

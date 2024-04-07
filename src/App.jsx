@@ -42,6 +42,7 @@ import CultivatingInnovation from './Pages/Governance/CultivatingInnovation';
 import Materiality from "./Pages/Sustanablity Strategy/Materiality";
 import StakeholderEngg from "./Pages/Sustanablity Strategy/StakeholderEngagement";
 import StakeholderEngagement from "./Pages/Sustanablity Strategy/StakeholderEngagement";
+import Brsr from './Pages/Sliderpages/Brsr';
 function App() {
   const [activeTab, setActivetab] = useState("Home");
   const [Videokey, SetVideoKey] = useState(null);
@@ -128,7 +129,7 @@ function App() {
             element={<SustanablityFyGoals activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           />
           <Route
-            path="/Sustainability/unsustainable-development-goals"
+            path="/Sustainability/sustainable-development-goals"
             element={<SustanablityDevlopmentGoals activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           />
           <Route
@@ -234,6 +235,14 @@ function App() {
           <Route
             path="/Sustainability/materiality"
             element={<Materiality activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />
+          <Route
+            path="/Gri-index"
+            element={<GriIndex activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />
+          <Route
+            path="/Brsr"
+            element={<Brsr activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           />
           {/* <Route
             path="/Sustainability/sustainability-governance"

@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import AnimatedMessage from "../../Components/Animatedcounter/AnimatedHeading";
 import TextAnimation from "../../Components/Animatedcounter/TextAnimation";
 import Textanimation2 from '../../Components/Animatedcounter/Textanimation2';
+import ImagecardContainerLandingpage from "../../Components/CardComponent/ImagecardContainerLandingpage";
 const LandingPage = ({ activeTab, setActivetab }) => {
   //  video section part added here
   const [ref, inView] = useInView({
@@ -71,6 +72,11 @@ const LandingPage = ({ activeTab, setActivetab }) => {
     "/landingpagecard1.png",
     "/landingpagecard2.png",
     "/landingpagecard3.png",
+  ];
+  const urlToGo = [
+    "/Sustainability/sustainability-commitments",
+    "/Sustainability/sustainability-commitments",
+    "/Sustainability/fy24-goals-&-progress",
   ];
   const headingarr = [
     "Long-term commitments",
@@ -193,10 +199,12 @@ const LandingPage = ({ activeTab, setActivetab }) => {
               variants={cardVariants}
               style={{ marginBottom: "20px", width:"27%" }} // Adjust as needed
             >
-              <ImageCard
+              <ImagecardContainerLandingpage
                 color={"#6c1b54"}
                 imageurl={imageurl}
                 heading={headingarr[id]}
+                url={urlToGo[id]}
+                activeTab={activeTab}
               />
             </motion.div>
           ))}
@@ -337,7 +345,7 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           </motion.b>
       </div>
       <div className="sdg-wheel-landing-page-container">
-        <motion.img initial={{opacity:0,scale:0.5, rotate:"30deg"}} whileHover={{ scale: 1.001,rotate:"5deg"}} whileInView={{opacity:1,scale:1,rotate:0}} transition={{duration:1,ease:"easeInOut"}} src="/sdg-wheel-landing-page.png" alt="" className="sdg-wheels" />
+        <motion.img initial={{opacity:0,scale:0.5, rotate:"30deg"}} whileHover={{ scale: 1.001,rotate:"5deg"}} whileInView={{opacity:1,scale:1,rotate:"-4deg"}} transition={{duration:1,ease:"easeInOut"}} src="/sdg-wheel-landing-page.png" alt="" className="sdg-wheels" />
         <div className="sdg-wheel-descriptions">
           <motion.p initial={{opacity:0,x:100}} whileInView={{opacity:1,x:0}} transition={{duration:0.3,ease:"easeInOut"}} className="smae-font-para-sdg">
             Our sustainability strategy, focusing on{" "}
@@ -358,7 +366,9 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           <br />
           <img className="line-image-dashed" src="/line-dark.png" alt="" />
           <br />
+          <Link to={'/Sustainability/sustainable-development-goals'}>
           <button className="readmore-blue"> <TextAnimation text={'read more'}/>  {">"}</button>
+          </Link>
         </div>
       </div>
       <div className="awards-wrapper-parent">

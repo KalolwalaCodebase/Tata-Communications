@@ -42,9 +42,8 @@ const Navbar = ({ activeTab, setActivetab }) => {
     <div ref={navbarRef} id="navbar" className="Navbar-parent">
     <div  className="upper-navbar-logo-container">
        <Link
-            to="/"
-          
-            onClick={() => setActivetab("Home")}
+            to="https://www.tatacommunications.com/"
+            target="blank"
           ><div className="mainlogo-image">
           <img src="/mainlogoleft.png" alt="" />
         </div>
@@ -64,11 +63,11 @@ const Navbar = ({ activeTab, setActivetab }) => {
        <div className="parent-down-navbar-conatiner">
        <li className={`Sustainability specail-sustainablity ${activeTab === "Sustainability" ? "active-tab" : " "}`}>
           <Link
-            to="/Sustainability"
+            to="/"
             className={`Sustainability ${
               activeTab === "Sustainability" ? "active-tab" : ""
             }`}
-            onClick={() => setActivetab("Sustainability")}
+            onClick={() => setActivetab("Home")}
           >
             <TextAnimation text={'Sustainability'}/>
           </Link>
