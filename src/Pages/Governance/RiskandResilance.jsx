@@ -19,7 +19,7 @@ const RiskandResilance = () => {
           </div>
           <br />
           <br />
-          <div className="normal-paragraph-leadership-and-integrity">
+          <div className="normal-paragraph-leadership-and-integrity-upper">
             Our approach involves proactive engagement with stakeholders,
             transparent reporting on ESG performance and the incorporation of
             sustainability criteria into our strategic planning and risk
@@ -49,7 +49,7 @@ const RiskandResilance = () => {
                 financial reporting
               </div>
               <br />
-              <div className="upper-section-leadership-and-integrity">
+              <div className="lower-section-leadership-and-integrity">
                 In our Enterprise Risk Management (ERM) framework, we’ve
                 identified the most important risks related to sustainability
                 and ESG. Below, we’ve listed the main issues that are linked to
@@ -103,7 +103,55 @@ const RiskandResilance = () => {
           </div>
         </div>
       </div>
-    </div>
+      <div className="risk-n-res-table">
+        <div className="risk-tablw-divider"></div>
+        <div className="risk-res-col">
+          <div className="risk-res-h2-1">
+            <h2>
+              TOP ESG <br /> RISK
+            </h2>
+          </div>
+          <div className="risk-res-table-content1">
+            <h5>Environment Compliance and Sustainability</h5>
+            <p className="risk-table-sec1">Minimizing our environmental impact, maximizing resource efficiency, and enhancing the adoption of renewable energy are imperative. Compliance with environmental legislation is equally critical. Failure to uphold stringent environmental standards could adversely affect our brand reputation and result in financial repercussions.</p>
+            <h5>Human Resource Risk</h5>
+            <p >The swift pace of change in our industry necessitates the retention and recruitment of talent. A company’s failure to cultivate a workforce that is both experienced and technically proficient can adversely affect its financial future. Additionally, excessive turnover and extended onboarding periods for new hires or replacements can amplify risks.</p>
+          </div>
+        </div>
+        <div className="risk-res-col">
+          <div className="risk-res-h2-2">
+            <h2>
+              MITIGATION <br /> MEASURES
+            </h2>
+          </div>
+          <div className="risk-res-table-content2">
+
+            <p className="risk-table-sec1">Our dedication to reducing environmental impact is unwavering. Our Environmental Management System (EMS) aligns with the ISO 14001:2015 standards. We regularly review our EMS to ensure compliance with all applicable national and regional regulations. By setting clear environmental targets, we steer our company towards achieving our sustainability goals</p>
+            <p >A workforce enriched with technical skill and expertise is essential for our organization. Hence, we are devoted to securing and keeping individuals suited for specialized functions. We aim to create a nurturing atmosphere that encourages both professional and personal advancement, establishing a collaborative and inclusive culture that appreciates diversity and individual dignity. We also emphasize the growth and guidance of emerging talents, preparing them to navigate our organization to greater levels of accomplishment. Our proactive measures to ensure the well-being of our employees’ physical and mental health also signal a positive outlook for our team’s future.</p>
+          </div>
+        </div>
+
+        <div className="risk-res-col">
+          <div className="risk-res-h2-3">
+            <h2>
+              MATERIAL <br /> TOPICS
+            </h2>
+          </div>
+          <div className="risk-res-table-content3">
+
+            <ul className="risk-table-sec1">
+              <li>Resource Management and environmental conservation</li>
+              <li>Climate Change</li>
+            </ul>
+            <ul >
+              <li>Human capital development</li>
+              <li>Diversity and Inclusion</li>
+              <li>Health, Safety, and well-being</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div >
   );
 };
 

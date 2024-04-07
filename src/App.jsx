@@ -35,6 +35,7 @@ import RiskandResilance from "./Pages/Governance/RiskandResilance";
 import SustanablityGovernance from "./Pages/Sustanablity Strategy/SustanablityGovernance";
 import SustanablityCommitment from "./Pages/Sustanablity Strategy/SustanablityCommitment";
 import SustaniblityDisclosures from "./Pages/Sliderpages/SustaniblityDisclosures";
+import SustaniblityDisclosures from "./Pages/Sliderpages/SustaniblityDisclosures";
 function App() {
   const [activeTab, setActivetab] = useState("Home");
   const [Videokey, SetVideoKey] = useState(null);
@@ -167,6 +168,10 @@ function App() {
           <Route
             path="/press/release"
             element={<PressRelease activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          /> 
+          <Route
+            path="/sustainability-disclosures"
+            element={<SustaniblityDisclosures activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           /> 
           <Route
             path="/sustainability-disclosures"
