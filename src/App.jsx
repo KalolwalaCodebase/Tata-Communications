@@ -35,7 +35,10 @@ import RiskandResilance from "./Pages/Governance/RiskandResilance";
 import SustanablityGovernance from "./Pages/Sustanablity Strategy/SustanablityGovernance";
 import SustanablityCommitment from "./Pages/Sustanablity Strategy/SustanablityCommitment";
 import SustaniblityDisclosures from "./Pages/Sliderpages/SustaniblityDisclosures";
-import SustaniblityDisclosures from "./Pages/Sliderpages/SustaniblityDisclosures";
+import { HumanRights } from './Pages/Governance/HumanRights';
+import { PoliciesAndProcedures } from './Pages/Governance/PoliciesAndProcedures';
+import EconomicPerformance from './Pages/Governance/EconomicPerformance';
+import CultivatingInnovation from './Pages/Governance/CultivatingInnovation';
 function App() {
   const [activeTab, setActivetab] = useState("Home");
   const [Videokey, SetVideoKey] = useState(null);
@@ -189,6 +192,22 @@ function App() {
             path="/Governance/risk-and-risilience"
             element={<RiskandResilance activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           /> 
+          <Route
+            path="/Governance/human-rights"
+            element={<HumanRights activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />
+          <Route
+            path="/Governance/policies-and-procedure"
+            element={<PoliciesAndProcedures activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />
+          <Route
+            path="/Governance/economic-perfomance"
+            element={<EconomicPerformance activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />
+          <Route
+            path="/Governance/cultavating-inovations"
+            element={<CultivatingInnovation activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
+          />
           {/* <Route
             path="/Sustainability/sustainability-governance"
             element={<SustanablityGovernance activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
