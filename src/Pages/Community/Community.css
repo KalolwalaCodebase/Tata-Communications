@@ -52,6 +52,8 @@
 }
 .quick-link-sections{
        width: 25%;
+       position: sticky;
+       top: 30px;
        padding-left: 30px;
        padding-top: 30px;
        }
@@ -139,7 +141,7 @@
 }
 .container-sustainability {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100% !important;
 }

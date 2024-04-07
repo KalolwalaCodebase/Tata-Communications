@@ -1,6 +1,7 @@
 import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./Community.css";
+import AnimatedCounter from '../../Components/Animatedcounter/Animatedcounter';
 const CommunitySustinableLivehood = () => {
   return (
     <div className="community-student-container">
@@ -36,19 +37,19 @@ const CommunitySustinableLivehood = () => {
             </div>
             <div className="data-student-community-container">
               <div className="data-set-conatiner-below">
-                <b className="big-size-data">2,618,471</b>
+                <b className="big-size-data"><AnimatedCounter finalValue={2} />,<AnimatedCounter finalValue={618} />,<AnimatedCounter finalValue={471} /></b>
                 <p className="small-size-paragraph">Lives impacted</p>
               </div>
               <div className="data-set-conatiner-below">
-                <b className="big-size-data">5,800+</b>
+                <b className="big-size-data"><AnimatedCounter finalValue={5} />,<AnimatedCounter finalValue={800} />+</b>
                 <p className="small-size-paragraph">Youth Trained</p>
               </div>
               <div className="data-set-conatiner-below">
-                <b className="big-size-data">15,169</b>
+                <b className="big-size-data"><AnimatedCounter finalValue={15} />,<AnimatedCounter finalValue={169} /></b>
                 <p className="small-size-paragraph">Direct beneficiaries</p>
               </div>
               <div className="data-set-conatiner-below">
-                <b className="big-size-data">72%</b>
+                <b className="big-size-data"><AnimatedCounter finalValue={72} />%</b>
                 <p className="small-size-paragraph">Affirmative Action</p>
               </div>
             </div>
@@ -101,13 +102,13 @@ const CommunitySustinableLivehood = () => {
             <div className="data-container-inner">
               <div className="data-student-community-container">
                 <div className="data-set-conatiner-below">
-                  <b className="big-size-data">6,000</b>
+                  <b className="big-size-data"><AnimatedCounter finalValue={6} />,000</b>
                   <p className="small-size-paragraph">
                     households benefited (including 98% of tribal households)
                   </p>
                 </div>
                 <div className="data-set-conatiner-below">
-                  <b className="big-size-data">36,000</b>
+                  <b className="big-size-data"><AnimatedCounter finalValue={36} />,000</b>
                   <p className="small-size-paragraph">
                     beneficiaries in 41 villages were benefitted
                   </p>
@@ -173,13 +174,13 @@ const CommunitySustinableLivehood = () => {
                 </div>
                 <div className="description-flex-row2">
                   <div className="data-set-conatiner-below">
-                    <b className="big-size-data">~6,000</b>
+                    <b className="big-size-data">~<AnimatedCounter finalValue={6} />,000</b>
                     <p className="small-size-paragraph">
                       marginalised women supported
                     </p>
                   </div>
                   <div className="data-set-conatiner-below">
-                    <b className="big-size-data">500</b>
+                    <b className="big-size-data"><AnimatedCounter finalValue={500} /></b>
                     <p className="small-size-paragraph">
                       Self Help Groups supported
                     </p>

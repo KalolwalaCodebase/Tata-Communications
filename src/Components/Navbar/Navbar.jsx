@@ -1,6 +1,7 @@
 import React,{useState,useEffect,useRef} from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
+import TextAnimation from "../Animatedcounter/TextAnimation";
 const Navbar = ({ activeTab, setActivetab }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -22,6 +23,21 @@ const Navbar = ({ activeTab, setActivetab }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  useEffect(() => {
+    const storedActiveTab = sessionStorage.getItem("activeTab");
+    if (storedActiveTab) {
+      setActivetab(storedActiveTab);
+    } else {
+      setActivetab("Home");
+      sessionStorage.setItem("activeTab", "Home");
+    }
+  }, []);
+
+  useEffect(() => {
+    setActivetab(location.pathname.substring(1));
+    sessionStorage.setItem("activeTab", location.pathname.substring(1));
+    window.scrollTo(0, 0); // Scroll to top when location changes
+  }, [location,activeTab]);
   return (
     <div ref={navbarRef} id="navbar" className="Navbar-parent">
     <div  className="upper-navbar-logo-container">
@@ -54,7 +70,7 @@ const Navbar = ({ activeTab, setActivetab }) => {
             }`}
             onClick={() => setActivetab("Sustainability")}
           >
-            Sustainability
+            <TextAnimation text={'Sustainability'}/>
           </Link>
         </li>
         <div className="navbar-elements"> 

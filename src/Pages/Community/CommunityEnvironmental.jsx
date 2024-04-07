@@ -1,6 +1,7 @@
 import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./Community.css";
+import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
 const CommunityEnvironmental = () => {
   return (
     <div className="community-student-container">
@@ -35,26 +36,26 @@ const CommunityEnvironmental = () => {
             </div>
             <div className="data-student-community-container-environment">
               <div className="data-set-conatiner-below">
-                <b className="big-size-data">73,424</b>
+                <b className="big-size-data"><AnimatedCounter finalValue={73424} /></b>
                 <br />
                 <p className="small-size-paragraph-environment">
                   Reduction in water consumption by 2030
                 </p>
               </div>
               <div className="data-set-conatiner-below">
-                <b className="big-size-data">3000</b>
+                <b className="big-size-data"><AnimatedCounter finalValue={3000} /></b>
                 <p className="small-size-paragraph-environment">
                   Trees planted
                 </p>
               </div>
               <div className="data-set-conatiner-below">
-                <b className="big-size-data">5</b>
+                <b className="big-size-data"><AnimatedCounter finalValue={5} /></b>
                 <p className="small-size-paragraph-environment">
                   Public health centres powered by solar panels
                 </p>
               </div>
               <div className="data-set-conatiner-below">
-                <b className="big-size-data">210</b>
+                <b className="big-size-data"><AnimatedCounter finalValue={210} /></b>
                 <p className="small-size-paragraph-environment">
                   Households powered with solar power
                 </p>
@@ -91,7 +92,8 @@ const CommunityEnvironmental = () => {
                     well as along pathways. Our programme also includes
                     initiatives to raise community awareness about the
                     importance of increasing green cover and conserving the
-                    environment. These efforts will have a positive impact on
+                    import AnimatedCounter from '../../Components/Animatedcounter/Animatedcounter';
+environment. These efforts will have a positive impact on
                     the climate by reducing carbon footprint.
                   </p>
 
@@ -104,7 +106,7 @@ const CommunityEnvironmental = () => {
             <div className="data-container-inner">
               <div className="data-student-community-container">
                 <div className="data-set-conatiner-below">
-                  <b className="big-size-data">500</b>
+                  <b className="big-size-data"><AnimatedCounter finalValue={500} /></b>
                   <p className="small-size-paragraph">
                     Mango orchards <br />
                     planted
@@ -198,7 +200,7 @@ const CommunityEnvironmental = () => {
             <div className="data-container-inner">
               <div className="data-student-community-container">
                 <div className="data-set-conatiner-below">
-                  <b className="big-size-data">20</b>
+                  <b className="big-size-data"><AnimatedCounter finalValue={20} /></b>
                   <p className="small-size-paragraph">
                     Government schools were <br />
                     supported
@@ -236,7 +238,7 @@ const CommunityEnvironmental = () => {
             <div className="data-container-inner">
               <div className="data-student-community-container">
                 <div className="data-set-conatiner-below">
-                  <b className="big-size-data">~15,000</b>
+                  <b className="big-size-data">~<AnimatedCounter finalValue={15000} /></b>
                   <p className="small-size-paragraph">
                   people were <br />
                   benefited

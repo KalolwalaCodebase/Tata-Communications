@@ -1,5 +1,5 @@
 .parent-image-card-component{
-    width: 30%;
+    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
@@ -31,7 +31,7 @@
     position: absolute;
     bottom: -40px;
     color: white;
-    width: 75%;
+    width: 85%;
     font-size: 32px;
     letter-spacing: 0.02em;
     padding: 3% 6%;
@@ -40,7 +40,7 @@
 }
 .image-container-card {
     position: relative; /* Ensure that positioning of the absolute element is relative to this container */
-    width: 90%;
+    width: 100%;
     overflow: hidden;
     transition: all 0.3s ease; 
 }

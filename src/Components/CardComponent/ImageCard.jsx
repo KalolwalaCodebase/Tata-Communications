@@ -1,6 +1,7 @@
 import React from "react";
 import "./imagecard.css";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
 const ImageCard = ({ imageurl, color, heading,activeTab}) => {
   console.log(heading,"here is the heading")
   const formatHeadingForLink = (heading) => {
@@ -13,13 +14,13 @@ const ImageCard = ({ imageurl, color, heading,activeTab}) => {
         <img src={imageurl} alt="" />
       </div>
       <div className="image-container-card-heading">
-        <h2 className="CardHeading-second-specail poppins-light span-inital">
+        <motion.h2 initial={{opacity:0,x:"-100px"}} whileInView={{opacity:1,x:0}} transition={{duration:0.5,delay:0.3,ease:"easeIn"}} className="CardHeading-second-specail poppins-light span-inital">
           {Array.isArray(heading)?heading[0]:heading} <br />
           <Link className="read-more-btn-second poppins-regular specail-btn-show-on-hover" to={`/${activeTab}/${formatHeadingForLink(heading[0])}`}>
   READ MORE {">"}
 </Link>
 {" "}
-        </h2>
+        </motion.h2>
       </div>
     </div>
   );

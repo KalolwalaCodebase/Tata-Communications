@@ -34,7 +34,8 @@ border-top-right-radius: 0.9rem; /* Adjust the radius value as needed */
   min-height: 310px;
   max-height: 320px;
   overflow: hidden;
- 
+  text-align: left;
+  justify-content: flex-start;
 }
 .resources-main-section-tab-container .resources-content{
   display: flex;
@@ -54,3 +55,14 @@ border-top-right-radius: 0.9rem; /* Adjust the radius value as needed */
   max-height: 250px;
   margin-top: 30px;
 }
+.link-class-simple a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out; /* Add transition for color and font weight change */
+}
+
+.link-class-simple a:hover {
+  color: #123c61;
+  font-weight: 400;
+}
+
