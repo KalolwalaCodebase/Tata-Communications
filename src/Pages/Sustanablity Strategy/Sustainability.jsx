@@ -10,7 +10,7 @@ const Sustainability = ({ activeTab, HeroSectionContent }) => {
   const headingarr = [ ['SUSTAINABILITY GOVERNANCE','/cardimg01.svg','/cardimg07.svg'],
   ['SUSTAINABILITY COMMITMENTS','/cardimg02.svg','cardimg08.svg'],
    ['FY24 GOALS & PROGRESS','/cardimg03.svg','/cardimg09.svg'],
-  ['UNSUSTAINABLE DEVELOPMENT GOALS','/cardimg04.svg','/cardimg10.svg'],
+  ['SUSTAINABLE DEVELOPMENT GOALS','/cardimg04.svg','/cardimg10.svg'],
   ['MATERIALITY','/cardimg05.svg','/cardimg11.svg']
   ,['STAKEHOLDER ENGAGEMENT','/cardimg06.svg','/cardimg12.svg']];
 

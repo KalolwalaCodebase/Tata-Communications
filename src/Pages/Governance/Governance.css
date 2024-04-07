@@ -549,10 +549,29 @@ width: 100%;
   position: relative;
   background-color: rgb(255, 205, 0, 0.1  );
   width: 70%;
-  /* height: 600px; */
+  height: 500px;
   padding: 4%;
   justify-content: center;
   /* height: 100px; */
+}
+.pp-sec2-container-items{
+  height: 100%;
+}
+.pp-sec2-container-items img{
+  width: 20%;
+}
+.pp-sec2-container-img-1,
+.pp-sec2-container-img-3,
+.pp-sec2-container-img-5 {
+  align-self: flex-end; /* Align odd images to the bottom */
+}
+
+.pp-sec2-container-img-2,
+.pp-sec2-container-img-4 {
+  align-self: flex-start; /* Align even images to the top */
+}
+.pp-sec2-container-img-1{
+
 }
 .pp-sec3-table-data h2{
   font-size: 1.5rem;
@@ -800,7 +819,7 @@ width: 100%;
   top: 0%;
   right: 5%;
   font-size: 1.1rem;
-  padding: 15% 0;
+  padding: 15% 0; 
 }
 .ci-sticky-links h4{
   padding-bottom: 5%;

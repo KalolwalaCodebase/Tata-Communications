@@ -4,12 +4,12 @@ import { Mainsection } from '../../Components/HeroSection/Mainsection';
 import Cards from '../../Components/Card';
 import CardContainergov from '../../Components/CardContainerGovernance/CardContainergov';
 const Governance = ({activeTab,HeroSectionContent}) => {
-       const headingarr = [ ['Leadership and Integrity at the Core','/cardimg01.svg','/cardimg07.svg'],
-        ['risk and risilience','/cardimg02.svg','cardimg08.svg'],
-         ['Human Rights','/cardimg03.svg','/cardimg09.svg'],
-        ['policies and procedure','/cardimg04.svg','/cardimg10.svg'],
-        ['economic perfomance','/cardimg05.svg','/cardimg11.svg']
-        ,['cultavating inovations','/cardimg06.svg','/cardimg12.svg']];
+       const headingarr = [ ['LEADERSHIP AND INTEGRITY AT THE CORE','/cardimg01.svg','/cardimg07.svg'],
+        ['RISK AND RESILIENCE','/cardimg02.svg','cardimg08.svg'],
+         ['HUMAN RIGHTS','/cardimg03.svg','/cardimg09.svg'],
+        ['POLICIES AND PROCEDURES','/cardimg04.svg','/cardimg10.svg'],
+        ['ECONOMIC PERFORMANCE','/cardimg05.svg','/cardimg11.svg']
+        ,['CULTIVATING INNOVATIONS','/cardimg06.svg','/cardimg12.svg']];
   return (
    <>
  

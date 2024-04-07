@@ -33,12 +33,14 @@ export const PoliciesAndProcedures = () => {
 
       </div>
       <div>
-        <div className='pp-sec2-container flex'>
-          <img src="/pp-icon1.png" alt="" />
-          <img src="/pp-icon2.png" alt="" />
-          <img src="/pp-icon3.png" alt="" />
-          <img src="/pp-icon4.png" alt="" />
-          <img src="/pp-icon5.png" alt="" />
+        <div className='pp-sec2-container '>
+          <div className='pp-sec2-container-items flex'>
+            <img className='pp-sec2-container-img-1' src="/pp-icon1.png" alt="" />
+            <img className='pp-sec2-container-img-2' src="/pp-icon2.png" alt="" />
+            <img className='pp-sec2-container-img-3' src="/pp-icon3.png" alt="" />
+            <img className='pp-sec2-container-img-4' src="/pp-icon4.png" alt="" />
+            <img className='pp-sec2-container-img-5' src="/pp-icon5.png" alt="" />
+          </div>
         </div>
       </div>
       <div className='pp-sec3-container'>

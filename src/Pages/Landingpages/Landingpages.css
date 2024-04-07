@@ -6,7 +6,62 @@
        justify-content: center;
        align-items: center;
 } */
+.landing-page-ppc-triangle{
+       margin: auto;
+       right: 0;
+       height: 80%;
+       width: 680px;
+       position: absolute;
+}
+/* .landing-page-ppc-triangle {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+     } */
+     
+     .img2 {
+       height: 62%;
+       /* height: 63%; */
+       position: absolute;
+       top: 4%;
+       left: 50%;
+       cursor: pointer;
+       transform: translateX(-50%);
+     }
+     
+     
+     .img3 {
+       height: 50%;
+       cursor: pointer;
+
+       /* width: 49%; */
+       position: absolute;
+       bottom: 0;
+       left: 8%;
+     }
+     
+     .img4 {
+       cursor: pointer;
+       height: 50%;
+       position: absolute;
+       bottom: 0;
+       right: 8%;
+     }
+     
+     .img1 {
+       width: 30%;
+       cursor: pointer;
+       position: absolute;
+       z-index: 1;
+       top: 45%;
+       left: 50%;
+       transform: translateX(-50%);
+     }
+     
+
 .traingle-parent-container{
+       position: relative;
        display: flex;
        flex-direction: column;
        width: 100%;
@@ -14,7 +69,7 @@
        padding: 4%;
        align-items: flex-start;
        justify-self: center;
-       background: url('/trainglebackgroundimg.svg');
+       /* background: url('/trainglebackgroundimg.svg'); */
        background-size: cover;
        height: 536px;
        overflow-x: hidden;
@@ -98,9 +153,7 @@
        /* background:rgba(223, 214, 214, 0.12); */
        
 }
-.three-card-conatiner .card-container{
-       /* margin-left: 35px; */
-}
+
 .landing-page-second-caresoules{
        display: flex;
        flex-direction: column;

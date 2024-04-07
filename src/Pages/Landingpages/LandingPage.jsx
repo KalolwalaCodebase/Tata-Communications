@@ -37,13 +37,13 @@ const LandingPage = ({ activeTab, setActivetab }) => {
   });
 
   const containerVariants = {
-    hidden: {y:"-100px"},
+    hidden: { y: "-100px" },
     visible: {
-      y:0,
+      y: 0,
       transition: {
-        staggerChildren: 0.4, duration:0.3 ,ease:easeInOut // Adjust as needed for desired stagger effect
+        staggerChildren: 0.4, duration: 0.3, ease: easeInOut // Adjust as needed for desired stagger effect
       },
-     
+
     },
   };
 
@@ -95,28 +95,54 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           className="heading-main-section-down"
         >
           THE PILLARS OF
-          </motion.b>
-          <motion.b
+        </motion.b>
+        <motion.b
           initial={{ opacity: 0, y: "10px" }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: easeInOut }}
           className="heading-main-section-down"
         >
           OUR STRATEGY
-          </motion.b>
-        <br />
-        <motion.b initial={{opacity:0,y:"-10px",scale:0.8}} whileInView={{opacity:1,y:0,scale:1}} transition={{duration:0.5 ,ease:"easeIn"}} className="small-heading-landing-page">
-          <Textanimation2 text={'Our sustainability strategy has a 360-degree focus, comprising three dimensions –'}/> 
         </motion.b>
-        <b  className="small-heading-landing-page small-heading-landing-page-second">
-          <motion.span initial={{opacity:0,x:"-10px",scale:0.9}} whileInView={{opacity:1,x:0,scale:1}} transition={{duration:0.3 ,ease:"easeIn",delay:0.4}} className="people-heading-color">People,</motion.span>{" "}
-          <motion.span  initial={{opacity:0,x:"-10px",scale:0.9}} whileInView={{opacity:1,x:0,scale:1}} transition={{duration:0.3 ,ease:"easeIn",delay:0.6}}  className="planet-heading-color">Planet </motion.span> and{" "}
-          <motion.span   initial={{opacity:0,x:"10px",scale:0.9}} whileInView={{opacity:1,x:0,scale:1}} transition={{duration:0.3 ,ease:"easeIn",delay:0.8}} className="community-heading-color">Community.</motion.span>
+        <br />
+        <motion.b initial={{ opacity: 0, y: "-10px", scale: 0.8 }} whileInView={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 0.5, ease: "easeIn" }} className="small-heading-landing-page">
+          <Textanimation2 text={'Our sustainability strategy has a 360-degree focus, comprising three dimensions –'} />
+        </motion.b>
+        <b className="small-heading-landing-page small-heading-landing-page-second">
+          <motion.span initial={{ opacity: 0, x: "-10px", scale: 0.9 }} whileInView={{ opacity: 1, x: 0, scale: 1 }} transition={{ duration: 0.3, ease: "easeIn", delay: 0.4 }} className="people-heading-color">People,</motion.span>{" "}
+          <motion.span initial={{ opacity: 0, x: "-10px", scale: 0.9 }} whileInView={{ opacity: 1, x: 0, scale: 1 }} transition={{ duration: 0.3, ease: "easeIn", delay: 0.6 }} className="planet-heading-color">Planet </motion.span> and{" "}
+          <motion.span initial={{ opacity: 0, x: "10px", scale: 0.9 }} whileInView={{ opacity: 1, x: 0, scale: 1 }} transition={{ duration: 0.3, ease: "easeIn", delay: 0.8 }} className="community-heading-color">Community.</motion.span>
         </b>
       </div>
       {/* triangle --section -- start--from--here */}
-      <motion.div initial={{opacity:0,x:"100px",scale:0.9}} whileInView={{opacity:1,x:0,scale:1}} transition={{duration:0.3 ,ease:"easeIn",staggerChildren:0.2}} className="traingle-parent-container">
-        <motion.div initial={{opacity:0,y:"-40px"}} whileInView={{opacity:1,y:0}} exit={{opacity:0,y:"-40px"}} transition={{duration:0.3 ,ease:"easeIn",delay:0.4}} className="traingle-descriptions">
+      <motion.div initial={{ opacity: 0, x: "100px", scale: 0.9 }} whileInView={{ opacity: 1, x: 0, scale: 1 }} transition={{ duration: 0.3, ease: "easeIn", staggerChildren: 0.2 }} className="traingle-parent-container">
+        <div className="landing-page-ppc-triangle">
+          <Link
+            onClick={() => setActivetab("Governance")}
+            to={"/Governance"}
+          >
+            <img className="img1" src="/landingpage-triangle-corp-gov.svg" alt="" />
+          </Link>
+          <Link
+            onClick={() => setActivetab("People")}
+            to={"/People"}
+          >
+          <img className="img2" src="/landingpage-triangle-people.svg" alt="" />
+          </Link>
+          <Link
+            onClick={() => setActivetab("Planet")}
+            to={"/Planet"}
+          >
+          <img className="img3" src="/landingpage-triangle-planet.svg" alt="" />
+          </Link>
+          <Link
+            onClick={() => setActivetab("Community")}
+            to={"/Community"}
+          >
+          <img className="img4" src="/landingpage-triangle-community.svg" alt="" />
+          </Link>
+        </div>
+        <motion.div initial={{ opacity: 0, y: "-40px" }} whileInView={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: "-40px" }} transition={{ duration: 0.3, ease: "easeIn", delay: 0.4 }} className="traingle-descriptions">
           <p className="people-color-heading-landing-page">
             Our holistic sustainability strategy is grounded in the pillars of
             People, Planet and Community with corporate governance at the heart
@@ -135,7 +161,7 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           </p>
           <br />
           <motion.p className="linking-sustabanility">
-            <Textanimation2 text={'To read more about our Sustainability Strategy:'}/>
+            <Textanimation2 text={'To read more about our Sustainability Strategy:'} />
             {" "}
             <Link
               onClick={() => setActivetab("Sustainability")}
@@ -173,13 +199,13 @@ const LandingPage = ({ activeTab, setActivetab }) => {
         </motion.b>
         <br />
         <motion.img
-      initial={{ scaleX: 0, originX: 0 }} // Start from left (0)
-      animate={{ scaleX: inView ? 1 : 0 }} // Expand to full width
-      transition={{ duration: 1, ease: customEase, delay: 0.3 }}
-      className="landing-page-section-heading-down"
-      src="/landing-page-heading.png"
-      alt=""
-    />
+          initial={{ scaleX: 0, originX: 0 }} // Start from left (0)
+          animate={{ scaleX: inView ? 1 : 0 }} // Expand to full width
+          transition={{ duration: 1, ease: customEase, delay: 0.3 }}
+          className="landing-page-section-heading-down"
+          src="/landing-page-heading.png"
+          alt=""
+        />
         <motion.div
           className="three-card-conatiner"
           ref={ref1}
@@ -191,7 +217,7 @@ const LandingPage = ({ activeTab, setActivetab }) => {
             <motion.div
               key={id}
               variants={cardVariants}
-              style={{ marginBottom: "20px", width:"27%" }} // Adjust as needed
+              style={{ marginBottom: "20px", width: "27%" }} // Adjust as needed
             >
               <ImageCard
                 color={"#6c1b54"}
@@ -217,26 +243,26 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           className="heading-main-section-down"
         >
           Message from
-          </motion.b>
+        </motion.b>
         <motion.b
           initial={{ opacity: 0, y: "30px" }}
           whileInView={{ opacity: 1, y: 0, }}
-          transition={{ duration: 0.5, ease:"easeInOut",delay:0.3}}
+          transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
           className="heading-main-section-down"
         >
-         Managing director
-          </motion.b>
-     
+          Managing director
+        </motion.b>
+
         <br />
         {showPopup && (
           <div className="width-full-span">
-          <motion.span initial={{ opacity: 0, width: 0 }}
-          whileInView={{ opacity: 1, width: "100px", }}
-          transition={{ duration: 0.5, ease:"easeInOut",delay:0.3}} className="close" onClick={togglePopup}>
-            &times;
-          </motion.span>
+            <motion.span initial={{ opacity: 0, width: 0 }}
+              whileInView={{ opacity: 1, width: "100px", }}
+              transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }} className="close" onClick={togglePopup}>
+              &times;
+            </motion.span>
           </div>
-          
+
         )}
         <div className="carousel-img-container flex">
           <img
@@ -246,10 +272,10 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           />
           {showPopup && (
             <motion.div className="video-popup"
-            initial={{ opacity: 0, width: 0 ,borderRadius:"100%"}}
-            animate={{ opacity: 1, width: "100%",borderRadius:0 }}
-            exit={{ opacity: 0, width: 0 ,borderRadius:"100%",transition: { duration: 1 } }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}>
+              initial={{ opacity: 0, width: 0, borderRadius: "100%" }}
+              animate={{ opacity: 1, width: "100%", borderRadius: 0 }}
+              exit={{ opacity: 0, width: 0, borderRadius: "100%", transition: { duration: 1 } }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}>
               <div className="video-popup-content">
                 <iframe
                   title="YouTube Video Popup"
@@ -263,23 +289,23 @@ const LandingPage = ({ activeTab, setActivetab }) => {
             </motion.div>
           )}
           <div className="carousel-img-container-content">
-            <motion.img initial={{ opacity: 0,scale:0}}
-            whileInView={{ opacity: 1, scale:1}}
-            exit={{ opacity: 0, x:100,transition: { duration: 0.7 } }}
-            transition={{ duration: 0.2, ease: "easeInOut",delay:1}}
-             className="quote-icon1" src="./quote-icon.svg" alt="" />
+            <motion.img initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, x: 100, transition: { duration: 0.7 } }}
+              transition={{ duration: 0.2, ease: "easeInOut", delay: 1 }}
+              className="quote-icon1" src="./quote-icon.svg" alt="" />
             <motion.img
-            initial={{ opacity: 0,scale:0}}
-            whileInView={{ opacity: 1, scale:1}}
-            exit={{ opacity: 0, scale:0,transition: { duration: 0.5 } }}
-            transition={{ duration: 0.2, ease: "easeInOut",delay:0.7}}
-             className="quote-icon2" src="./quote-icon2.svg" alt="" />
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0, transition: { duration: 0.5 } }}
+              transition={{ duration: 0.2, ease: "easeInOut", delay: 0.7 }}
+              className="quote-icon2" src="./quote-icon2.svg" alt="" />
             < motion.p
-            initial={{ opacity: 0,x:100}}
-            whileInView={{ opacity: 1, x:0}}
-            exit={{ opacity: 0, x:100,transition: { duration: 0.5 } }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-             className="poppins-light md-msg">
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 100, transition: { duration: 0.5 } }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="poppins-light md-msg">
               At Tata Communications, we believe in creating <br /> a world
               where everyone has equal access to <br />
               technology and can thrive in a sustainable and <br />
@@ -292,16 +318,16 @@ const LandingPage = ({ activeTab, setActivetab }) => {
               <br /> future-proof our solutions and enhancing our
               <br /> operations towards sustainable development.
             </motion.p>
-            <h6 className="poppins-bold"> <TextAnimation text={'Amur S Lakshminarayanan'}/></h6>
+            <h6 className="poppins-bold"> <TextAnimation text={'Amur S Lakshminarayanan'} /></h6>
             <p className="poppins-medium managing-director">
               Managing Director
             </p>
-            < motion.button 
-            initial={{ opacity: 0, width: "35%" ,borderRadius:0}}
-            whileInView={{ opacity: 1, width: "40%",borderRadius:"50px" }}
-            exit={{ opacity: 0, width: "35%" ,borderRadius:0,transition: { duration: 1 } }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="poppins-medium" onClick={togglePopup}>
+            < motion.button
+              initial={{ opacity: 0, width: "35%", borderRadius: 0 }}
+              whileInView={{ opacity: 1, width: "40%", borderRadius: "50px" }}
+              exit={{ opacity: 0, width: "35%", borderRadius: 0, transition: { duration: 1 } }}
+              transition={{ duration: 0.8, ease: "easeInOut" }}
+              className="poppins-medium" onClick={togglePopup}>
               WATCH VIDEO
             </motion.button>
           </div>
@@ -318,33 +344,33 @@ const LandingPage = ({ activeTab, setActivetab }) => {
         />{" "}
       </div>
       <div className="sdg-wheell-heading-upper">
-      <motion.b
+        <motion.b
           initial={{ opacity: 0, y: "-10px" }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: easeInOut }}
           className="heading-main-section-down"
         >
           CONTRIBUTING
-          </motion.b>
+        </motion.b>
         <b className="heading-main-section-down"></b>
         <motion.b
           initial={{ opacity: 0, y: "10px" }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: easeInOut ,delay:0.5 }}
+          transition={{ duration: 0.5, ease: easeInOut, delay: 0.5 }}
           className="heading-main-section-down"
         >
           TO UN SDGS
-          </motion.b>
+        </motion.b>
       </div>
       <div className="sdg-wheel-landing-page-container">
-        <motion.img initial={{opacity:0,scale:0.5, rotate:"30deg"}} whileHover={{ scale: 1.001,rotate:"5deg"}} whileInView={{opacity:1,scale:1,rotate:0}} transition={{duration:1,ease:"easeInOut"}} src="/sdg-wheel-landing-page.png" alt="" className="sdg-wheels" />
+        <motion.img initial={{ opacity: 0, scale: 0.5, rotate: "30deg" }} whileHover={{ scale: 1.001, rotate: "5deg" }} whileInView={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ duration: 1, ease: "easeInOut" }} src="/sdg-wheel-landing-page.png" alt="" className="sdg-wheels" />
         <div className="sdg-wheel-descriptions">
-          <motion.p initial={{opacity:0,x:100}} whileInView={{opacity:1,x:0}} transition={{duration:0.3,ease:"easeInOut"}} className="smae-font-para-sdg">
+          <motion.p initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.3, ease: "easeInOut" }} className="smae-font-para-sdg">
             Our sustainability strategy, focusing on{" "}
-            <span className="people-span"><TextAnimation text={'People'}/> </span> ,{" "}
-            <span className="planet-span"><TextAnimation text={'Planet'}/></span> ,{" "}
-            <span className="community-span"><TextAnimation text={'Community'}/></span> , and{" "}
-            <span className="governance-span"><TextAnimation text={'Governance'}/></span> , aims to
+            <span className="people-span"><TextAnimation text={'People'} /> </span> ,{" "}
+            <span className="planet-span"><TextAnimation text={'Planet'} /></span> ,{" "}
+            <span className="community-span"><TextAnimation text={'Community'} /></span> , and{" "}
+            <span className="governance-span"><TextAnimation text={'Governance'} /></span> , aims to
             create long-term stakeholder value and sustainable growth for our
             business. It aligns with the UN Sustainable Development Goals, the
             Tata Group Sustainability Strategy, and our company’s assessment of
@@ -358,12 +384,12 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           <br />
           <img className="line-image-dashed" src="/line-dark.png" alt="" />
           <br />
-          <button className="readmore-blue"> <TextAnimation text={'read more'}/>  {">"}</button>
+          <button className="readmore-blue"> <TextAnimation text={'read more'} />  {">"}</button>
         </div>
       </div>
       <div className="awards-wrapper-parent">
         <motion.img
-        initial={{opacity:0,width:0}} whileInView={{opacity:1,width:"100%"}}
+          initial={{ opacity: 0, width: 0 }} whileInView={{ opacity: 1, width: "100%" }}
           className="small-square-btn-png landing-page-small-square-btn"
           src="/small-square-btn.png"
           alt=""
@@ -377,8 +403,8 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           className="heading-main-section-down"
         >
           AWARDS
-          </motion.b>
-        <motion.p initial={{scale:0.5,opacity:0}} whileInView={{scale:1,opacity:1}} className="awards-green-title poppins-semibold"><TextAnimation text={'SUSTAINABILITY'}/> </motion.p>
+        </motion.b>
+        <motion.p initial={{ scale: 0.5, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} className="awards-green-title poppins-semibold"><TextAnimation text={'SUSTAINABILITY'} /> </motion.p>
         <Carouseldown />
         <div className="resources-wrapper-parent">
           <img
