@@ -193,7 +193,7 @@ function App() {
             element={<LeadershipAndIntegrity activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           /> 
           <Route
-            path="/Governance/risk-and-risilience"
+            path="/Governance/risk-and-resilience"
             element={<RiskandResilance activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           /> 
           <Route
@@ -201,15 +201,15 @@ function App() {
             element={<HumanRights activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           />
           <Route
-            path="/Governance/policies-and-procedure"
+            path="/Governance/policies-and-procedures"
             element={<PoliciesAndProcedures activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           />
           <Route
-            path="/Governance/economic-perfomance"
+            path="/Governance/economic-performance"
             element={<EconomicPerformance activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           />
           <Route
-            path="/Governance/cultavating-inovations"
+            path="/Governance/cultivating-innovations"
             element={<CultivatingInnovation activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           />
           <Route

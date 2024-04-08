@@ -21,7 +21,7 @@ const LandingPage = ({ activeTab, setActivetab }) => {
     triggerOnce: true,
     threshold: 0.8, // Adjust as needed
   });
-
+  const [isBlueHeading, setIsBlueHeading] = useState(false);
   const textContainerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
@@ -121,34 +121,48 @@ const LandingPage = ({ activeTab, setActivetab }) => {
         </b>
       </div>
       {/* triangle --section -- start--from--here */}
-      <motion.div initial={{ opacity: 0, x: "100px", scale: 0.9 }} whileInView={{ opacity: 1, x: 0, scale: 1 }} transition={{ duration: 0.3, ease: "easeIn", staggerChildren: 0.2 }} className="traingle-parent-container">
-        <div className="landing-page-ppc-triangle">
-          <Link
-            onClick={() => setActivetab("Governance")}
-            to={"/Governance"}
-          >
-            <img className="img1" src="/landingpage-triangle-corp-gov.svg" alt="" />
-          </Link>
-          <Link
-            onClick={() => setActivetab("People")}
-            to={"/People"}
-          >
+      <motion.div className="traingle-parent-container">
+      <motion.div initial={{y:"100px"}}
+       whileInView={{y:0}}
+       transition={{ duration: 0.5,ease:"easeInOut" }} className="landing-page-ppc-triangle">
+      <motion.div
+       initial={{opacity:0}}
+       whileInView={{opacity:1 }}
+       transition={{ duration: 0.5,ease:"easeInOut" }}
+      >
+        <Link onClick={() => setActivetab("Governance")} to={"/Governance"}>
+          <img className="img1" src="/landingpage-triangle-corp-gov.svg" alt="" />
+        </Link>
+      </motion.div>
+      <motion.div
+        initial={{ opacity:0.6,scale:0.5 }}
+        whileInView={{ opacity:1,scale:1  }}
+        transition={{ duration: 0.5,ease:"easeInOut",delay:0.1 }}
+      >
+        <Link onClick={() => setActivetab("People")} to={"/People"}>
           <img className="img2" src="/landingpage-triangle-people.svg" alt="" />
-          </Link>
-          <Link
-            onClick={() => setActivetab("Planet")}
-            to={"/Planet"}
-          >
+        </Link>
+      </motion.div>
+      <motion.div
+        initial={{ opacity:0.6,scale:0.5 }}
+        whileInView={{ opacity:1,scale:1}}
+        transition={{ duration: 0.5,ease:"easeInOut",delay:0.2 }}
+      >
+        <Link onClick={() => setActivetab("Planet")} to={"/Planet"}>
           <img className="img3" src="/landingpage-triangle-planet.svg" alt="" />
-          </Link>
-          <Link
-            onClick={() => setActivetab("Community")}
-            to={"/Community"}
-          >
+        </Link>
+      </motion.div>
+      <motion.div
+        initial={{ opacity:0,scale:0.5, }}
+        whileInView={{ opacity:1,scale:1  }}
+        transition={{ duration: 0.5,ease:"easeInOut",delay:0.}}
+      >
+        <Link onClick={() => setActivetab("Community")} to={"/Community"}>
           <img className="img4" src="/landingpage-triangle-community.svg" alt="" />
-          </Link>
-        </div>
-        <motion.div initial={{ opacity: 0, y: "-40px" }} whileInView={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: "-40px" }} transition={{ duration: 0.3, ease: "easeIn", delay: 0.4 }} className="traingle-descriptions">
+        </Link>
+      </motion.div>
+    </motion.div>
+        <motion.div initial={{ opacity: 0, x: "-40px" }} whileInView={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: "-40px" }} transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }} className="traingle-descriptions">
           <p className="people-color-heading-landing-page">
             Our holistic sustainability strategy is grounded in the pillars of
             People, Planet and Community with corporate governance at the heart
@@ -409,11 +423,22 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: easeInOut }}
           className="heading-main-section-down"
+          
         >
-          AWARDS
+         AWARDS
         </motion.b>
-        <motion.p initial={{ scale: 0.5, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} className="awards-green-title poppins-semibold"><TextAnimation text={'SUSTAINABILITY'} /> </motion.p>
-        <Carouseldown />
+        <motion.p
+        style={{ 
+          textTransform: "uppercase",
+          backgroundColor: isBlueHeading ? '#00B3BD' : '#B0BC25', // Change background color based on isBlueHeading state
+        }}
+        initial={{ scale: 0.5, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        className="awards-green-title poppins-semibold"
+      >
+        {isBlueHeading ? 'corporate social responsibility' : 'SUSTAINABILITY'}
+      </motion.p>
+        <Carouseldown setIsBlueHeading={setIsBlueHeading} />
         <div className="resources-wrapper-parent">
           <img
             className="small-square-btn-png landing-page-small-square-btn"

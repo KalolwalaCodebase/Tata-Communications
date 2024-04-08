@@ -13,6 +13,7 @@
        width: 680px;
        position: absolute;
 }
+
 /* .landing-page-ppc-triangle {
        display: flex;
        justify-content: center;
@@ -67,9 +68,11 @@
        width: 100%;
        justify-content: flex-start;
        padding: 4%;
+       margin-top: 4%;
        align-items: flex-start;
        justify-self: center;
        /* background: url('/trainglebackgroundimg.svg'); */
+       background: rgba(161, 169, 172, 0.08);
        background-size: cover;
        height: 536px;
        overflow-x: hidden;
@@ -173,7 +176,11 @@
               font-size: 25px;   
        }
      }
-       
+     @media only screen and (max-width: 1600px) {
+       .landing-page-ppc-triangle{
+              width: 560px;
+       }
+     }   
 .sdg-wheel-landing-page-container{
        display: flex;
        justify-content: center;
