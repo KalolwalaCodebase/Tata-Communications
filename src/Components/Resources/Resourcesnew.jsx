@@ -41,7 +41,8 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
               className="resources-heading-tab-heading"
               style={{
                 background: btnId === index + 1 ? "#5CA4E3" : "",
-                color: btnId === index + 1 ? "white" : "",
+                color: btnId === index + 1 ? "white" : "#3D86C6",
+                textTransform:"uppercase"
               }}
               initial={{ opacity:0,x: -100 }}
               whileInView={{ opacity:1,x: 0 }}

@@ -45,7 +45,7 @@ const Navbar = ({ activeTab, setActivetab }) => {
             to="https://www.tatacommunications.com/"
             target="blank"
           ><div className="mainlogo-image">
-          <img src="/mainlogoleft.png" alt="" />
+          <img src="/TATA.svg" alt="" />
         </div>
         </Link>  
         <div className="parent-logo-image">
@@ -68,6 +68,7 @@ const Navbar = ({ activeTab, setActivetab }) => {
               activeTab === "Sustainability" ? "active-tab" : ""
             }`}
             onClick={() => setActivetab("Home")}
+            style={{fontFamily:"sans-serif",letterSpacing:"0.3em"}}
           >
             <TextAnimation text={'Sustainability'}/>
           </Link>

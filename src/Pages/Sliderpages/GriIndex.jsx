@@ -4,7 +4,7 @@ import "./sliderpages.css";
 const GriIndex = () => {
   return (
     <div>
-      <HeadBar heading={"GRI INDEX"} theme={"#AD3088"} />
+      <HeadBar heading={"GRI INDEX"} theme={"#3D86C6"} />
       <div className="gri-index-flex-container">
         <div className="flex-conatiner-wrapper">
         <p className="gri-index-decription-main">

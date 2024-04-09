@@ -7,9 +7,10 @@ const PeopleCustomers = () => {
   return (
     <div className='people-customer-container-main'>
       <HeadBar
-        icon={"/peoplesmall-logo.svg"}
-        heading={"CUSTOMER"}
+        icon={"/Customers.svg"}
+        heading={"CUSTOMERS"}
         theme={"#AD3088"}
+        headiconstyle={'#E036AE'}
       />
       <div className="climate-change-intro-container people-main-parent-container">
         <div className="climate-change-intro-paragraph-inside-container">
@@ -79,44 +80,56 @@ const PeopleCustomers = () => {
           </div>
     <div className="our-ups-section-environment">
            <div className="imgate-heading-our-ups">
-           <img src="/ourusps.png" alt="" />
+           <motion.p
+        style={{ 
+          textTransform: "uppercase",
+          width:"20%",
+          textAlign:"center",
+          backgroundColor: "#AD3088", // Change background color based on isBlueHeading state
+        }}
+        initial={{ scale: 0.5, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        className="awards-green-title poppins-semibold"
+      >
+        OUR USP<span style={{textTransform:"lowercase"}}>s</span>
+        </motion.p>
             </div> 
             <div className="our-ups-card-container">
                 <div className="each-card-container-our-ups">
-                    <div className="img-section-our-ups">
+                    <motion.div className="img-section-our-ups" initial={{y:"100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1,ease:"easeInOut"}}>
                      <img src="/peopleourupsimg01.png" alt="" />
-                    </div>
-                    <div className="descreptions-section-our-ups">
+                    </motion.div>
+                    <motion.div initial={{y:"-100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1,ease:"easeInOut"}} className="descreptions-section-our-ups"  style={{height:'130px'}}>
                     We are able to quickly integrate with the partner ecosystem to deliver the solution.
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="each-card-container-our-ups">
-                    <div className="img-section-our-ups">
+                    <motion.div initial={{y:"100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1,ease:"easeInOut"}} className="img-section-our-ups">
                      <img src="/peopleourupsimg02.png" alt="" />
-                    </div>
-                    <div className="descreptions-section-our-ups">
-                    A smart light controller allows for remote switching (on/off) of lights with a dimming feature to optimise energy consumption                    </div>
+                    </motion.div>
+                    <motion.div  initial={{y:"-100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1,ease:"easeInOut"}} className="descreptions-section-our-ups" style={{height:'130px'}}>
+                    A smart light controller allows for remote switching (on/off) of lights with a dimming feature to optimise energy consumption                    </motion.div>
                 </div>
-                <div className="each-card-container-our-ups">
-                    <div className="img-section-our-ups">
+                <div className="each-card-container-our-ups" >
+                    <motion.div className="img-section-our-ups"initial={{y:"100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1,ease:"easeInOut"}}>
                      <img src="/peopleourupsimg03.png" alt="" />
-                    </div>
-                    <div className="descreptions-section-our-ups">
-                    We provided gateways and a network platform to enable the setup of LoRaWAN®                    </div>
+                    </motion.div>
+                    <motion.div initial={{y:"-100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1,ease:"easeInOut"}} className="descreptions-section-our-ups" style={{height:'130px'}}>
+                    We provided gateways and a network platform to enable the setup of LoRaWAN®                    </motion.div>
                 </div>
                 <div className="each-card-container-our-ups">
-                    <div className="img-section-our-ups">
+                    <motion.div className="img-section-our-ups" initial={{y:"100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1,ease:"easeInOut"}}>
                      <img src="/peopleourupsimg04.png" alt="" />
-                    </div>
-                    <div className="descreptions-section-our-ups">
-                    An application captures the metering of each individual streetlight and monitors light health, providing fault alerts for immediate resolution in case of issues. In addition, the solution includes features such as dead lamp notification, keeping track of lamp burn hours, auto-scheduling and electricity theft.                    </div>
+                    </motion.div>
+                    <motion.div className="descreptions-section-our-ups" style={{height:'280px'}} initial={{y:"-100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1,ease:"easeInOut"}}>
+                    An application captures the metering of each individual streetlight and monitors light health, providing fault alerts for immediate resolution in case of issues. In addition, the solution includes features such as dead lamp notification, keeping track of lamp burn hours, auto-scheduling and electricity theft.                    </motion.div>
                 </div>
                 <div className="each-card-container-our-ups">
-                    <div className="img-section-our-ups">
+                    <motion.div className="img-section-our-ups" initial={{y:"100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1,ease:"easeInOut"}}>
                      <img src="/peopleourupsimg05.png" alt="" />
-                    </div>
-                    <div className="descreptions-section-our-ups">
-                    Tata Communications’ IoT smart light solution is an end-to-end management platform for citywide streetlight management and it is a perfect fit to address our customers’ needs.                    </div>
+                    </motion.div>
+                    <motion.div className="descreptions-section-our-ups" style={{height:'280px'}} initial={{y:"-100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1,ease:"easeInOut"}}>
+                    Tata Communications’ IoT smart light solution is an end-to-end management platform for citywide streetlight management and it is a perfect fit to address our customers’ needs.                    </motion.div>
                 </div>
             </div>
       </div>
@@ -124,7 +137,8 @@ const PeopleCustomers = () => {
         </div>
         
         < motion.div initial={{x:"100px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:0.5,delay:0.3, type:"spring"}} className="quick-link-sections">
-          <b className="heading-links"><TextAnimation text={'QUICK LINKS'}/> </b>
+        <b className="heading-links">
+          <TextAnimation text={'Quick'}/> <TextAnimation text={'Links'}/></b>
           <br />
           <img src="/quick-link-underline.png" alt="" />
           <div className="quicklinks-button-div">

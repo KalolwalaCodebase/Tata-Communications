@@ -20,16 +20,15 @@ const CarouselMain = ({setActivetab}) => {
             whileInView={{ opacity: 1, x:"0%" }}
             transition={{ duration: 0.2, ease:"easeIn",delay:0.5 }}
              className="absolute-video-description">
-              <img
-                className="small-square-btn-png"
-                src="/small-square-btn.png"
-                alt=""
-              />{" "}
+             <img
+              className="small-square-img"
+              src="/small-square-btn.png"
+              alt=""
+            />{" "}
               <br />
               <b className="heading-caresoules">tata communications</b>
               <p className="heading-description-carosoule">
-                climate targets <br />
-                approved by SBTi
+              emissions reduction<br /> targets validated <br /> by the SBTi 
               </p>
               <motion.div 
               
@@ -59,7 +58,7 @@ const CarouselMain = ({setActivetab}) => {
           transition={{ duration: 0.2, ease:"easeIn",delay:0.5 }}
           className="absolute-video-description">
             <img
-              className="small-square-btn-png"
+              className="small-square-img"
               src="/small-square-btn.png"
               alt=""
             />{" "}
@@ -76,7 +75,7 @@ const CarouselMain = ({setActivetab}) => {
                 Savings, and Circular Economies in India
               </p>
               <Link  to="/press/release" className="view-release-part">
-              <TextAnimation text={'view press release'} />
+              {/* <TextAnimation text={''} /> */}view press release
                 </Link>
             </motion.div>
           </motion.div>
@@ -94,7 +93,7 @@ const CarouselMain = ({setActivetab}) => {
             transition={{ duration: 0.2, ease:"easeIn",delay:0.5 }}
              className="absolute-video-description">
             <img
-              className="small-square-btn-png"
+              className="small-square-img"
               src="/small-square-btn.png"
               alt=""
             />{" "}
@@ -107,12 +106,13 @@ const CarouselMain = ({setActivetab}) => {
             whileInView={{ opacity: 1, x:"1%" }}
             transition={{ duration: 0.4, ease:"easeIn",delay:0.5 }} className="carosoules-last-container">
               <p className="description-last-carosoule">
-                Focusing on new ways of harnessing technology, we combine our
-                global scale and expertise to create Hyperconnected ecosystems
+                Focusing on new ways of harnessing technology, we combine our <br />
+                global scale and expertise to create Hyperconnected ecosystems <br />
+
                 to reimagine a landscape for an Inclusive and Sustainable future
               </p>
               <Link target="blank" to={'https://www.tatacommunications.com/apps/online-sustainable-development-report-2023/index.php'} className="view-release-part">
-              <Textanimation2 text={'view sustainability development report 2023'} />   
+              {/* <Textanimation2 text={''} />    */}view sustainability development report 2023
               </Link>
             </motion.div>
           </motion.div>
@@ -130,7 +130,7 @@ const CarouselMain = ({setActivetab}) => {
             transition={{ duration: 0.2, ease:"easeIn",delay:0.5 }}
            className="absolute-video-description">
             <img
-              className="small-square-btn-png"
+              className="small-square-img"
               src="/small-square-btn.png"
               alt=""
             />{" "}
@@ -147,7 +147,10 @@ const CarouselMain = ({setActivetab}) => {
                 Increasing transparency that augments the accountability to our
                 stakeholders
               </p>
-              <Link className="view-release-part" to={'/sustainability-disclosures'}><TextAnimation text={'View sustainability disclosures'} /></Link>
+              <Link className="view-release-part" to={'/sustainability-disclosures'}>
+                {/* <TextAnimation text={''} /> */}
+                View sustainability disclosures
+                </Link>
             </motion.div>
           </motion.div>
         </Carousel.Item>
@@ -163,7 +166,7 @@ const CarouselMain = ({setActivetab}) => {
             whileInView={{ opacity: 1, x:"1%" }}
             transition={{ duration: 0.2, ease:"easeIn",delay:0.5 }} className="absolute-video-description">
             <img
-              className="small-square-btn-png"
+              className="small-square-img"
               src="/small-square-btn.png"
               alt=""
             />{" "}
@@ -186,7 +189,8 @@ const CarouselMain = ({setActivetab}) => {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <Link  onClick={()=>setActivetab("Community")} to="/Community" className="view-release-part">
-                              <TextAnimation text={' view Community page '} />
+                              {/* <TextAnimation text={' '} /> */}
+                              view Community page
 
                 </Link>
             </motion.div>

@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import './HeadBar.css';
 
-const HeadBar = ({ index , heading , icon, theme }) => {
+const HeadBar = ({ index , heading , icon, theme,headiconstyle }) => {
     console.log(index , heading , icon, theme);
     return (
         <div>
@@ -25,7 +25,7 @@ const HeadBar = ({ index , heading , icon, theme }) => {
                         { heading }</motion.h1>
                 </div>
                 {
-                    icon&&<div className='head-icon'>
+                    icon&&<div className='head-icon' style={{background:headiconstyle&&headiconstyle}}>
                     <img src={icon} alt="" />
                 </div>
                 }

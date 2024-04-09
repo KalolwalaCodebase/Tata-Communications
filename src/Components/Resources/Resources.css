@@ -19,6 +19,7 @@ text-align: center;
 line-height: 3rem;
 border-top-left-radius: 0.9rem; /* Adjust the radius value as needed */
 border-top-right-radius: 0.9rem; /* Adjust the radius value as needed */
+font-weight: 700;
 } 
 .resources-main-section-tab-container{
   display: flex;
@@ -47,7 +48,7 @@ border-top-right-radius: 0.9rem; /* Adjust the radius value as needed */
   display: flex;
   width: 98%;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 500;
   color: #3E3E3E;
   flex-direction: column;
 }
@@ -58,11 +59,13 @@ border-top-right-radius: 0.9rem; /* Adjust the radius value as needed */
 .link-class-simple a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out; /* Add transition for color and font weight change */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, text-decoration 1s ease-in-out; /* Add transition for color and font weight change */
 }
 
 .link-class-simple a:hover {
-  color: #123c61;
-  font-weight: 400;
+  color: #3D86C6;
+  text-decoration: underline;
 }
 

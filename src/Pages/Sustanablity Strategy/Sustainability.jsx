@@ -7,12 +7,12 @@ import { Mainsection } from "../../Components/HeroSection/Mainsection";
 
 const Sustainability = ({ activeTab, HeroSectionContent }) => {
 
-  const headingarr = [ ['SUSTAINABILITY GOVERNANCE','/cardimg01.svg','/cardimg07.svg'],
-  ['SUSTAINABILITY COMMITMENTS','/cardimg02.svg','cardimg08.svg'],
-   ['FY24 GOALS & PROGRESS','/cardimg03.svg','/cardimg09.svg'],
-  ['SUSTAINABLE DEVELOPMENT GOALS','/cardimg04.svg','/cardimg10.svg'],
-  ['MATERIALITY','/cardimg05.svg','/cardimg11.svg']
-  ,['STAKEHOLDER ENGAGEMENT','/cardimg06.svg','/cardimg12.svg']];
+  const headingarr = [ ['SUSTAINABILITY GOVERNANCE','/Strategy01.svg','/Strategy07.svg'],
+  ['SUSTAINABILITY COMMITMENTS','/Strategy02.svg','/Strategy08.svg'],
+   ['FY24 GOALS & PROGRESS','/Strategy03.svg','/Strategy09.svg'],
+  ['SUSTAINABLE DEVELOPMENT GOALS','/Strategy04.svg','/Strategy10.svg'],
+  ['MATERIALITY','/Strategy05.svg','/Strategy11.svg']
+  ,['STAKEHOLDER ENGAGEMENT','/Strategy06.svg','/Strategy12.svg']];
 
   return (
     <>

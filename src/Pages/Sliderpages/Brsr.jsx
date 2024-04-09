@@ -4,7 +4,7 @@ import "./sliderpages.css";
 const Brsr = () => {
   return (
     <div>
-      <HeadBar heading={"BRSR"} theme={"#AD3088"} />
+      <HeadBar heading={"BRSR"} theme={"#3D86C6"} />
       <div className="gri-index-flex-container">
         <div className="flex-conatiner-wrapper">
         

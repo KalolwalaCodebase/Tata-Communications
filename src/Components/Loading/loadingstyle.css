@@ -6,20 +6,19 @@
     -ms-user-select: none;
     user-select: none;
     z-index: 99999999999999;
-    position: fixed;
+    position: absolute;
     margin: auto;
-    top: 0;
+    top: 50px;
     left: 0;
     right: 0;
-    bottom: 0;
     width: 400px;
     border: 0px;
-    height: 1px;
+    height: 2px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.05);
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
   }
   
   .pace .pace-progress {
@@ -43,9 +42,9 @@
       color-stop(#01d9f6),
       to(#074d70)
     );
-    background: -webkit-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-    background: -o-linear-gradient(left, #12c2e9, #c471ed, #f64f59);
-    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background: -webkit-linear-gradient(left, #12c2e9, #59c2ff, #189bf8);
+    background: -o-linear-gradient(left, #12c2e9, #4ac6ff, #5cc0ff);
+    background: linear-gradient(to right, #12c2e9, #3ab7ff, #26b3ff);
   }
   
   .pace.pace-inactive {

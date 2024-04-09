@@ -6,9 +6,10 @@ const CommunitySustinableLivehood = () => {
   return (
     <div className="community-student-container">
       <HeadBar
-        icon={"/Demologo.png"}
+        icon={"/SustainableLivelihoods.svg"}
         heading={"SUSTANIBLITY-LIVEHOOD"}
         theme={"#38D1DA"}
+        headiconstyle={'#8CD3DA'}
       />
       <div className="wrapper-student-container">
         <div className="slide-left-container">
@@ -70,7 +71,7 @@ const CommunitySustinableLivehood = () => {
                 <div className="description-flex-row specail-paragraph">
                   <p className="frist-paragraph">
                     {" "}
-                    <span> Lakhpati Kisan - Smart Villages 2.0</span>is an
+                    <span style={{fontWeight:"normal"}}> Lakhpati Kisan - Smart Villages 2.0 </span>is an
                     initiative that embodies a comprehensive rural development
                     strategy, empowering households to craft their way out of
                     poverty and enhance their overall quality of life.

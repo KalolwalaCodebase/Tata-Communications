@@ -8,19 +8,24 @@ import PlanetGreenSolutions from "./PlanetGreenSolutions";
 import PlanetCuttingDownSolution from "./PlanetCuttingDownSolution";
 import PlanetClimateLastThreeComponet from "./PlanetClimateLastThreeComponet";
 import PlanetIntroducingEv from "./PlanetIntroducingEv";
-
+import { motion } from 'framer-motion';
+import TextAnimation from '../../Components/Animatedcounter/TextAnimation';
+import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
 const Planetsclimatechange = () => {
-  const transationingObject={
-  heading:"Transitioning to Renewable Energy",
-  specailPara:"We are at the forefront of integrating renewable energy sources into our global electricity consumption mix.",
-  description:"This strategic move aligns with our approach to sustainability and our efforts to mitigate the impact of our operations on the environment. We understand the critical importance of renewable energy in reducing carbon emissions and are actively exploring avenues to augment the share of renewables in our energy portfolio. In pursuit of this goal, significant steps have been taken, including the procurement of solar power and the engagement in renewable energy certificate programs internationally."
-}
-
-  const CommunityCarbonObject={
-  heading:"Community Carbon Offset Programmes",
-  specailPara:"We are engaged in initiatives that not only address the global challenge of climate change but also exert a positive influence within the communities where we have a presence.",
-  description:"We are taking action against climate change by supporting projects that reduce carbon emissions and benefit local people. We carefully assess community needs and choose projects that are both effective and sustainable in the long run. By FY 2030, we aim to have generated 95,000 tonnes of Community based Carbon Credits, marking a substantial contribution to both local environments and the broader climate agenda."
-}
+  const transationingObject = {
+    heading: "Transitioning to Renewable Energy",
+    specailPara:
+      "We are at the forefront of integrating renewable energy sources into our global electricity consumption mix.",
+    description:
+      "This strategic move aligns with our approach to sustainability and our efforts to mitigate the impact of our operations on the environment. We understand the critical importance of renewable energy in reducing carbon emissions and are actively exploring avenues to augment the share of renewables in our energy portfolio. In pursuit of this goal, significant steps have been taken, including the procurement of solar power and the engagement in renewable energy certificate programs internationally.",
+  };
+  const CommunityCarbonObject = {
+    heading: "Community Carbon Offset Programmes",
+    specailPara:
+      "We are engaged in initiatives that not only address the global challenge of climate change but also exert a positive influence within the communities where we have a presence.",
+    description:
+      "We are taking action against climate change by supporting projects that reduce carbon emissions and benefit local people. We carefully assess community needs and choose projects that are both effective and sustainable in the long run. By FY 2030, we aim to have generated 95,000 tonnes of Community based Carbon Credits, marking a substantial contribution to both local environments and the broader climate agenda.",
+  };
   const accrodianContent = [
     {
       heading: "Energy-Saving Opportunities Identified",
@@ -114,64 +119,159 @@ const Planetsclimatechange = () => {
       <HeadBar
         icon={"/Demologo.png"}
         heading={"CLIMATE-CHANGE"}
-        theme={"#4F570A"}
+        theme={"#B0BC25"}
+        headiconstyle={"rgb(184 198 25)"}
       />
       <div className="climate-change-intro-container">
         <div className="climate-change-intro-paragraph-inside-container">
           <p className="paragraph-inside-climate-change">
-            Our core philosophy is grounded in the implementation of
-            conservation initiatives that significantly reduce our ecological
-            footprint, while simultaneously fostering innovation in our products
-            to support global decarbonisation efforts. By setting ambitious,
-            long-term sustainability goals, we address the critical issues of
-            climate change, and generate customer savings. This strategic
-            approach enables us to enhancing our contribution towards a
-            sustainable and resilient future.
+            Through our environment conservation initiatives, we aim to reduce
+            our environmental footprint, while also pushing innovation within
+            our product line to assist global decarbonisation endeavours. We
+            acknowledge the necessity of climate action, shifting our focus
+            towards combating climate change and mitigating its adverse effects.
           </p>
           <p className="paragraph-inside-climate-change">
-            In action, we rigorously adhere to environmental regulations across
-            all regions of operation, maintaining a record of zero
-            non-compliances or incidents. This discipline extends to our
-            comprehensive efforts in resource optimisation and the adoption of
-            the 3R principle—reduce, reuse, and recycle—across our water and
-            waste management strategies.
+            As a company in ICT, we are heavily reliant on our energy supplies
+            to run our operations 24X7. To meet this energy demand, we utilise
+            various sources across geographies. These sources can be categorised
+            into energy from diesel generators for backup, energy from national
+            grids and renewable energy from public as well as private suppliers.
+             With the operational energy demand and our upstream and downstream
+            operations, the associated GHG emissions are inherent part of our
+            value chain.
           </p>
           <p className="paragraph-inside-climate-change">
-            Our commitment to decarbonisation consists of over a decade of
-            leading energy and carbon emission reduction projects. By embedding
-            a robust climate change strategy within our operations, we position
-            ourselves as industry forerunners in navigating the challenges and
-            seizing the opportunities presented by energy transitions. Our
-            ultimate goal is to achieve Net Zero emissions, thereby
-            significantly diminishing our environmental footprint and actively
-            contributing to global climate action initiatives
+            Our comprehensive decarbonisation strategy seeks to reduce the GHG
+            emissions across our value chain. Recognising the detrimental
+            effects of climate change caused by greenhouse gas (GHG) emissions,
+            we are committed to adopting operational enhancements that lower our
+            GHG intensity. We have laid the foundation for targeted efforts to
+            reduce our carbon footprint by meticulously tracking our GHG
+            emissions, which include both Scope 1 and Scope 2 and 3 emissions,
+            in accordance with the GHG Protocol Corporate Accounting and
+            Reporting Standard and Corporate Value Chain (Scope 3) Accounting
+            and Reporting Standard. The analysis and mitigation of Scope 3
+            emissions, involving emissions from employee commuting, business
+            travel and other indirect activities, are also integral components
+            of our strategy.
           </p>
         </div>
         <div className="climate-change-intro-photos-inside-container">
           <img
             className="intro-climate-image"
-            src="/planetClimateChangeIntro.png"
+            src="/Planetimg04.png"
             alt=""
           />
         </div>
       </div>
-      <div className="plannet-climate-focus-section">
+      
+
+      <div className="planet-climate-last-section-parent">
+      
+        <div className="main-section-climate-change" style={{background: '#F7F7F7',borderRadius:"20px"}}>
+        <motion.p
+        style={{ 
+          textTransform: "uppercase",
+          backgroundColor: '#B0BC25', // Change background color based on isBlueHeading state
+        }}
+        initial={{ scale: 0.5, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        className="awards-green-title poppins-semibold"
+      >
+        <TextAnimation text={'our'}/> <TextAnimation text={'footprint'}/>
+      </motion.p>
+          <div className="description-main-section planet-climate-change-description" >
+          <div className="data-student-community-container-environment " style={{display:"flex"}}>
+              <div className="data-set-conatiner-below">
+              <b style={{color:"#B0BC25"}} className="big-size-data"><AnimatedCounter finalValue={10} />%</b>
+                <p className="small-size-paragraph-environment">
+                Improvement in GHG Intensity  Reduction to 40.72MT of CO2 per million USD revenue from FY 2022
+                </p>
+              </div>
+              <div className="data-set-conatiner-below">
+                <b style={{color:"#B0BC25"}} className="big-size-data"><AnimatedCounter finalValue={28} />%</b>
+                <p className="small-size-paragraph-environment">
+                Reduction in Scope 1 and <br /> Scope 2 Emissions from Base <br />Year 2020
+                </p>
+              </div>
+              <div className="data-set-conatiner-below">
+                <b style={{color:"#B0BC25"}}  className="big-size-data"><AnimatedCounter finalValue={128} />,<AnimatedCounter finalValue={251} />MT</b>
+                <p className="small-size-paragraph-environment">
+                of Scope 3 Emissions <br /> Recorded for 2022-23
+                </p>
+              </div>
+          </div>
+           <div className="planate-climate-change-energy-effiecency" style={{paddingTop:"2%"}}>
+            <div className="ghg-intensity">
+              <img src="/planetgraph01.svg" alt="" />
+            </div>
+            <div className="energy-intensity">
+             <img src="/planetgraph02.svg" alt="" />
+            </div>
+           </div>
+           <div className="planate-climate-change-energy-effiecency" style={{borderBottom:"1px solid #B1B3B6",padding:"2%"}}>
+            <div className="ghg-intensity" style={{paddingRight:"6%"}}>
+              <img src="/planetdata01.svg" alt="" />
+            </div>
+            <div className="energy-intensity">
+             <img src="/planetdata02.svg" alt="" />
+            </div>
+           </div>
+           <div className="planate-climate-change-energy-effiecency" style={{borderBottom:"1px solid #B1B3B6",padding:"2%",borderTop:"none"}}>
+            <div className="ghg-intensity" style={{paddingRight:"6%"}}>
+              <img src="/planetdata01.svg" alt="" />
+            </div>
+            <div className="energy-intensity">
+             <img src="/planetdata02.svg" alt="" />
+            </div>
+           </div>
+          </div>
+          <div className="gresnnish-planet-environment-text-container">
+          To realise our ambition of becoming climate action leaders, we recognise the need to take actions aligned with the 1.5-degree climate scenario. In lieu of our commitment, we have now established our science-based short-term emissions reduction targets aligned with the 1.5-degree emissions trajectory. The targets have also been validated by the Science-based Targets Initiative (SBTi).
+          <br />
+          <br />
+          “Tata Communications Limited commits to reducing absolute Scope 1 and Scope 2 GHG emissions by 42% by FY2030 from a FY2022 base year. Tata Communications Limited also commits to reducing absolute Scope 3 GHG emissions by 25% within the same timeframe.”
+          <br />
+          <br />
+          We have demonstrated climate leadership this year with our CDP disclosure as well. We have received an A-, which is in the Leadership band. This is higher than the Asia regional average of C and higher than the Media, telecommunications and data centre services sector average of B. The leadership band signifies the implementation of current best practices by Tata Communications in climate action.
+          </div>
+          <div className="normal-text-climate-change-vision">
+            <p className="boiggrer-decription">
+            In alignment with our forward-looking vision, we have devised a targeted climate action strategy that seamlessly integrates industry-leading practices.
+            </p>
+            <p className="normal-text-planet-vision">
+            This strategy is informed by a comprehensive understanding of our business’s risks and opportunities. Within this framework, we’ve identified eight climate action levers, spanning operational enhancements and decarbonization initiatives across our value chain.
+            <br />
+            <br />
+            To mitigate the adverse impact of emerging climate risks on our operations, we’ve implemented best practice measures supported by internal carbon pricing mechanisms. Our commitment extends to transparently documenting our progress toward established objectives and strategies, while closely adhering to mandated disclosure and reporting frameworks. Through this holistic approach, we are resolutely dedicated to reducing our carbon footprint and contributing to a sustainable future for all.
+            </p>
+          </div>
+          <div className="text-center-climate-change-container">
+            <p className="bold-green-text">
+            Assessing existing and emerging climate related risks and opportunities
+            Implementation of Internal Carbon Pricing mechanism in overall climate action levers
+            </p>
+            <div className="underlined-green"></div>
+            <div className="smallsquare-rotate-btn"></div>
+          </div>
+           <div className="plannet-climate-focus-section">
         <div className="focus-heading-section">
           <div className="parent-child-component">
             <span className="focus-heading1">Immediate Focus</span>
-            <img src="/logo-traingle.png" alt="" />
+            <img src="/traingalePolygonplanet.png" alt="" />
           </div>
           <div className="parent-child-component">
             <span className="focus-heading2">Near-term Focus</span>
-            <img src="/logo-taingle-dark.png" alt="" />
+            <img src="/traingalePolygonplanet.png" alt="" />
           </div>
           <div className="parent-child-component">
             <span className="focus-heading1">Medium-term Focus</span>
-            <img src="/logo-traingle.png" alt="" />
+            <img src="/traingalePolygonplanet.png" alt="" />
           </div>
           <div className="parent-child-component">
             <span className="focus-heading2">Long-term Focus</span>
-            <img src="/logo-taingle-dark.png" alt="" />
+            <img src="/traingalePolygonplanet.png" alt="" />
           </div>
         </div>
         <div className="focus-main-content-container">
@@ -325,52 +425,9 @@ const Planetsclimatechange = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="planet-climate-last-section-parent">
-        <div className="main-section-climate-change">
-          <div className="description-main-section">
-            <img
-              className="small-square-btn-png"
-              src="/small-square-btn.png"
-              alt=""
-            />
-            <br />
-            <b className="heading-main-section-climate-change">
-              Maximizing Energy Efficiency
-            </b>
-            <p className="description-main-section-climate-change">
-              By prioritising operational streamlining, the adoption of
-              innovative technologies such as IoT, and transitioning to
-              energy-saving LED lighting, significant strides have been made in
-              reducing energy consumption and costs. The Indian operations team
-              has been particularly proactive, focusing on improving the
-              efficiency of{" "}
-              <b>
-                {" "}
-                Heating, Ventilation and Air Conditioning (HVAC), Switched-Mode
-                Power Supply (SMPS),
-              </b>{" "}
-              and <b> Uninterruptible Power Supply (UPS) systems.</b>
-              <br />
-              <br />
-              Implementing best practices like setting air conditioners to a
-              optimal temperature and installing grill tiles in front of Active
-              Equipment Racks exemplifies our hands-on approach to energy
-              management. Additionally, our efforts extend to smart lighting
-              initiatives and leveraging{" "}
-              <b>Facilities Infrastructure Management</b>
-              (FIM) in India to identify and execute energy-saving
-              opportunities.
-              <br />
-              <br />
-              These targeted actions are part of a comprehensive strategy to
-              down on energy use and to foster a culture of{" "}
-              <b>sustainability awareness</b> throughout our global operations.
-              <br />
-            </p>
-          </div>
+      </div> 
           <div className="accordian-main-section-climate-change">
-            <b className="heading-accrodian">PROGRESS MADE</b>
+            {/* <b className="heading-accrodian">PROGRESS MADE</b>
             <div className="accrodian-parent-element">
               {accrodianContent.map((accrodian) => (
                 <Accrodian
@@ -379,52 +436,53 @@ const Planetsclimatechange = () => {
                   span={accrodian.span}
                 />
               ))}
-            </div>
+            </div> */}
             <div className="graph-parent-container">
               <img src="/chart1-mainsection.png" alt="" />
               <img src="/chart2-mainsection.png" alt="" />
             </div>
           </div>
           <div className="yellowish-background-container">
-          <PlanetTransioning transationingObject={transationingObject} />
-          <div className="small-accrodian-container">
-            <div className="accordian-main-section-climate-changen accrodian-main-small-height">
-              <b className="heading-accrodian">PROGRESS MADE</b>
-              <div className="accrodian-parent-element">
-                {accrodianContentSecond.map((accrodian) => (
-                  <Accrodian
-                    heading={accrodian.heading}
-                    descriptions={accrodian.description}
-                    span={accrodian.span}
-                  />
-                ))}
+            <PlanetTransioning transationingObject={transationingObject} />
+            <div className="small-accrodian-container">
+              <div className="accordian-main-section-climate-changen accrodian-main-small-height">
+                <b className="heading-accrodian">PROGRESS MADE</b>
+                <div className="accrodian-parent-element">
+                  {accrodianContentSecond.map((accrodian) => (
+                    <Accrodian
+                      heading={accrodian.heading}
+                      descriptions={accrodian.description}
+                      span={accrodian.span}
+                    />
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="small-paragraph-inside-small-accrodian-container">
-             <br />
-              <b className="small-paragraph-heading">
-                Decarbonisation of Operations
-              </b>
-              <p className="specail-small-font-headings">
-                Our approach to decarbonisation involves a comprehensive
-                strategy aimed at reducing our operational carbon footprint.
-              </p>
-              <p className="small-accrodian-descriptions">
-                Recognising the adverse consequences of climate change driven by
-                greenhouse gas (GHG) emissions, we are committed to operational
-                improvements that contribute to a significant reduction in our
-                GHG intensity.
-              </p>
-              <p className="small-accrodian-descriptions">
-                Through meticulous accounting of our GHG emissions, encompassing
-                both Scope 1 and Scope 2 as per the GHG Protocol Corporate
-                Accounting and Reporting Standard, we lay the groundwork for
-                targeted actions to diminish our carbon impact. The analysis and
-                reduction of Scope 3 emissions also form a crucial part of our
-                strategy, addressing emissions from business travel, employee
-                commute, and other indirect activities.
-              </p>
-            </div>
+              <div className="small-paragraph-inside-small-accrodian-container">
+                <br />
+                <b className="small-paragraph-heading">
+                  Decarbonisation of Operations
+                </b>
+                <p className="specail-small-font-headings">
+                  Our approach to decarbonisation involves a comprehensive
+                  strategy aimed at reducing our operational carbon footprint.
+                </p>
+                <p className="small-accrodian-descriptions">
+                  Recognising the adverse consequences of climate change driven
+                  by greenhouse gas (GHG) emissions, we are committed to
+                  operational improvements that contribute to a significant
+                  reduction in our GHG intensity.
+                </p>
+                <p className="small-accrodian-descriptions">
+                  Through meticulous accounting of our GHG emissions,
+                  encompassing both Scope 1 and Scope 2 as per the GHG Protocol
+                  Corporate Accounting and Reporting Standard, we lay the
+                  groundwork for targeted actions to diminish our carbon impact.
+                  The analysis and reduction of Scope 3 emissions also form a
+                  crucial part of our strategy, addressing emissions from
+                  business travel, employee commute, and other indirect
+                  activities.
+                </p>
+              </div>
               <b className="heading-accrodian">PROGRESS MADE</b>
               <div className="accrodian-parent-element">
                 {accrodianContentThree.map((accrodian) => (
@@ -434,20 +492,21 @@ const Planetsclimatechange = () => {
                     span={accrodian.span}
                   />
                 ))}
+              </div>
             </div>
           </div>
-          </div>
-          <PlanetGreenSolutions/>
+          <PlanetGreenSolutions />
           <div className="yellowish-background-container">
-          <PlanetTransioning transationingObject={CommunityCarbonObject}/>
-          <img className="specail-image-div" src="/Group 128.svg" alt="" />
+            <PlanetTransioning transationingObject={CommunityCarbonObject} />
+            <img className="specail-image-div" src="/Group 128.svg" alt="" />
           </div>
-          <PlanetCuttingDownSolution/>
-          <PlanetClimateLastThreeComponet/>
-          <PlanetIntroducingEv/>
+          <PlanetCuttingDownSolution />
+          <PlanetClimateLastThreeComponet />
+          <PlanetIntroducingEv />
         </div>
         <div className="quick-link-sections">
-          <b className="heading-links">QUICK LINKS</b><br />
+          <b className="heading-links">QUICK LINKS</b>
+          <br />
           <img src="/quick-link-underline.png" alt="" />
           <div className="quicklinks-button-div">
             <img

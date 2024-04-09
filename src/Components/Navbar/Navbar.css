@@ -52,10 +52,12 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
+ 
 }
 .Navbar-parent .navbar-elements li{
        list-style: none;
-       font-weight: bold;
+       font-weight: 700;
+       padding: 1% 0;
        text-transform: uppercase;
        font-family: var(--font-replacment);
        cursor: pointer;
@@ -63,15 +65,20 @@
 }
 .Navbar-parent .navbar-elements li a {
   text-decoration: none;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.2em;
+  font-family: sans-serif;
+  font-weight: 600;
 }
 .navbar-element-seprator{
        margin:  0 var(--gap-lgi);
        color: var(--d86c6);
 }
+.Sustainability:hover a{
+  color: var(--d86c6) !important; 
+}
 
      .planet ,.people,.community,.sustainability-strategy,.governance{
-       font-family:Arial, Helvetica, sans-serif;
+       font-family: sans-serif;
        font-weight: bolder;
      }
      
@@ -133,7 +140,7 @@
  .Navbar-parent {
        display: flex;
        flex-direction: column;
-       font-family: Arial, Helvetica, sans-serif;
+       font-family: var(--font-replacment);
        /* position: fixed; */
        z-index: 10;
        width: 100%;
@@ -146,6 +153,7 @@
        display: flex;
        align-items: center;
        justify-content: space-between;
+       height: 50px;
      }
      
      .parent-down-navbar-container {
@@ -154,6 +162,7 @@
        display: flex;
        align-items: center;
        justify-content: space-between;
+     
        /* position: sticky;
        z-index: 10000;
        top: 0; */
@@ -163,6 +172,7 @@
        top: 0;
        width: 100%;
        z-index: 100;
+       box-shadow: 1px 2px 3px rgb(212, 201, 201);
        background-color: white; /* Set initial background color */
        animation: backgroundAnimation 0.5s ease forwards; /* Apply animation */
        transform-origin: left;

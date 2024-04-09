@@ -256,3 +256,8 @@ color: #2F2F2F;
  line-height: 38px;
  color: #606060;
 }
+@media only screen and (min-width: 1700px) {
+  .container-sustainability{
+      justify-content: center;
+  }
+}

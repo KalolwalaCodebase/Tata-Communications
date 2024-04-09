@@ -92,3 +92,11 @@
     margin-left: 1%;
     padding-left: 0;
 }
+@media only screen and (min-width: 1700px) {
+    .parent-image-card-component{
+        width: 70%;
+    }
+    .parent-image-card-component{
+        width: 80%;
+    }
+}

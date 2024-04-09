@@ -9,7 +9,6 @@ import Sustainability from "./Pages/Sustanablity Strategy/Sustainability";
 import Community from "./Pages/Community/Community";
 import Planetsclimatechange from "./Pages/Planets/Planetsclimatechange";
 import PlanetCilcularEconomy from './Pages/Planets/PlanetCilcularEconomy';
-import PlanetsWaterManagment from './Pages/Planets/PlanetsWaterManagment';
 import SustaniablityStrategiest from "./Pages/Sustanablity Strategy/SustaniablityStrategiest";
 import SustanablityFyGoals from "./Pages/Sustanablity Strategy/SustanablityFyGoals";
 import SustanablityDevlopmentGoals from './Pages/Sustanablity Strategy/SustanablityDevlopmentGoals';
@@ -43,6 +42,8 @@ import Materiality from "./Pages/Sustanablity Strategy/Materiality";
 import StakeholderEngg from "./Pages/Sustanablity Strategy/StakeholderEngagement";
 import StakeholderEngagement from "./Pages/Sustanablity Strategy/StakeholderEngagement";
 import Brsr from './Pages/Sliderpages/Brsr';
+import PlanetWasteManagement from "./Pages/Planets/PlanetWasteManagement";
+import { PlanetWaterResourceManagement } from "./Pages/Planets/PlanetWaterResourceManagement";
 function App() {
   const [activeTab, setActivetab] = useState("Home");
   const [Videokey, SetVideoKey] = useState(null);
@@ -87,7 +88,7 @@ function App() {
   return (
     <>
       <div className="app-container">
-        <LoadingScreen isloading={true}/>
+        {/* <LoadingScreen isloading={true}/> */}
       <BrowserRouter>
       <Navbar activeTab={activeTab} setActivetab={setActivetab}  />
       <div className="main-container">
@@ -101,16 +102,16 @@ function App() {
             element={<Planets activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           />
           <Route
-            path="/Planet/climate-change"
+            path="/Planet/energy-&-climate-change"
             element={<Planetsclimatechange/>}
           />
           <Route
-            path="/Planet/circular-economy"
-            element={<PlanetCilcularEconomy/>}
+            path="/Planet/water-managment"
+            element={<PlanetWaterResourceManagement/>}
           />
           <Route
-            path="/Planet/water-managment"
-            element={<PlanetsWaterManagment/>}
+            path="/Planet/waste-management"
+            element={<PlanetWasteManagement/>}
           />
           <Route
             path="/Sustainability"
@@ -161,7 +162,7 @@ function App() {
             element={<People activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           /> 
           <Route
-            path="/People/employee"
+            path="/People/employees"
             element={<PeopleEmployes activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           /> 
           <Route
@@ -169,7 +170,7 @@ function App() {
             element={<PeopleSupplychain activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           /> 
           <Route
-            path="/People/customer"
+            path="/People/customers"
             element={<PeopleCustomers activeTab={activeTab} HeroSectionContent={HeroSectionContent} />}
           /> 
           <Route

@@ -42,17 +42,16 @@
      .content-parent{
         position: absolute;
         top: 5%;
-        left: 8%;
+        left: 5%;
         width: 60%;
         color: #fff;
         
      }
 
-   
     .main-section-heading{
-      font-size: var(--font-size-23xl);
+      font-size: 70px;
       letter-spacing: 0.3em;
-       line-height: 56px;
+       line-height: 80px;
        text-transform: uppercase;
     }
     .main-section-content{
@@ -65,11 +64,13 @@
   .small-square-img{
     flex-shrink: 0;
     height: 10px;
+    margin-top: 4%;
     overflow: hidden;
     position: relative;
-    width: 30px;
+    width: 50px;
+    margin-left: 5px;
     z-index: 2;
     }
     .main-section-content{
-      margin-top: 22%;
+      margin-top: 10%;
     }

@@ -6,140 +6,171 @@ body {
 
 html,
 body {
-  scroll-behavior: smooth;
+  scroll-behavior:auto;
 }
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 200; /* Light */
+  src: url('./Gotham/Gotham-Medium.otf') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 400; /* Regular */
+  src: url('./Gotham/Gotham-Book.otf') format('woff2'),
+       url('./Gotham/Gotham-Book.otf') format('woff'),
+       url('./Gotham/Gotham-BookItalic.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 500; /* Medium */
+  src: url('./Gotham/Gotham-Medium.otf') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 600; /* Light */
+  src: url('./Gotham/Gotham-Bold.otf') format('embedded-opentype')
+  url('./Gotham/Gotham-BoldItalic.otf') format('woff'),
+       url('./Gotham/Gotham-Bold.otf') format('truetype')
+}
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 900; /* Light */
+  src: url('./Gotham/Gotham-Light.otf') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 100; /* Light */
+  src: url('./Gotham/Gotham-Light.otf') format('embedded-opentype')
+  url('./Gotham/Gotham-Light.otf') format('woff'),
+       url('./Gotham/Gotham-Light.otf') format('truetype')
+}
+
 .poppins-thin {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 100;
   font-style: normal;
 }
 
 .poppins-extralight {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 200;
   font-style: normal;
 }
 
 .poppins-light {
-  font-family: "Poppins", sans-serif;
+  font-family:'Gotham';
   font-weight: 300;
   font-style: normal;
 }
 
 .poppins-regular {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 400;
   font-style: normal;
 }
 
 .poppins-medium {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 500;
   font-style: normal;
 }
 
 .poppins-semibold {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 600;
   font-style: normal;
 }
 
 .poppins-bold {
-  font-family: "Poppins", sans-serif;
+  font-family:'Gotham';
   font-weight: 700;
   font-style: normal;
 }
 
 .poppins-extrabold {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 800;
   font-style: normal;
 }
 
 .poppins-black {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 900;
   font-style: normal;
 }
 
 .poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 100;
   font-style: italic;
 }
 
 .poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 200;
   font-style: italic;
 }
 
 .poppins-light-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 300;
   font-style: italic;
 }
 
 .poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 400;
   font-style: italic;
 }
 
 .poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 500;
   font-style: italic;
 }
 
 .poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 600;
   font-style: italic;
 }
 
 .poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 700;
   font-style: italic;
 }
 
 .poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 800;
   font-style: italic;
 }
 
 .poppins-black-italic {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Gotham';
   font-weight: 900;
   font-style: italic;
 }
-@font-face {
-  font-display: swap;
-  font-family: Gotham;
+/* @font-face {
+  font-family: 'Gotham';
+  src: url('./Fonts/gotham/Gotham-Bold.otf') format('woff2'),
+       url('./Fonts/Gotham-Thin.woff') format('woff'),
+       url('./Fonts/GothamMedium.woff') format('truetype');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 500,900,400,300,600,700;
-  src: url(/public/Fonts/Gotham-Book.cc2a7cd.ttf?#iefix) format("embedded-opentype"),
-    url(/public/Fonts/Gotham-Book.cc2a7cd.ttf) format("woff2"),
-    url(/public/Fonts/Gotham-Book.cc2a7cd.ttf) format("woff"),
-    url(/public/Fonts/Gotham-Book.cc2a7cd.ttf) format("truetype");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: Gotham Book;
-  font-style: normal;
-  font-weight: 400,500,300,200,900;
-  src: url(/public/Fonts//Gotham-Book.0d27335.woff2);
-  src: url(/public/Fonts/Gotham-Book.cc2a7cd.ttf) format("embedded-opentype"),
-    url(/public/Fonts/Gotham-Book.cc2a7cd.ttf) format("woff2"),
-    url(/public/Fonts/Gotham-Book.cc2a7cd.ttf) format("woff"),
-    url(/public/Fonts/Gotham-Medium.7038d86.woff) format("truetype");
-}
+} */
 :root {
   /* fonts */
-  --font-gotham: Gotham;
+  --font-replacment:Gotaham;
 
   /* font sizes */
   --font-size-lg: 18px;

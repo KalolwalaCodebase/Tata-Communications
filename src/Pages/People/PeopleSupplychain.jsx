@@ -7,9 +7,10 @@ const PeopleSupplychain = () => {
   return (
     <div className="people-supply-chain-intro-parent-container">
       <HeadBar
-        icon={"/peoplesmall-logo.svg"}
+        icon={"/SupplyChain.svg"}
         heading={"EMPLOYEE"}
         theme={"#AD3088"}
+        headiconstyle={'#E036AE'}
       />
       <div className="climate-change-intro-container people-main-parent-container">
         <div className="climate-change-intro-paragraph-inside-container">
@@ -225,7 +226,7 @@ const PeopleSupplychain = () => {
         </div>
 
         < motion.div initial={{x:"100px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:0.5,delay:0.3, type:"spring"}} className="quick-link-sections">
-          <b className="heading-links"><TextAnimation text={'QUICK LINKS'}/> </b>
+        <b className="heading-links"><TextAnimation text={'Quick'}/><TextAnimation text={'Links'}/></b>
           <br />
           <img src="/quick-link-underline.png" alt="" />
           <div className="quicklinks-button-div">

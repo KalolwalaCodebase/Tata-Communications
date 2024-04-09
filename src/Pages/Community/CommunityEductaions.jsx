@@ -6,9 +6,10 @@ const CommunityEductaions = () => {
   return (
     <div className="community-student-container">
       <HeadBar
-        icon={"/Demologo.png"}
+        icon={"/Education.svg"}
         heading={"EDUCATIONS"}
         theme={"#38D1DA"}
+        headiconstyle={'#8CD3DA'}
       />
       <div className="wrapper-student-container">
         <div className="slide-left-container">
