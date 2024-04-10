@@ -1,193 +1,245 @@
-#root ,body{
-       margin: 0;
-       padding: 0;
-       box-sizing: border-box;
+#root,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.search-input{
-       background: url('/search.svg');
-       background-repeat: no-repeat;
-       background-size: contain;
-       padding-left: 25px;
-       width: 150px;
-       transition: all 0.3s ease-in-out;
-       border: 2px solid var(--d86c6);
-       border-radius: 5px;
-       line-height: 25px;
-       background-color: rgba(255, 255, 255, 0.5); /* White background with 50% opacity */
-      background-blend-mode: overlay; /* Blend the background image and color */
-}
-.search-input:focus {
-       outline: rgb(52, 160, 218);
-       width: 250px; /* Expanded width when input is focused */
-     }
 
-.Navbar-parent{
-       display: flex;
-       flex-direction: column;
-       justify-content: flex-start;
-       align-items: center;
-       font-family: Arial, Helvetica, sans-serif;
-       height: 15%;
-       width: 100%;
-      background: white;
+.search-input {
+  background: url('/search.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 25px;
+  width: 150px;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid var(--d86c6);
+  border-radius: 5px;
+  line-height: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* White background with 50% opacity */
+  background-blend-mode: overlay;
+  /* Blend the background image and color */
 }
-.Navbar-parent .logo{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-direction: column;
-       color: var(--d86c6);
-       margin-top: 15px;
-       margin-bottom: var( --gap-lgi);
+
+.search-input:focus {
+  outline: rgb(52, 160, 218);
+  width: 250px;
+  /* Expanded width when input is focused */
 }
-.logo .logo-small{
-       margin-top: var(--gap-sm);
-       letter-spacing: 0.8em;
-       font-size: var(--font-size-base);
-       font-family: var(--font-replacment);
-       font-weight: 700;
-       margin-bottom: var( --gap-lgi);
+
+.Navbar-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 15%;
+  width: 100%;
+  background: white;
 }
+
+.Navbar-parent .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--d86c6);
+  margin-top: 15px;
+  margin-bottom: var(--gap-lgi);
+}
+
+.logo .logo-small {
+  margin-top: var(--gap-sm);
+  letter-spacing: 0.8em;
+  font-size: var(--font-size-base);
+  font-family: var(--font-replacment);
+  font-weight: 700;
+  margin-bottom: var(--gap-lgi);
+}
+
 .Navbar-parent .navbar-elements {
   display: flex;
   justify-content: space-between;
   gap: 10px;
- 
-}
-.Navbar-parent .navbar-elements li{
-       list-style: none;
-       font-weight: 700;
-       padding: 1% 0;
-       text-transform: uppercase;
-       font-family: var(--font-replacment);
-       cursor: pointer;
-       color: var(--d86c6);
-}
-.Navbar-parent .navbar-elements li a {
-  text-decoration: none;
-  letter-spacing: 0.2em;
-  font-family: sans-serif;
-  font-weight: 600;
-}
-.navbar-element-seprator{
-       margin:  0 var(--gap-lgi);
-       color: var(--d86c6);
-}
-.Sustainability:hover a{
-  color: var(--d86c6) !important; 
 }
 
-     .planet ,.people,.community,.sustainability-strategy,.governance{
-       font-family: sans-serif;
-       font-weight: bolder;
-     }
-     
-     .Governance::after {
-       background-color:#ea7926;  
-     }
-     .Governance{
-      color: var(--d86c6);
-     }
-     .Sustainability{
-      color: var(--d86c6);
-     }
-     .Planet{
-      color: var(--d86c6);
-     }
-     .Community{
-      color: var(--d86c6);
-     }
-     .People , .Peoples{
-      color: var(--d86c6);
-     }
-.upper-navbar-logo-container{
-       width: 100%;
-       padding:10px 20px;
-       height: 80%;
-       display: flex;
-       border-bottom: 1px solid rgb(241, 237, 237);
-       justify-content: space-between;
+.Navbar-parent .navbar-elements li {
+  list-style: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: var(--font-replacment);
+  cursor: pointer;
+  color: var(--d86c6);
 }
-.parent-logo-image{
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       gap: 1rem;
+
+.Navbar-parent .navbar-elements li a {
+  text-decoration: none;
+  letter-spacing: 0.05em;
 }
-.parent-down-navbar-conatiner{
-       width: 100%;
-       padding:10px 20px;
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       /* position: sticky;
-       z-index: 1000000; 
-       top: 0;  */
+
+.navbar-element-seprator {
+  margin: 0 var(--gap-lgi);
+  color: var(--d86c6);
 }
-.specail-sustainablity{
-       font-weight: bold;
-       text-transform: uppercase;
-       font-family: var(--font-replacment);
-       cursor: pointer;
-       list-style: none;
-       text-decoration: none !important;
+
+.planet,
+.people,
+.community,
+.sustainability-strategy,
+.governance {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-weight: bolder;
 }
-.specail-sustainablity a,.Peoples a{
-       color: var(--d86c6);
-       text-decoration: none;
-    letter-spacing: 0.05em;
- }
- .Navbar-parent {
-       display: flex;
-       flex-direction: column;
-       font-family: var(--font-replacment);
-       /* position: fixed; */
-       z-index: 10;
-       width: 100%;
-       background: white;
-     }
-     
-     .upper-navbar-logo-container {
-       width: 100%;
-       padding: 10px 20px;
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-       height: 50px;
-     }
-     
-     .parent-down-navbar-container {
-       width: 100%;
-       padding: 10px 20px;
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
-     
-       /* position: sticky;
-       z-index: 10000;
-       top: 0; */
-     }
-     .stickyparent .parent-down-navbar-conatiner {
-       position: fixed;
-       top: 0;
-       width: 100%;
-       z-index: 100;
-       box-shadow: 1px 2px 3px rgb(212, 201, 201);
-       background-color: white; /* Set initial background color */
-       animation: backgroundAnimation 0.5s ease forwards; /* Apply animation */
-       transform-origin: left;
+
+.Governance::after {
+  background-color: #ea7926;
 }
-     
-     @keyframes backgroundAnimation {
-       0% {
-         transform:translateY(-100px); /* Start with no width */
-       }
-       100% {
-         transform: translateY(0); /* End with full width */
-       }
-     }
-     
-     .stickyparent + .parent-down-navbar-conatiner {
-       padding-top: 60px; /* Adjust the height of the navbar */
-     }
-     
+
+.Governance {
+  color: var(--d86c6);
+}
+
+.Sustainability {
+  color: var(--d86c6);
+}
+
+.Planet {
+  color: var(--d86c6);
+}
+
+.Community {
+  color: var(--d86c6);
+}
+
+.People,
+.Peoples {
+  color: var(--d86c6);
+}
+
+.upper-navbar-logo-container {
+  width: 100%;
+  padding: 10px 20px;
+  height: 80%;
+  display: flex;
+  border-bottom: 1px solid rgb(241, 237, 237);
+  justify-content: space-between;
+}
+
+.parent-logo-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.parent-down-navbar-conatiner {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  height: 50px;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ Link{
+  border: 2px solid;
+
+}
+
+.specail-sustainablity {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: var(--font-replacment);
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+.specail-sustainablity a,
+.Peoples a {
+  color: var(--d86c6);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.Navbar-parent {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  /* position: fixed; */
+  z-index: 10;
+  width: 100%;
+  background: white;
+}
+
+.upper-navbar-logo-container {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.stickyparent .parent-down-navbar-conatiner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  /* Set initial background color */
+  animation: backgroundAnimation 0.5s ease forwards;
+  /* Apply animation */
+  transform-origin: left;
+}
+
+
+.navbar-elements .People,
+.navbar-elements .Planet,
+.navbar-elements .Community,
+.navbar-elements .Governance {
+  transition: color 0.5s ease;
+  padding-bottom: 2px;
+}
+.navbar-elements .People:hover {
+  color: #AD3088;
+  border-bottom: 2px solid #AD3088;
+
+}
+
+.navbar-elements .Planet:hover {
+  color: #B0BC25;
+  border-bottom: 2px solid #B0BC25;
+
+}
+
+.navbar-elements .Community:hover {
+  color: #00B3BD;
+  border-bottom: 2px solid #00B3BD;
+
+}
+
+.navbar-elements .Governance:hover {
+  color: #123C61;
+  border-bottom: 2px solid #123C61;
+
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    transform: translateY(-100px);
+    /* Start with no width */
+  }
+
+  100% {
+    transform: translateY(0);
+    /* End with full width */
+  }
+}
+
+.stickyparent+.parent-down-navbar-conatiner {
+  padding-top: 60px;
+  /* Adjust the height of the navbar */
+}

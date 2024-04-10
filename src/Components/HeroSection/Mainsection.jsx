@@ -23,9 +23,7 @@ const Mainsection = ({ activeTab,HeroSectionContent,videolink }) => {
   
   return (
     <>
-      {activeTab === "Home" ? (
-        <div className="landing-page">empty</div>
-      ) : (
+
         <div className="Main-section-container">
           <video id="video-background" className={`${animate?"animate-video-main":""}`} autoPlay muted loop playsInline>
             <source src={videolink} type="video/mp4" />
@@ -41,7 +39,6 @@ const Mainsection = ({ activeTab,HeroSectionContent,videolink }) => {
             <div className="main-section-content">{content?.Content}</div>
           </div>
         </div>
-      )}
     </>
   );
 };

@@ -2,8 +2,24 @@ import React from 'react'
 import HeadBar from '../../Components/Headbar/HeadBar'
 import { motion } from 'framer-motion';
 import TextAnimation from '../../Components/Animatedcounter/TextAnimation';
+import { Link } from 'react-router-dom';
 
 const PeopleCustomers = () => {
+  const handleClick = (event,id) => {
+    //event.preventDefault(); // Prevent default anchor behavior
+  
+    const targetElement = document.querySelector(`#${id}`);
+    if (targetElement) {
+      // Calculate the offset based on the current scroll position
+      const offset = targetElement.getBoundingClientRect().top - 100;
+  
+      // Scroll to the element with an offset
+      window.scrollBy({
+        top: offset,
+        behavior: 'smooth'
+      });
+    }
+  };
   return (
     <div className='people-customer-container-main'>
       <HeadBar
@@ -30,7 +46,7 @@ const PeopleCustomers = () => {
       </div>
       <div className="planet-climate-last-section-parent">
         <div className="main-section-climate-change">
-          <div className="description-main-section people-descriptions">
+          <div id='Customer-experiences' className="description-main-section people-descriptions">
             <img
               className="small-square-btn-png"
               src="/small-btn-alternative.svg"
@@ -50,7 +66,7 @@ const PeopleCustomers = () => {
           <div className="people-customer-section-down" style={{marginTop:"-20px"}}>
             <img src="/people-customerimg02.svg" alt="" />
           </div>
-          <div className="people-customer-section-deep-pink">
+          <div id='Enhancing-Customer-Engagement' className="people-customer-section-deep-pink">
           <b className="heading-black">
              Enhancing Customer Engagement
                 </b>
@@ -78,8 +94,8 @@ const PeopleCustomers = () => {
 </div>
 
           </div>
-    <div className="our-ups-section-environment">
-           <div className="imgate-heading-our-ups">
+    <div id="our-usps-id" className="our-ups-section-environment">
+           <div  className="imgate-heading-our-ups">
            <motion.p
         style={{ 
           textTransform: "uppercase",
@@ -147,7 +163,14 @@ const PeopleCustomers = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Goals and Progress</a>
+<Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link>          </div>
+          <div className="quicklinks-button-div">
+            <img
+              className="quick-links-logo"
+              src="/quickLinkArrow.png"
+              alt=""
+            />
+            <Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -155,7 +178,7 @@ const PeopleCustomers = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Policies</a>
+            <li onClick={()=>handleClick(event,"Customer-experiences")}>Customer Experience</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -163,7 +186,7 @@ const PeopleCustomers = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Customer Experience</a>
+            <li onClick={()=>handleClick(event,"Enhancing-Customer-Engagement")} href="">Enhancing Customer Engagement</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -171,7 +194,7 @@ const PeopleCustomers = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Enhancing Customer Engagement</a>
+            <li onClick={()=>handleClick(event,"our-usps-id")}>Our USPs</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -179,7 +202,7 @@ const PeopleCustomers = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Our USPs</a>
+            <Link target="_blank" to="/gri-index">GRI index</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -187,15 +210,7 @@ const PeopleCustomers = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">GRI index</a>
-          </div>
-          <div className="quicklinks-button-div">
-            <img
-              className="quick-links-logo"
-              src="/quickLinkArrow.png"
-              alt=""
-            />
-            <a href="">SDG Linkage</a>
+            <Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link>
           </div>
         </motion.div>
       </div>

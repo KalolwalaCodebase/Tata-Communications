@@ -28,9 +28,9 @@
 .main-scrollabale-container-leadership-integrity {
   width: 80%;
 }
-.main-conter-wrapper-main-section .quick-link-sections {
+/* .main-conter-wrapper-main-section .quick-link-sections {
   width: 18%;
-}
+} */
 .upper-section-leadership-and-integrity {
   font-size: 30px;
   font-weight: 300;
@@ -67,7 +67,7 @@
   line-height: 32px;
   text-align: left;
   color: #606060;
-  width: 95%;
+  width: 100%;
   margin: auto;  
 }
 .normal-paragraph-leadership-and-integrity{
@@ -144,18 +144,18 @@ width: 100%;
 .risk-n-res-table{
   position: relative;
   display: flex;
-  width: 95%;
+  width: 90%;
   background-color: white;
 }
-.risk-tablw-divider{
+/* .risk-tablw-divider{
   position: absolute;
   width: 80%;
-  top: 50%;
+  
 
   left: 1.5%;
   height: 1px;
   background-color: rgb(128, 128, 128, 0.5);
-}
+} */
 .risk-res-col{
   width: 100%;
   /* background-color: rgb(155, 183, 224, 0.15); */
@@ -228,6 +228,14 @@ width: 100%;
   background-color: #D6E3EF;
   
 }
+.wrapper-hr-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sliding-wrapper-container{
+  width: 75%;
+}
 .risk-res-table-content3 li{
   /* list-style-type: none; */
   list-style-image: url('/li-style-img.png');
@@ -247,16 +255,14 @@ width: 100%;
 /* ******HUMAN RIGHTS CSS START*/
 .human-rights-container-main{
   position: relative;
-  width: 70%;
+  width: 100%;
   padding: 0  0  0 5%;
   margin: 5% 0;
 }
 .hr-quick-links-section{
-  position: absolute;
-  right: 0;
+  position: sticky;
   margin-top: 5%;
-  width: 30%;
-  height: 450%;
+  width: 25%;
   justify-content: center;
 }
 .hr-sticky-links{
@@ -313,7 +319,7 @@ width: 100%;
 
 
 .human-rights-container-main-sec2{
-  width: 70%;
+  width: 100%;
   background-color: rgb(218, 218, 218, 0.1);
   margin: 5% 0;
   padding: 1%;
@@ -335,7 +341,7 @@ width: 100%;
   font-size: 1.2rem;
 }
 .human-rights-container-main-sec3{
-  width: 70%;
+  width: 100%;
   /* background-color: rgb(218, 218, 218, 0.1); */
   margin: 5% 0;
   padding: 1%;
@@ -349,7 +355,7 @@ width: 100%;
   border-radius: 20px;
 }
 .human-rights-container-main-sec4{
-  width: 70%;
+  width: 100%;
   background-color: rgb(218, 218, 218, 0.2);
   margin: 5% 0 0;
   padding: 2%;
@@ -381,7 +387,7 @@ width: 100%;
   font-weight: bold
 }
 .human-rights-container-main-sec5{
-  width: 70%;
+  width: 100%;
   background-color: rgb(61, 134, 198, 0.05);
   /* margin: 5% 0; */
   padding: 4%;
@@ -438,7 +444,7 @@ width: 100%;
   font-size: 1.5rem;
 }
 .human-rights-container-main-sec6 {
-  width: 70%;
+  width: 100%;
   
   /* margin: 5% 0; */
   padding: 4%;
@@ -466,7 +472,7 @@ width: 100%;
   width: 100%;
 }
 .human-rights-container-main-sec7{
-  width: 70%;
+  width: 100%;
   background-color: rgb(61, 134, 198, 0.05);
   /* margin: 5% 0; */
   padding: 4%;
@@ -484,9 +490,8 @@ width: 100%;
   justify-content: space-between;
 }
 .human-rights-container-main-sec8{
-  width: 70%;
+  width: 100%;
   background-color: rgb(255, 205, 0, 0.05);
-  /* margin: 5% 0; */
   padding: 4%;
   justify-content: space-between;
 }
@@ -510,7 +515,6 @@ width: 100%;
 }
 .pp-sticky-links{
   margin: auto;
-
   width: 60%;
   position: sticky;
   top: 0%;

@@ -1,13 +1,15 @@
 import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./Governance.css";
+import { Link } from 'react-router-dom';
 const LeadershipAndIntegrity = () => {
   return (
     <div>
       <HeadBar
-        icon={"/Demologo.png"}
+        icon={"/cardimg07.svg"}
         heading={"Leadership and Integrity"}
         theme={"#123C61"}
+        headiconstyle={'#3B91DC'}
       />
       <div className="main-conter-wrapper-main-section">
         <div className="main-scrollabale-container-leadership-integrity">
@@ -151,7 +153,7 @@ const LeadershipAndIntegrity = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Goals and Progress</a>
+            <Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -159,7 +161,7 @@ const LeadershipAndIntegrity = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">GRI Index</a>
+     <Link target="_blank" to="/gri-index">GRI index</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -167,7 +169,7 @@ const LeadershipAndIntegrity = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">SDG Linkage</a>
+           <Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link>
           </div>
           <div className="quicklinks-button-div">
             <img

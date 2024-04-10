@@ -1,32 +1,36 @@
 import React from 'react'
 import HeadBar from '../../Components/Headbar/HeadBar'
+import { Link } from 'react-router-dom';
 
 export const HumanRights = () => {
+
+    const handleClick = (event,id) => {
+        //event.preventDefault(); // Prevent default anchor behavior
+      
+        const targetElement = document.querySelector(`#${id}`);
+        if (targetElement) {
+          // Calculate the offset based on the current scroll position
+          const offset = targetElement.getBoundingClientRect().top - 100;
+      
+          // Scroll to the element with an offset
+          window.scrollBy({
+            top: offset,
+            behavior: 'smooth'
+          });
+        }
+      };
     return (
         <div>
             <HeadBar
-                icon={"/Demologo.png"}
+                icon={"/cardimg09.svg"}
                 heading={"HUMAN RIGHTS"}
                 theme={"#123C61"}
+                headiconstyle={'#3B91DC'}
             />
-
-            <div className="hr-quick-links-section">
-                <div className='hr-sticky-links'>
-                    <h4>QUICK LINKS</h4>
-                    <ul>
-                        <li><a href="/">Goals and Progress</a></li>
-                        <li><a href="/">Policies</a></li>
-                        <li><a href="/">Policy Framework</a></li>
-                        <li><a href="/">Ensuring safety at work</a></li>
-                        <li><a href="/">Ethics Helpline</a></li>
-                        <li><a href="/">Awareness and training</a></li>
-                        <li><a href="/">Vendor and third party compliance</a></li>
-                        <li><a href="/">GRI index</a></li>
-                        <li><a href="/">SDG Linkages</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div className='human-rights-container-main flex'>
+           <div className="wrapper-hr-container">
+          
+            <div className="sliding-wrapper-container">
+            <div className='human-rights-container-main flex' >
                 {/* <div className='human-rights-container-main flex'> */}
                 <div className='human-rights-container-main-left'>
                     <div className='human-rights-container-main-sec1 flex'>
@@ -41,7 +45,7 @@ export const HumanRights = () => {
                 </div>
 
             </div>
-            <div className='human-rights-container-main-sec2'>
+            <div id='Policy-Framework' className='human-rights-container-main-sec2'>
                 <div className='human-rights-container-main-sec2-content'>
                     <h1>Policy Framework</h1>
                     <h2>To strengthen the connection between our Business & Human Rights (BHR) initiatives and existing company policies, we have introduced a comprehensive Business and Human Rights Policy this year. <br /> <br /></h2>
@@ -70,7 +74,7 @@ export const HumanRights = () => {
                     </p>
                 </div>
             </div>
-            <div className='human-rights-container-main-sec4 flex'>
+            <div id='Ethics-Helpline' className='human-rights-container-main-sec4 flex'>
                 <div className='human-rights-container-main-sec4-left'>
                     <h2>Ethics Helpline</h2>
                     <h3>We have created a helpline for all our stakeholders to report concerns and misconducts. Issues can be reported via phone calls, emails, fax and the web portal.</h3>
@@ -81,7 +85,7 @@ export const HumanRights = () => {
                         reported in FY2024</p>
                 </div>
             </div>
-            <div className='human-rights-container-main-sec5 '>
+            <div id='Ensuring-safety-at-work' className='human-rights-container-main-sec5 '>
                 <h2>Assesment and Engagement</h2>
                 <h3>
                     We conducted an extensive human rights salience assessment to identify potential issues within our value chain and stakeholder interactions.
@@ -114,7 +118,7 @@ export const HumanRights = () => {
                     </div>
                 </div>
             </div>
-            <div className='human-rights-container-main-sec6 '>
+            <div id='Awareness-and-training' className='human-rights-container-main-sec6 '>
                 <h2>Awareness and Training</h2>
                 <div className='hr-container-main-sec6-text flex'>
                     <p><b>Inclusive Policies:</b> Policies such as the Whistleblower Policy and Sexual Harassment Charter is revised regularly on the basis of industry standards and feedback received from employees or other stakeholders.</p>
@@ -133,7 +137,7 @@ export const HumanRights = () => {
                     </div>
                 </div>
             </div>
-            <div className='human-rights-container-main-sec7 '>
+            <div id='Vendor-and-third-party-compliance' className='human-rights-container-main-sec7 '>
                 <h2>Vendor and third-party compliance</h2>
                 <div className='hr-sec7-text flex'>
                     <p>
@@ -147,6 +151,26 @@ export const HumanRights = () => {
                     We have pledged our commitment to the UN Global Compact's 10 Principles and, as a signatory, we will be transparently reporting our Communication of Progress (COP) annually starting from the fiscal year 2025. This commitment underscores our dedication to sustainable and ethical business practices on a global scale.
                 </h2>
             </div>
+            </div>
+            <div className="hr-quick-links-section">
+                <div className='hr-sticky-links'>
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link></li>
+                        <li><Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link></li>
+                        <li><Link onClick={()=>handleClick(event,"Policy-Framework")}>Policy Framework</Link></li>
+                        <li><Link onClick={()=>handleClick(event,"Ensuring-safety-at-work")}>Ensuring safety at work</Link></li>
+                        <li><Link onClick={()=>handleClick(event,"Ethics-Helpline")}>Ethics Helpline</Link></li>
+                        <li><Link onClick={()=>handleClick(event,"Awareness-and-training")}>Awareness and training</Link></li>
+                        <li><Link onClick={()=>handleClick(event,"Vendor-and-third-party-compliance")}>Vendor and third party compliance</Link></li>
+                        <li> <Link target="_blank" to="/gri-index">GRI index</Link></li>
+                        <li> <Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link></li>
+                    </ul>
+                </div>
+            </div>
+           </div>
+            
+            
 
         </div>
     )

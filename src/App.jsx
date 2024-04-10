@@ -45,9 +45,11 @@ import Brsr from './Pages/Sliderpages/Brsr';
 import PlanetWasteManagement from "./Pages/Planets/PlanetWasteManagement";
 import { PlanetWaterResourceManagement } from "./Pages/Planets/PlanetWaterResourceManagement";
 function App() {
-  const [activeTab, setActivetab] = useState("Home");
+  const [activeTab, setActivetab] = useState("Planet");
   const [Videokey, SetVideoKey] = useState(null);
-   
+  const [hoveredNavItem, setHoveredNavItem] = useState(null);
+
+
   const HeroSectionContent = {
     Planet: {
       Heading: "Planet",
@@ -91,7 +93,7 @@ function App() {
       <div className="app-container">
         {/* <LoadingScreen isloading={true}/> */}
       <BrowserRouter>
-      <Navbar activeTab={activeTab} setActivetab={setActivetab}  />
+      <Navbar activeTab={activeTab} setActivetab={setActivetab}  hoveredNavItem={hoveredNavItem} setHoveredNavItem={setHoveredNavItem} />
       <div className="main-container">
       <Routes>
       <Route

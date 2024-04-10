@@ -2,7 +2,23 @@ import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./Community.css";
 import AnimatedCounter from '../../Components/Animatedcounter/Animatedcounter';
+import { Link } from 'react-router-dom';
 const CommunitySustinableLivehood = () => {
+  const handleClick = (event,id) => {
+    //event.preventDefault(); // Prevent default anchor behavior
+  
+    const targetElement = document.querySelector(`#${id}`);
+    if (targetElement) {
+      // Calculate the offset based on the current scroll position
+      const offset = targetElement.getBoundingClientRect().top - 100;
+  
+      // Scroll to the element with an offset
+      window.scrollBy({
+        top: offset,
+        behavior: 'smooth'
+      });
+    }
+  };
   return (
     <div className="community-student-container">
       <HeadBar
@@ -56,7 +72,7 @@ const CommunitySustinableLivehood = () => {
             </div>
           </div>
           <div className="second-section-student-community">
-            <div className="container-one-second-section">
+            <div id='Case-Studies' className="container-one-second-section">
               <img
                 className="small-btn-svg"
                 src="/small-btn-alternative.svg"
@@ -100,7 +116,7 @@ const CommunitySustinableLivehood = () => {
                 </div>
               </div>
             </div>
-            <div className="data-container-inner">
+            <div className="data-container-inner" style={{justifyContent:"space-between"}}>
               <div className="data-student-community-container">
                 <div className="data-set-conatiner-below">
                   <b className="big-size-data"><AnimatedCounter finalValue={6} />,000</b>
@@ -246,7 +262,7 @@ const CommunitySustinableLivehood = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Goals and Progress</a>
+             <Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -254,7 +270,7 @@ const CommunitySustinableLivehood = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Policies</a>
+            <Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -262,7 +278,7 @@ const CommunitySustinableLivehood = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">GRI Index</a>
+            <Link target="_blank" to="/gri-index">GRI index</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -270,7 +286,7 @@ const CommunitySustinableLivehood = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">SDG Linkages</a>
+         <Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -278,7 +294,7 @@ const CommunitySustinableLivehood = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Case Studies</a>
+             <li onClick={()=>handleClick(event,"Case-Studies")}>Case Studies</li>
           </div>
         </div>
       </div>

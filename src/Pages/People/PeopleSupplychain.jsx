@@ -3,12 +3,28 @@ import HeadBar from "../../Components/Headbar/HeadBar";
 import "./People.css";
 import { motion } from 'framer-motion';
 import TextAnimation from "../../Components/Animatedcounter/TextAnimation";
+import { Link } from "react-router-dom";
 const PeopleSupplychain = () => {
+  const handleClick = (event,id) => {
+    //event.preventDefault(); // Prevent default anchor behavior
+  
+    const targetElement = document.querySelector(`#${id}`);
+    if (targetElement) {
+      // Calculate the offset based on the current scroll position
+      const offset = targetElement.getBoundingClientRect().top - 100;
+  
+      // Scroll to the element with an offset
+      window.scrollBy({
+        top: offset,
+        behavior: 'smooth'
+      });
+    }
+  };
   return (
     <div className="people-supply-chain-intro-parent-container">
       <HeadBar
         icon={"/SupplyChain.svg"}
-        heading={"EMPLOYEE"}
+        heading={"Supply chain"}
         theme={"#AD3088"}
         headiconstyle={'#E036AE'}
       />
@@ -45,7 +61,7 @@ const PeopleSupplychain = () => {
       </div>
       <div className="planet-climate-last-section-parent">
         <div className="main-section-climate-change">
-          <div className="description-main-section people-descriptions">
+          <div id='Responsible-sourcinge' className="description-main-section people-descriptions">
             <img
               className="small-square-btn-png"
               src="/small-btn-alternative.svg"
@@ -99,7 +115,7 @@ const PeopleSupplychain = () => {
               <img src="/circle-graph-people02.svg" alt="" />
             </div>
           </div>
-          <div className="description-main-section people-descriptions">
+          <div id='Sustainable-Supply-Chain-Framework' className="description-main-section people-descriptions">
             <img
               className="small-square-btn-png"
               src="/small-btn-alternative.svg"
@@ -135,7 +151,7 @@ const PeopleSupplychain = () => {
               highest standards of sustainable and ethical practices.
             </p>
           </div>
-          <div className="description-main-section people-descriptions">
+          <div id='Supplier-Diversity' className="description-main-section people-descriptions">
             <img
               className="small-square-btn-png"
               src="/small-btn-alternative.svg"
@@ -196,7 +212,7 @@ const PeopleSupplychain = () => {
              <img src="/supply-chain-img06.svg" alt="" />
             </div>
           </div>
-          <div className="description-main-section people-descriptions">
+          <div id='ESG-Due-Diligence' className="description-main-section people-descriptions">
             <img
               className="small-square-btn-png"
               src="/small-btn-alternative.svg"
@@ -235,7 +251,14 @@ const PeopleSupplychain = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Goals and Progress</a>
+<Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link>          </div>
+          <div className="quicklinks-button-div">
+            <img
+              className="quick-links-logo"
+              src="/quickLinkArrow.png"
+              alt=""
+            />
+             <Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -243,7 +266,7 @@ const PeopleSupplychain = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Policies</a>
+            <li onClick={()=>handleClick(event,"Responsible-sourcinge")}>Responsible Sourcinge</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -251,7 +274,7 @@ const PeopleSupplychain = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Responsible Sourcinge</a>
+            <li onClick={()=>handleClick(event,"Sustainable-Supply-Chain-Framework")} >Sustainable Supply Chain Framework</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -259,7 +282,7 @@ const PeopleSupplychain = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Sustainable Supply Chain Framework</a>
+            <li onClick={()=>handleClick(event,"Supplier-Diversity")}>Supplier Diversity</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -267,7 +290,7 @@ const PeopleSupplychain = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Supplier Diversity</a>
+            <li onClick={()=>handleClick(event,"ESG-Due-Diligence")} >ESG Due Diligence</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -275,15 +298,7 @@ const PeopleSupplychain = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">ESG Due Diligence</a>
-          </div>
-          <div className="quicklinks-button-div">
-            <img
-              className="quick-links-logo"
-              src="/quickLinkArrow.png"
-              alt=""
-            />
-            <a href="">GRI index</a>
+             <Link target="_blank" to="/gri-index">GRI index</Link>
           </div>
           <div className="quicklinks-button-div">
             <img

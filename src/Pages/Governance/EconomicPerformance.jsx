@@ -1,7 +1,25 @@
 import React from 'react'
 import HeadBar from '../../Components/Headbar/HeadBar'
+import { Link } from 'react-router-dom';
 
 const EconomicPerformance = () => {
+    const handleClick = (event,id) => {
+        //event.preventDefault(); // Prevent default anchor behavior
+      
+        const targetElement = document.querySelector(`#${id}`);
+        if (targetElement) {
+          // Calculate the offset based on the current scroll position
+          const offset = targetElement.getBoundingClientRect().top - 100;
+      
+          // Scroll to the element with an offset
+          window.scrollBy({
+            top: offset,
+            behavior: 'smooth'
+          });
+        }
+      }; 
+   
+   
     return (
         <div>
             <HeadBar
@@ -14,11 +32,12 @@ const EconomicPerformance = () => {
                 <div className='ep-sticky-links'>
                     <h4>QUICK LINKS</h4>
                     <ul>
-                        <li><a href="/">Goals and Progress</a></li>
-                        <li><a href="/">Policies</a></li>
-                        <li><a href="/">Committed to Value Creation</a></li>
-                        <li><a href="/">GRI index</a></li>
-                        <li><a href="/">SDG Linkages</a></li>
+                    <li><Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link></li>
+            <li><Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link></li>
+            <li><Link onClick={()=>handleClick(event,"Committed-to-Value-Creation")} >Committed to Value Creation</Link></li>
+                        <li><Link onClick={()=>handleClick(event,"Value-Generated-for-key-stakeholders")}>Value Generated for key stakeholders</Link></li>
+                        <li><Link target="_blank" to="/gri-index">GRI index</Link></li>
+                        <li><Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link></li>
                     </ul>
                 </div>
             </div>
@@ -32,7 +51,7 @@ const EconomicPerformance = () => {
                     Our consistent financial performances have paved the path for sustained value creation. It has also reinforced the trust and confidence of stakeholders in our robust business model.
                 </p>
                 <div className="ep-sec1-undersection">
-                    <div className="ep-sec1-undersection-row flex">
+                    <div id='Committed-to-Value-Creation' className="ep-sec1-undersection-row flex">
                         <div className='ep-sec1-undersection-row-text '>
                             <h3>Committed to Value Creation</h3>
                             <p>
@@ -46,7 +65,7 @@ const EconomicPerformance = () => {
                         <img src="/ep-bar-graph3.svg" alt="" />
                     </div>
                 </div>
-                <div className='ep-sec2-heading'>
+                <div id='Value-Generated-for-key-stakeholders' className='ep-sec2-heading'>
                     <h5>VALUE GENERATED FOR KEY STAKEHOLDERS</h5>
                 </div>
             </div>

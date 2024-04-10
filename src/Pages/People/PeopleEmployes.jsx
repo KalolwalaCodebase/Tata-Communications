@@ -534,7 +534,7 @@ const PeopleEmployes = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Goals and Progress</a>
+            <Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -542,7 +542,7 @@ const PeopleEmployes = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Policies</a>
+            <Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -568,14 +568,14 @@ const PeopleEmployes = () => {
             />
             <li onClick={()=>handleClick(event,"towards-zero-harm")}>Towards Zero Harm</li>
           </div>
-          <div className="quicklinks-button-div">
+          {/* <div className="quicklinks-button-div">
             <img
               className="quick-links-logo"
               src="/quickLinkArrow.png"
               alt=""
             />
 <Link target="_blank" to="/Governance/policies-and-procedures#Policies">People Centric Policies</Link>
-          </div>
+          </div> */}
           <div className="quicklinks-button-div">
             <img
               className="quick-links-logo"
@@ -590,7 +590,7 @@ const PeopleEmployes = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">SDG Linkage</a>
+            <Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link>
           </div>
           <div className="quicklinks-button-div">
             <img

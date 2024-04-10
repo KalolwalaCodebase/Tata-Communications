@@ -1,13 +1,15 @@
 import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
+import { Link } from "react-router-dom";
 
 const RiskandResilance = () => {
   return (
     <div>
       <HeadBar
-        icon={"/Demologo.png"}
+        icon={"/cardimg08.svg"}
         heading={"risk and rEsilience"}
         theme={"#123C61"}
+        headiconstyle={'#3B91DC'}
       />
       <div className="main-conter-wrapper-main-section">
         <div className="main-scrollabale-container-leadership-integrity">
@@ -42,7 +44,7 @@ const RiskandResilance = () => {
                 inclusivity, and secures our position as industry leaders. The
                 Risk Management Committee diligently monitors significant risks,
                 establishing appropriate controls and countermeasures. Moreover,
-                the Board’s Enterprise Risk Management approach facilitates
+                the Board's Enterprise Risk Management approach facilitates
                 early detection of risks, allowing for timely intervention.
                 Rigorous internal control audits are conducted to verify the
                 effectiveness of management practices and the reliability of
@@ -50,9 +52,9 @@ const RiskandResilance = () => {
               </div>
               <br />
               <div className="lower-section-leadership-and-integrity">
-                In our Enterprise Risk Management (ERM) framework, we’ve
+                In our Enterprise Risk Management (ERM) framework, we've
                 identified the most important risks related to sustainability
-                and ESG. Below, we’ve listed the main issues that are linked to
+                and ESG. Below, we've listed the main issues that are linked to
                 these risks.
               </div>
             </div>
@@ -67,7 +69,7 @@ const RiskandResilance = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Goals and Progress</a>
+            <Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -75,7 +77,7 @@ const RiskandResilance = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Policies</a>
+            <Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -83,7 +85,7 @@ const RiskandResilance = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Enterprise Risk Management Framework</a>
+            <Link target="_blank" to="/gri-index">GRI index</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -91,15 +93,7 @@ const RiskandResilance = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">GRI index</a>
-          </div>
-          <div className="quicklinks-button-div">
-            <img
-              className="quick-links-logo"
-              src="/quickLinkArrow.png"
-              alt=""
-            />
-            <a href="">SDG Linkages</a>
+           <Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link>
           </div>
         </div>
       </div>
@@ -141,12 +135,16 @@ const RiskandResilance = () => {
 
             <ul className="risk-table-sec1">
               <li>Resource Management and environmental conservation</li>
-              <li>Climate Change</li>
+              <br />
+              <li>Climate Change</li>
             </ul>
             <ul >
               <li>Human capital development</li>
+              <br />
               <li>Diversity and Inclusion</li>
+              <br />
               <li>Health, Safety, and well-being</li>
+              <br />
             </ul>
           </div>
         </div>

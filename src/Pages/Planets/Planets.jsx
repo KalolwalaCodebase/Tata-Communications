@@ -1,6 +1,5 @@
 import React from 'react'
 import { Mainsection } from '../../Components/HeroSection/Mainsection'
-import Cards from '../../Components/Card'
 import './Planets.css'
 import { motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";

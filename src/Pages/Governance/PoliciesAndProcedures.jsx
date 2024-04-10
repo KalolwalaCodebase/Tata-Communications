@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import HeadBar from '../../Components/Headbar/HeadBar'
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 export const PoliciesAndProcedures = () => {
     const location = useLocation();
   useEffect(() => {
@@ -19,19 +20,20 @@ export const PoliciesAndProcedures = () => {
   return (
     <div>
       <HeadBar
-        icon={"/Demologo.png"}
+        icon={"/cardimg10.svg"}
         heading={"POLICIES AND PROCEDURES"}
         theme={"#123C61"}
+        headiconstyle={'#3B91DC'}
       />
 
       <div className="pp-quick-links-section">
         <div className='pp-sticky-links'>
           <h4>QUICK LINKS</h4>
           <ul>
-            <li><a href="/">Goals and Progress</a></li>
-            <li><a href="/">Policies</a></li>
-            <li><a href="/">GRI index</a></li>
-            <li><a href="/">SDG Linkages</a></li>
+            <li><Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link></li>
+            <li><Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link></li>
+            <li><Link target="_blank" to="/gri-index">GRI index</Link></li>
+            <li><Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link></li>
           </ul>
         </div>
       </div>

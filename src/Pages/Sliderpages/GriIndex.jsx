@@ -2,6 +2,7 @@ import React,{useEffect} from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./sliderpages.css";
 const GriIndex = () => {
+  
   return (
     <div>
       <HeadBar heading={"GRI INDEX"} theme={"#3D86C6"} />

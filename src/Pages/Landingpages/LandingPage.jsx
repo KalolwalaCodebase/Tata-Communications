@@ -1,4 +1,4 @@
-import React, { lazy, useState } from "react";
+import React, { lazy, useEffect, useState } from "react";
 import CarouselMain from "../../Components/CarouselSection/CarouselMain";
 import "./Landingpages.css";
 import Cards from "../../Components/Card";
@@ -234,7 +234,7 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           initial="hidden"
           animate={inView1 ? "visible" : "hidden"}
         >
-          {imageUrlarr.map((imageurl, id) => (
+          {headingarr.map((heading, id) => (
             <motion.div
               key={id}
               variants={cardVariants}
@@ -242,10 +242,9 @@ const LandingPage = ({ activeTab, setActivetab }) => {
             >
               <ImagecardContainerLandingpage
                 color={"#6c1b54"}
-                imageurl={imageurl}
+                imageurl={imageUrlarr[id]}
                 heading={headingarr[id]}
                 url={urlToGo[id]}
-                activeTab={activeTab}
               />
             </motion.div>
           ))}
@@ -414,7 +413,7 @@ Sustainable Development Goals
       <img
         style={{width:"200px",height:"15px"}}
           className="small-square-btn-png landing-page-small-square-btn"
-          src="/small-square-btn copy.png"
+          src="/small-square-btn.png"
           alt=""
         />{" "}
         <br />

@@ -502,7 +502,7 @@ const Planetsclimatechange = () => {
           </div>
           <PlanetCuttingDownSolution />
           <PlanetClimateLastThreeComponet />
-          <PlanetIntroducingEv />
+          {/* <PlanetIntroducingEv /> */}
         </div>
         <div className="quick-link-sections">
           <b className="heading-links">QUICK LINKS</b>

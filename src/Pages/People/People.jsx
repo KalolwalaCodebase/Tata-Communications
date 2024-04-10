@@ -37,8 +37,8 @@ const People = ({activeTab,HeroSectionContent}) => {
  
        <Mainsection
       videolink={"/peoplevideo.mp4"}
-      activeTab={activeTab}
-      HeroSectionContent={HeroSectionContent}
+      activeTab={activeTab&&activeTab}
+      HeroSectionContent={HeroSectionContent&&HeroSectionContent}
     />
        {/* <div className='container-sustainability'>
          {headingarr.map((heading, id) => (
@@ -59,7 +59,7 @@ const People = ({activeTab,HeroSectionContent}) => {
               style={{ marginBottom: "50px", width:"27%" }} // Adjust as needed
             >
               <ImageCard
-                activeTab={activeTab} hoverCardColor={'#DC67B9'} cardsColor={'#F395D2'} key={id} heading={heading} imageurl={heading[1]}
+                activeTab={activeTab&&activeTab} hoverCardColor={'#DC67B9'} cardsColor={'#F395D2'} key={id} heading={heading} imageurl={heading[1]}
               />
             </motion.div>
           ))}
