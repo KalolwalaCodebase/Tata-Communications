@@ -6,7 +6,7 @@ import ImageCard from '../../Components/CardComponent/ImageCard';
 import { motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 const Community = ({activeTab,HeroSectionContent}) => {
-       const headingarr = [ ['Education','/communitycard1.png'], ['Sustainable Livelihoods',"/communitycard2.png"],['Environment','/communitycard3.png']];
+       const headingarr = [ ['Education','/communitycard1.png','/Community/education'], ['Sustainable Livelihoods',"/communitycard2.png",'/Community/sustainable-livelihoods'],['Environment','/communitycard3.png','/Community/environment']];
        const imageurl=["communitycard1.png","communitycard2.png","communitycard3.png"]
        const [ref1, inView1] = useInView({
         triggerOnce: true,

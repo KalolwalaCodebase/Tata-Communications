@@ -47,6 +47,7 @@ import { PlanetWaterResourceManagement } from "./Pages/Planets/PlanetWaterResour
 function App() {
   const [activeTab, setActivetab] = useState("Home");
   const [Videokey, SetVideoKey] = useState(null);
+   
   const HeroSectionContent = {
     Planet: {
       Heading: "Planet",

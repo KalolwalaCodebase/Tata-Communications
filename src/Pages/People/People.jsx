@@ -5,7 +5,7 @@ import ImageCard from '../../Components/CardComponent/ImageCard';
 import { motion, easeInOut } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 const People = ({activeTab,HeroSectionContent}) => {
-       const headingarr = [ ['Employees','/peoplecard1.png'],[ 'Customers','/peoplecard2.png'], ['Supply chain','peoplecard3.png']];
+       const headingarr = [ ['Employees','/peoplecard1.png','/People/employees'],[ 'Customers','/peoplecard2.png','/People/customers'], ['Supply chain','peoplecard3.png','/People/supply-chain']];
        const [ref1, inView1] = useInView({
         triggerOnce: true,
         threshold: 0.5, // Adjust as needed
@@ -47,10 +47,9 @@ const People = ({activeTab,HeroSectionContent}) => {
        </div> */}
        <motion.div
           className="container-sustainability"
-          ref={ref1}
           variants={containerVariants}
           initial="hidden"
-          animate={inView1 ? "visible" : "hidden"}
+          animate={"visible"}
           style={{marginTop:"200px"}}
         >
           {headingarr.map((heading, id) => (

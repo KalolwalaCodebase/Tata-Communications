@@ -1,7 +1,21 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import HeadBar from '../../Components/Headbar/HeadBar'
-
+import { useLocation } from 'react-router-dom';
 export const PoliciesAndProcedures = () => {
+    const location = useLocation();
+  useEffect(() => {
+    const scrollToTarget = () => {
+      if (location.hash) {
+        console.log("here it is ",location.hash);
+        const targetElement = document.querySelector(location.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+    // Call scrollToTarget when the location changes
+    scrollToTarget();
+  }, [location]);
   return (
     <div>
       <HeadBar
@@ -43,7 +57,7 @@ export const PoliciesAndProcedures = () => {
           </div>
         </div>
       </div>
-      <div className='pp-sec3-container'>
+      <div id="Policies" className='pp-sec3-container'>
         <h2 className='pp-sec3-container-h2'>Policies</h2>
         <div className='pp-sec3-table flex'>
           <div className="pp-sec3-table-data">

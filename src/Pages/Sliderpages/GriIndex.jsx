@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./sliderpages.css";
 const GriIndex = () => {

@@ -207,6 +207,14 @@ const CommunityEductaions = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
+            <a href="">Policies</a>
+          </div>
+          <div className="quicklinks-button-div">
+            <img
+              className="quick-links-logo"
+              src="/quickLinkArrow.png"
+              alt=""
+            />
             <a href="">GRI Index</a>
           </div>
           <div className="quicklinks-button-div">
@@ -215,15 +223,7 @@ const CommunityEductaions = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">SDG Linkage</a>
-          </div>
-          <div className="quicklinks-button-div">
-            <img
-              className="quick-links-logo"
-              src="/quickLinkArrow.png"
-              alt=""
-            />
-            <a href="">CDP reporting</a>
+            <a href="">SDG Linkages</a>
           </div>
           <div className="quicklinks-button-div">
             <img

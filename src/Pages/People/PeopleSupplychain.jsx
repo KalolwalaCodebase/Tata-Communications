@@ -283,7 +283,7 @@ const PeopleSupplychain = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">People Centric Policies</a>
+            <a href="">GRI index</a>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -291,7 +291,7 @@ const PeopleSupplychain = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">GRI index</a>
+            <a href="">SDG Linkage</a>
           </div>
         </motion.div>
       </div>

@@ -187,14 +187,6 @@ const PeopleCustomers = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">People Centric Policies</a>
-          </div>
-          <div className="quicklinks-button-div">
-            <img
-              className="quick-links-logo"
-              src="/quickLinkArrow.png"
-              alt=""
-            />
             <a href="">GRI index</a>
           </div>
           <div className="quicklinks-button-div">

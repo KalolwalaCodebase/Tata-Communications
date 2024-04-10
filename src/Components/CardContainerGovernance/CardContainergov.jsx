@@ -12,7 +12,7 @@ const CardContainergov = ({heading,activeTab,hoverCardColor}) => {
     <div onMouseOver={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)} className='card-container-div-main-gov' style={{ background: isHovered ? hoverCardColor : "white" }}>
          <img style={{height:"80px"}} src={isHovered?heading[2]:heading[1]} alt="" />
          <b style={{ color: !isHovered ? hoverCardColor : "white" ,marginTop:"15%"}} className="heading-card-container-governance">{heading[0]}</b>
-        <Link to={`/${activeTab}/${formatHeadingForLink(heading[0])}`}><button className="reade-more-gov-sec" style={{ color: !isHovered ? hoverCardColor : "white" }}>
+        <Link to={heading[3]}><button className="reade-more-gov-sec" style={{ color: !isHovered ? hoverCardColor : "white" }}>
             read more {" > "}
          </button></Link> 
     </div>

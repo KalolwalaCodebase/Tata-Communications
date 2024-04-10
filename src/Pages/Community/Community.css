@@ -60,15 +60,22 @@
   font-weight: 450;
   letter-spacing: 0.2em;
 }
-.quick-link-sections a {
+.quick-link-sections a ,.quick-link-sections li{
   text-decoration: none;
   color: #134673;
-  font-size: 18px;
+  list-style: none;
+  font-size: 14px;
   letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.quick-link-sections a:hover ,.quick-link-sections li:hover{
+  font-weight: 900;
 }
 .quicklinks-button-div {
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
+  display: flex;
   margin-bottom: 15px;
   margin-top: 10px;
   margin-left: 20px;

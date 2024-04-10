@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 import ImageCard from '../../Components/CardComponent/ImageCard';
 const Planets = ({activeTab,HeroSectionContent}) => {
-  const headingarr = [ ['ENERGY & CLIMATE CHANGE','/Planetimg01.png'], ['WASTE MANAGEMENT','Planetimg02.png'], ['WATER MANAGMENT','Planetimg03.png']];
+  const headingarr = [ ['ENERGY & CLIMATE CHANGE','/Planetimg01.png','/Planet/energy-&-climate-change'], ['WASTE MANAGEMENT','Planetimg02.png','/Planet/waste-management'], ['WATER MANAGMENT','Planetimg03.png','/Planet/water-managment']];
   const [ref1, inView1] = useInView({
     triggerOnce: true,
     threshold: 0.5, // Adjust as needed

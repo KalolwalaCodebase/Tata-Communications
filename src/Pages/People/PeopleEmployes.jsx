@@ -5,7 +5,25 @@ import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
 import { motion } from 'framer-motion';
 import Textanimation2 from "../../Components/Animatedcounter/Textanimation2";
 import TextAnimation from "../../Components/Animatedcounter/TextAnimation";
+import { Link } from 'react-router-dom';
 const PeopleEmployes = () => {
+
+  const handleClick = (event,id) => {
+    //event.preventDefault(); // Prevent default anchor behavior
+  
+    const targetElement = document.querySelector(`#${id}`);
+    if (targetElement) {
+      // Calculate the offset based on the current scroll position
+      const offset = targetElement.getBoundingClientRect().top - 100;
+  
+      // Scroll to the element with an offset
+      window.scrollBy({
+        top: offset,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <div className="people-supply-chain-intro-parent-container">
       <HeadBar
@@ -44,7 +62,7 @@ const PeopleEmployes = () => {
       </div>
       <div className="planet-climate-last-section-parent">
         <div  className="main-section-climate-change">
-          <motion.div initial={{y:"100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1.5,type:"spring"}} className="description-main-section people-descriptions">
+          <motion.div id="Diversity-and-Inclusion" initial={{y:"100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1.5,type:"spring"}} className="description-main-section people-descriptions">
             <img
               className="small-square-btn-png"
               src="/small-btn-alternative.svg"
@@ -101,7 +119,7 @@ const PeopleEmployes = () => {
           </div>
           <div className="people-environment-image-text-container">
             <motion.img initial={{y:"100px",opacity:0,scale:0.5}} whileInView={{y:0,opacity:1,scale:1}} transition={{duration:1.3,type:"spring"}}   src="/people-environemnt-img04.jpeg" alt="" />
-            <motion.div initial={{x:"100px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1.1,type:"spring"}}  className="text-environemt-image-text-container">
+            <motion.div id="Learning-and-Skill-Development" initial={{x:"100px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1.1,type:"spring"}}  className="text-environemt-image-text-container">
               <img
                 className="small-square-btn-png"
                 src="/small-btn-alternative.svg"
@@ -315,7 +333,7 @@ const PeopleEmployes = () => {
             </motion.div>
           </div>
           <div className="people-environment-image-text-container">
-            <motion.div initial={{x:"-40px",opacity:0.5}} whileInView={{x:0,opacity:1}} transition={{duration:1,type:"spring"}}  className="text-environemt-image-text-container">
+            <motion.div id="towards-zero-harm" initial={{x:"-40px",opacity:0.5}} whileInView={{x:0,opacity:1}} transition={{duration:1,type:"spring"}}  className="text-environemt-image-text-container">
               <img
                 className="small-square-btn-png"
                 src="/small-btn-alternative.svg"
@@ -532,7 +550,7 @@ const PeopleEmployes = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Diversity and Inclusion</a>
+            <li onClick={()=>handleClick(event,"Diversity-and-Inclusion")} >Diversity and Inclusion</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -540,7 +558,7 @@ const PeopleEmployes = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Learning and Skill Development</a>
+            <li onClick={()=>handleClick(event,"Learning-and-Skill-Development")}>Learning and Skill Development</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -548,7 +566,7 @@ const PeopleEmployes = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Towards Zero Harm</a>
+            <li onClick={()=>handleClick(event,"towards-zero-harm")}>Towards Zero Harm</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -556,7 +574,7 @@ const PeopleEmployes = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">People Centric Policies</a>
+<Link target="_blank" to="/Governance/policies-and-procedures#Policies">People Centric Policies</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -564,7 +582,7 @@ const PeopleEmployes = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">GRI index</a>
+            <Link target="_blank" to="/gri-index">GRI index</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
