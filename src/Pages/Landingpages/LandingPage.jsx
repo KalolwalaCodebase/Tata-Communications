@@ -96,17 +96,17 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           alt=""
         />{" "}
         <motion.b
-          initial={{ opacity: 0, y: "-10px" }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: easeInOut }}
+          initial={{ opacity: 0, x: "-30px" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease:"easeInOut" }}
           className="heading-main-section-down"
         >
           THE PILLARS OF
         </motion.b>
         <motion.b
-          initial={{ opacity: 0, y: "10px" }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: easeInOut }}
+          initial={{ opacity: 0, x: "30px" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease:"easeInOut" }}
           className="heading-main-section-down"
         >
           OUR STRATEGY
