@@ -1,4 +1,4 @@
-import React, { lazy, useEffect, useState } from "react";
+import React, { lazy, useState } from "react";
 import CarouselMain from "../../Components/CarouselSection/CarouselMain";
 import "./Landingpages.css";
 import Cards from "../../Components/Card";
@@ -89,24 +89,27 @@ const LandingPage = ({ activeTab, setActivetab }) => {
 
       <br />
       <div className="heading-main-section-landing-page">
-        <img
+        <motion.img
+        initial={{ opacity: 0,scale:0.5 }}
+        whileInView={{ opacity: 1, scale:0.5 }}
+        transition={{ duration: 1, ease:"easeInOut" }}
         style={{width:"200px",height:"15px"}}
           className="small-square-img"
           src="/small-square-btn.png"
           alt=""
         />{" "}
         <motion.b
-          initial={{ opacity: 0, y: "-10px" }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: easeInOut }}
+          initial={{ opacity: 0, x: "-30px" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease:"easeInOut" }}
           className="heading-main-section-down"
         >
           THE PILLARS OF
         </motion.b>
         <motion.b
-          initial={{ opacity: 0, y: "10px" }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: easeInOut }}
+          initial={{ opacity: 0, x: "30px" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, ease:"easeInOut" }}
           className="heading-main-section-down"
         >
           OUR STRATEGY
@@ -234,7 +237,7 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           initial="hidden"
           animate={inView1 ? "visible" : "hidden"}
         >
-          {headingarr.map((heading, id) => (
+          {imageUrlarr.map((imageurl, id) => (
             <motion.div
               key={id}
               variants={cardVariants}
@@ -242,9 +245,10 @@ const LandingPage = ({ activeTab, setActivetab }) => {
             >
               <ImagecardContainerLandingpage
                 color={"#6c1b54"}
-                imageurl={imageUrlarr[id]}
+                imageurl={imageurl}
                 heading={headingarr[id]}
                 url={urlToGo[id]}
+                activeTab={activeTab}
               />
             </motion.div>
           ))}
