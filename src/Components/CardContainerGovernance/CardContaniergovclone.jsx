@@ -9,7 +9,7 @@ const CardContaniergovclone = ({heading,activeTab,hoverCardColor,url}) => {
         return heading.replace(/\s+/g, '-').toLowerCase();
       };
   return (
-    <div onMouseOver={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)} className='card-container-div-main-gov' style={{ background: isHovered ? hoverCardColor : "white" }}>
+    <Link to={heading[3]} onMouseOver={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)} className='card-container-div-main-gov' style={{ background: isHovered ? hoverCardColor : "white" }}>
          <img src={isHovered?heading[2]:heading[1]} alt=""  style={{width:"70px",height:"100px"}}/>
         <br />
         <br />
@@ -18,7 +18,7 @@ const CardContaniergovclone = ({heading,activeTab,hoverCardColor,url}) => {
           <button className="reade-more-gov-sec" style={{ color: !isHovered ? "#3D86C6" : "white" }}>
             read more {" > "}
          </button></Link> 
-    </div>
+    </Link>
     
   )
 }

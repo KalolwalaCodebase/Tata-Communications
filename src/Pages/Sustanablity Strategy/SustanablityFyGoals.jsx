@@ -167,15 +167,15 @@ const SustanablityDevlopmentGoals = () => {
                     <h2 className={`poppins-medium main-card-h2`}>{selectedTitle}</h2>
                     <table className='goals-table'>
                         <tbody className={`goals-table-body`}>
-                            <th className='poppins-medium goals-data'>FY 2023 TARGETS</th>
-                            <th className='poppins-medium goals-data'>FY 2023 PERFORMANCE</th>
-                            <th className='poppins-medium goals-data'>STATUS</th>
+                            <th className='poppins-medium goals-data goal-data-x'>FY 2023 TARGETS</th>
+                            <th className='poppins-medium goals-data goal-data-x'>FY 2023 PERFORMANCE</th>
+                            <th className='poppins-medium goals-data goal-data-x'>STATUS</th>
                             {data.find((item) => item.title === selectedTitle).tableData.map((rowData, rowIndex) => (
                                 <tr key={rowIndex}>
 
-                                    <td className='poppins-light goals-data'>{rowData.value1}</td>
-                                    <td className='poppins-light goals-data'>{rowData.value2}</td>
-                                    <td className="poppins-light goals-data" > <span className='status-bar' style={{ backgroundColor: rowData.status === 'Completed' ? '#B0BC25' : rowData.status === 'Ongoing' ? '#00B3BD' : 'grey' }}>  {rowData.status} </span></td>
+                                    <td className='poppins-light goals-data goal-data-y'>{rowData.value1}</td>
+                                    <td className='poppins-light goals-data goal-data-y'>{rowData.value2}</td>
+                                    <td className="poppins-light goals-data goal-data-y" > <span className='status-bar' style={{ backgroundColor: rowData.status === 'Completed' ? '#B0BC25' : rowData.status === 'Ongoing' ? '#00B3BD' : 'grey' }}>  {rowData.status} </span></td>
 
                                 </tr>
                             ))}

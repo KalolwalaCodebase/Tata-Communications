@@ -9,13 +9,12 @@ const Brsr = () => {
         <div className="flex-conatiner-wrapper">
         
         <p className="gri-index-decription-main">
-        SEBI introduced the
+        SEBI introduced the{' '}
         <span className="bold-span-gri-index">Business Responsibility and Sustainability Reporting (BRSR)</span>  standards to report on
           framework, which mandates certain listed companies, including ours, to disclose their ESG-related information as a mandatory process. This initiative aims to enhance transparency and encourages companies to adopt responsible and sustainable business practices.
       </p>
       <p className="normal-text">
-      By adhering to the BRSR framework, we ensure stakeholders have access to standardized disclosures on ESG parameters. This transparent communication fosters trust among investors, customers, and the wider stakeholder community, strengthening our reputation as a responsible organization committed to a sustainable future.
-      </p>
+      By adhering to the BRSR framework, we ensure stakeholders have access to standardised disclosures on ESG parameters. This transparent communication fosters trust among investors, customers and the wider stakeholder community, strengthening our reputation as a responsible organisation committed to a sustainable future.      </p>
       <br />
       <br />
       <li className="section-list-brsr">Section A (General Disclosures)</li>

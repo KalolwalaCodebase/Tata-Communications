@@ -8,7 +8,7 @@ const DevelopmentGoals = () => {
         <div>
             <HeadBar heading={'SUSTAINABLE DEVELOPMENT GOALS'} icon={'/vector-dev-goals.svg'} theme={'#7A63AB'} />
             <div className='flex dev-goals-wrapper1'>
-                <p className='poppins-light'>
+                <p className='poppins-light sustan-blue-para'>
                     Leveraging the <strong>UN SDGs</strong> as crucial benchmarks, we plan initiatives, measure impact, and prioritize focus areas. Our strategies closely align with these goals as we serve as a digital ecosystem enabler. <br /> <br />
                     Recognizing the significance of contributing to global sustainability, we've prioritized and mapped direct and indirect SDGs based on risk, relevance, and our organizational contribution, and actively pursue their achievement.
                 </p>

@@ -36,7 +36,8 @@ const Mainsection = ({ activeTab,HeroSectionContent,videolink }) => {
               alt=""
             />
             <div className="main-section-heading">{content?.Heading}</div>
-            <div className="main-section-content">{content?.Content}</div>
+            <div className="main-section-content">{content?.Content} <br />
+            <br />{content?.contetntdown}</div>
           </div>
         </div>
     </>

@@ -15,8 +15,9 @@ const SustanablityGovernance = () => {
                 <img src="/small-square-btn.png" alt="" />
                 <div className="sus-cont1-sec1 flex">
                     <div className='cont1-sec1-left'>
-
+<br />
                         <h2 className='poppins-light '>SUSTAINABILITY VISION</h2>
+                       <br />
                         <p className='poppins-light sus-p1'>To create a long-term stakeholder value and sustainable growth for our business by managing risks and embracing opportunities, implementing robust governance practices and optimisation of the economic, environmental and social performance.</p>
                         <p className='poppins-light sus-p2'>
                             <b> Our Approach - </b>is based on a strong commitment to responsibly benefit society, our people, shareholders, communities, and other stakeholders. We aim to optimise economic value while meeting environmental and social standards
@@ -34,13 +35,14 @@ const SustanablityGovernance = () => {
                     <span className='span-plt poppins-medium'>PLANET</span>
                     <span className='sus-bar poppins-medium'>|</span>
                     <span className='span-cmt poppins-medium'>COMMUNITY</span>
-                    <h4 className="poppins-medium poppins-medium">all interconnected by robust Corporate Governance practices</h4>
+                    <h4 className="poppins-medium poppins-medium">all interconnected by robust <span id="specail-span-robust"> Corporate Governance </span> practices</h4>
                 </div>
 
                 <div className="sec2-gov-table flex">
                     <div className='gov-table-card1 poppins-medium'>
                         <img className='gov-poly1' src="/gov-poly1.png" alt="" />
                         <h4>DRIVERS</h4>
+                        <br />
                         <h5>Sustainable <br />
                             Development Goals</h5>
                         <h5>Tata Group’s <br />
@@ -51,7 +53,7 @@ const SustanablityGovernance = () => {
                         <p>(Megatrends, Stakeholder <br /> Feedback, Peer <br /> Benchmarking in ICT)</p>
                     </div>
                     <div className='gov-table-card2'>
-                        <h4 className='poppins-medium corp-gov'>CORPORATE GOVERNANCE</h4>
+                        <h4 className='poppins-medium corp-gov'>Embedding Sustainability within our Business</h4>
                         <div className='corp-gov-inner poppins-light flex'>
                             <div className='inner-child '>
                                 <img src="/gov-ppl.svg" alt="" />
@@ -89,7 +91,7 @@ const SustanablityGovernance = () => {
                     <div className='gov-table-card3 poppins-light'>
                         <img className='gov-poly2' src="/gov-poly2.png" alt="" />
 
-                        <h4>BUSINESS</h4>
+                        <h4>BUSINESS CASE</h4>
                         <h5>Bedrock pillar of
                             Corporate Strategy - <br />
                             KPIs part of Corporate Scorecard
@@ -117,11 +119,15 @@ const SustanablityGovernance = () => {
             <div className="sus-gov-container3">
                 <div className="sus-gov-container3-content">
                     <img src="/small-square-btn.png" alt="" />
+                    <br />
+                    <br />
                     <h1 className='poppins-light'>SUSTAINABILITY GOVERNANCE</h1>
+                    <br />
+                
                     <p className="sus-3-p poppins-light">
                         CSR, Safety and Sustainability aspects are being reviewed at multiple levels within the Company with specific oversight and reviewed by the Board led CSR, Safety and Sustainability Committee (CSRSS).
                     </p>
-
+             <br />
                     <p className='poppins-light'>
                         It reviews and monitors business risks and opportunities with reference to sustainability, and also oversees the progress of business sustainability and aspects related to occupational health and safety (OHS), climate change, resource conservation, employee engagement and development, sustainable supply chain management, and human rights (privacy and freedom of expression, etc.).
                     </p>
@@ -140,6 +146,7 @@ const SustanablityGovernance = () => {
                             CSR, Safety & <br />Sustainablity Committee <br />(Board Level)
                         </h2>
                         <ul>
+                            <br />
                             <li>Board-led committee to review and monitor business risks and opportunities with reference to sustainability
                             </li>
                             <li>
@@ -156,6 +163,7 @@ const SustanablityGovernance = () => {
                         <img className='sus-pic' src="/sus-pic2.png" alt="" />
                         <h2>Sustainable Development <br />Committee (SDC)</h2>
                         <ul>
+                            <br />
                             <li>
                                 MD & CEO chairs the Sustainable Development Committee (Quarterly)
                             </li>
@@ -176,6 +184,8 @@ const SustanablityGovernance = () => {
                         <img className='sus-pic' src="/sus-pic3.png" alt="" />
                         <h2>Sub Committee <br />of SDC</h2>
                         <ul>
+                            <br />
+                            <br />
                             <li>
                                 CHRO and EOHS & Sustainability Head chairs the meeting (Quarterly)
                             </li>
@@ -195,6 +205,8 @@ const SustanablityGovernance = () => {
                         <img className='sus-pic' src="/sus-pic4.png" alt="" />
                         <h2>Management Review <br />Committee</h2>
                         <ul>
+                            <br />
+                            <br />
                             <li>
                                 EOHS & Sustainability Head chairs the meeting (Annually) as part of ISO 14001 and ISO 45001 Standard
                             </li>

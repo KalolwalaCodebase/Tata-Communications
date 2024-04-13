@@ -26,7 +26,6 @@ const CarouselMain = ({setActivetab}) => {
               alt=""
             />{" "}
               <br />
-              <b className="heading-caresoules">tata communications</b>
               <p className="heading-description-carosoule">
               emissions reduction<br /> targets validated <br /> by the SBTi 
               </p>
@@ -180,13 +179,7 @@ const CarouselMain = ({setActivetab}) => {
             transition={{ duration: 0.4, ease:"easeIn",delay:0.5 }}
             className="carosoules-last-container">
               <p className="description-last-carosoule">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Creating a sustainable eco-system by keeping the community at the centre of our developmental objectives.
               </p>
               <Link  onClick={()=>setActivetab("Community")} to="/Community" className="view-release-part">
                               {/* <TextAnimation text={' '} /> */}

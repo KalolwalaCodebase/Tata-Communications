@@ -84,16 +84,19 @@ const SustanablityCommitment = () => {
                 <section className='cmmt1'>
                     <img className='banner-commitments' src="/banner-commitments.svg" alt="" />
                     <div className="cmmt1-content">
+                        <br />
                         <img src="/small-square-btn.png" alt="" />
+                        <br />
+                        <br />
                         <h1 className="cmmt1-content poppins-light">SUSTAINABILITY COMMITMENTS</h1>
-                        <p className='poppins-light'>
-                            Our sustainability strategy is aligned with the Board-approved long-term Sustainability Goals, which focus on <strong>Climate Change, Circular Economy,</strong> and <strong>customer savings.</strong> These goals are consistent with the Tata Group’s Sustainability Policy, UN Sustainable Development Goals, our company’s materiality assessment, and peer benchmarking. We have also set short-term targets for FY 2024 to FY 2026, which support the long-term goals and cover other important ESG aspects.
-                        </p>
+                        <br />
+                        <p className='poppins-light popins-sus-board'>
+                        Our sustainability strategy is aligned with the Board-approved long-term Sustainability Goals, which emphasises <span>climate change, circular economy</span>  and <span>customer GHG Avoidance.</span>  These objectives are consistent with the Tata Group’s Sustainability Policy, UN Sustainable Development Goals and our Company’s materiality assessment and peer benchmarking. We have also set short-term targets for FY2024 to FY2026, which support the long-term goals and focus on other important ESG aspects.                        </p>
                     </div>
                 </section>
             </div>
             <section className='cmmt2'>
-                <div className='bar-heading-parent' style={{ display: "flex", width: '100%', justifyContent: 'center' }}>
+                <div className='bar-heading-parent' style={{ display: "flex", width: '100%', justifyContent: 'center', padding:"10px" }}>
                     <h3 className='bar-heading-sec poppins-medium'>LONG-TERM COMMITMENTS</h3>
                 </div>
                 <div className='table'>

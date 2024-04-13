@@ -71,15 +71,16 @@ export const PoliciesAndProcedures = () => {
               </div>
               <ul>
                 <li><a href="/">Occupational Health and Privacy Policy</a></li>
-                <li><a href="/">EOHS Policy</a></li>
-              </ul>
-              <ul>
-                <li><a href="/">Supplier Code of Conduct</a></li>
+                <li><a href="/">Tata Communications Remuneration Policy</a></li>
                 <li><a href="/">Customer Privacy Policies</a></li>
               </ul>
               <ul>
-                <li><a href="/">Sustainable Supply</a></li>
-                <li><a href="/">Chain Policy</a></li>
+                <li><a href="/">Supplier Code of Conduct</a></li>
+                <li><a href="/">Prevention of Sexual Harassment Charter</a></li>
+              </ul>
+              <ul>
+                <li><a href="/">Sustainable Supply Chain Policy</a></li>
+                <li><a href="/">Board Diversity Policy</a></li>
               </ul>
             </div>
             <div className="pp-sec3-table-data-row2 flex">
@@ -112,11 +113,12 @@ export const PoliciesAndProcedures = () => {
                 <li><a href="/">Tata Code of Conduct</a></li>
                 <li><a href="/">Fair Use Policy For Global SIP Connect</a></li>
                 <li><a href="/">Business and Human Rights Policy</a></li>
+                <li><a href="/">Privacy</a></li>
               </ul>
               <ul>
                 <li><a href="/">Dignity at Workspace</a></li>
                 <li><a href="/">Anti-Corruption Policy</a></li>
-                <li><a href="/">Privacy</a></li>
+                <li><a href="/">Business responsibility policies</a></li>
               </ul>
               <ul>
                 <li><a href="/">Whistleblowers Policy</a></li>

@@ -1,8 +1,22 @@
 import React, { useState } from 'react'
 import HeadBar from '../../Components/Headbar/HeadBar'
-
+import { Link } from 'react-router-dom';
 export const PlanetWaterResourceManagement = () => {
-
+    const handleClick = (event,id) => {
+        //event.preventDefault(); // Prevent default anchor behavior
+      
+        const targetElement = document.querySelector(`#${id}`);
+        if (targetElement) {
+          // Calculate the offset based on the current scroll position
+          const offset = targetElement.getBoundingClientRect().top - 100;
+      
+          // Scroll to the element with an offset
+          window.scrollBy({
+            top: offset,
+            behavior: 'smooth'
+          });
+        }
+      };
     const data = [
         {
             title: 'WATER RISK MANAGEMENT',
@@ -55,21 +69,74 @@ export const PlanetWaterResourceManagement = () => {
             <HeadBar heading={'WATER RESOURCE MANAGEMENT'} icon={'/planet-waste-mgt-heading-icon.png'} theme={'#B0BC25'} />
 
             <div className="wm-quick-links-section">
-                <div className='wm-sticky-links'>
-                    <h4>QUICK LINKS</h4>
-                    <ul>
-                        <li><a href="/">Goals and Progress</a></li>
-                        <li><a href="/">Policies</a></li>
-                        <li><a href="/">Water Resource Management</a></li>
-                        <li><a href="/">Wastewater management</a></li>
-                        <li><a href="/">GRI index</a></li>
-                        <li><a href="/">SDG Linkages</a></li>
-                        <li><a href="/">CDP reporting</a></li>
-                    </ul>
-                </div>
+        <div className="wm-sticky-links">
+          <h4>QUICK LINKS</h4>
+          <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link>
             </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <a onClick={() => handleClick(event, "Water-Resource-Management")}>
+              Water Resource Management
+              </a>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <a onClick={() => handleClick(event, "Wastewater-management")}>
+              Wastewater management
+              </a>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <Link target="_blank" to="/gri-index">GRI index</Link>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+               <Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <a>
+                CDP reporting
+              </a>
+            </div>
+        </div>
+      </div>
 
-            <div className='planet-wrm-sec1 flex'>
+            <div  className='planet-wrm-sec1 flex'>
                 <div className='planet-wm-sec1-text'>
                     <img src="/small-square-btn.png" alt="" />
 
@@ -86,7 +153,7 @@ export const PlanetWaterResourceManagement = () => {
                 </div>
                 <img src="/planet-wrm-header-img.png" alt="" />
             </div>
-            <div className='planet-wrm-sec2'>
+            <div id='Water-Resource-Management' className='planet-wrm-sec2'>
                 <img src="/small-square-btn.png" alt="" />
 
                 <h1>
@@ -181,7 +248,7 @@ export const PlanetWaterResourceManagement = () => {
                     </div>
                 </div>
 
-                <div className='planet-wrm-sec-context3'>
+                <div id='Wastewater-management' className='planet-wrm-sec-context3'>
 
                     <img src="/small-square-btn.png" alt="" />
                     <h1>

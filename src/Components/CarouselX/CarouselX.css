@@ -1,7 +1,7 @@
 .carousel-x-container{
     background-color: #F1F1F1;
     padding: 20px;
-    
+    margin: 5% 0;
 }
 
 .carousel-x {
@@ -11,11 +11,17 @@
     width: 100%;
     /* box-shadow: slategray; */
 }
+.data-li-card li,.data-li-card-li {
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
 
+}
 .bar {
     position: relative;
-    width: 6%;
-    height: 400px;
+    width: 10%;
+    height: 582px;
     /* color: #fff; */
     margin-right: 10px;
     border-radius: 15px;
@@ -26,20 +32,29 @@
     cursor: pointer;
     transition: width 0.6s cubic-bezier(0, 0, 0, 0.9);;
 }
+.heading-data-row-li{
+font-size: 18px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.3em;
+text-align: left;
+
+}
 .bar-image{
     position: absolute;
     top: 20px;
-    width: 50px;
-    height: 40px;
+    width: 100px;
+    height: 80px;
 }
 .bar-title {
     transform: rotate(-90deg);
     color: #fff;
     text-align: end;
-    font-size: 12px;
-    letter-spacing: 1cqmin;
+    font-size: 18px;
+    letter-spacing: 1rem;
     position: absolute;
-    top: 60%;
+    top: 50%;
+    font-weight: 800 !important;
     /* transition: transform 0.3s ease-in-out;  */
 }
 
@@ -66,8 +81,10 @@
 }
 .card-x tr th,td{
     border-bottom: 1px solid #F1F1F1;
+    letter-spacing: 0.1rem;
     /* margin: 10px; */
 }
+
 .table-heading{
     color: #7A63AB;
     font-size: 1.3rem;
@@ -79,3 +96,11 @@
     font-size: 1.5rem;
     letter-spacing: 1cqmin;
 }
+.goal-data-x{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.3em;
+    text-align: left;
+    
+    }

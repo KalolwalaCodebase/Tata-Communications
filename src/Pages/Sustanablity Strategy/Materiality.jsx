@@ -20,29 +20,26 @@ const Materiality = () => {
                 <img src="/m-row-i1.png" alt="" />
                 <h4>IDENTIFY</h4>
                 <p>
-                Identification of material issues involves leveraging various inputs, such as GRI Standards compliance, evaluation within the Dow Jones Sustainability Index (DJSI), participation in the Carbon Disclosure Project (CDP), regulatory assessments, peer benchmarking exercises, and engaging in stakeholder consultations.
-                </p>
+                Material issues are identified using various sources, such as GRI Standards, DJSI, CDP, regulations, peer benchmarking, and stakeholder engagement.                </p>
             </div>
             <div className='m-row-card'>
                 <img src="/m-row-i2.png" alt="" />
                 <h4>PRIORITISE</h4>
                 <p>
-                Prioritisation of material issues is determined by assessing their potential impact on the business, external operating conditions, and key stakeholders.
-                </p>
+                The prioritisation of material issues is based on their potential impact on the business, external environment, and key stakeholders, with a focus on mitigating negative outcomes.                </p>
             </div>
             <div className='m-row-card'>
                 <img src="/m-row-i3.png" alt="" />
                 <h4>VALIDATE</h4>
                 <p>
-                Obtain validation from <br />management.
+                The material concerns that have been identified are validated by top management.
                 </p>
             </div>
             <div className='m-row-card'>
                 <img src="/m-row-i4.png" alt="" />
                 <h4>DISCLOSE</h4>
                 <p>
-                The key material topics are matched with the appropriate GRI standard indicators, and their advancement is openly disclosed
-                </p>
+                The significant impact on stakeholders is identified, tracked, and communicated through our annual and sustainable development reports.                </p>
                 
             </div>
             <img className='m-row-arrow-line' src="/m-row-arrow-line.svg" alt="" />
@@ -50,7 +47,10 @@ const Materiality = () => {
         </div>
         <div className='materiality-sec2'>
         <img src="/small-square-btn.png" alt="" />
+        <br />
+        <br />
         <h1>MATERIAL ISSUES</h1>
+       
             <img className='materiality-graph' src="/materiality-graph.png" alt="" />
         </div>
     </div>

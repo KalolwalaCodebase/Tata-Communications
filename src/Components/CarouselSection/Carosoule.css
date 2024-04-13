@@ -8,7 +8,7 @@
        
 }
 .carousel-indicators ,.carousel-control-prev,.carousel-control-prev{
-       z-index: 1;
+       z-index: 2;
 }
 .absolute-video-description{
        font-family: var(--font-replacment);
@@ -82,8 +82,8 @@ img{
 }
 .carousel-indicators [data-bs-target]{
        border-radius: 50% !important;
-       width: 10px !important;
-       height: 10px !important;
+       width: 15px !important;
+       height: 15px !important;
        margin-left: 10px !important;
 }
 .image-inside-slider-down{
@@ -194,4 +194,8 @@ img{
        background-position: center center;
        background-repeat: no-repeat;
    }
-   
+   @media screen and (min-width: 1700px) {
+ .carosoules-last-container{
+    margin-top: 10%;
+ }
+   }

@@ -1,11 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./People.css";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
 import { motion } from 'framer-motion';
 import Textanimation2 from "../../Components/Animatedcounter/Textanimation2";
 import TextAnimation from "../../Components/Animatedcounter/TextAnimation";
-import { Link } from 'react-router-dom';
+import { Link,useLocation } from 'react-router-dom';
 const PeopleEmployes = () => {
 
   const handleClick = (event,id) => {
@@ -23,6 +23,20 @@ const PeopleEmployes = () => {
       });
     }
   };
+  const location = useLocation();
+  useEffect(() => {
+    const scrollToTarget = () => {
+      if (location.hash) {
+        console.log("here it is ",location.hash);
+        const targetElement = document.querySelector(location.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+    // Call scrollToTarget when the location changes
+    scrollToTarget();
+  }, [location]);
 
   return (
     <div className="people-supply-chain-intro-parent-container">
@@ -525,7 +539,7 @@ const PeopleEmployes = () => {
          
         </div>
         < motion.div initial={{x:"100px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:0.5,delay:0.3, type:"spring"}} className="quick-link-sections">
-          <b className="heading-links"><TextAnimation text={'Quick'}/><TextAnimation text={'Links'}/></b>
+          <b style={{textTransform:"uppercase  "}} className="heading-links"><TextAnimation text={'Quick'}/>{" "}<TextAnimation text={'Links'}/></b>
           <br />
           <img src="/quick-link-underline.png" alt="" />
           <div className="quicklinks-button-div">

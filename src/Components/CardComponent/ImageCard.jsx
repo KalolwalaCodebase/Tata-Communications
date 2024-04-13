@@ -10,7 +10,7 @@ const ImageCard = ({ imageurl, color, heading,activeTab,url}) => {
     return heading.replace(/\s+/g, '-').toLowerCase();
   };
   return (
-    <div className="parent-image-card-component">
+    <Link to={heading[2]} className="parent-image-card-component">
       <div className="image-container-card">
         <img src={imageurl} alt="" />
       </div>
@@ -23,7 +23,7 @@ const ImageCard = ({ imageurl, color, heading,activeTab,url}) => {
 {" "}
         </motion.h2>
       </div>
-    </div>
+    </Link>
   );
 };
 

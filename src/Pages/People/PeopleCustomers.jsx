@@ -1,8 +1,8 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import HeadBar from '../../Components/Headbar/HeadBar'
 import { motion } from 'framer-motion';
 import TextAnimation from '../../Components/Animatedcounter/TextAnimation';
-import { Link } from 'react-router-dom';
+import { Link ,useLocation} from 'react-router-dom';
 
 const PeopleCustomers = () => {
   const handleClick = (event,id) => {
@@ -20,6 +20,20 @@ const PeopleCustomers = () => {
       });
     }
   };
+  const location = useLocation();
+  useEffect(() => {
+    const scrollToTarget = () => {
+      if (location.hash) {
+        console.log("here it is ",location.hash);
+        const targetElement = document.querySelector(location.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+    // Call scrollToTarget when the location changes
+    scrollToTarget();
+  }, [location]);
   return (
     <div className='people-customer-container-main'>
       <HeadBar
@@ -29,24 +43,24 @@ const PeopleCustomers = () => {
         headiconstyle={'#E036AE'}
       />
       <div className="climate-change-intro-container people-main-parent-container">
-        <div className="climate-change-intro-paragraph-inside-container">
+        <motion.div initial={{x:"-100px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,type:"spring"}} className="climate-change-intro-paragraph-inside-container">
           <p className="paragraph-inside-climate-change people-paragraph-style1">
           At the heart of our endeavour lies a commitment to empower customers, to create ecosystems that enable them to succeed in a new world of digital technologies.          </p>
           <p className="paragraph-inside-climate-change people-paragraph-style2">
           Our customer success team upholds a customer-centric approach throughout the customer journey. They also make sure to align internal stakeholders with customer success metrics to make the process seamless and convenient.          </p>
           
-        </div>
-        <div className="climate-change-intro-photos-inside-container">
+        </motion.div>
+        <motion.div initial={{y:"100px",opacity:0,scale:0.5}} whileInView={{y:0,opacity:1,scale:1}} transition={{duration:1.3,type:"spring"}}  className="climate-change-intro-photos-inside-container">
           <img
             className="intro-climate-image intro-people-image"
             src="/peoplecustomerimg01.png"
             alt=""
           />
-        </div>
+        </motion.div>
       </div>
       <div className="planet-climate-last-section-parent">
         <div className="main-section-climate-change">
-          <div id='Customer-experiences' className="description-main-section people-descriptions">
+          <motion.div initial={{y:"100px",opacity:0,scale:0.5}} whileInView={{y:0,opacity:1,scale:1}} transition={{duration:1.3,type:"spring"}}  id='Customer-experiences' className="description-main-section people-descriptions">
             <img
               className="small-square-btn-png"
               src="/small-btn-alternative.svg"
@@ -59,37 +73,37 @@ const PeopleCustomers = () => {
             <h6 className="bigger-paragraph-people-descriptions specail-description-heading">
             At Tata Communications, we are dedicated to enrich the digital transformation journey of our customers. Our commitment to prioritise customer needs allows us to continuously refine our processes and systems. Leveraging the insights gained from customer feedback, we drive innovation and introduce new, cutting-edge solutions to meet emerging demands effectively.
             </h6>
-          </div>
-          <div className="people-customer-section-down">
+          </motion.div>
+          <motion.div initial={{y:"100px",opacity:0,scale:0.5}} whileInView={{y:0,opacity:1,scale:1}} transition={{duration:1.3,type:"spring"}}    className="people-customer-section-down">
             <img src="/people-customerimg03.svg" alt="" />
-          </div>
-          <div className="people-customer-section-down" style={{marginTop:"-20px"}}>
+          </motion.div>
+          <motion.div initial={{y:"100px",opacity:0,scale:0.5}} whileInView={{y:0,opacity:1,scale:1}} transition={{duration:1.3,type:"spring"}}    className="people-customer-section-down" style={{marginTop:"-20px"}}>
             <img src="/people-customerimg02.svg" alt="" />
-          </div>
+          </motion.div>
           <div id='Enhancing-Customer-Engagement' className="people-customer-section-deep-pink">
-          <b className="heading-black">
+          <motion.b initial={{x:"-100px",opacity:0,scale:0.5}} whileInView={{x:0,opacity:1,scale:1}} transition={{duration:1,type:"spring"}}    className="heading-black">
              Enhancing Customer Engagement
-                </b>
+                </motion.b>
                 <div class="main-customer-section-design-content">
     <div class="each-container-main-design">
-        <div class="slim-pink-container"></div>
-        <div class="slim-pink-container-description">Through various touchpoints and a customer hierarchy, our ‘deeper with fewer’ strategy enhances our relationship with our top 1,000 customers.</div>
+        <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1.3,type:"spring"}}    class="slim-pink-container"></motion.div>
+        <motion.div initial={{x:10}} whileInView={{x:0}} transition={{duration:1,type:"spring",ease:"easeInOut"}} class="slim-pink-container-description">Through various touchpoints and a customer hierarchy, our ‘deeper with fewer’ strategy enhances our relationship with our top 1,000 customers.</motion.div>
     </div>
     <div class="each-container-main-design">
-        <div class="slim-pink-container"></div>
-        <div class="slim-pink-container-description">Our Off-Shore Customer Success Management model in Pune uses the follow-the-sun methodology and is geared towards top enterprise customers.</div>
+        <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1.3,type:"spring"}}    class="slim-pink-container"></motion.div>
+        <motion.div initial={{x:10}} whileInView={{x:0}} transition={{duration:1,type:"spring",ease:"easeInOut"}} class="slim-pink-container-description">Our Off-Shore Customer Success Management model in Pune uses the follow-the-sun methodology and is geared towards top enterprise customers.</motion.div>
     </div>
     <div class="each-container-main-design">
-        <div class="slim-pink-container"></div>
-        <div class="slim-pink-container-description">Our CRM desk maintains the virtual customer interactions and takes into account customer life cycle management for the sector of digital customers</div>
+        <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1.3,type:"spring"}}    class="slim-pink-container"></motion.div>
+        <motion.div initial={{x:10}} whileInView={{x:0}} transition={{duration:1,type:"spring",ease:"easeInOut"}} class="slim-pink-container-description">Our CRM desk maintains the virtual customer interactions and takes into account customer life cycle management for the sector of digital customers</motion.div>
     </div>
     <div class="each-container-main-design">
-        <div class="slim-pink-container"></div>
-        <div class="slim-pink-container-description">Our dedicated sales team works for the core segment accounts, which are above the top 1,000 accounts. For these accounts, we use the FIGITAL (Field + Digital) paradigm, with distinct responsibilities for account farming and account hunting.</div>
+        <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1.3,type:"spring"}}    class="slim-pink-container"></motion.div>
+        <motion.div initial={{x:10}} whileInView={{x:0}} transition={{duration:1,type:"spring",ease:"easeInOut"}} class="slim-pink-container-description"> Our dedicated sales team works for the core segment accounts, which are above the top 1,000 accounts. For these accounts, we use the FIGITAL (Field + Digital) paradigm, with distinct responsibilities for account farming and account hunting.</motion.div>
     </div>
     <div class="each-container-main-design">
-        <div class="slim-pink-container"></div>
-        <div class="slim-pink-container-description">With the aid of a designated customer success team (CST), our engagement methodology for large enterprise customers focuses on both customer experience and business outcomes.</div>
+        <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1.3,type:"spring"}}    class="slim-pink-container"></motion.div>
+        <motion.div initial={{x:10}} whileInView={{x:0}} transition={{duration:1,type:"spring",ease:"easeInOut"}} class="slim-pink-container-description">With the aid of a designated customer success team (CST), our engagement methodology for large enterprise customers focuses on both customer experience and business outcomes.</motion.div>
     </div>
 </div>
 

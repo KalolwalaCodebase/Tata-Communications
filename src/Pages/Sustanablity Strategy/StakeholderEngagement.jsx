@@ -31,8 +31,8 @@ const StakeholderEngagement = () => {
     const renderSubtitleData = (subtitle, value) => {
         return (
             <div className="stakeholder-subtitle">
-                <p className="poppins-medium">{subtitle}</p>
-                <p className="poppins-light">{value}</p>
+                <li className="poppins-medium">{' '}{subtitle}{' '}{value}</li>
+                <p className="poppins-light"></p>
             </div>
         );
     };
@@ -129,14 +129,13 @@ const StakeholderEngagement = () => {
     return (
         <div>
             <HeadBar heading={'STAKEHOLDER MANAGEMENT'} icon={'/stakeholder-mgmt.svg'} theme={'#7A63AB'} />
-            <div className='flex stakeholder-mgmt-container1 poppins-light'>
+            <div className='flex stakeholder-mgmt-container1 poppins-light' style={{justifyContent:"space-between",padding:"2%",paddingRight:"0",alignItems:"flex-start"}}>
                 <div>
                     <p className="p1">
-                        Tata Communications places great importance on engaging with a wide range of stakeholders across our value chain. Our well-established stakeholder engagement procedure ensures regular interaction with individuals, groups, and organizations directly or indirectly impacted by our operations.
-                    </p>
+                    Tata Communications puts significant emphasis on engaging with a wide fraternity of stakeholders across the value chain. Our well-established stakeholder engagement procedure ensures regular interaction with individuals, groups and organisations directly or indirectly impacted by our operations.                    </p>
+                    <br />
                     <p className="p2">
-                        This proactive approach enables us to develop sustainable solutions and drive inclusive growth, taking into account the core concerns of our stakeholders. Acknowledging the significance of effective and ongoing communication, we empower our employees and collaborate with customers, suppliers, and investors to build trust and achieve positive outcomes.
-                    </p>
+                    This proactive approach enables us to develop sustainable solutions and drive inclusive growth, taking into consideration the core concerns of our stakeholders. Acknowledging the significance of effective and ongoing communication, we empower our teams and collaborate with customers, suppliers and investors to build trust and achieve positive outcomes.                    </p>
                 </div>
                 <img src="/stakehoder-diagram.png" alt="" />
             </div>
@@ -162,12 +161,12 @@ const StakeholderEngagement = () => {
                         <div className="card-content">
                             <div className="left-half poppins-light">
                                 <h2 className="main-card-h2 poppins-medium">EXPECTATIONS</h2>
-
+<br />
                                 {selectedTableData.length > 0 && renderValueList(selectedTableData[0].value)}
                             </div>
                             <div className="right-half">
                                 <h2 className="main-card-h2 poppins-medium">MODE OF COMMUNICATION</h2>
-
+<br />
                                 {selectedTableData.map((rowData, rowIndex) => (
                                     <div className='right-list' key={rowIndex}>
                                         {rowData.subtitle1 && renderSubtitleData(<p>{rowData.subtitle1}</p>, rowData.value1)}
@@ -184,14 +183,18 @@ const StakeholderEngagement = () => {
 
             <div className="stakeholder-management-container3">
                 <img src="/small-square-btn.png" alt="" />
+                <br />
+                <br />
                 <div className="cont3-sec1 flex">
                     <div className='cont3-sec1-left'>
 
                         <h2 className='poppins-light'>GRIEVANCE REDRESSAL MECHANISM</h2>
+                        <br />
                         <p className='poppins-light'>At Tata Communications, we prioritise addressing the concerns and grievances of all our stakeholders. To this end, we have implemented a robust grievance redressal mechanism. For each stakeholder group identified, we have designated one or more specific business functions within our organisation. These functions are equipped with defined communication channels and escalation matrices, ensuring prompt and efficient handling of grievances.</p>
                     </div>
                     <img className='cont3-sec1-img' src="/stake-sec3.png" alt="" />
                 </div>
+                <br />
                 <p className='poppins-light cont3-sec2-p'>
                     These communication channels are designed to direct grievances to the appropriate personnel or department for resolution in a timely manner. Further, we have established a whistleblower mechanism, along with a dedicated email address, such as EOSH@tatacommunications.com, for reporting grievances related to Environmental, Social and Governance (ESG) aspects.
                     <br /><br />

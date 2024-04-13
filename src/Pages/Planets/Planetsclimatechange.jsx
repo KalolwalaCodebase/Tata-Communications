@@ -11,6 +11,7 @@ import PlanetIntroducingEv from "./PlanetIntroducingEv";
 import { motion } from 'framer-motion';
 import TextAnimation from '../../Components/Animatedcounter/TextAnimation';
 import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
+import { Link } from 'react-router-dom';
 const Planetsclimatechange = () => {
   const transationingObject = {
     heading: "Transitioning to Renewable Energy",
@@ -19,6 +20,7 @@ const Planetsclimatechange = () => {
     description:
       "This strategic move aligns with our approach to sustainability and our efforts to mitigate the impact of our operations on the environment. We understand the critical importance of renewable energy in reducing carbon emissions and are actively exploring avenues to augment the share of renewables in our energy portfolio. In pursuit of this goal, significant steps have been taken, including the procurement of solar power and the engagement in renewable energy certificate programs internationally.",
   };
+
   const CommunityCarbonObject = {
     heading: "Community Carbon Offset Programmes",
     specailPara:
@@ -114,24 +116,39 @@ const Planetsclimatechange = () => {
       description: " of CO2e* for FY 2022-2023.",
     },
   ];
+  const handleClick = (event,id) => {
+    //event.preventDefault(); // Prevent default anchor behavior
+  
+    const targetElement = document.querySelector(`#${id}`);
+    if (targetElement) {
+      // Calculate the offset based on the current scroll position
+      const offset = targetElement.getBoundingClientRect().top - 100;
+  
+      // Scroll to the element with an offset
+      window.scrollBy({
+        top: offset,
+        behavior: 'smooth'
+      });
+    }
+  };
   return (
     <div className="planets-climate-change-container">
       <HeadBar
-        icon={"/Demologo.png"}
+        icon={"/planetpage02.svg"}
         heading={"CLIMATE-CHANGE"}
         theme={"#B0BC25"}
         headiconstyle={"rgb(184 198 25)"}
       />
       <div className="climate-change-intro-container">
         <div className="climate-change-intro-paragraph-inside-container">
-          <p className="paragraph-inside-climate-change">
+          <p style={{fontSize:'20px'}} className="paragraph-inside-climate-change">
             Through our environment conservation initiatives, we aim to reduce
             our environmental footprint, while also pushing innovation within
             our product line to assist global decarbonisation endeavours. We
             acknowledge the necessity of climate action, shifting our focus
             towards combating climate change and mitigating its adverse effects.
           </p>
-          <p className="paragraph-inside-climate-change">
+          <p style={{fontSize:'20px'}} className="paragraph-inside-climate-change">
             As a company in ICT, we are heavily reliant on our energy supplies
             to run our operations 24X7. To meet this energy demand, we utilise
             various sources across geographies. These sources can be categorised
@@ -141,7 +158,7 @@ const Planetsclimatechange = () => {
             operations, the associated GHG emissions are inherent part of our
             value chain.
           </p>
-          <p className="paragraph-inside-climate-change">
+          <p style={{fontSize:'20px'}} className="paragraph-inside-climate-change">
             Our comprehensive decarbonisation strategy seeks to reduce the GHG
             emissions across our value chain. Recognising the detrimental
             effects of climate change caused by greenhouse gas (GHG) emissions,
@@ -170,6 +187,8 @@ const Planetsclimatechange = () => {
       <div className="planet-climate-last-section-parent">
 
         <div className="main-section-climate-change" style={{ background: '#F7F7F7', borderRadius: "20px" }}>
+          <br />
+          <br />
           <motion.p
             style={{
               textTransform: "uppercase",
@@ -179,8 +198,9 @@ const Planetsclimatechange = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             className="awards-green-title poppins-semibold"
           >
-            <TextAnimation text={'our'} /> <TextAnimation text={'footprint'} />
+            <TextAnimation text={'our'} />{' '} <TextAnimation text={'footprint'} />
           </motion.p>
+          
           <div className="description-main-section planet-climate-change-description" >
             <div className="data-student-community-container-environment " style={{ display: "flex" }}>
               <div className="data-set-conatiner-below">
@@ -203,31 +223,31 @@ const Planetsclimatechange = () => {
               </div>
             </div>
             <div className="planate-climate-change-energy-effiecency" style={{ paddingTop: "2%" }}>
-              <div className="ghg-intensity">
+              <motion.div initial={{opacity:0.5,scale:0.5,x:"-100px"}} whileInView={{opacity:1,scale:1,x:1}} transition={{duration:0.5,ease:"easeInOut"}} className="ghg-intensity">
                 <img src="/planetdata01.svg" alt="" />
-              </div>
-              <div className="energy-intensity">
+              </motion.div>
+              <motion.div initial={{opacity:0.5,scale:0.5,x:"100px"}} whileInView={{opacity:1,scale:1.17,x:1}} transition={{duration:0.6,ease:"easeInOut"}} className="energy-intensity">
                 <img src="/planetdata02.svg" alt="" />
-              </div>
+              </motion.div>
             </div>
             <div className="planate-climate-change-energy-effiecency" style={{ borderBottom: "1px solid #B1B3B6", padding: "2%" }}>
-              <div className="ghg-intensity" style={{ paddingRight: "6%" }}>
+              <motion.div initial={{opacity:0.5,scale:0.5,x:"-100px"}} whileInView={{opacity:1,scale:1,x:0}} transition={{duration:0.5,ease:"easeInOut"}} className="ghg-intensity" >
                 <img src="/planetdata03.svg" alt="" />
-              </div>
-              <div className="energy-intensity">
+              </motion.div>
+              <motion.div initial={{opacity:0.5,scale:0.5,x:"100px"}} whileInView={{opacity:1,scale:1,x:0}} transition={{duration:0.5,ease:"easeInOut"}} className="energy-intensity">
                 <img src="/planetdata04.svg" alt="" />
-              </div>
+              </motion.div>
             </div>
             <div className="planate-climate-change-energy-effiecency" style={{ borderBottom: "1px solid #B1B3B6", padding: "2%", borderTop: "none" }}>
-              <div className="ghg-intensity" style={{ paddingRight: "6%" }}>
+              <motion.div initial={{opacity:0.5,scale:0.5,x:"-100px"}} whileInView={{opacity:1,scale:1,x:0}} transition={{duration:0.5,ease:"easeInOut"}} className="ghg-intensity" >
                 <img src="/planetdata05.svg" alt="" />
-              </div>
-              <div className="energy-intensity">
+              </motion.div>
+              <motion.div initial={{opacity:0.5,scale:0.9,y:"100px"}} whileInView={{opacity:1,scale:1,y:0}} transition={{duration:0.5,ease:"easeInOut"}} className="energy-intensity">
                 <img src="/planetdata06.svg" alt="" />
-              </div>
+              </motion.div>
             </div>
           </div>
-          <div className="gresnnish-planet-environment-text-container">
+          <motion.div initial={{opacity:0.5,scale:0.9,y:"50px"}} whileInView={{opacity:1,scale:1,y:0}} transition={{duration:1,ease:"easeInOut"}} className="gresnnish-planet-environment-text-container">
             To realise our ambition of becoming climate action leaders, we recognise the need to take actions aligned with the 1.5-degree climate scenario. In lieu of our commitment, we have now established our science-based short-term emissions reduction targets aligned with the 1.5-degree emissions trajectory. The targets have also been validated by the Science-based Targets Initiative (SBTi).
             <br />
             <br />
@@ -235,40 +255,41 @@ const Planetsclimatechange = () => {
             <br />
             <br />
             We have demonstrated climate leadership this year with our CDP disclosure as well. We have received an A-, which is in the Leadership band. This is higher than the Asia regional average of C and higher than the Media, telecommunications and data centre services sector average of B. The leadership band signifies the implementation of current best practices by Tata Communications in climate action.
-          </div>
+          </motion.div>
           <div className="normal-text-climate-change-vision">
-            <p className="boiggrer-decription">
+            <motion.p initial={{opacity:0.5,scale:0.9,y:"50px"}} whileInView={{opacity:1,scale:1,y:0}} transition={{duration:1,ease:"easeInOut"}}  className="boiggrer-decription">
               In alignment with our forward-looking vision, we have devised a targeted climate action strategy that seamlessly integrates industry-leading practices.
-            </p>
-            <p className="normal-text-planet-vision">
+            </motion.p>
+            <motion.p initial={{opacity:0.5,scale:0.9,y:"50px"}} whileInView={{opacity:1,scale:1,y:0}} transition={{duration:1,ease:"easeInOut",delay:0.1}}  className="normal-text-planet-vision">
               This strategy is informed by a comprehensive understanding of our business’s risks and opportunities. Within this framework, we’ve identified eight climate action levers, spanning operational enhancements and decarbonization initiatives across our value chain.
               <br />
               <br />
               To mitigate the adverse impact of emerging climate risks on our operations, we’ve implemented best practice measures supported by internal carbon pricing mechanisms. Our commitment extends to transparently documenting our progress toward established objectives and strategies, while closely adhering to mandated disclosure and reporting frameworks. Through this holistic approach, we are resolutely dedicated to reducing our carbon footprint and contributing to a sustainable future for all.
-            </p>
+            </motion.p>
           </div>
           <div className="text-center-climate-change-container">
-            <p className="bold-green-text">
+            <motion.p initial={{opacity:0.5,scale:0.9,y:"50px"}} whileInView={{opacity:1,scale:1,y:0}} transition={{duration:1,ease:"easeInOut"}}  className="bold-green-text">
               Assessing existing and emerging climate related risks and opportunities
               Implementation of Internal Carbon Pricing mechanism in overall climate action levers
-            </p>
-            <div className="underlined-green"></div>
+            </motion.p>
+            <motion.div initial={{scale:1,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:1,ease:"easeInOut",delay:0.8}}  className="underlined-green"></motion.div>
             <div className="smallsquare-rotate-btn"></div>
           </div>
           <div className="plannet-climate-focus-section">
 
             <div className="focus-main-content-container">
               <div className="mainContainer-focus-sectin div-focus1">
-                <div className="parent-child-component">
-                  <span className="focus-heading1">Immediate Focus</span>
+                <motion.div initial={{x:"-100px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut"}} className="parent-child-component">
+                  <span   className="focus-heading1">Immediate Focus</span>
                   <img src="/ecm=polygon.svg" alt="" />
-                </div>
+                </motion.div>
                 <div className="single-focus-container">
                   <div className="single-focus-container-heading-bar">
 
                     <b className="single-focus-container-heading">
                       Enhancing Energy Efficiency
                     </b>
+                    
                     <img
                       src="/ecc-heading-bar1.png"
                       alt=""
@@ -279,9 +300,9 @@ const Planetsclimatechange = () => {
                   <p className="single-focus-container-description">
                     Increase energy efficiency by optimising energy consumption in facilities and data centres
                   </p>
-                  <a href="" className="single-focus-conatiner-links">
+                  {/* <a onClick={()=>handleClick(event,"Enhancing-Energy-Efficiency")} className="single-focus-conatiner-links">
                     Read More{">"}
-                  </a>
+                  </a> */}
                 </div>
                 <div className="single-focus-container">
                   <div className="single-focus-container-heading-bar">
@@ -298,16 +319,16 @@ const Planetsclimatechange = () => {
                   <p className="single-focus-container-description">
                     Improve emission reduction by raising the proportion of renewable energy sources in the energy mix
                   </p>
-                  <a href="" className="single-focus-conatiner-links">
+                  {/* <a onClick={()=>handleClick(event,"Transition-to-Renewable-Energy")} className="single-focus-conatiner-links">
                     Read More{">"}
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div className="mainContainer-focus-sectin div-focus2">
-                <div className="parent-child-component">
-                  <span className="focus-heading2">Near-term Focus</span>
+                <motion.div initial={{x:"-100px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut",delay:0.1}} className="parent-child-component">
+                  <span   className="focus-heading2">Near-term Focus</span>
                   <img src="/ecm=polygon.svg" alt="" />
-                </div>
+                </motion.div>
                 <div className="single-focus-container single-focus-container-specail">
                   <div className="single-focus-container-heading-bar">
                     <b className="single-focus-container-heading">
@@ -322,9 +343,9 @@ const Planetsclimatechange = () => {
                   <p className="single-focus-container-description">
                     Prioritising green product innovation to minimise our carbon footprint
                   </p>
-                  <a href="" className="single-focus-conatiner-links">
+                  {/* <a href="" className="single-focus-conatiner-links">
                     Read More{">"}
-                  </a>
+                  </a> */}
                 </div>
                 <div className="single-focus-container single-focus-container-specail">
                   <div className="single-focus-container-heading-bar">
@@ -341,17 +362,17 @@ const Planetsclimatechange = () => {
                   <p className="single-focus-container-description">
                     Implement carbon offset programmes at the community level
                   </p>
-                  <a href="" className="single-focus-conatiner-links">
+                  {/* <a href="" className="single-focus-conatiner-links">
                     Read More{">"}
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div className="mainContainer-focus-sectin div-focus1">
 
-                <div className="parent-child-component">
-                  <span className="focus-heading1">Medium-term Focus</span>
+                <motion.div initial={{x:"-100px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut",delay:0.2}}  className="parent-child-component">
+                  <span  className="focus-heading1">Medium-term Focus</span>
                   <img src="/ecm=polygon.svg" alt="" />
-                </div>
+                </motion.div>
                 <div className="single-focus-container">
                   <div className="single-focus-container-heading-bar">
 
@@ -367,9 +388,9 @@ const Planetsclimatechange = () => {
                   <p className="single-focus-container-description">
                     Objective is to reduce emissions throughout the entire value chain, encompassing upstream, downstream and supply chain operations.
                   </p>
-                  <a href="" className="single-focus-conatiner-links">
+                  {/* <a href="" className="single-focus-conatiner-links">
                     Read More{">"}
-                  </a>
+                  </a> */}
                 </div>
                 <div className="single-focus-container">
                   <div className="single-focus-container-heading-bar">
@@ -386,16 +407,16 @@ const Planetsclimatechange = () => {
                   <p className="single-focus-container-description">
                     Launch community-based carbon offset programmes and introduce cleaner fuel options for Electric Vehicles (EVs) to decrease emissions related to commuting.
                   </p>
-                  <a href="" className="single-focus-conatiner-links">
+                  {/* <a href="" className="single-focus-conatiner-links">
                     Read More{">"}
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div className="mainContainer-focus-sectin div-focus2">
-                <div className="parent-child-component">
-                  <span className="focus-heading2">Long-term Focus</span>
+                <motion.div initial={{x:"-100px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut",delay:0.3}}  className="parent-child-component">
+                  <span  className="focus-heading2">Long-term Focus</span>
                   <img src="/ecm=polygon.svg" alt="" />
-                </div>
+                </motion.div>
                 <div className="single-focus-container single-focus-container-specail">
                   <div className="single-focus-container-heading-bar">
 
@@ -413,9 +434,9 @@ const Planetsclimatechange = () => {
                     Decarbonise Scope 1
                     (Diesel-based) emissions.
                   </p>
-                  <a href="" className="single-focus-conatiner-links">
+                  {/* <a href="" className="single-focus-conatiner-links">
                     Read More{">"}
-                  </a>
+                  </a> */}
                 </div>
                 <div className="single-focus-container single-focus-container-specail">
                   <div className="single-focus-container-heading-bar">
@@ -432,31 +453,48 @@ const Planetsclimatechange = () => {
                   <p className="single-focus-container-description">
                     Participate in collaborative endeavours to promote climate action and contribute to policy development alongside key stakeholders.
                   </p>
-                  <a href="" className="single-focus-conatiner-links">
+                  {/* <a href="" className="single-focus-conatiner-links">
                     Read More{">"}
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
           </div>
-          <div className="ecc-sec3-content">
+          <div id="Enhancing-Energy-Efficiency" className="ecc-sec3-content">
             <img src="/small-square-btn.png" alt="" />
+            <br />
+            <br />
             <h2>
               ENHANCING ENERGY EFFICIENCY
             </h2>
+            <br />
             <h3>
               Energy efficiency is one of the key levers in our strategy which reduces our energy demand while accommodating the growing business needs.
             </h3>
+            <br />
             <p>
-              We invest significantly in our energy efficiency projects to improve the operations of the offices, networking centres  and PoP locations while addressing the gaps in the infrastructure. To accomplish this, we undertake proactive actions by comprehensive planning and assessing the impacts of the initiatives at financial, technological, social and environmental level. These opportunities encompass all our equipments and facilities such as HVAC, SMP, UPS systems and illumination systems. With this holistic approach, we enable our operations to optimise energy usage and achieve our overall climate goals. <br /><br />
+              We invest significantly in our energy efficiency projects to improve the operations of the offices, networking centres and PoP locations while addressing the gaps in the infrastructure. To accomplish this, we undertake proactive actions by comprehensive planning and assessing the impacts of the initiatives at financial, technological, social and environmental level. These opportunities encompass all our equipments and facilities such as HVAC, SMP, UPS systems and illumination systems. With this holistic approach, we enable our operations to optimise energy usage and achieve our overall climate goals. <br /><br />
             </p>
             <p>
               We recognise monitoring and measurement activity as a critical element for us to maintain the efficiency of our infrastructure. Therefore, we ensure all our energy consumption across operations is monitored, measured, and reviewed at all levels. This helps in identifying performance issues, taking corrective actions, and benchmarking our systems with the global leading best practices. Furthermore, we conduct thorough internal energy audits to assess the current gaps and implement the opportunities.
             </p>
+<br />
+<div className="wrapper-progress-made" style={{width:"100%",display:"flex",justifyContent:"center"}}>
+<motion.p
+            style={{
+              textTransform: "uppercase",
+              width:"40%",
+              textAlign:"center",
+              backgroundColor: '#B0BC25', // Change background color based on isBlueHeading state
+            }}
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            className="awards-green-title poppins-semibold"
+          >
+            <TextAnimation text={'Progress'} />{' '} <TextAnimation text={'Made'} />
+          </motion.p>
+</div>
 
-            <div className='bar-heading-parent' style={{ display: "flex", width: '100%', justifyContent: 'center' }}>
-              <h3 className='planet-bar-heading-sec poppins-medium'>PROGRESS MADE</h3>
-            </div>
             <div className="p-ecc-bcc-wrap-main">
               <div className="p-ecc-bcc-wrap flex">
                 <img src="/ecc-bcc1.png" alt="" />
@@ -468,12 +506,16 @@ const Planetsclimatechange = () => {
               </div>
             </div>
             <img src="/small-square-btn.png" alt="" />
-            <h2>
+            <br />
+            <br />
+            <h2 id="Transition-to-Renewable-Energy">
               TRANSITION TO RENEWABLE ENERGY
             </h2>
+            <br />
             <h3>
               Recognising the crucial role of renewable energy in reducing carbon emissions, we are actively seeking opportunities to increase the proportion of renewables in our energy portfolio.
             </h3>
+            <br />
             <p>
               Our renewable energy portfolio is focused to bring cost effectiveness with less volatile prices and compete with conventional electricity tariffs. Keeping our future ambition to become Net Zero and RE outlook, we plan targeted opportunities with long term time horizons in mind.<br /><br />
             </p>
@@ -484,19 +526,33 @@ const Planetsclimatechange = () => {
               Our current portfolio includes Power purchase agreements (PPA), government green tariff schemes, Group captive models, solar rooftops and Energy Attribute Certificates. <br /><br /><br />
             </p>
             <div className="p-ecc-bcc-wrap-main">
-              <h4>
+              <h4 style={{color: "#3E3E3E",fontWeight:"800"}}>
                 Decarbonisation of Operations
               </h4>
+              <br />
               <h3>
                 Our comprehensive decarbonisation strategy seeks to reduce the carbon footprint associated with our operations.
               </h3>
+              <br />
               <p>
                 Recognising the detrimental effects of climate change caused by greenhouse gas (GHG) emissions, we are committed to adopting operational enhancements that lower our GHG intensity. We have laid the foundation for targeted efforts to reduce our carbon footprint by <b>meticulously tracking our GHG emissions,</b> which include both Scope 1 and Scope 2 emissions, in accordance with the GHG Protocol Corporate Accounting and Reporting Standard. The <b>analysis and mitigation of Scope 3 emissions,</b> involving emissions from employee commuting, business travel and other indirect activities, are also integral components of our strategy.
               </p>
             </div>
-            <div className='bar-heading-parent' style={{ display: "flex", width: '100%', justifyContent: 'center' }}>
-              <h3 className='planet-bar-heading-sec poppins-medium'>PROGRESS MADE</h3>
-            </div>
+            <div className="wrapper-progress-made" style={{width:"100%",display:"flex",justifyContent:"center"}}>
+<motion.p
+            style={{
+              textTransform: "uppercase",
+              width:"40%",
+              textAlign:"center",
+              backgroundColor: '#B0BC25', // Change background color based on isBlueHeading state
+            }}
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            className="awards-green-title poppins-semibold"
+          >
+            <TextAnimation text={'Progress'} />{' '} <TextAnimation text={'Made'} />
+          </motion.p>
+</div>
             <div className="p-ecc-bcc-wrap-main">
               <div className="p-ecc-bcc-wrap flex">
                 <img src="/ecc-bcc5.png" alt="" />
@@ -508,19 +564,37 @@ const Planetsclimatechange = () => {
             </div>
 
             <img src="/small-square-btn.png" alt="" />
-            <h2>
+            <br />
+            <br />
+            <h2 id="Customer-GHG-Avoidance">
               CUSTOMER GHG AVOIDANCE <br />
             </h2>
+            <br />
             <h3>
               At Tata Communications, we are developing environment-friendly products and solutions that seamlessly connect our business with the environment and society. <br />
             </h3>
+            <br />
             <p>
               By offering green solutions to our clients, we assist them in becoming more competitive and sustainable in their supply chains. Our low-carbon products and solutions, spanning robust network services, Internet of Things (IoT) solutions, Manufacturing Execution Systems (MES), cloud services and collaborative business solutions, are meticulously designed to deliver substantial reduction in greenhouse gas (GHG) emissions.<br />
             </p>
-            <div className="p-ecc-bcc-wrap-main-grey">
-              <div className='bar-heading-parent' style={{ display: "flex", width: '100%', justifyContent: 'center' }}>
-                <h3 className='planet-bar-heading-sec poppins-medium'>PROGRESS MADE</h3>
-              </div>
+            <br />
+            <br />
+            <div className="p-ecc-bcc-wrap-main-grey1">
+            <div className="wrapper-progress-made" style={{width:"100%",display:"flex",justifyContent:"center"}}>
+<motion.p
+            style={{
+              textTransform: "uppercase",
+              width:"40%",
+              textAlign:"center",
+              backgroundColor: '#B0BC25', // Change background color based on isBlueHeading state
+            }}
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            className="awards-green-title poppins-semibold"
+          >
+            <TextAnimation text={'Progress'} />{' '} <TextAnimation text={'Made'} />
+          </motion.p>
+</div>
               <div className="p-ecc-bcc-wrap flex">
                 <img src="/ecc-bcc8.png" alt="" />
                 <img src="/ecc-bcc9.png" alt="" />
@@ -537,25 +611,33 @@ const Planetsclimatechange = () => {
                 <img src="/ecc-bcc14.png" alt="" />
               </div>
             </div>
+            <br />
+            <br />
             <img src="/small-square-btn.png" alt="" />
-            <h2>
-              COMMUNITY CARBON OFFSET PROGRAMMES<br /><br />
+            <br />
+            <br />
+            <h2 id="Community-Carbon-Offset-Programmes">
+              COMMUNITY CARBON OFFSET PROGRAMMES
             </h2>
+            <br />
             <h3>
-              We remain resolute in our commitment to mitigating risks posed by climate change and to inspire positive change in the communities where we operate. <br /> <br />
+              We remain resolute in our commitment to mitigating risks posed by climate change and to inspire positive change in the communities where we operate. <br /> 
+              
             </h3>
             <p>
-              Additionally, we have undertaken an extensive baseline and community needs assessment to find feasible carbon offset projects. Using this method, we have found projects that have been assessed both financially and operationally with the goal of enhancing plantations and cook stoves. By the fiscal year 2030, <b>our objective is to have produced 95,000 metric tonnes of Community-based Carbon Credits,</b> signifying a significant contribution to both the local environment and the broader climate agenda.<br />
+              Additionally, we have undertaken an extensive baseline and community needs assessment to find feasible carbon offset projects. Using this method, we have found projects that have been assessed both financially and operationally with the goal of enhancing plantations and cook stoves. By the fiscal year 2030, <b>our objective is to have produced 95,000 metric tonnes of Community-based Carbon Credits,</b> signifying a significant contribution to both the local environment and the broader climate agenda.<br />
             </p>
+            <br />
           </div>
           <div className="p-ecc-bcc-wrap-main-grey">
             <img src="/ecc-bcc15.png" alt="" />
           </div>
-          <div className="p-ecc-bcc-wrap-main">
-            <div className="p-ecc-bcc-wrap flex">
-              <div className="p-ecc-bcc-wrap-context">
+          <div id="Cutting-Down-on-Value-Chain-Based-Emissions" className="p-ecc-bcc-wrap-main">
+            <div className="p-ecc-bcc-wrap flex" style={{ alignItems:"flex-start"}}>
+              <div className="p-ecc-bcc-wrap-context" style={{padding:"2%"}}>
                 <img className="ecc-bcc-lil-btn" src="/small-square-btn.png" alt="" />
-
+<br />
+<br />
                 <h2>
                   CUTTING DOWN ON VALUE CHAIN BASED EMISSIONS<br /><br />
                 </h2>
@@ -568,12 +650,49 @@ const Planetsclimatechange = () => {
                 <p>
                   With this guiding strategy, we are embarking in a crucial journey to educate suppliers about climate change and supporting them in their climate action journey while also assessing the impact on our supply chain based emissions to create a positive impact in global supply chains.<br />
                 </p>
+                <div className="last-descp-evs">
+                <b className="green-heading">
+                  A-
+                </b><br />
+                <span>CDP supplier engagement <br />
+                   rating in 2023</span>
+                </div>
+                
               </div>
+              <div className="image-container-wrapper">
               <img className="ecc-bcc16" src="/ecc-bcc16.png" alt="" />
+              </div>
+              
 
             </div>
           </div>
-          <div className="p-ecc-bcc-wrap-main">
+          <div id="Introducing-EVs-and-Cleaner-Fuel-Options" className="p-ecc-bcc-wrap-main" style={{marginTop:0,background:"rgb(152, 167, 70,0.08)"}}>
+            <div className="p-ecc-bcc-wrap flex" style={{ alignItems:"flex-start"}}>
+            
+              <div className="p-ecc-bcc-wrap-context" style={{padding:"2%"}}>
+                <img className="ecc-bcc-lil-btn" src="/small-square-btn.png" alt="" />
+<br />
+<br />
+                <h2>
+                Introducing EVs and Cleaner Fuel Options<br /><br />
+                </h2>
+                <p className="specail">
+                In accordance with our emission reduction objectives, we are actively transitioning our corporate fleet to greener alternatives.<br />
+                </p>
+                <p>
+                Notably, we have introduced electric vehicles (EVs) for business travel in India, resulting in a commendable decrease in greenhouse gas (GHG) emissions. Moreover, we are enhancing associated infrastructure by developing additional EV charging stations.                </p>
+                <p>
+                  <br />
+                  In Europe, we are advocating for rail travel as a more environment-friendly option compared to short-haul flights, which has the potential to substantially reduce emissions. Our commitment extends to collaborating with aviation partners to enhance the utilisation of Sustainable Aviation Fuel (SAF), representing a significant stride towards cleaner aviation.                </p>
+              </div>
+              <div className="image-container-wrapper">
+              <img className="ecc-bcc16" src="/PlanetFule.svg" alt="" />
+              </div>
+              
+
+            </div>
+          </div>
+          <div id="Decarbonising-Diesel-Based-Scope-1-Emissions" className="p-ecc-bcc-wrap-main">
             <div className="p-ecc-bcc-wrap-fnl flex">
               <img className="ecc-bcc17" src="/ecc-bcc17.png" alt="" />
               <div className="p-ecc-bcc-wrap-context">
@@ -583,14 +702,18 @@ const Planetsclimatechange = () => {
                   DECARBONISING DIESEL-BASED SCOPE 1 EMISSIONS<br /><br />
                 </h2>
                 <p>
-                  Our commitment to advancing climate action transcends our direct operations. We actively <b>participate in advocacy</b> and <b>foster relationships with stakeholders</b> to navigate regulatory hurdles, particularly in the renewable energy sector. Our climate action teams are crafting detailed roadmaps and seeking partnerships to bolster our strategies and broaden the scope of our climate initiatives.<br />
+                  We are tracking the environmental impact of our backup power sources. Traditional diesel generators, employed for energy continuity, contribute to Scope 1 emissions. To address this concern, we are exploring energy-efficient, emission-free alternatives, such as <b>battery energy storage systems.</b> These alternatives align with our decarbonisation goals by eliminating diesel usage and offering on-site energy storage solutions that enhance the resilience and sustainability of our operations<br />
                 </p>
+                <p>
+                  We are also moving towards Dual fuel technologies and advanced emission control devices for our generators, thus, minimising the use of diesel.<br />
+                </p>
+                
 
                 <img className='ecc-bcc20 ' src="/ecc-bcc20.png" alt="" />
               </div>
             </div>
           </div>
-          <div className="p-ecc-bcc-wrap-main">
+          <div id="Driving-Climate-Action-Through-Collaboration" className="p-ecc-bcc-wrap-main">
             <div className="p-ecc-bcc-wrap-fnl flex">
               <div className="p-ecc-bcc-wrap-context">
                 <img className="ecc-bcc-lil-btn" src="/small-square-btn.png" alt="" />
@@ -599,13 +722,10 @@ const Planetsclimatechange = () => {
                   DRIVING CLIMATE ACTION THROUGH COLLABORATION<br /><br />
                 </h2>
                 <p>
-                  We are tracking the environmental impact of our backup power sources. Traditional diesel generators, employed for energy continuity, contribute to Scope 1 emissions. To address this concern, we are exploring energy-efficient, emission-free alternatives, such as <b>battery energy storage systems.</b> These alternatives align with our decarbonisation goals by eliminating diesel usage and offering on-site energy storage solutions that enhance the resilience and sustainability of our operations<br />
-                </p>
-                <p>
-                  We are also moving towards Dual fuel technologies and advanced emission control devices for our generators, thus, minimising the use of diesel.<br />
-                </p>
+                  Our commitment to advancing climate action transcends our direct operations. We actively <b>participate in advocacy</b> and <b>foster relationships with stakeholders</b> to navigate regulatory hurdles, particularly in the renewable energy sector. Our climate action teams are crafting detailed roadmaps and seeking partnerships to bolster our strategies and broaden the scope of our climate initiatives.<br />
+                </p> 
                 <img className='ecc-bcc20 ' src="/ecc-bcc21.png" alt="" />
-
+     
               </div>
               <img className="ecc-bcc18" src="/ecc-bcc18.png" alt="" />
 
@@ -615,7 +735,7 @@ const Planetsclimatechange = () => {
             <div className="p-ecc-bcc-wrap-fnl flex">
               <img className="ecc-bcc18" src="/ecc-bcc19.png" alt="" />
 
-              <div className="p-ecc-bcc-wrap-context">
+              <div id='Ensuring-Transparency-and-Accountability' className="p-ecc-bcc-wrap-context">
                 <img className="ecc-bcc-lil-btn" src="/small-square-btn.png" alt="" />
 
                 <h2>
@@ -655,7 +775,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Goals and Progress</a>
+            <Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -663,7 +783,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Policies</a>
+            <Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -671,7 +791,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Our Footprint</a>
+            <a onClick={()=>handleClick(event,"Our-Footprint")}>Our Footprint</a>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -679,7 +799,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Enhancing Energy Efficiency</a>
+            <a onClick={()=>handleClick(event,"Enhancing-Energy-Efficiency")}>Enhancing Energy Efficiency</a>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -687,7 +807,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Transition to Renewable Energy (RE)</a>
+            <a onClick={()=>handleClick(event,"Transition-to-Renewable-Energy")}>Transition to Renewable Energy (RE)</a>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -695,7 +815,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Customer GHG Avoidance</a>
+            <a onClick={()=>handleClick(event,"Customer-GHG-Avoidance")}>Customer GHG Avoidance</a>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -703,7 +823,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Community Carbon Offset Programmes </a>
+            <a onClick={()=>handleClick(event,"Community-Carbon-Offset-Programmes")}>Community Carbon Offset Programmes</a>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -711,7 +831,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Cutting Down on Value Chain Based Emissions</a>
+            <a onClick={()=>handleClick(event,"Cutting-Down-on-Value-Chain-Based-Emissions")}>Cutting Down on Value Chain Based Emissions</a>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -719,7 +839,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Introducing EVs and Cleaner Fuel Options</a>
+            <a onClick={()=>handleClick(event,"Introducing-EVs-and-Cleaner-Fuel-Options")}>Introducing EVs and Cleaner Fuel Options</a>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -727,7 +847,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Decarbonising Diesel-Based Scope 1 Emissions</a>
+            <a onClick={()=>handleClick(event,"Decarbonising-Diesel-Based-Scope-1-Emissions")}>Decarbonising Diesel-Based Scope 1 Emissions</a>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -735,7 +855,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Driving Climate Action Through Collaboration</a>
+            <a onClick={()=>handleClick(event,"Driving-Climate-Action-Through-Collaboration")}>Driving Climate Action Through Collaboration</a>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -743,7 +863,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">Ensuring Transparency and Accountability</a>
+            <a onClick={()=>handleClick(event,"Ensuring-Transparency-and-Accountability")}>Ensuring Transparency and Accountability</a>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -751,7 +871,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">GRI index</a>
+            <Link target="_blank" to="/gri-index">GRI index</Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -759,7 +879,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a href="">SDG Linkages</a>
+            <Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link>
           </div>
           <div className="quicklinks-button-div">
             <img

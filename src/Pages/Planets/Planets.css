@@ -9,6 +9,7 @@
 .ecc-bcc17{
   width: 47%;
 }
+
 .climate-change-intro-paragraph-inside-container {
   font-family: var(--font-replacment);
   color: #123c61;
@@ -150,7 +151,7 @@ color: #123C61;
 }
 .single-focus-container-heading-bar{
   display: flex;
-  height: 20%;
+  height: 30%;
   margin: 5% 0;
   justify-content: space-between;
 }
@@ -166,7 +167,6 @@ color: #123C61;
 .single-focus-container a {
   margin-top: 5%;
   text-decoration: none;
-  width: 192px;
   color: #717171;
   letter-spacing: 0.5em;
   padding: 1px 8px;
@@ -216,7 +216,15 @@ color: #123C61;
 .planet-climate-last-section-parent .quick-link-sections a
 {
   font-size: 14px;
-}.description-main-section {
+  color:#134673;
+  transition: 0.5s all ease-in-out;
+}
+.planet-climate-last-section-parent .quick-link-sections a:hover
+{
+  font-weight: 600;
+  color:#133859;
+}
+.description-main-section {
   margin: 30px;
   margin-left: 60px;
   
@@ -295,7 +303,8 @@ color: #123C61;
 }
 .graph-parent-container img{
  width: 400px;
- height: 400px;margin-right: 40px;
+ height: 400px;
+ margin-right: 40px;
 }
 /* NEW CSS FOR CONTENT BELOW TABLE START*/
 
@@ -306,27 +315,59 @@ color: #123C61;
 }
 .ecc-sec3-content h2{
   color: #B0BC25;
+font-size: 36px;
+font-weight: 400;
+line-height: 42px;
+text-align: left;
+
   
 }
 .ecc-sec3-content h3{
+  font-family: Gotham;
+  font-size: 28px;
   font-weight: 300;
-  font-size: 30px;
-  
+  line-height: 42px;
+  text-align: left;
+  width: 100%;
 }
 .ecc-sec3-content h4{
 font-size: 32px;
 }
 .ecc-sec3-content p{
+  font-family: Gotham;
   font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  
 }
 .p-ecc-bcc-wrap{
   width: 100%;
   margin: 2% auto;
   justify-content: space-between;
+
+}
+
+.image-container-wrapper{
+  width: 48%;
+  margin-top: 15%;
+  padding-right: 2%;
 }
 .p-ecc-bcc-wrap-main{
   width: 100%;
   margin: 2% auto 10%;
+  margin-bottom: 0;
+}
+.p-ecc-bcc-wrap-main-grey1{
+  width: 100%;
+  margin: 2% auto 10%;
+  padding: 2%;
+  border-radius: 22px;
+  border: 1px solid #D9D9D9;
+  background-color: rgb(217, 217, 217, 0.1);  
+}
+.p-ecc-bcc-wrap-main-grey1{
+  margin: auto;
 }
 .p-ecc-bcc-wrap-main-grey{
   width: 100%;
@@ -335,6 +376,10 @@ font-size: 32px;
   border-radius: 22px;
   border: 1px solid #D9D9D9;
   background-color: rgb(217, 217, 217, 0.1);
+}
+.p-ecc-bcc-wrap-main-grey img{
+  width: 95%;
+  margin: auto;
 }
 .p-ecc-bcc-wrap-context{
   width: 48%;
@@ -354,16 +399,43 @@ font-size: 32px;
 }
 .p-ecc-bcc-wrap-context h2{
   color: #B0BC25;
+
 }
 .p-ecc-bcc-wrap-context p{
+  font-family: Gotham;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #606060;
+  
+}
+.last-descp-evs b{
+  font-family: Gotham;
+font-size: 48px;
+font-weight: 700;
+line-height: 30px;
+text-align: left;
+color: #97A400;
+}
+.last-descp-evs span{
+  font-family: Gotham;
 font-size: 20px;
+font-weight: 600;
+line-height: 32px;
+text-align: left;
+
 }
 .p-ecc-bcc-wrap ecc-bcc16{
  width: 48%;
 }
 
-
-
+.p-ecc-bcc-wrap img{
+  width:48%;
+}
+.image-container-wrapper img{
+  width: 100%;
+}
 
 
 
@@ -590,7 +662,12 @@ margin: 0;
 }
 .specail-circular-economy .climate-change-intro-paragraph-inside-container p {
  color: #123C61;
- font-size: 18px;
+ font-family: Gotham;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+
 
 }
 .specail-circular-economy-img img{
@@ -603,6 +680,12 @@ margin: 0;
 }
 .water-mamngment-intro .climate-change-intro-paragraph-inside-container .paragraph-inside-climate-change{
   color:#123c61 !important;
+  font-family: Gotham;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+
 }
 .specail-water-mamngment-para{
   color:#B0BC25 ;
@@ -680,7 +763,8 @@ margin-top: 20px;
   margin-top: 2%;
   border-top: 1px solid  #B1B3B6;
   display: flex;
-  justify-content: center;
+
+  justify-content: space-between;
   align-items: center;
 }
 .planet-climate-change-description .data-student-community-container-environment .data-set-conatiner-below .small-size-paragraph-environment{
@@ -692,13 +776,17 @@ margin-top: 20px;
   color: #151515;
   width: 100%;
 }
-.ghg-intensity{
-  border-right: 1px solid  #B1B3B6;
+.ghg-intensity, .energy-intensity{
   padding: 3%;
+  width: 50%;
+  margin: auto;
 }
-.ghg-intensity img ,.energy-intensity img{
+.ghg-intensity img,.energy-intensity img{
   width: 100%;
-   margin-top: 2%;
+  margin: auto;
+  /* height: 40%; */
+   /* margin-top: 2%; */
+  /* border: 2px solid red; */
   align-items: center;
   align-self: center;
 }
@@ -785,10 +873,24 @@ font-size: 2.2rem;
 font-weight: 300;
 }
 .planet-wm-sec1-text{
-  width: 65%;
+  width: 68%;
+}
+.planet-wm-sec1-text h2{
+font-family: Gotham;
+font-size: 30px;
+font-weight: 300;
+line-height: 42px;
+text-align: left;
+ margin-bottom: 2%;
 }
 .planet-wm-sec1-text p{
-  font-size: 1.5rem;
+  font-family: Gotham;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 2%;
+  padding-right: 3%;
   color: #606060;
 }
 .planet-wm-sec2{
@@ -822,8 +924,13 @@ font-weight: 300;
   color: #97A400;
 }
 .planet-wm-sec2-card-header h2{
- font-size: 1.5rem;
- letter-spacing: 0.5cqmin;
+  font-family: Gotham;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  
 }
 .planet-wm-sec2-card-divider{
   width: 95%;
@@ -832,6 +939,15 @@ font-weight: 300;
   background-color: #717171;
   height: 1px;
 }
+.planet-wm-sec2-card-divider ul li{
+  font-family: Gotham;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+text-align: left;
+
+}
+
 .planet-wm-sec3{
   width: 70%;
   margin: 5% 0;
@@ -845,14 +961,21 @@ font-weight: 300;
 }
 .planet-wm-sec3 h3{
  color: #3E3E3E;
- font-weight: 300;
-  margin-bottom: 2%; 
-  font-size: 2rem;
+font-family: Gotham;
+font-size: 30px;
+font-weight: 300;
+line-height: 42px;
+text-align: left;
+margin-bottom: 2%;
 }
 .planet-wm-sec3 p{
   color: #3E3E3E;
-  font-size: 1.4rem;
-  margin-bottom: 2%; 
+  font-family: Gotham;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+ 
 }
 .planet-wm-sec4{
   width: 70%;
@@ -866,20 +989,14 @@ font-weight: 300;
   background-color: rgb(217, 217, 217, 0.3);
   padding: 2% 5%;
 }
-.planet-bar-heading-sec {
-  text-align: center;
-  background-color: #B0BC25;
-  color: #fff;
-  border-radius: 50px;
-  padding: 1px 50px;
-  display: inline-block;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  margin: 0 auto 4%; /* Centering using margin */
-}
+
 .planet-wm-sec4-p1{
-  text-align: center;
-  font-size: 1.3rem
+font-family: Gotham;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+text-align: center;
+
 }
 .planet-wm-sec4-p1 span{
  font-size: 2.5rem;
@@ -891,9 +1008,16 @@ font-weight: 300;
   margin: auto;
   justify-content: space-between;
 }
+.planet-wm-sec4-row-cont h1{
+
+
+}
 .planet-wm-sec4-row h1{
-  font-weight: 600;
-  font-size: 3rem;
+  font-family: Gotham;
+  margin-top: 2%;
+font-size: 42px;
+font-weight: 600;
+line-height: 26px;
   text-align: center;
   color: #B0BC25;
 }
@@ -928,6 +1052,14 @@ font-weight: 300;
 .planet-wm-sec5-content .planet-wm-sec5-content-text{
   width: 50%;
 }
+.planet-wm-sec5-content-text h3{
+  font-family: Gotham;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 42px;
+  text-align: left;
+  
+}
 .planet-wm-sec5-content .planet-wm-sec5-graph{
   width: 50%;
 }
@@ -939,16 +1071,27 @@ font-weight: 300;
 }
 .planet-wm-sec5 h3{
   color: #3E3E3E;
-  font-weight: 300;
-   margin-bottom: 2%; 
-   font-size: 2rem;
+font-family: Gotham;
+font-size: 30px;
+font-weight: 300;
+line-height: 42px;
+text-align: left;
+
  }
  .planet-wm-sec5 p{
-  font-size: 1.5rem;
+  font-family: Gotham;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+
 }
 .planet-wm-sec5 h1{
-  font-size: 3rem;
-  font-weight: bold;
+  font-family: Gotham;
+font-size: 48px;
+font-weight: 700;
+line-height: 40px;
+text-align: left;
   color: #B0BC25;
 }
 .planet-wm-sec5 h6{
@@ -979,16 +1122,21 @@ font-weight: 300;
   letter-spacing: 0.5cqmin;
 }
 .wm-sticky-links li{
-  list-style-image: url('/quick-links-icon.png');
+  list-style-image: url('/quickLinkArrow.png"');
   margin-bottom: 8%;
   color: #123C61;
   /* width: 5px; */
  }
 .wm-sticky-links ul li a {
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.5s all ease-in-out; /* Remove underline from links */
   color: inherit; /* Inherit color from parent */
 }
-
+.wm-sticky-links ul li a:hover{
+  font-weight: 600;
+  color: #243f56;
+}
 /* *******WATER RESOURCE MANAGEMENT CSS START */
 .planet-wrm-sec1{
   width: 90%;
@@ -1124,4 +1272,36 @@ margin-bottom: 2%;
 }
 .wrm-sec3-wr-card-row img{
  width: 48%;
+}
+@media (max-width: 1600px) {
+  .wm-quick-links-section{
+margin-top: 70%;
+  }
+}
+.planet-bar-heading-sec {
+  text-align: center;
+  width: 30%;
+  background-color: #B0BC25;
+  color: #fff;
+  border-radius: 50px;
+  font-family: Gotham;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0.2em;
+}
+.wm-sticky-links .quicklinks-button-div{
+  width: 100%;
+  color: #134673;
+
+}
+.wm-sticky-links .quicklinks-button-div a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+.wm-sticky-links .quicklinks-button-div a:hover{
+  font-weight: 600;
 }

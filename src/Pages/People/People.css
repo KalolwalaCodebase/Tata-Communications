@@ -212,7 +212,7 @@ color: #3E3E3E;
 .specail-description-heading{
 font-weight: 300;
 line-height: 42px;
-margin-top: 3%;
+margin-top: 2%;
 width: 90%;
 text-align: left;
 font-family: var(--font-replacment);
@@ -458,7 +458,7 @@ color:#3E3E3E;
   .image-description-and-image-container{
     display: flex;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -508,6 +508,7 @@ color: #AD3088;
   }
   .specail-style-pink-identification-supplier {
     width: 100%;
+    padding: 2%;
   }
   .specail-style-pink-identification-supplier img{
     width: 100%;

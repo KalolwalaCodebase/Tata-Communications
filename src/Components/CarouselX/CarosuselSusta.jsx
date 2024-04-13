@@ -134,10 +134,12 @@ const CarosuselSusta = () => {
                                     <tbody className='carousel-x-data'>
                                         {item.tableData.map((rowData, rowIndex) => (
                                             <tr key={rowIndex}>
-                                                <th className='poppins-medium'>{rowData.heading}</th>
+                
+                                                <th className='poppins-medium heading-data-row-li' style={{fontWeight:"600",fontSize:"18px"}}>{rowData.heading}</th>
+                        
                                                 <td className='poppins-light'>
                                                     {Array.isArray(rowData.value) ? (
-                                                        <ul className='poppins-light'>
+                                                        <ul className='poppins-light data-li-card'>
                                                             {rowData.value.map((bullet, bulletIndex) => (
                                                                 <li key={bulletIndex}>{bullet}</li>
 
@@ -145,7 +147,7 @@ const CarosuselSusta = () => {
                                                         </ul>
 
                                                     ) : (
-                                                        <span>{rowData.value}</span>
+                                                        <span className='data-li-card-li'>{rowData.value}</span>
                                                     )}
                                                 </td>
                                             </tr>

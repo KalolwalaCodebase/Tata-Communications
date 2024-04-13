@@ -55,31 +55,34 @@ function App() {
       Heading: "Planet",
       Video: "/Planetmainsection.mp4",
       Content:
-        "At Tata Communications, we are committed to environmental stewardship and reducing our environmental footprint and supporting global decarbonisation. Our sustainability goals enable us to address climate change, promote circular economy principles and enhance value created for the stakeholders. We maintain strict compliance with environmental standards, ensuring no incidents of non-compliance across our operations.",
-    },
+"At Tata Communications, we meticulously minimise our environmental footprint, aligning with global decarbonization efforts. Our sustainability goals prioritise climate change mitigation, embrace circular economy principles and aim to maximise stakeholder value. We operate with strict adherence to environmental standards, ensuring full compliance and avoiding any oversights."
+,contetntdown:  "Our commitment to environmental sustainability is evident in our comprehensive policies and procedures. We have implemented and certified the Environmental, Occupational Health, and Safety Management System (EOHS MS) across our major Indian facilities, adhering to ISO 14001:2015 and ISO 45001:2018. This framework helps us identify environmental and OH&S risks, seize opportunities and continually improve our performance. ", 
+     },
     People: {
       Heading:"People",
       Video: "/.mp4",
       Content:
-        "At Tata Communications, we recognise that our success is deeply intertwined with the collective efforts of our people including employees, customers and supply chain partners. Together, we form a dynamic ecosystem dedicated to driving innovation, connectivity and sustainable growth. As a global leader in digital solutions, we are committed to fostering meaningful relationships built on trust, collaboration and mutual respect. By leveraging our collective expertise and diverse perspectives, we continuously strive to deliver exceptional value and improve stakeholder experience.",
-    },
+        "At Tata Communications, we recognise that our success is deeply intertwined with the collective efforts of our people including employees, customers and supply chain partners. Together, we form a dynamic ecosystem dedicated to driving innovation, connectivity and sustainable growth.",
+    contetntdown:"As a global leader in digital solutions, we are committed to fostering meaningful relationships built on trust, collaboration and mutual respect. By leveraging our collective expertise and diverse perspectives, we continuously strive to deliver exceptional value and improve stakeholder experience."
+      },
     Community: {
       Heading: "community",
       Video: "/Community.mp4",
-      Content:
-        "Our belief in making a positive impact drives us to utilize our influence and knowledge to enact meaningful change in the regions we serve. Committed to societal progress, we leverage our scale and expertise to drive impactful change. Our efforts are dedicated to advancing sustainability through various initiatives that bolster education, preserve the environment, promote livelihood sustainability, and enhance healthcare services.",
+      Content:"We deploy our resources and expertise to make meaningful impact in the quality of life of the communities we serve through our community development programmes. Our steadfast commitment to the community is built upon the foundation of long-term stakeholder value creation, along with leadership with trust.",
+    contetntdown:"Through a value-centric approach focusing on Wellbeing, Regeneration, Ethics and Resilience, we promote sustainable and inclusive growth across various sectors. Our initiatives span education, sustainable livelihoods, environment and healthcare services, aiming to foster holistic development and empower individuals and communities to thrive.",
     },
     Governance: {
       Heading: "Governance",
       Video: "/Governance.mp4",
-      Content:
-        "At Tata Communications, we uphold the utmost standards of legal compliance and ethical conduct. We ensure that our operations are conducted with transparency and integrity. Our comprehensive compliance framework rigorously aligns our activities with both legal and regulatory demands, reaffirming our dedication to accountability and openness in our professional conduct.",
-    },
+      Content:"",
+      contetntdown:"At Tata Communications, we recognise the pivotal role of good governance in strengthening the foundation of an ethical and responsible organisation. It empowers us to fulfil our commitment to transparency, accountability and integrity across all facets of our organisation. We believe in conducting business in compliance with regulatory requirements and aim to ensure sustainable development for the organisation, its people and its diverse stakeholders.",
+        },
     Sustainability: {
       Heading: "sustainability strategy",
       Video: "/Sustainability.mp4",
       Content:
-        "Creating enduring value for all stakeholders is our paramount objective, achieved through the cultivation of sustainable business practices. Embedded within our business strategy, sustainability is integral to our mission. We are dedicated to delivering long-term value to stakeholders through an inclusive, sustainable, and interconnected ecosystem. At Tata Communications, sustainability is a cornerstone, guided by the belief that positive economic outcomes arise from the effective management of our ESG endeavors.",
+        "Creating enduring value for Creating enduring value for all stakeholders amidst industry cycles through an inclusive, sustainable and hyperconnected ecosystem remains our paramount objective. This is accomplished through the cultivation of sustainable business practices.",
+        contetntdown:"At Tata Communications, sustainability is a cornerstone, guided by the belief that positive economic outcomes arise from the effective management of Environmental, Social and Governance (ESG) endeavours.",
     },
   };
   useEffect(()=>{

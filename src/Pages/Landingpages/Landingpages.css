@@ -484,3 +484,7 @@ margin-left: 1%;
                      font-size: 40px;
               }
             }
+            .carousel-indicators li{
+              width: 80px !important;
+              height: 80px;
+            }
