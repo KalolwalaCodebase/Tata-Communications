@@ -157,3 +157,13 @@ color: #3D86C6;
 line-height: 42px;
 text-decoration: underline;
 }
+.staticic-image{
+  width: 100%;
+}
+.staticic-image img{
+  width: 100%;
+} 
+.no-style-anchor-tag{
+  color: #3d86c6;
+  
+}

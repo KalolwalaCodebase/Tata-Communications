@@ -23,7 +23,7 @@ const CommunityEductaions = () => {
     <div className="community-student-container">
       <HeadBar
         icon={"/Education.svg"}
-        heading={"EDUCATIONS"}
+        heading={"EDUCATION"}
         theme={"#38D1DA"}
         headiconstyle={'#8CD3DA'}
       />

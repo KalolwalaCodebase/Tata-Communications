@@ -1,8 +1,37 @@
-import React from "react";
+import React,{useEffect} from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./Governance.css";
-import { Link } from 'react-router-dom';
+import { Link ,useLocation} from 'react-router-dom';
 const LeadershipAndIntegrity = () => {
+  const handleClick = (event,id) => {
+    event.preventDefault(); // Prevent default anchor behavior
+  
+    const targetElement = document.querySelector(`#${id}`);
+    if (targetElement) {
+      // Calculate the offset based on the current scroll position
+      const offset = targetElement.getBoundingClientRect().top - 100;
+  
+      // Scroll to the element with an offset
+      window.scrollBy({
+        top: offset,
+        behavior: 'smooth'
+      });
+    }
+  };
+  const location = useLocation();
+  useEffect(() => {
+    const scrollToTarget = () => {
+      if (location.hash) {
+        console.log("here it is ",location.hash);
+        const targetElement = document.querySelector(location.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+    // Call scrollToTarget when the location changes
+    scrollToTarget();
+  }, [location]);
   return (
     <div>
       <HeadBar
@@ -22,7 +51,7 @@ const LeadershipAndIntegrity = () => {
             maximising stakeholder value.
           </div>
           <div className="deep-background-description-leadership-and-integrity-container">
-            <div className="board-ofdirector-container">
+            <div id="Board-of-Directors" className="board-ofdirector-container">
               <b className="heading-blue">Board of Directors</b>
               <br />
               <br />
@@ -110,7 +139,7 @@ const LeadershipAndIntegrity = () => {
               </div>
             </div>
           </div>
-          <div className="board-ofdirector-container">
+          <div id="Board-Committees" className="board-ofdirector-container">
               <b className="heading-blue">Board Committees</b>
               <br />
               <br />
@@ -123,7 +152,7 @@ const LeadershipAndIntegrity = () => {
               </div>
               <img className="govn-board-committee-img" src="/govn-board-committee.png" alt="board commiteee images" />
             </div>
-            <div className="board-ofdirector-container">
+            <div id="Nominations-Evaluation-and-Performance" className="board-ofdirector-container">
               <b className="heading-blue"> <br />Nominations, Evaluation and Performance</b>
               <br />
               <br />
@@ -131,7 +160,7 @@ const LeadershipAndIntegrity = () => {
               <div className="normal-paragraph-leadership-and-integrity">
               At our organization, we uphold a structured and systematic protocol for Board nominations, evaluations, and performance evaluations. Each nomination undergoes rigorous examination by the Nomination and Remuneration Committee to confirm its alignment with our strategic direction. Furthermore, the Board conducts annual assessments of its own performance, as well as that of its committees and individual Directors.  <br /> <br />            </div>
             </div>
-            <div className="board-ofdirector-container">
+            <div id="Remuneration-and-Conflict-of-Interest" className="board-ofdirector-container">
               <b className="heading-blue"> <br /> Remuneration and Conflict of Interest</b>
               <br />
               <br />
@@ -153,7 +182,47 @@ const LeadershipAndIntegrity = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
+            <a href="">Goals and Progress</a>
+          </div>
+          <div className="quicklinks-button-div">
+            <img
+              className="quick-links-logo"
+              src="/quickLinkArrow.png"
+              alt=""
+            />
             <Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link>
+          </div>
+          <div className="quicklinks-button-div">
+            <img
+              className="quick-links-logo"
+              src="/quickLinkArrow.png"
+              alt=""
+            />
+            <li onClick={()=>handleClick(event,"Board-of-Directors")}>Board of Directors</li>
+          </div>
+          <div className="quicklinks-button-div">
+            <img
+              className="quick-links-logo"
+              src="/quickLinkArrow.png"
+              alt=""
+            />
+            <li onClick={()=>handleClick(event,"Board-Committees")}>Board Committees</li>
+          </div>
+          <div className="quicklinks-button-div">
+            <img
+              className="quick-links-logo"
+              src="/quickLinkArrow.png"
+              alt=""
+            />
+            <li onClick={()=>handleClick(event,"Nominations-Evaluation-and-Performance")}>Nominations, Evaluation and Performance</li>
+          </div>
+          <div className="quicklinks-button-div">
+            <img
+              className="quick-links-logo"
+              src="/quickLinkArrow.png"
+              alt=""
+            />
+            <li onClick={()=>handleClick(event,"Remuneration-and-Conflict-of-Interest")}>Remuneration and Conflict of Interest</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -171,22 +240,22 @@ const LeadershipAndIntegrity = () => {
             />
            <Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link>
           </div>
-          <div className="quicklinks-button-div">
+          {/* <div className="quicklinks-button-div">
             <img
               className="quick-links-logo"
               src="/quickLinkArrow.png"
               alt=""
             />
             <a href="">CDP reporting</a>
-          </div>
-          <div className="quicklinks-button-div">
+          </div> */}
+          {/* <div className="quicklinks-button-div">
             <img
               className="quick-links-logo"
               src="/quickLinkArrow.png"
               alt=""
             />
             <a href="">Case Studies</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

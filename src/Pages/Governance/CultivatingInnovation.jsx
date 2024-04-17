@@ -1,45 +1,144 @@
 import React from 'react'
 import HeadBar from '../../Components/Headbar/HeadBar'
+import { Link } from 'react-router-dom';
 
 const CultivatingInnovation = () => {
+    const handleClick = (event,id) => {
+        //event.preventDefault(); // Prevent default anchor behavior
+      
+        const targetElement = document.querySelector(`#${id}`);
+        if (targetElement) {
+          // Calculate the offset based on the current scroll position
+          const offset = targetElement.getBoundingClientRect().top - 100;
+      
+          // Scroll to the element with an offset
+          window.scrollBy({
+            top: offset,
+            behavior: 'smooth'
+          });
+        }
+      };
     return (
         <div>
             <HeadBar
-                icon={"/Demologo.png"}
+                icon={"/cardimg12.svg"}
                 heading={"CULTIVATING INNOVATION"}
                 theme={"#123C61"}
+                headiconstyle={"#3B91DC"}
             />
 
-            <div className="ci-quick-links-section">
-                <div className='ci-sticky-links'>
-                    <h4>QUICK LINKS</h4>
-                    <ul>
-                        <li><a href="/">Goals and Progress</a></li>
-                        <li><a href="/">Policies</a></li>
-                        <li><a href="/">Strategic Collaboration for technological Advancement</a></li>
-                        <li><a href="/">Building intellectual ecosystem</a></li>
-                        <li><a href="/">Empowering innovators</a></li>
-                        <li><a href="/">Assessment and engagement</a></li>
-                        <li><a href="/">Innovation and Sustainability</a></li>
-                        <li><a href="/">GRI index</a></li>
-                        <li><a href="/">SDG Linkages</a></li>
-                    </ul>
-                </div>
+<div className="wm-quick-links-section" style={{marginTop:"5%"}}>
+        <div className="wm-sticky-links">
+          <h4>QUICK LINKS</h4>
+          <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link>
             </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <a onClick={() => handleClick(event, "Strategic-Collaboration-for-technological-Advancement")}>
+              Strategic Collaboration for technological Advancement
+              </a>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <a onClick={() => handleClick(event, "Building-intellectual-ecosystem")}>
+              Building-intellectual-ecosystem
+              </a>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <a onClick={() => handleClick(event, "Empowering-innovators")}>
+              Empowering-innovators
+              </a>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <a onClick={() => handleClick(event, "Assessment-and-engagement")}>
+              Assessment and engagement
+              </a>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <a onClick={() => handleClick(event, "Innovation-and-Sustainability")}>
+              Innovation and Sustainability
+              </a>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <Link target="_blank" to="/gri-index">GRI index</Link>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+               <Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link>
+            </div>
+            <div className="quicklinks-button-div">
+              <img
+                className="quick-links-logo"
+                src="/quickLinkArrow.png"
+                alt=""
+              />
+              <a>
+                CDP reporting
+              </a>
+            </div>
+        </div>
+      </div>
 
             <div className="ci-sec1">
                 <h2>
                     Our research and development endeavours are directed to create sustainable solutions for a better tomorrow. We prioritise novel concepts, leverage cutting-edge technologies and have developed a culture of curiosity and collaboration to ensure operational efficiency, simplify complexities and aspire for better client outcomes. <br /><br />
                 </h2>
 
-                <h1>
+                <h1 id='Strategic-Collaboration-for-technological-Advancement'>
                     Strategic Collaborations for Technological Advancements
                 </h1>
+                <br />
                 <p>
                     Our R&D team is committed to advancing products and services that foster energy efficiency, diminish carbon emissions and facilitate sustainable operations. We invest in emerging technologies like AI, ML and IoT to innovate sustainable solutions for our marquee clientele. Our IoT-powered smart building solution exemplifies our dedication to crafting sustainable alternatives, assisting customers to optimise energy usage and minimise its environmental impact.
                 </p>
             </div>
-            <div className="ci-sec2">
+            <div id='Building-intellectual-ecosystem' className="ci-sec2">
                 <h1>Building Intellectual Ecosystems</h1>
                 <div className="ci-sec2-row flex">
                     <div className='ci-sec2-row-col'>
@@ -73,7 +172,7 @@ const CultivatingInnovation = () => {
                     </div>
                 </div>
             </div>
-            <div className="ci-sec3">
+            <div id='Empowering-innovators' className="ci-sec3">
                 <h2 className="ci-sec3-h2">Empowering Innovators</h2>
                 <h5 className="ci-sec3-h5">SHAPE THE FUTURE</h5>
                 <h6 className="ci-sec3-h6">UNLEASHING INTERNAL INNOVATION</h6>
@@ -101,7 +200,7 @@ const CultivatingInnovation = () => {
                     </div>
                 </div>
             </div>
-            <div className="ci-sec4">
+            <div id='Assessment-and-engagement' className="ci-sec4">
                 <h5 className="ci-sec4-h5">ASSESMENT AND ENGAGEMENT</h5>
                 <div className='ci-flowchart-table-container'>
                     <div className='ci-flowchart-table'>
@@ -130,7 +229,7 @@ const CultivatingInnovation = () => {
                         <h1>
                             INCUBATION
                         </h1>
-                        <div className='ci-flowchart-table-row2 flex'>
+                        <div  className='ci-flowchart-table-row2 flex'>
                             <div className='ci-flowchart-table-card'>
                                 <h6>IDEATION</h6>
                                 <ul>
@@ -176,6 +275,7 @@ const CultivatingInnovation = () => {
                     <h4>CUSTOMER CO-INNOVATION: <br />
                         COLLABORATIVE GROWTH
                     </h4>
+                    <br />
                     <p>
                         Launched to harness Tata Communications’ innovation engine in partnership with strategic customers, this program focuses on thought leadership and innovative solutions to address business challenges, enabling disruptive use-case discovery and delivery.
                     </p>
@@ -186,6 +286,7 @@ const CultivatingInnovation = () => {
                         CELEBRATING INNOVATION AT <br />
                         TATA COMMUNICATIONS
                     </h4>
+                    <br />
                     <p>
                         InnoVista at Tata Communications celebrates innovation through categories:
                     </p>
@@ -225,7 +326,7 @@ const CultivatingInnovation = () => {
                     <img src="/ci-sec6-img2.png" alt="" />
                 </div>
             </div>
-            <div className="ci-sec7 flex">
+            <div id='Innovation-and-Sustainability' className="ci-sec7 flex">
                 <div className='ci-sec7-card'>
                     <h2>
                     Innovation and Sustainability

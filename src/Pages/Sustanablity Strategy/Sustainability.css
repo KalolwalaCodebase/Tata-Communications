@@ -525,9 +525,7 @@ text-align: center;;
   background-color: #D5D5D5 !important;
   color: #7A63AB !important;
 }
-.first-child-color{
-  color: #7A63AB;
-}
+
 .cmmt2 .table .table-head-wrapper h3 {
   transition: background-color 0.3s ease-in-out;
 }
@@ -648,10 +646,14 @@ text-align: left;
 }
 .dev-goals-wrapper1 p{
   color: #55349D;
-  font-size: 19px;
-  text-align: justify;
-  height: fit-content;
-  width: 650px;
+  width: 65%;
+  padding: 2%;
+font-family: Gotham;
+font-size: 30px;
+font-weight: 300;
+line-height: 42px;
+text-align: left;
+
 }
 .dev-goals-wrapper1 img{
   width: 400px;
@@ -1037,4 +1039,17 @@ display: inline;
 .stakeholder-subtitle li{
   list-style: none;
   
+}
+.first-child-color{
+  color: #7A63AB !important;
+  font-size: 700 !important;
+}
+.sdgwhell-parent-container{
+  width: 100%;
+  margin-top: 5%;
+  background: #F1F1F1;
+  padding: 3%;
+}
+.sustan-blue-para{
+
 }

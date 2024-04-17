@@ -17,9 +17,21 @@ const Brsr = () => {
       By adhering to the BRSR framework, we ensure stakeholders have access to standardised disclosures on ESG parameters. This transparent communication fosters trust among investors, customers and the wider stakeholder community, strengthening our reputation as a responsible organisation committed to a sustainable future.      </p>
       <br />
       <br />
-      <li className="section-list-brsr">Section A (General Disclosures)</li>
-      <li className="section-list-brsr">Section B (Management and Process Disclosures)</li>
-      <li className="section-list-brsr">Section C (Principle-Wise Performance Disclosures)</li>
+      <li className="section-list-brsr">
+              <a href="/General-Disclosures.pdf" target="_blank">
+                Section A (General Disclosures)
+              </a>
+            </li>
+            <li className="section-list-brsr">
+              <a href="/Management-and-process-disclosures.pdf" target="_blank">
+                Section B (Management and Process Disclosures)
+              </a>
+            </li>
+            <li className="section-list-brsr">
+              <a href="/Principle-wise-perfomance-disclouser.pdf" target="_blank">
+                Section C (Principle-Wise Performance Disclosures)
+              </a>
+            </li>
         </div>
       
       <div className="quick-link-sections">

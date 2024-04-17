@@ -22,8 +22,9 @@ const PlanetWasteManagement = () => {
     <div>
       <HeadBar
         heading={"WASTE MANAGEMENT"}
-        icon={"/planet-waste-mgt-heading-icon.png"}
+        icon={"/planetpage002.svg"}
         theme={"#B0BC25"}
+        headiconstyle={"rgb(184 198 25)"}
       />
 
       <div className="wm-quick-links-section">
@@ -104,41 +105,18 @@ const PlanetWasteManagement = () => {
         </div>
       </div>
 
-      <div className="planet-wm-sec1 flex">
+      <div className="planet-wm-sec1 flex" style={{justifyContent:"flex-start"}}>
         <div className="planet-wm-sec1-text">
           <h2>
-            At the heart of our sustainability ethos lies a robust waste
-            management system. As a company focused on service provision, our
-            waste production primarily consists of non-hazardous refuse from
-            everyday operations and hazardous materials like E-waste and
-            batteries from our service apparatus. <br />
+          At the heart of our sustainability ethos lies a robust waste management system. As a Company focused on service provision, our waste production primarily consists of non-hazardous refuse from everyday operations and hazardous materials like E-waste and batteries from our service apparatus. <br />
           </h2>
+          <br />
           <p>
-            Our reliance on external suppliers for this equipment constrains our
-            influence over their waste generation. Additionally, the intangible
-            nature of our products translates to minimal waste creation on the
-            client’s end. Despite these factors, we are dedicated to diminishing
-            waste-related impacts through effective and eco-friendly disposal
-            methods. Non-hazardous waste is channelled to local recycling
-            centres or municipal collection services, while hazardous waste is
-            disposed of conscientiously via certified recycling firms. <br />
+          Our reliance on external suppliers for this equipment constrains our influence over their waste generation. Additionally, the intangible nature of our products translates to minimal waste creation on the client's end. Despite these factors, we are dedicated to diminishing waste-related impacts through effective and eco-friendly disposal methods. Non-hazardous waste is channelled to local recycling centres or municipal collection services, while hazardous waste is disposed of conscientiously via certified recycling firms. <br />
           </p>
+          <br />
           <p>
-            Our strategy for waste management is centred on the principles of
-            efficient recycling and the reduction of waste streams wherever
-            feasible, highlighting our pledge to environmental guardianship.
-            This strategy encompasses the composting of organic refuse, and we
-            are actively developing plans to expand these initiatives and
-            incorporate a circular economy approach into our business model, in
-            line with our aspiration of achieving zero waste to landfill by the
-            financial year 2027. We utilise an in-house automated system
-            alongside facility-specific data logs to monitor and regulate waste,
-            ensuring adherence to both national and regional regulations. We
-            advocate for the uptake of sustainable practices in the disposal or
-            recycling of end-of-life waste, collaborating with accredited
-            partners. Through these measures, we have successfully averted the
-            disposal of waste in landfills, significantly curtailing our
-            ecological footprint.
+          Our strategy for waste management is centred on the principles of efficient recycling and the reduction of waste streams wherever feasible, highlighting our pledge to environmental guardianship. This strategy encompasses the composting of organic refuse, and we are actively developing plans to expand these initiatives and incorporate a circular economy approach into our business model, in line with our aspiration of achieving zero waste to landfill by the financial year 2027. We utilise an in-house automated system alongside facility-specific data logs to monitor and regulate waste, ensuring adherence to both national and regional regulations. We advocate for the uptake of sustainable practices in the disposal or recycling of end-of-life waste, collaborating with accredited partners. Through these measures, we have successfully averted the disposal of waste in landfills, significantly curtailing our ecological footprint.
           </p>
         </div>
         <img src="/planet-wm-sec1-img.png" alt="" />
@@ -219,21 +197,11 @@ const PlanetWasteManagement = () => {
         <br />
         <h2>NON-HAZARDOUS WASTE</h2>
         <h3>
-          Non-hazardous waste primarily consists of municipal solid waste, which
-          we <br />
-          segregate into paper, food, plant trimmings, plastic, metal, and
-          cartons.
+        Non-hazardous waste primarily consists of municipal solid waste, which we segregate into paper, food, plant trimmings, plastic, metal and cartons.
         </h3>
+        <br />
         <p>
-          These waste types are responsibly disposed of by authorized recyclers
-          or municipal corporations. Our Organic Waste Converters (OWCs)
-          transform cafeteria food waste into valuable manure. Furthermore,
-          we’ve proactively banned single-use plastic across all our facilities,
-          opting for sustainable alternatives. Glass bottles now replace PET
-          bottles in our meeting rooms, and reusable ceramic or acrylic mugs
-          have replaced plastic cups in the cafeteria. We actively encourage
-          employees to minimize their use of single-use plastics in their daily
-          routines.
+        These waste types are responsibly disposed of by authorized recyclers or municipal corporations. Our Organic Waste Converters (OWCs) transform cafeteria food waste into valuable manure. Furthermore, we've proactively banned single-use plastic across all our facilities, opting for sustainable alternatives. Glass bottles now replace PET bottles in our meeting rooms, and reusable ceramic or acrylic mugs have replaced plastic cups in the cafeteria. We actively encourage employees to minimise their use of single-use plastics in their daily routines.
         </p>
       </div>
       <div className="planet-wm-sec4">
@@ -252,6 +220,8 @@ const PlanetWasteManagement = () => {
             recyclers. By using in house OWCs, almost <span>86%</span> of
             biodegradable waste was composted.
           </p>
+          <br />
+          <br />
           <div className="planet-wm-sec4-row flex">
             <div className="planet-wm-sec4-row-cont">
               <h1>68 tonnes</h1>
@@ -294,12 +264,10 @@ const PlanetWasteManagement = () => {
               electronic equipment.
             </p>
             <p>
-              Our waste handlers receive comprehensive training to prevent
-              spills and contamination risks. Metal Scrap Trade Corporation
-              Limited, an authorized recycler and processor, ensures compliance
-              with waste management regulations in the relevant regions or
-              countries.
+            Our waste handlers receive comprehensive training to prevent spills and contamination risks. Metal Scrap Trade Corporation Limited, an authorised recycler and processor, ensures compliance with waste management regulations in the relevant regions or countries.
             </p>
+            <br />
+            <br />
             <h1>187,263 kg</h1>
             <h6>
               of hazardous waste <br />

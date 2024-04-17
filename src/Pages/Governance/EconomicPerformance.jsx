@@ -23,9 +23,10 @@ const EconomicPerformance = () => {
     return (
         <div>
             <HeadBar
-                icon={"/Demologo.png"}
+                icon={"/cardimg11.svg"}
                 heading={"ECONOMIC PERFORMANCE"}
                 theme={"#123C61"}
+                headiconstyle={"#3B91DC"}
             />
 
             <div className="ep-quick-links-section">

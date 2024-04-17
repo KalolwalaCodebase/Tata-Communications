@@ -159,8 +159,8 @@ export const HumanRights = () => {
                         <li><Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link></li>
                         <li><Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link></li>
                         <li><Link onClick={()=>handleClick(event,"Policy-Framework")}>Policy Framework</Link></li>
-                        <li><Link onClick={()=>handleClick(event,"Ensuring-safety-at-work")}>Ensuring safety at work</Link></li>
-                        <li><Link onClick={()=>handleClick(event,"Ethics-Helpline")}>Ethics Helpline</Link></li>
+                        <li><Link onClick={()=>handleClick(event,"Ensuring-safety-at-work")}>Ensuring Dignity at work </Link></li>
+                        <li><Link onClick={()=>handleClick(event,"Ethics-Helpline")}>Assessment and Engagement</Link></li>
                         <li><Link onClick={()=>handleClick(event,"Awareness-and-training")}>Awareness and training</Link></li>
                         <li><Link onClick={()=>handleClick(event,"Vendor-and-third-party-compliance")}>Vendor and third party compliance</Link></li>
                         <li> <Link target="_blank" to="/gri-index">GRI index</Link></li>

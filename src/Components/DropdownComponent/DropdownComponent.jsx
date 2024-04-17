@@ -9,6 +9,11 @@ const DropdownComponent = ({ hoveredNavItem, onClose }) => {
   const [modifiedMenuItems, setModifiedMenuItems] = useState([]);
   const [ref, inView] = useInView();
   const location = useLocation();
+  const callafterdelay=()=>{
+    setTimeout(()=>{
+  onClose();
+    },300)
+  }
   useEffect(() => {
     const scrollToTarget = () => {
       if (location.hash) {
@@ -126,9 +131,9 @@ const DropdownComponent = ({ hoveredNavItem, onClose }) => {
               imgSrc: "/dropdown-img-com.png",
               headings: ["EDUCATION", "SUSTAINABLE LIVELIHOOD", "ENVIRONMENT"],
               listItems: [
-                [{ text: "Education", link: "#" }],
-                [{ text: "Sustainable Livelihood", link: "#" }],
-                [{ text: "Environment", link: "#" }],
+                [{ text: "Education", link: "/Community/education" }],
+                [{ text: "Sustainable Livelihood", link: "/Community/sustainable-livelihoods" }],
+                [{ text: "Environment", link: "/Community/environment"}],
               ],
             },
           ]);
@@ -147,48 +152,52 @@ const DropdownComponent = ({ hoveredNavItem, onClose }) => {
               ],
               listItems: [
                 [
-                  { text: "Board of Directors", link: "#" },
-                  { text: "Board Committees", link: "#" },
+                  { text: "Board of Directors", link: "/Governance/leadership-and-integrity-at-the-core#Board-of-Directors" },
+                  { text: "Board Committees", link: "/Governance/leadership-and-integrity-at-the-core#Board-Committees" },
                   {
                     text: "Nominations, Evaluation and Performance",
-                    link: "#",
+                    link: "/Governance/leadership-and-integrity-at-the-core#Nominations-Evaluation-and-Performance",
                   },
-                  { text: "Remuneration and Conflict of Interest", link: "#" },
+                  { text: "Remuneration and Conflict of Interest", link: "/Governance/leadership-and-integrity-at-the-core#Remuneration-and-Conflict-of-Interest" },
                   // Add more items here...
                 ],
                 [
-                  { text: "Policy Framework", link: "#" },
-                  { text: "Ensuring Dignity at work", link: "#" },
-                  { text: "Assessment and Engagement", link: "#" },
-                  { text: "Awareness and training", link: "#" },
-                  { text: "Vendor and third party compliance", link: "#" },
+                  { text: "Policy Framework", link: "/Governance/human-rights#Policy-Framework" },
+                  { text: "Ensuring Dignity at work", link: "/Governance/human-rights#Ensuring-safety-at-work" },
+                  { text: "Assessment and Engagement", link: "/Governance/human-rights#Ethics-Helpline" },
+                  { text: "Awareness and training", link: "/Governance/human-rights#Awareness-and-training" },
+                  { text: "Vendor and third party compliance", link: "/Governance/human-rights#Vendor-and-third-party-compliance" },
                   // Add more items here...
                 ],
                 [
-                  { text: "Enterprise Risk Management Framework", link: "#" },
+                  { text: "Enterprise Risk Management Framework", link: "/Governance/risk-and-resilience#Enterprise-Risk-Management-Framework" },
                   // Add more items here...
                 ],
                 [
-                  { text: "Board of Directors", link: "#" },
-                  { text: "Board Committees", link: "#" },
+                  { text: "Committed to Value Creation", link: "/Governance/economic-performance#Committed-to-Value-Creation" },
+                  { text: "Value Generated for key stakeholders", link: "/Governance/economic-performance#Value-Generated-for-key-stakeholders" },
+                ],
+                [
                   {
-                    text: "Nominations, Evaluation and Performance",
-                    link: "#",
+                    text: "Strategic Collaboration for technological Advancement",
+                    link: "/Governance/cultivating-innovations#Strategic-Collaboration-for-technological-Advancement",
                   },
-                  { text: "Remuneration and Conflict of Interest", link: "#" },
-                  // Add more items here...
-                ],
-                [
-                  { text: "Board of Directors", link: "#" },
-                  { text: "Board Committees", link: "#" },
                   {
-                    text: "Nominations, Evaluation and Performance",
-                    link: "#",
+                    text: "Building-intellectual-ecosystem",
+                    link: "/Governance/cultivating-innovations#Building-intellectual-ecosystem",
                   },
-                  { text: "Remuneration and Conflict of Interest", link: "#" },
+                  {
+                    text: "Empowering innovators",
+                    link: "/Governance/cultivating-innovations#Empowering-innovators",
+                  },
+                  {
+                    text: "Innovation and Sustainability",
+                    link: "/Governance/cultivating-innovations#Innovation-and-Sustainability",
+                  },
+                  { text: "Assessment and engagement", link: "/Governance/cultivating-innovations#Assessment-and-engagement" },
                   // Add more items here...
                 ],
-                [{ text: "Policies and Procedures", link: "#" }],
+                [{ text: "Policies and Procedures", link: "/Governance/policies-and-procedures#Policies" }],
               ],
             },
           ]);
@@ -242,7 +251,7 @@ const DropdownComponent = ({ hoveredNavItem, onClose }) => {
                 <ul>
                   {item.listItems[headingIndex].map(
                     (listItem, listItemIndex) => (
-                      <Link  to={listItem.link} key={listItemIndex}>
+                      <Link onClick={callafterdelay} to={listItem.link} key={listItemIndex}>
                         <li>{listItem.text}</li>
                       </Link>
                     )

@@ -23,7 +23,7 @@ const CommunitySustinableLivehood = () => {
     <div className="community-student-container">
       <HeadBar
         icon={"/SustainableLivelihoods.svg"}
-        heading={"SUSTANIBLITY-LIVEHOOD"}
+        heading={"sustainable-LIVEHOODs"}
         theme={"#38D1DA"}
         headiconstyle={'#8CD3DA'}
       />

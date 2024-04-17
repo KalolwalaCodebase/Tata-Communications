@@ -1,6 +1,7 @@
 import React from 'react'
 // import './DevelopmentGoals.css';
 import HeadBar from '../../Components/Headbar/HeadBar'
+import Sdgwhells from '../../Components/Sdgwhells/Sdgwhells'
 // import CircularSDG from '../../../Components/CircularSDG/CircularSDG';
 
 const DevelopmentGoals = () => {
@@ -14,10 +15,12 @@ const DevelopmentGoals = () => {
                 </p>
                 <img src="/image-dev-goals.svg" alt="" />
             </div>
-            <div className='dev-goals-wrapper2 flex'>
-                <img src="/sdg-wheel 5.svg" alt="" />
-                {/* <CircularSDG/> */}
-                <div className='poppins-light dev-goals-wrapper2-content'>
+           <div className="sdgwhell-parent-container">
+           <Sdgwhells/>
+           </div>
+                {/* <img src="/sdg-wheel 5.svg" alt="" /> */}
+               
+                {/* <div className='poppins-light dev-goals-wrapper2-content'>
                     <p>sdg #3</p>
                     <h1 className='poppins-medium'>GOOD HEALTH AND <br />WELL-BEING</h1>
                     <h5 className='poppins-medium'>OBJECTIVE</h5>
@@ -33,8 +36,8 @@ const DevelopmentGoals = () => {
                     <li>IT solutions for safety monitoring</li>
                     <li>Health awareness camps and workshops</li>
                     </ul>
-                </div >
-            </div >
+                </div > */}
+           
         </div >
     )
 }

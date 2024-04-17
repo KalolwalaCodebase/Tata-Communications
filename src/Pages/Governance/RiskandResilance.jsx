@@ -1,8 +1,37 @@
-import React from "react";
+import React,{useEffect} from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 
 const RiskandResilance = () => {
+  const handleClick = (event,id) => {
+    //event.preventDefault(); // Prevent default anchor behavior
+  
+    const targetElement = document.querySelector(`#${id}`);
+    if (targetElement) {
+      // Calculate the offset based on the current scroll position
+      const offset = targetElement.getBoundingClientRect().top - 100;
+  
+      // Scroll to the element with an offset
+      window.scrollBy({
+        top: offset,
+        behavior: 'smooth'
+      });
+    }
+  };
+  const location = useLocation();
+  useEffect(() => {
+    const scrollToTarget = () => {
+      if (location.hash) {
+        console.log("here it is ",location.hash);
+        const targetElement = document.querySelector(location.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+    // Call scrollToTarget when the location changes
+    scrollToTarget();
+  }, [location]);
   return (
     <div>
       <HeadBar
@@ -31,7 +60,7 @@ const RiskandResilance = () => {
             future generations.
           </div>
           <div className="deep-background-description-leadership-and-integrity-container">
-            <div className="board-ofdirector-container">
+            <div id="Enterprise-Risk-Management-Framework" className="board-ofdirector-container">
               <b className="heading-blue">
                 Enterprise risk management framework
               </b>
@@ -78,6 +107,14 @@ const RiskandResilance = () => {
               alt=""
             />
             <Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link>
+          </div>
+          <div className="quicklinks-button-div">
+            <img
+              className="quick-links-logo"
+              src="/quickLinkArrow.png"
+              alt=""
+            />
+            <li onClick={()=>handleClick(event,"Enterprise-Risk-Management-Framework")}>Enterprise Risk Management Framework</li>
           </div>
           <div className="quicklinks-button-div">
             <img

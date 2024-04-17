@@ -51,7 +51,7 @@ const Materiality = () => {
         <br />
         <h1>MATERIAL ISSUES</h1>
        
-            <img className='materiality-graph' src="/materiality-graph.png" alt="" />
+            <img className='materiality-graph' src="/Material.svg" alt="" />
         </div>
     </div>
     </div>

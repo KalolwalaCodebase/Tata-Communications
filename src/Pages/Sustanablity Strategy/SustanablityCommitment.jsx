@@ -12,7 +12,7 @@ const SustanablityCommitment = () => {
     const dataArr = {
         'CLIMATE CHANGE': [
             {
-                "Specific Goal": "Carbon Neutral by FY 2030 Net Zero by 2035", 
+                "Specific Goal": "Net Zero by 2035", 
                 "Target Year": "2030 For Carbon Neutral 2035 for Net Zero",
                 "Base Year": "FY 2022",
                 "Boundary": "Global Operations",
@@ -30,14 +30,14 @@ const SustanablityCommitment = () => {
             {
                 "Specific Goal": "20% Reduction by FY 2030",
                 "Target Year": "2030",
-                "Base Year": "-",
+                "Base Year": "FY 2020",
                 "Boundary": "Indian Operations Only",
-                "Inclusion/Scope": "-",
+                "Inclusion/Scope": "Water Consumption",
             }
         ],
-        'CHG REDUCTION': [
+        'customer GHG avoidance': [
             {
-                "Specific Goal": "Customer Emission CHG Reduction Potential of 20x by FY 2027",
+                "Specific Goal": "GHG Avoidance Potential of 20x for Customers",
                 "Target Year": "2027",
                 "Base Year": "FY 2022",
                 "Boundary": "Global Operations",
@@ -104,14 +104,14 @@ const SustanablityCommitment = () => {
                         <div className='table-head-wrapper2 '>
                             <h3 className={`poppins-medium ${activeHeading !== 'CLIMATE CHANGE' ? 'inactive-heading-x' : 'active-heading-x'}`} onClick={() => toggleHeading('CLIMATE CHANGE')}>CLIMATE CHANGE</h3>
                             <h3 className={`poppins-medium ${activeHeading !== 'WATER CONSUMPTION' ? 'inactive-heading-x' : 'active-heading-x'}`} onClick={() => toggleHeading('WATER CONSUMPTION')}>WATER CONSUMPTION</h3>
-                            <h3 className={`poppins-medium ${activeHeading !== 'CHG REDUCTION' ? 'inactive-heading-x' : 'active-heading-x'}`} onClick={() => toggleHeading('CHG REDUCTION')}>CHG REDUCTION</h3>
+                            <h3 className={`poppins-medium ${activeHeading !== 'customer GHG avoidance' ? 'inactive-heading-x' : 'active-heading-x'}`} onClick={() => toggleHeading('customer GHG avoidance')}>CUSTOMER GHG AVOIDANCE</h3>
                             <h3 className={`poppins-medium ${activeHeading !== 'ZERO WASTE' ? 'inactive-heading-x' : 'active-heading-x'}`} onClick={() => toggleHeading('ZERO WASTE')}>ZERO WASTE</h3>
                         </div>
                     </div>
                     <div className='cmmt-table-data-rows'>
                         {renderDataRows('CLIMATE CHANGE')}
                         {renderDataRows('WATER CONSUMPTION')}
-                        {renderDataRows('CHG REDUCTION')}
+                        {renderDataRows('customer GHG avoidance')}
                         {renderDataRows('ZERO WASTE')}
                     </div>
                 </div>

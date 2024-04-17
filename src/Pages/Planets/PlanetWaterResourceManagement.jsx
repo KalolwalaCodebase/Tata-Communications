@@ -28,7 +28,7 @@ export const PlanetWaterResourceManagement = () => {
             ]
         },
         {
-            title: 'CONSUMPTION, MONITORING, & AWARENESS',
+            title: 'Consumption, Monitoring and Awareness',
             tableData: [
                 {
                     value1: 'Monitor water use diligently and foster awareness among stakeholders.',
@@ -66,10 +66,10 @@ export const PlanetWaterResourceManagement = () => {
 
     return (
         <div>
-            <HeadBar heading={'WATER RESOURCE MANAGEMENT'} icon={'/planet-waste-mgt-heading-icon.png'} theme={'#B0BC25'} />
+            <HeadBar heading={'WATER RESOURCE MANAGEMENT'} icon={'/planetpage03.svg'} theme={'#B0BC25'} headiconstyle={"rgb(184 198 25)"} />
 
             <div className="wm-quick-links-section">
-        <div className="wm-sticky-links">
+        <div className="wm-sticky-links"style={{width:"70%"}}>
           <h4>QUICK LINKS</h4>
           <div className="quicklinks-button-div">
               <img
@@ -153,7 +153,7 @@ export const PlanetWaterResourceManagement = () => {
                 </div>
                 <img src="/planet-wrm-header-img.png" alt="" />
             </div>
-            <div id='Water-Resource-Management' className='planet-wrm-sec2'>
+            <div id='Water-Resource-Management' className='planet-wrm-sec2' style={{padding:"2%"}}>
                 <img src="/small-square-btn.png" alt="" />
 
                 <h1>
@@ -165,7 +165,8 @@ export const PlanetWaterResourceManagement = () => {
                         {data.map((item, index) => (
                             <div
                                 key={index}
-                                className={`planet-wrm-little-card poppins-medium ${selectedTitle === item.title ? 'wrm-active' : ''}`}
+                                style={{textTransform:"uppercase"}}
+                                className={`planet-wrm-little-card  ${selectedTitle === item.title ? 'wrm-active' : ''}`}
                                 onClick={() => handleTitleClick(item.title)}
                             >
                                 {item.title}
@@ -175,8 +176,8 @@ export const PlanetWaterResourceManagement = () => {
                     <div className={`wrm-main-card ${fadeIn ? 'fade-in' : ''}`}>
                         <table className='wrm-table'>
                             <tbody className={`wrm-table-body`}>
-                                <th className='wrm-data'>OBJECTIVE</th>
-                                <th className='wrm-data'>ACTIONS</th>
+                                <th className='wrm-data' style={{height:"50px"}}>OBJECTIVE</th>
+                                <th className='wrm-data'style={{height:"50px"}}>ACTIONS</th>
                                 {data.find((item) => item.title === selectedTitle).tableData.map((rowData, rowIndex) => (
                                     <tr key={rowIndex}>
                                         <td className='wrm-data1'>{rowData.value1}</td>
@@ -199,7 +200,7 @@ export const PlanetWaterResourceManagement = () => {
                 <div>
 
                 </div>
-                <div className='wrm-sec2-context2'>
+                <div className='wrm-sec2-context2' style={{margin:"2%",width:"96%"}}>
                     <div className='bar-heading-parent' style={{ display: "flex", width: '100%', justifyContent: 'center' }}>
                         <h3 className='planet-bar-heading-sec poppins-medium'>PROGRESS MADE</h3>
                     </div>
@@ -254,16 +255,17 @@ export const PlanetWaterResourceManagement = () => {
                     <h1>
                         WASTEWATER MANAGEMENT
                     </h1>
+        
                     <h2>
-                        We prioritize effective wastewater management resulting from our activities, with a focus on on-site treatment.
+                    We prioritise effective wastewater management resulting from our activities, with a focus on on-site treatment.
                     </h2>
-
+<br />
                     <p>
-                        Facilities equipped with Sewage Treatment Plants (STPs) play a crucial role in treating and repurposing wastewater for non-potable applications, ensuring the conservation of freshwater resources and preventing wastewater discharge into natural water bodies or land areas.
+                    Facilities equipped with Sewage Treatment Plants (STPs) play a crucial role in treating and repurposing wastewater for non-potable applications, ensuring the conservation of freshwater resources and preventing wastewater discharge into natural water bodies or land areas.
                     </p>
-
+<br />
                     <p>
-                        Our commitment to stringent compliance with all regulatory requirements underscores our dedication to responsible wastewater management practices. For facilities without STPs, wastewater is responsibly discharged into municipal systems, further aligning with our commitment to environmental stewardship.
+                    Our commitment to stringent compliance with all regulatory requirements underscores our dedication to responsible wastewater management practices. For facilities without STPs, wastewater is responsibly discharged into municipal systems, further aligning with our commitment to environmental stewardship.
                     </p>
                 </div>
                 <div className='wrm-sec2-context2'>

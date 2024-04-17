@@ -69,9 +69,9 @@ const LandingPage = ({ activeTab, setActivetab }) => {
 
   //  video section part added here
   const imageUrlarr = [
-    "/landingpagecard1.png",
-    "/landingpagecard2.png",
+    "/ladingpagerep01.png",
     "/landingpagecard3.png",
+    "ladingpagerep02.png"
   ];
   const urlToGo = [
     "/Sustainability/sustainability-commitments",
@@ -176,14 +176,15 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           </p>
           <br />
           <motion.p  className="linking-sustabanility">
-            {/* <Textanimation2 text={''} /> */}To read more about our Sustainability Strategy:
+            {/* <Textanimation2 text={''} /> */}
             {" "}
             <Link
               onClick={() => setActivetab("Sustainability")}
               to={"/Sustainability"}
             >
-              Click Here
+              read more{" "}
             </Link>
+            about our Sustainability Strategy
           </motion.p>
         </motion.div>
       </motion.div>
@@ -347,7 +348,8 @@ const LandingPage = ({ activeTab, setActivetab }) => {
               <br /> future-proof our solutions and enhancing our
               <br /> operations towards sustainable development.
             </motion.p>
-            <motion.h6 initial={{x:"-40px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut",type:"spring"}} className="poppins-bold"> Amur S Lakshminarayanan</motion.h6>
+            <motion.h6 initial={{x:"-40px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut",type:"spring"}} className="poppins-bold"> Amur S Lakshminarayanan
+</motion.h6>
             <motion.p initial={{x:"-40px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut",type:"spring"}} className="poppins-medium managing-director">
               Managing Director & CEO
             </motion.p>
@@ -402,12 +404,11 @@ Sustainable Development Goals
         <motion.img initial={{ opacity: 0, scale: 0.5, rotate: "30deg" }} whileHover={{ scale: 1.001, rotate: "5deg" }} whileInView={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ duration: 1, ease: "easeInOut" }} src="/sdg-wheel-landing-page.png" alt="" className="sdg-wheels" />
         <div className="sdg-wheel-descriptions">
           <motion.p initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.3, ease: "easeInOut" }} className="smae-font-para-sdg">
-            <p className="sdg-wheel-colorful-paragaraph">
+            <p className="sdg-wheel-colorful-paragaraph" >
             The UN SDGs serves as key benchmarks to plan initiative, measure our impact, and prioritise <br /> our areas of focus.
 
             </p>
-            Our strategies closely align with these goals as we serve as a digital ecosystem enabler. Recognising the significance of contributing to global sustainability, we have prioritised and mapped direct and indirect SDGs, based on risk, relevance and our organisational contribution and pursue their achievement.
-          </motion.p>
+            Our strategies closely align with these goals as we serve as a digital ecosystem enabler. Recognising the significance of contributing to global sustainability, we have prioritised and mapped our direct and indirect contributions to UNSDGs through our work and committed efforts towards people, planet and communities.          </motion.p>
           <br />
           <br />
           <Link to={'/Sustainability/sustainable-development-goals'} className="readmore-blue"> <motion.span initial={{ opacity: 0, y: "-100px" }}

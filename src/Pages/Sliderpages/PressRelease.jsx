@@ -116,15 +116,11 @@ const PressRelease = () => {
         <br />
         <b className="heading-bold-press-release">About Tata Communications</b>
         <p className="description-section-main-content">
-          A part of the Tata Group, Tata Communications (NSE: TATACOMM; BSE:
-          500483) is a global digital ecosystem enabler powering today's
-          fast-growing digital economy in more than 190 countries and
-          territories. Leading with trust, it enables digital transformation of
-          enterprises globally with collaboration and connected solutions, core
-          and next gen connectivity, cloud hosting and security solutions and
-          media services. 300 of the Fortune 500 companies are its customers and
-          the company connects businesses to 80% of the world's cloud giants.
-          For more information, please visit{" "}
+        A part of the Tata Group, Tata Communications (NSE: TATACOMM; BSE: 500483) is a global digital ecosystem enabler powering today’s fast-growing digital economy in more than 190 countries and territories. Leading with trust, it enables digital transformation of enterprises globally with collaboration and connected solutions, core and next gen connectivity, cloud hosting and security solutions and media services. We have enabled digital transformation of 300 out of 500 fortune companies. Tata Communications carries 30% of the world's internet routes and connects businesses to 60% of the world's cloud giants.
+        <br />
+        <br />
+        <br />
+        For more information, please visit
           <span className="links-text">
             {" "}
             <a
@@ -141,39 +137,19 @@ const PressRelease = () => {
           Forward-looking and cautionary statements
         </b>
         <p className="description-section-main-content">
-          Certain words and statements in this release concerning Tata
-          Communications and its prospects, and other statements, including
-          those relating to Tata Communications expected financial position,
-          business strategy, the future development of Tata Communications'
-          operations, and the general economy in India, are forward-looking
-          statements. Such statements involve known and unknown risks,
-          uncertainties and other factors, including financial, regulatory and
-          environmental, as well as those relating to industry growth and trend
-          projections, which may cause actual results, performance or
-          achievements of Tata Communications, or industry results, to differ
-          materially from those expressed or implied by such forward-looking
-          statements. The important factors that could cause actual results,
-          performance or achievements to differ materially from such
-          forward-looking statements include, among others, failure to increase
-          the volume of traffic on Tata Communications' network; failure to
-          develop new products and services that meet customer demands and
-          generate acceptable margins; failure to successfully complete
-          commercial testing of new technology and information systems to
-          support new products and services, including voice transmission
-          services; failure to stabilize or reduce the rate of price compression
-          on certain of the company's communications services; failure to
-          integrate strategic acquisitions and changes in government policies or
-          regulations of India and, in particular, changes relating to the
-          administration of Tata Communications' industry; and, in general, the
-          economic, business and credit conditions in India. Additional factors
-          that could cause actual results, performance or achievements to differ
-          materially from such forward-looking statements, many of which are not
-          in Tata Communications' control, include, but are not limited to,
-          those risk factors discussed in Tata Communications Limited's Annual
-          Reports.The Annual Reports of Tata Communications Limited are
-          available at www.tatacommunications.com. Tata Communications is under
-          no obligation to, and expressly disclaims any obligation to, update or
-          alter its forward-looking statements.
+          Certain words and statements in this release concerning Tata Communications and its prospects, and other statements, including those relating to Tata Communications expected financial position, business strategy, 
+          the future development of Tata Communications' operations, and the general economy in India, are forward-looking statements. Such statements involve known and unknown risks, uncertainties and other factors, 
+          including financial, regulatory and environmental, as well as those relating to industry growth and trend projections, which may cause actual results, performance or achievements of Tata
+           Communications, or industry results, to differ materially from those expressed or implied by such forward-looking statements. The important factors that could cause actual results, performance or 
+           achievements to differ materially from such forward-looking statements include, among others, failure to increase the volume of traffic on Tata Communications' network; failure to develop new products and services
+            that meet customer demands and generate acceptable margins; failure to successfully complete commercial testing of new technology and information systems to support new products and services, including voice transmission services; failure to stabilize or reduce the rate of price compression on certain of the Company's communications services; failure to integrate strategic acquisitions and changes in government policies or regulations of India and, in particular, changes relating to the administration of Tata Communications' industry; and, in general, the economic, business and credit conditions in India. Additional factors that could cause actual results, performance or 
+          achievements to differ materially from such forward-looking statements, many of which are not in Tata Communications' control, include, but are not limited to, those risk factors discussed in Tata Communications Limited's Annual Reports. The Annual Reports of Tata Communications Limited are available at{' '} 
+          <a
+              className="no-style-anchor-tag"
+              href="www.tatacommunications.com"
+            >
+             {' '} www.tatacommunications.com{' '}
+            </a> Tata Communications is under no obligation to, and expressly disclaims any obligation to, update or alter its forward-looking statements.
         </p>
         <br />
         <br />

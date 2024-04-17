@@ -128,6 +128,9 @@ width: 100%;
 .learning-environment-descriptions b{
     text-align: left;
 }
+.learning-environment-descriptions img{
+  width: 100%;
+}
 .heading-black{
     font-size: 26px;
     font-weight: 700;
