@@ -348,8 +348,7 @@ const LandingPage = ({ activeTab, setActivetab }) => {
               <br /> future-proof our solutions and enhancing our
               <br /> operations towards sustainable development.
             </motion.p>
-            <motion.h6 initial={{x:"-40px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut",type:"spring"}} className="poppins-bold"> Amur S Lakshminarayanan
-</motion.h6>
+            <motion.h6 initial={{x:"-40px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut",type:"spring"}} className="poppins-bold"> Amur S Lakshminarayanan</motion.h6>
             <motion.p initial={{x:"-40px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut",type:"spring"}} className="poppins-medium managing-director">
               Managing Director & CEO
             </motion.p>
