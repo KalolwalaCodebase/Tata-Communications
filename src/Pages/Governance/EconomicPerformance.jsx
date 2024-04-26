@@ -1,23 +1,27 @@
 import React from 'react'
 import HeadBar from '../../Components/Headbar/HeadBar'
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate} from 'react-router-dom';
 
 const EconomicPerformance = () => {
-    const handleClick = (event,id) => {
-        //event.preventDefault(); // Prevent default anchor behavior
-      
+    const navigate = useNavigate();
+
+    const handleClick = async(event, id) => {
+        event.preventDefault(); // Prevent default link behavior
         const targetElement = document.querySelector(`#${id}`);
         if (targetElement) {
-          // Calculate the offset based on the current scroll position
-          const offset = targetElement.getBoundingClientRect().top - 100;
-      
-          // Scroll to the element with an offset
-          window.scrollBy({
-            top: offset,
-            behavior: 'smooth'
-          });
+            // Calculate the offset based on the current scroll position
+            const offset = targetElement.getBoundingClientRect().top - 100;
+
+            // Scroll to the element with an offset
+            window.scrollBy({
+                top: offset,
+                behavior: 'smooth'
+            });
+
+            // Update URL
+            navigate(`${window.location.pathname}#${id}`);
         }
-      }; 
+    };
    
    
     return (
@@ -35,8 +39,8 @@ const EconomicPerformance = () => {
                     <ul>
                     <li><Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link></li>
             <li><Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link></li>
-            <li><Link onClick={()=>handleClick(event,"Committed-to-Value-Creation")} >Committed to Value Creation</Link></li>
-                        <li><Link onClick={()=>handleClick(event,"Value-Generated-for-key-stakeholders")}>Value Generated for key stakeholders</Link></li>
+            <li><Link onClick={(event)=>handleClick(event,"Committed-to-Value-Creation")} >Committed to Value Creation</Link></li>
+                        <li><Link onClick={(event)=>handleClick(event,"Value-Generated-for-key-stakeholders")}>Value Generated for key stakeholders</Link></li>
                         <li><Link target="_blank" to="/gri-index">GRI index</Link></li>
                         <li><Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link></li>
                     </ul>

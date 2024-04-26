@@ -62,7 +62,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   className="resources-content"
                   variants={containerVariants}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   <motion.span
                     className="link-class-simple"
@@ -109,7 +109,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   src="/verticalline.png"
                   alt=""
                   initial={{ height: 0 }}
-                  animate={{ height: "100%", transition: easeInOut }}
+                  whileInView={{ height: "100%", transition: easeInOut }}
                   transition={{ delay: 1, duration: 10 }} // Delay image animation to start after span animation
                 />
               </div>
@@ -118,7 +118,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   className="resources-content"
                   variants={containerVariants}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   <motion.span
                     className="link-class-simple"
@@ -163,7 +163,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   src="/verticalline.png"
                   alt=""
                   initial={{ height: 0 }}
-                  animate={{ height: "100%", transition: easeInOut }}
+                  whileInView={{ height: "100%", transition: easeInOut }}
                   transition={{ delay: 0.5, duration: 10 }} // Delay image animation to start after span animation
                 />
               </div>
@@ -173,7 +173,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   className="resources-content"
                   variants={containerVariants}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   <motion.span
                     className="link-class-simple"
@@ -207,7 +207,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   src="/verticalline.png"
                   alt=""
                   initial={{ height: 0 }}
-                  animate={{ height: "100%", transition: easeInOut }}
+                  whileInView={{ height: "100%", transition: easeInOut }}
                   transition={{ delay: 0.5, duration: 10 }} // Delay image animation to start after span animation
                 />
               </div>
@@ -220,7 +220,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   className="resources-content"
                   variants={containerVariants}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   <motion.span
                     className="link-class-simple"
@@ -241,7 +241,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   src="/verticalline.png"
                   alt=""
                   initial={{ height: 0 }}
-                  animate={{ height: "100%", transition: easeInOut }}
+                  whileInView={{ height: "100%", transition: easeInOut }}
                   transition={{ delay: 1, duration: 10 }} // Delay image animation to start after span animation
                 />
               </div>
@@ -250,7 +250,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   className="resources-content"
                   variants={containerVariants}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   <motion.span
                     className="link-class-simple"
@@ -272,7 +272,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   src="/verticalline.png"
                   alt=""
                   initial={{ height: 0 }}
-                  animate={{ height: "100%", transition: easeInOut }}
+                  whileInView={{ height: "100%", transition: easeInOut }}
                   transition={{ delay: 0.5, duration: 10 }} // Delay image animation to start after span animation
                 />
               </div>
@@ -281,7 +281,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   className="resources-content"
                   variants={containerVariants}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   <motion.span
                     className="link-class-simple"
@@ -302,7 +302,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   src="/verticalline.png"
                   alt=""
                   initial={{ height: 0 }}
-                  animate={{ height: "100%", transition: easeInOut }}
+                  whileInView={{ height: "100%", transition: easeInOut }}
                   transition={{ delay: 0.5, duration: 10 }} // Delay image animation to start after span animation
                 />
               </div>
@@ -315,7 +315,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   className="resources-content"
                   variants={containerVariants}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   <motion.span
                     className="link-class-simple"
@@ -362,7 +362,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   src="/verticalline.png"
                   alt=""
                   initial={{ height: 0 }}
-                  animate={{ height: "100%", transition: easeInOut }}
+                  whileInView={{ height: "100%", transition: easeInOut }}
                   transition={{ delay: 0.5, duration: 10 }} // Delay image animation to start after span animation
                 />
               </div>
@@ -372,7 +372,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   className="resources-content"
                   variants={containerVariants}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   <motion.span
                     className="link-class-simple"
@@ -415,7 +415,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   src="/verticalline.png"
                   alt=""
                   initial={{ height: 0 }}
-                  animate={{ height: "100%", transition: easeInOut }}
+                  whileInView={{ height: "100%", transition: easeInOut }}
                   transition={{ delay: 1, duration: 10 }} // Delay image animation to start after span animation
                 />
               </div>
@@ -425,7 +425,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   className="resources-content"
                   variants={containerVariants}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   <motion.span
                     className="link-class-simple"
@@ -461,7 +461,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   src="/verticalline.png"
                   alt=""
                   initial={{ height: 0 }}
-                  animate={{ height: "100%", transition: easeInOut }}
+                  whileInView={{ height: "100%", transition: easeInOut }}
                   transition={{ delay: 1, duration: 10 }} // Delay image animation to start after span animation
                 />
               </div>
@@ -474,7 +474,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   className="resources-content"
                   variants={containerVariants}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   <motion.span
                     className="link-class-simple"
@@ -520,7 +520,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   src="/verticalline.png"
                   alt=""
                   initial={{ height: 0 }}
-                  animate={{ height: "100%", transition: easeInOut }}
+                  whileInView={{ height: "100%", transition: easeInOut }}
                   transition={{ delay: 1, duration: 10 }} // Delay image animation to start after span animation
                 />
               </div>
@@ -530,7 +530,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   className="resources-content"
                   variants={containerVariants}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   <motion.span
                     className="link-class-simple"
@@ -575,7 +575,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   src="/verticalline.png"
                   alt=""
                   initial={{ height: 0 }}
-                  animate={{ height: "100%", transition: easeInOut }}
+                  whileInView={{ height: "100%", transition: easeInOut }}
                   transition={{ delay: 1, duration: 10 }} // Delay image animation to start after span animation
                 />
               </div>
@@ -585,7 +585,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   className="resources-content"
                   variants={containerVariants}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   <motion.span
                     className="link-class-simple"
@@ -618,7 +618,7 @@ const tabHeadings=['Compliance','Corporate Social Responsibility',' Certificatio
                   src="/verticalline.png"
                   alt=""
                   initial={{ height: 0 }}
-                  animate={{ height: "100%", transition: easeInOut }}
+                  whileInView={{ height: "100%", transition: easeInOut }}
                   transition={{ delay: 1, duration: 10 }} // Delay image animation to start after span animation
                 />
               </div>

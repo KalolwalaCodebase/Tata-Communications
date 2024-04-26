@@ -18,10 +18,10 @@
 }
 .icons-footer{
     display: flex;
-    width: 8%;
+    width: 12%;
     justify-content: space-evenly;
 }
-.icons-footer img{
+.icons-footer a img{
  cursor: pointer;
 }
 .footer-parent{

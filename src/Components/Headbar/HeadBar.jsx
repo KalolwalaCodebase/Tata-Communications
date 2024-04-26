@@ -14,7 +14,7 @@ const HeadBar = ({ index , heading , icon, theme,headiconstyle }) => {
                             opacity: 0,
                             x: index % 2 === 0 ? 20 : -20
                         }}
-                        whileInView={{
+                        animate={{
                             opacity: 1,
                             x: 0, // Slide in to its original position
                             transition: {

@@ -1,24 +1,30 @@
 import React from 'react'
 import HeadBar from '../../Components/Headbar/HeadBar'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const HumanRights = () => {
 
-    const handleClick = (event,id) => {
-        //event.preventDefault(); // Prevent default anchor behavior
-      
+    const navigate = useNavigate();
+
+    const handleClick = async(event, id) => {
+        event.preventDefault(); // Prevent default link behavior
         const targetElement = document.querySelector(`#${id}`);
         if (targetElement) {
-          // Calculate the offset based on the current scroll position
-          const offset = targetElement.getBoundingClientRect().top - 100;
-      
-          // Scroll to the element with an offset
-          window.scrollBy({
-            top: offset,
-            behavior: 'smooth'
-          });
+            // Calculate the offset based on the current scroll position
+            const offset = targetElement.getBoundingClientRect().top - 100;
+
+            // Scroll to the element with an offset
+            window.scrollBy({
+                top: offset,
+                behavior: 'smooth'
+            });
+
+            // Update URL
+            navigate(`${window.location.pathname}#${id}`);
         }
-      };
+    };
+
+      
     return (
         <div>
             <HeadBar
@@ -48,12 +54,12 @@ export const HumanRights = () => {
             <div id='Policy-Framework' className='human-rights-container-main-sec2'>
                 <div className='human-rights-container-main-sec2-content'>
                     <h1>Policy Framework</h1>
-                    <h2>To strengthen the connection between our Business & Human Rights (BHR) initiatives and existing company policies, we have introduced a comprehensive Business and Human Rights Policy this year. <br /> <br /></h2>
+                    <h2>To strengthen the connection between our Business & Human Rights (BHR) initiatives and existing company policies, we have introduced a comprehensive Business and Human Rights Policy. <br /> <br /></h2>
                     <p>
-                        This policy demonstrates our pledge to uphold the highest ethical standards in our business operations. It is in harmony with various national and international human rights frameworks, including the United Nations Universal Declaration of Human Rights, the ILO Declaration on Fundamental Principles and Rights at Work, the Modern Slavery Act 2015, and the UN Sustainable Development Goals 2030, as well as Tata's own Code of Conduct and Affirmative Action Policy. <br /><br />
+                    This policy demonstrates our pledge to uphold the highest ethical standards in our business operations. It is in harmony with various national and international human rights frameworks, including the United Nations Universal Declaration of Human Rights, the ILO Declaration on Fundamental Principles and Rights at Work, the Modern Slavery Act 2015, and the UN Sustainable Development Goals 2030, as well as Tata's own Code of Conduct and Affirmative Action Policy. <br /><br />
                     </p>
                     <p>
-                        The policy applies to all stakeholders identified by the company, including employees, contractors, communities, customers, and partners in the value chain. It covers key aspects of business and human rights, such as anti-bribery, anti-corruption, responsible usage, equal opportunities, fair competition, community engagement, respect for individual dignity, fair compensation, the right to privacy, information and asset integrity, freedom of expression, health and safety, product and service standards, and protections against trafficking, modern slavery, child labor, and breaches of data privacy and security.
+                    The policy applies to all stakeholders identified by the Company, including employees, contractors, communities, customers and partners in the value chain. It covers key aspects of business and human rights, such as anti-bribery, anti-corruption, responsible usage, equal opportunities, fair competition, community engagement, respect for individual dignity, fair compensation, the right to privacy, information and asset integrity, freedom of expression, health and safety, product and service standards, and protection against trafficking, modern slavery, child labour and breaches of data privacy and security.
                     </p>
                 </div>
             </div>
@@ -91,7 +97,7 @@ export const HumanRights = () => {
                     We conducted an extensive human rights salience assessment to identify potential issues within our value chain and stakeholder interactions.
                 </h3>
                 <p>
-                    Prompted by our growing operations and the intricate nature of our value chain, this initiative responds to the heightened focus on human rights by investors and customers, as well as evolving business and human rights legislation. Our assessment reviewed our policies and performance, aligned them with global standards, and pinpointed key stakeholder human rights concerns. Utilizing the UNGP criteria and the RDR Corporate Accountability Index, along with Tata Group’s standards, we engaged stakeholders in a collaborative process to create a human rights risk matrix. This matrix evaluates risks across various business and human rights areas, guiding us to address gaps and improve our transparency continually.
+                Prompted by our growing operations and the intricate nature of our value chain, this initiative responds to the heightened focus on human rights by investors and customers, as well as evolving business and human rights legislation. Our assessment reviewed our policies and performance, aligned them with global standards and pinpointed key stakeholder human rights concerns. Utilising the UNGP criteria and the RDR Corporate Accountability Index, along with Tata Group's standards, we engaged stakeholders in a collaborative process to create a human rights risk matrix. This matrix evaluates risks across various business and human rights areas, guiding us to address gaps and improve our transparency continually.
                 </p>
                 <div className="hr-asses-card-parent flex">
                     <img className='hr-cards-line' src="/hr-cards-line.svg" alt="" />
@@ -123,7 +129,7 @@ export const HumanRights = () => {
                 <div className='hr-container-main-sec6-text flex'>
                     <p><b>Inclusive Policies:</b> Policies such as the Whistleblower Policy and Sexual Harassment Charter is revised regularly on the basis of industry standards and feedback received from employees or other stakeholders.</p>
                     <div className='hr-sec6-subtext'>
-                        <h1>93%</h1>
+                        <h1>96%</h1>
                         <p>Employees undertook training on the Tata Code of Conduct, and Global Dignity in the Workplace Policy</p>
                     </div>
                 </div>
@@ -158,11 +164,11 @@ export const HumanRights = () => {
                     <ul>
                         <li><Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link></li>
                         <li><Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link></li>
-                        <li><Link onClick={()=>handleClick(event,"Policy-Framework")}>Policy Framework</Link></li>
-                        <li><Link onClick={()=>handleClick(event,"Ensuring-safety-at-work")}>Ensuring Dignity at work </Link></li>
-                        <li><Link onClick={()=>handleClick(event,"Ethics-Helpline")}>Assessment and Engagement</Link></li>
-                        <li><Link onClick={()=>handleClick(event,"Awareness-and-training")}>Awareness and training</Link></li>
-                        <li><Link onClick={()=>handleClick(event,"Vendor-and-third-party-compliance")}>Vendor and third party compliance</Link></li>
+                        <li><Link onClick={(event)=>handleClick(event,"Policy-Framework")}>Policy Framework</Link></li>
+                        <li><Link onClick={(event)=>handleClick(event,"Ensuring-safety-at-work")}>Ensuring Dignity at work </Link></li>
+                        <li><Link onClick={(event)=>handleClick(event,"Ethics-Helpline")}>Assessment and Engagement</Link></li>
+                        <li><Link onClick={(event)=>handleClick(event,"Awareness-and-training")}>Awareness and training</Link></li>
+                        <li><Link onClick={(event)=>handleClick(event,"Vendor-and-third-party-compliance")}>Vendor and third party compliance</Link></li>
                         <li> <Link target="_blank" to="/gri-index">GRI index</Link></li>
                         <li> <Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link></li>
                     </ul>

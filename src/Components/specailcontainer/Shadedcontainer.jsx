@@ -9,7 +9,7 @@ const Shadedcontainer = () => {
       <motion.p className="description-shaded-container" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         {/* <Textanimation2 text={''}/>  */}
         For any feedback, queries or grievances related to our sustainability practices please reach out to 
-        <motion.span className='email-span' initial={{ opacity: 0,y:"-1000px",}} whileInView={{ opacity: 1, y: 0}} transition={{duration:0.5, ease:"easeIn"}}> EOHS@tatacommunications.com</motion.span>
+        <motion.span className='email-span' initial={{ opacity: 0,y:"-1000px",}} animate={{ opacity: 1, y: 0}} transition={{duration:0.5, ease:"easeIn"}}> EOHS@tatacommunications.com</motion.span>
       </motion.p>
     </div>
   );

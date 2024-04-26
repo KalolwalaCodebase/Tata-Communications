@@ -23,31 +23,31 @@ const Carouseldown = ({ setIsBlueHeading }) => {
       <Carousel.Item>
         <motion.div transition={{staggerChildren:0.3,duration:0.4}}  className="d-flex justify-content-around">
           <motion.img initial={{ scale: 0.7, opacity: 0 }}
-           whileInView={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}} className="carousel-image" src="./award1.svg" alt="" />
+           animate={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}} className="carousel-image" src="./award1.svg" alt="" />
           <motion.img initial={{ scale: 0.7, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}} className="carousel-image" src="/awardsSustanable.svg" alt="" />
+        animate={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}} className="carousel-image" src="/awardsSustanable.svg" alt="" />
           <motion.img initial={{ scale: 0.7, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}} className="carousel-image" src="/awardsEconomictime.svg" alt="" />
+        animate={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}} className="carousel-image" src="/awardsEconomictime.svg" alt="" />
         </motion.div>
       </Carousel.Item>
       <Carousel.Item>
       <motion.div transition={{staggerChildren:0.3}} className="d-flex justify-content-around">
         <motion.img initial={{ scale: 0.7, opacity: 0 }}
-           whileInView={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}} className="carousel-image" src="/awardsOurRanked.svg" alt="" />
+           animate={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}} className="carousel-image" src="/awardsOurRanked.svg" alt="" />
         <motion.img initial={{ scale: 0.7, opacity: 0 }}
-           whileInView={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}}  className="carousel-image" src="./award5.svg" alt="" />
+           animate={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}}  className="carousel-image" src="./award5.svg" alt="" />
         <motion.img initial={{ scale: 0.7, opacity: 0 }}
-           whileInView={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}} className="carousel-image" src="./award6.svg" alt="" />
+           animate={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}} className="carousel-image" src="./award6.svg" alt="" />
         </motion.div>
       </Carousel.Item>
       <Carousel.Item>
       <motion.div transition={{staggerChildren:0.3}} className="d-flex justify-content-around">
         <motion.img initial={{ scale: 0.7, opacity: 0 }}
-           whileInView={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}}  className="carousel-image" src="./award7.svg" alt="" />
+           animate={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}}  className="carousel-image" src="./award7.svg" alt="" />
         <motion.img initial={{ scale: 0.7, opacity: 0 }}
-           whileInView={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}}  className="carousel-image" src="./award8.svg" alt="" />
+           animate={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}}  className="carousel-image" src="./award8.svg" alt="" />
         <motion.img initial={{ scale: 0.7, opacity: 0 }}
-           whileInView={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}} className="carousel-image" src="./award9.svg" alt="" />
+           animate={{ scale: 1, opacity: 1 }} transition={{duration:0.6,ease:"easeInOut"}} className="carousel-image" src="./award9.svg" alt="" />
         </motion.div>
       </Carousel.Item>
     </Carousel>

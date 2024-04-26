@@ -2,29 +2,35 @@ import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./Community.css";
 import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 const CommunityEnvironmental = () => {
-  const handleClick = (event,id) => {
-    //event.preventDefault(); // Prevent default anchor behavior
+  const navigate = useNavigate();
+
+  const handleClick = async (event, id) => {
+      event.preventDefault(); // Prevent default link behavior
+      const targetElement = document.querySelector(`#${id}`);
+      if (targetElement) {
+        // Calculate the offset based on the current scroll position
+        const offset = targetElement.getBoundingClientRect().top - 100;
   
-    const targetElement = document.querySelector(`#${id}`);
-    if (targetElement) {
-      // Calculate the offset based on the current scroll position
-      const offset = targetElement.getBoundingClientRect().top - 100;
+        // Scroll to the element with an offset
+        window.scrollBy({
+          top: offset,
+          behavior: "smooth",
+        });
   
-      // Scroll to the element with an offset
-      window.scrollBy({
-        top: offset,
-        behavior: 'smooth'
-      });
+        // Update URL
+        navigate(`${window.location.pathname}#${id}`);
+      }
     }
-  };
+  
   return (
     <div className="community-student-container">
-      <HeadBar
-        icon={"/Demologo.png"}
-        heading={"ENVIRONMENT"}
+       <HeadBar
+        icon={"/Layer_1.png"}
+        heading={"EDUCATION"}
         theme={"#38D1DA"}
+        headiconstyle={'#8CD3DA'}
       />
       <div className="wrapper-student-container">
         <div className="slide-left-container">
@@ -52,14 +58,14 @@ const CommunityEnvironmental = () => {
             </div>
             <div className="data-student-community-container-environment">
               <div className="data-set-conatiner-below">
-                <b className="big-size-data"><AnimatedCounter finalValue={73424} /></b>
+                <b className="big-size-data"><AnimatedCounter finalValue={73} />,<AnimatedCounter finalValue={424} /></b>
                 <br />
                 <p className="small-size-paragraph-environment">
                   Reduction in water consumption by 2030
                 </p>
               </div>
               <div className="data-set-conatiner-below">
-                <b className="big-size-data"><AnimatedCounter finalValue={3000} /></b>
+                <b className="big-size-data"><AnimatedCounter finalValue={3} />,000</b>
                 <p className="small-size-paragraph-environment">
                   Trees planted
                 </p>
@@ -95,6 +101,7 @@ const CommunityEnvironmental = () => {
                     <span>
                       {" "}
                       Driving Climate Sustainability Through Horticulture
+                      <br />
                     </span>
                     This initiative aims to fulfil the specific needs of tribal
                     families, aiming to establish sustainable sources of income,
@@ -108,8 +115,7 @@ const CommunityEnvironmental = () => {
                     well as along pathways. Our programme also includes
                     initiatives to raise community awareness about the
                     importance of increasing green cover and conserving the
-                    import AnimatedCounter from '../../Components/Animatedcounter/Animatedcounter';
-environment. These efforts will have a positive impact on
+                    environment. These efforts will have a positive impact on
                     the climate by reducing carbon footprint.
                   </p>
 
@@ -151,7 +157,16 @@ environment. These efforts will have a positive impact on
                 </div>
               </div>
             </div>
-
+  <div className="container-one-second-section" style={{display:"flex",justifyContent:"flex-start"}}>
+  <span style={{fontSize:"42px",lineHeight:"32px",color:"#008189",fontWeight:"600",width:"55%"}}>Blue-Green Centre <br /><span style={{fontSize:"20px",color:"black",lineHeight:"10px"}}>Built for students to learn about biodiversity, indigenous plant species and flora and fauna</span></span>
+  <br />
+       <div className="data-set-conatiner-below" style={{marginLeft:"5%"}}>
+                    <b className="big-size-data"><AnimatedCounter finalValue={3} />,000</b>
+                    <p className="small-size-paragraph">
+                    Trees planted
+                    </p>
+                  </div>
+  </div>
             <div className="container-one-second-section">
               <div className="container-flex-row">
                 <div className="description-flex-row">
@@ -172,13 +187,13 @@ environment. These efforts will have a positive impact on
                 </div>
                 <div className="description-flex-row2">
                   <div className="data-set-conatiner-below">
-                    <b className="big-size-data">8,000</b>
+                    <b className="big-size-data">6,050</b>
                     <p className="small-size-paragraph">
                       Households were distributed clean cookstoves{" "}
                     </p>
                   </div>
                   <div className="data-set-conatiner-below">
-                    <b className="big-size-data">350</b>
+                    <b className="big-size-data">210</b>
                     <p className="small-size-paragraph">
                       Households were supported through solar electrification{" "}
                     </p>
@@ -191,7 +206,7 @@ environment. These efforts will have a positive impact on
                 <div className="description-flex-row specail-paragraph">
                   <p className="frist-paragraph">
                     {" "}
-                    <span>Schools at the Forefront of Planet Action </span>{" "}
+                    <span>Schools at the Forefront of Planet Action </span>{" "}
                     <br />
                     We are dedicated to fostering education for sustainable
                     development among young students and teachers.
@@ -230,10 +245,7 @@ environment. These efforts will have a positive impact on
                   <p className="frist-paragraph">
                     {" "}
                     <span>Neerina Shakti</span> <br />
-                    We are embarking on a river rejuvenation project in the
-                    Palar River basin with the objective of increasing water
-                    availability for crops, livestock and human consumption
-                    through an integrated watershed management programme.{" "}
+                    We are embarking on a river rejuvenation project in the Palar River basin with the objective of increasing water availability for crops, livestock and human consumption through an integrated watershed management programme.
                   </p>
                   <p className="normal-paragraph">
                     Based on studies conducted in similar projects, it is
@@ -254,7 +266,7 @@ environment. These efforts will have a positive impact on
             <div className="data-container-inner">
               <div className="data-student-community-container">
                 <div className="data-set-conatiner-below">
-                  <b className="big-size-data">~<AnimatedCounter finalValue={15000} /></b>
+                  <b className="big-size-data">~<AnimatedCounter finalValue={15} />,000</b>
                   <p className="small-size-paragraph">
                   people were <br />
                   benefited
@@ -306,7 +318,7 @@ environment. These efforts will have a positive impact on
               src="/quickLinkArrow.png"
               alt=""
             />
-            <li onClick={()=>handleClick(event,"Case-Studies")}>Case Studies</li>
+            <li onClick={(event)=>handleClick(event,"Case-Studies")}>Case Studies</li>
           </div>
         </div>
       </div>

@@ -280,7 +280,7 @@ width: 100%;
   margin: 4%;
   letter-spacing: 0.5cqmin;
 }
-.hr-sticky-links li{
+.hr-sticky-links ul li{
   list-style-image: url('/quick-links-icon.png');
   margin-bottom: 4%;
   color: #123C61;
@@ -289,6 +289,12 @@ width: 100%;
 .hr-sticky-links ul li a {
   text-decoration: none; /* Remove underline from links */
   color: inherit; /* Inherit color from parent */
+  font-size: 16px;
+  transition: 1s all ease-in-out;
+}
+.hr-sticky-links ul li a:hover{
+  color: #2A5F8F;
+  font-weight: 600;
 }
 .human-rights-container-main-left{
   width: 100%;
@@ -306,15 +312,22 @@ width: 100%;
 }
 .human-rights-container-main-sec1 .human-rights-banner-text h2{
  color: #005199;
- display: inline-block;
- font-size: 2.1rem;
+ font-family: Gotham;
+ font-size: 30px;
  font-weight: 300;
- margin-bottom: 8%;
+ line-height: 46px;
+ text-align: left;
 }
 .human-rights-container-main-sec1 .human-rights-banner-text p{
-  font-size: 1.5rem;
- font-weight: 350;
+  font-family: Gotham;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  
+  text-align: left;  
  display: inline-block;
+ color: #606060;
 }
 
 
@@ -338,7 +351,12 @@ width: 100%;
   font-weight: 350;
 }
 .human-rights-container-main-sec2-content p{
-  font-size: 1.2rem;
+  font-family: Gotham;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+  color: #606060;
 }
 .human-rights-container-main-sec3{
   width: 100%;
@@ -369,9 +387,13 @@ width: 100%;
   margin: 2% 0;
 }
 .human-rights-container-main-sec4-left h3{
-  font-size: 2rem;
-  font-weight: 300;
-  width: 85%;
+font-family: Gotham;
+font-size: 30px;
+font-weight: 300;
+line-height: 42px;
+color: #606060;
+text-align: left;
+width: 85%;
 }
 .human-rights-container-main-sec4-right{
   width: 30%;
@@ -403,7 +425,12 @@ width: 100%;
   margin: 0 0 2%;
 }
 .human-rights-container-main-sec5 p{
-  font-size: 1.4rem;
+  font-family: Gotham;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+ color: #606060;  
 }
 .hr-asses-card-parent{
   position: relative;
@@ -458,9 +485,13 @@ width: 100%;
 }
 .hr-container-main-sec6-text p{
   width: 60%;
+  font-family: Gotham;
+font-size: 20px;
+line-height: 32px;
+text-align: left;
 }
 .hr-container-main-sec6-text .hr-sec6-subtext{
-  width: 20%;
+  width: 25%;
   justify-content: end;
 }
 .hr-container-main-sec6-text .hr-sec6-subtext h1{
@@ -483,8 +514,13 @@ width: 100%;
 }
 .human-rights-container-main-sec7 p{
   width: 55%;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-family: Gotham;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+
+  color: #606060;
 }
 .hr-sec7-text {
   justify-content: space-between;
@@ -913,7 +949,6 @@ color: #606060;
 }
 .ci-sec3-h2{
   color: #3D86C6;
-  margin-bottom: 3%;
   font-weight: bold;
   text-align: center;
 }
@@ -925,16 +960,18 @@ color: #606060;
   letter-spacing: 0.5cqmin;
   color: #fff;
   border-radius: 50px;
+ margin-bottom: 2%;
   background-color: #3D86C6;
   padding: 0 2%;
 }
 .ci-sec3-h6{
   text-align: center;
+  text-transform: uppercase;
   margin: auto;
   font-weight: bold;
   letter-spacing: 0.5cqmin;
   color: #3D86C6;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 .ci-sec3-row-col{
   width: 45%;
@@ -951,11 +988,12 @@ color: #606060;
 }
 .ci-sec3-row-col h3{
   font-family: Gotham;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0.33em;
-  text-align: left;
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0.33em;
+text-align: left;
+  text-transform: uppercase;
   color: #E9B615;
 }
 .ci-sec3-row{
@@ -979,13 +1017,13 @@ color: #606060;
 }
 .ci-sec4-h5{
   text-align: center;
-  margin: 0 auto 5%;
+  margin: 0 auto 4%;
   width: 50%;
   letter-spacing: 0.5cqmin;
   color: #fff;
   border-radius: 50px;
   background-color: #3D86C6;
-  padding: 0 2%;
+  padding: 0 10px;
 }
 .ci-flowchart-table-container{
   margin: 3%;
@@ -1115,7 +1153,7 @@ color: #606060;
 .ci-sec6-img1-card{
   background-color: #9BB7E0;
   width: 40%;
-padding: 3px;
+padding: 10px;
 }
 .ci-sec6-img1-card h4{
   font-family: Gotham;

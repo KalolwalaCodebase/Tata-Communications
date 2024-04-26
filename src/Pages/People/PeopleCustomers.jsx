@@ -2,24 +2,28 @@ import React, { useEffect } from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import { motion } from "framer-motion";
 import TextAnimation from "../../Components/Animatedcounter/TextAnimation";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation,useNavigate } from "react-router-dom";
 
 const PeopleCustomers = () => {
-  const handleClick = (event, id) => {
-    //event.preventDefault(); // Prevent default anchor behavior
+  const navigate = useNavigate();
 
-    const targetElement = document.querySelector(`#${id}`);
-    if (targetElement) {
-      // Calculate the offset based on the current scroll position
-      const offset = targetElement.getBoundingClientRect().top - 100;
-
-      // Scroll to the element with an offset
-      window.scrollBy({
-        top: offset,
-        behavior: "smooth",
-      });
+  const handleClick = async (event, id) => {
+      event.preventDefault(); // Prevent default link behavior
+      const targetElement = document.querySelector(`#${id}`);
+      if (targetElement) {
+        // Calculate the offset based on the current scroll position
+        const offset = targetElement.getBoundingClientRect().top - 100;
+  
+        // Scroll to the element with an offset
+        window.scrollBy({
+          top: offset,
+          behavior: "smooth",
+        });
+  
+        // Update URL
+        navigate(`${window.location.pathname}#${id}`);
+      }
     }
-  };
   const location = useLocation();
   useEffect(() => {
     const scrollToTarget = () => {
@@ -45,7 +49,7 @@ const PeopleCustomers = () => {
       <div className="climate-change-intro-container people-main-parent-container">
         <motion.div
           initial={{ x: "-100px", opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, type: "spring" }}
           className="climate-change-intro-paragraph-inside-container"
         >
@@ -63,13 +67,13 @@ const PeopleCustomers = () => {
         </motion.div>
         <motion.div
           initial={{ y: "100px", opacity: 0, scale: 0.5 }}
-          whileInView={{ y: 0, opacity: 1, scale: 1 }}
+          animate={{ y: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1.3, type: "spring" }}
           className="climate-change-intro-photos-inside-container"
         >
           <img
             className="intro-climate-image intro-people-image"
-            src="/peoplecustomerimg01.png"
+            src="/people002.png"
             alt=""
           />
         </motion.div>
@@ -78,7 +82,7 @@ const PeopleCustomers = () => {
         <div className="main-section-climate-change">
           <motion.div
             initial={{ y: "100px", opacity: 0, scale: 0.5 }}
-            whileInView={{ y: 0, opacity: 1, scale: 1 }}
+            animate={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ duration: 1.3, type: "spring" }}
             id="Customer-experiences"
             className="description-main-section people-descriptions"
@@ -103,7 +107,7 @@ const PeopleCustomers = () => {
           </motion.div>
           <motion.div
             initial={{ y: "100px", opacity: 0, scale: 0.5 }}
-            whileInView={{ y: 0, opacity: 1, scale: 1 }}
+            animate={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ duration: 1.3, type: "spring" }}
             className="people-customer-section-down"
           >
@@ -111,7 +115,7 @@ const PeopleCustomers = () => {
           </motion.div>
           <motion.div
             initial={{ y: "100px", opacity: 0, scale: 0.5 }}
-            whileInView={{ y: 0, opacity: 1, scale: 1 }}
+            animate={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ duration: 1.3, type: "spring" }}
             className="people-customer-section-down"
             style={{ marginTop: "-20px" }}
@@ -124,7 +128,7 @@ const PeopleCustomers = () => {
           >
             <motion.b
               initial={{ x: "-100px", opacity: 0, scale: 0.5 }}
-              whileInView={{ x: 0, opacity: 1, scale: 1 }}
+              animate={{ x: 0, opacity: 1, scale: 1 }}
               transition={{ duration: 1, type: "spring" }}
               className="heading-black"
             >
@@ -134,13 +138,13 @@ const PeopleCustomers = () => {
               <div class="each-container-main-design">
                 <motion.div
                   initial={{ scale: 0 }}
-                  whileInView={{ scale: 1 }}
+                  animate={{ scale: 1 }}
                   transition={{ duration: 1.3, type: "spring" }}
                   class="slim-pink-container"
                 ></motion.div>
                 <motion.div
                   initial={{ x: 10 }}
-                  whileInView={{ x: 0 }}
+                  animate={{ x: 0 }}
                   transition={{
                     duration: 1,
                     type: "spring",
@@ -156,13 +160,13 @@ const PeopleCustomers = () => {
               <div class="each-container-main-design">
                 <motion.div
                   initial={{ scale: 0 }}
-                  whileInView={{ scale: 1 }}
+                  animate={{ scale: 1 }}
                   transition={{ duration: 1.3, type: "spring" }}
                   class="slim-pink-container"
                 ></motion.div>
                 <motion.div
                   initial={{ x: 10 }}
-                  whileInView={{ x: 0 }}
+                  animate={{ x: 0 }}
                   transition={{
                     duration: 1,
                     type: "spring",
@@ -178,13 +182,13 @@ const PeopleCustomers = () => {
               <div class="each-container-main-design">
                 <motion.div
                   initial={{ scale: 0 }}
-                  whileInView={{ scale: 1 }}
+                  animate={{ scale: 1 }}
                   transition={{ duration: 1.3, type: "spring" }}
                   class="slim-pink-container"
                 ></motion.div>
                 <motion.div
                   initial={{ x: 10 }}
-                  whileInView={{ x: 0 }}
+                  animate={{ x: 0 }}
                   transition={{
                     duration: 1,
                     type: "spring",
@@ -200,13 +204,13 @@ const PeopleCustomers = () => {
               <div class="each-container-main-design">
                 <motion.div
                   initial={{ scale: 0 }}
-                  whileInView={{ scale: 1 }}
+                  animate={{ scale: 1 }}
                   transition={{ duration: 1.3, type: "spring" }}
                   class="slim-pink-container"
                 ></motion.div>
                 <motion.div
                   initial={{ x: 10 }}
-                  whileInView={{ x: 0 }}
+                  animate={{ x: 0 }}
                   transition={{
                     duration: 1,
                     type: "spring",
@@ -224,13 +228,13 @@ const PeopleCustomers = () => {
               <div class="each-container-main-design">
                 <motion.div
                   initial={{ scale: 0 }}
-                  whileInView={{ scale: 1 }}
+                  animate={{ scale: 1 }}
                   transition={{ duration: 1.3, type: "spring" }}
                   class="slim-pink-container"
                 ></motion.div>
                 <motion.div
                   initial={{ x: 10 }}
-                  whileInView={{ x: 0 }}
+                  animate={{ x: 0 }}
                   transition={{
                     duration: 1,
                     type: "spring",
@@ -255,7 +259,7 @@ const PeopleCustomers = () => {
                   backgroundColor: "#AD3088", // Change background color based on isBlueHeading state
                 }}
                 initial={{ scale: 0.5, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
+                animate={{ scale: 1, opacity: 1 }}
                 className="awards-green-title poppins-semibold"
               >
                 OUR USP<span style={{ textTransform: "lowercase" }}>s</span>
@@ -266,14 +270,14 @@ const PeopleCustomers = () => {
                 <motion.div
                   className="img-section-our-ups"
                   initial={{ y: "100px", opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
+                  animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                 >
                   <img src="/peopleourupsimg01.png" alt="" />
                 </motion.div>
                 <motion.div
                   initial={{ y: "-100px", opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
+                  animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                   className="descreptions-section-our-ups"
                   style={{ height: "130px" }}
@@ -285,7 +289,7 @@ const PeopleCustomers = () => {
               <div className="each-card-container-our-ups">
                 <motion.div
                   initial={{ y: "100px", opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
+                  animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                   className="img-section-our-ups"
                 >
@@ -293,7 +297,7 @@ const PeopleCustomers = () => {
                 </motion.div>
                 <motion.div
                   initial={{ y: "-100px", opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
+                  animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                   className="descreptions-section-our-ups"
                   style={{ height: "130px" }}
@@ -307,14 +311,14 @@ const PeopleCustomers = () => {
                 <motion.div
                   className="img-section-our-ups"
                   initial={{ y: "100px", opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
+                  animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                 >
                   <img src="/peopleourupsimg03.png" alt="" />
                 </motion.div>
                 <motion.div
                   initial={{ y: "-100px", opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
+                  animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                   className="descreptions-section-our-ups"
                   style={{ height: "130px" }}
@@ -327,7 +331,7 @@ const PeopleCustomers = () => {
                 <motion.div
                   className="img-section-our-ups"
                   initial={{ y: "100px", opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
+                  animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                 >
                   <img src="/peopleourupsimg04.png" alt="" />
@@ -336,7 +340,7 @@ const PeopleCustomers = () => {
                   className="descreptions-section-our-ups"
                   style={{ height: "280px" }}
                   initial={{ y: "-100px", opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
+                  animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                 >
                   An application captures the metering of each individual
@@ -351,7 +355,7 @@ const PeopleCustomers = () => {
                 <motion.div
                   className="img-section-our-ups"
                   initial={{ y: "100px", opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
+                  animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                 >
                   <img src="/peopleourupsimg05.png" alt="" />
@@ -360,7 +364,7 @@ const PeopleCustomers = () => {
                   className="descreptions-section-our-ups"
                   style={{ height: "280px" }}
                   initial={{ y: "-100px", opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
+                  animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                 >
                   Tata Communications’ IoT smart light solution is an end-to-end
@@ -374,7 +378,7 @@ const PeopleCustomers = () => {
 
         <motion.div
           initial={{ x: "100px", opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3, type: "spring" }}
           className="quick-link-sections"
         >
@@ -412,7 +416,7 @@ const PeopleCustomers = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <li onClick={() => handleClick(event, "Customer-experiences")}>
+            <li onClick={(event) => handleClick(event, "Customer-experiences")}>
               Customer Experience
             </li>
           </div>
@@ -423,7 +427,7 @@ const PeopleCustomers = () => {
               alt=""
             />
             <li
-              onClick={() =>
+              onClick={(event) =>
                 handleClick(event, "Enhancing-Customer-Engagement")
               }
               href=""
@@ -437,7 +441,7 @@ const PeopleCustomers = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <li onClick={() => handleClick(event, "our-usps-id")}>Our USPs</li>
+            <li onClick={(event) => handleClick(event, "our-usps-id")}>Our USPs</li>
           </div>
           <div className="quicklinks-button-div">
             <img

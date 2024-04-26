@@ -15,7 +15,7 @@ const ImageCard = ({ imageurl, color, heading,activeTab,url}) => {
         <img src={imageurl} alt="" />
       </div>
       <div className="image-container-card-heading">
-        <motion.h2 initial={{opacity:0,x:"-100px"}} whileInView={{opacity:1,x:0}} transition={{duration:0.5,delay:0.3,ease:"easeIn"}} className="CardHeading-second-specail poppins-light span-inital">
+        <motion.h2 initial={{opacity:0,x:"-100px"}} animate={{opacity:1,x:0}} transition={{duration:0.5,delay:0.3,ease:"easeIn"}} className="CardHeading-second-specail poppins-light span-inital">
           {Array.isArray(heading)?heading[0]:heading} <br />
           <Link className="read-more-btn-second poppins-regular specail-btn-show-on-hover" to={heading[2]}>
   READ MORE {">"}

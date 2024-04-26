@@ -5,7 +5,7 @@ import ImageCard from '../../Components/CardComponent/ImageCard';
 import { motion, easeInOut } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 const People = ({activeTab,HeroSectionContent}) => {
-       const headingarr = [ ['Employees','/peoplecard1.png','/People/employees'],[ 'Customers','/peoplecard2.png','/People/customers'], ['Supply chain','peoplecard3.png','/People/supply-chain']];
+       const headingarr = [ ['Employees','/peoplecard1.png','/People/employees'],[ 'Customers','/people001.png','/People/customers'], ['Supply chain','peoplecard3.png','/People/supply-chain']];
        const [ref1, inView1] = useInView({
         triggerOnce: true,
         threshold: 0.5, // Adjust as needed

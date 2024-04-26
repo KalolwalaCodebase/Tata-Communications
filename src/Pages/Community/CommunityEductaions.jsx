@@ -2,23 +2,27 @@ import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./Community.css";
 import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate} from 'react-router-dom';
 const CommunityEductaions = () => {
-  const handleClick = (event,id) => {
-    //event.preventDefault(); // Prevent default anchor behavior
+  const navigate = useNavigate();
+
+  const handleClick = async (event, id) => {
+      event.preventDefault(); // Prevent default link behavior
+      const targetElement = document.querySelector(`#${id}`);
+      if (targetElement) {
+        // Calculate the offset based on the current scroll position
+        const offset = targetElement.getBoundingClientRect().top - 100;
   
-    const targetElement = document.querySelector(`#${id}`);
-    if (targetElement) {
-      // Calculate the offset based on the current scroll position
-      const offset = targetElement.getBoundingClientRect().top - 100;
+        // Scroll to the element with an offset
+        window.scrollBy({
+          top: offset,
+          behavior: "smooth",
+        });
   
-      // Scroll to the element with an offset
-      window.scrollBy({
-        top: offset,
-        behavior: 'smooth'
-      });
+        // Update URL
+        navigate(`${window.location.pathname}#${id}`);
+      }
     }
-  };
   return (
     <div className="community-student-container">
       <HeadBar
@@ -103,15 +107,15 @@ const CommunityEductaions = () => {
                 </div>
                 <div className="description-flex-row2">
                 <div className="data-set-conatiner-below">
-              <b className="big-size-data"><AnimatedCounter finalValue={30} />,000+</b>
+              <b className="big-size-data"><AnimatedCounter finalValue={161} />,<AnimatedCounter finalValue={664} /></b>
               <p className="small-size-paragraph">
-              Students benefited through this programme
+              Benficiaries (including 34,824 direct beneficiaries such as students, teachers and head-teachers)
               </p>
             </div>
             <div className="data-set-conatiner-below">
-              <b className="big-size-data"><AnimatedCounter finalValue={120} /></b>
+              <b className="big-size-data"><AnimatedCounter finalValue={17} />,262</b>
               <p className="small-size-paragraph">
-              Rural communities impacted
+              Girl beneficiaries
               </p>
             </div>
                 </div>
@@ -133,14 +137,7 @@ const CommunityEductaions = () => {
                     reach their full potential.
                   </p>
                   <p className="normal-paragraph">
-                    Through this initiative, we provide financial assistance and
-                    invaluable mentorship, aiming to bridge gaps and unlock
-                    opportunities for deserving individuals. We extend our
-                    support to students enrolled in esteemed institutions such
-                    as the College of Engineering Pune, Government Polytechnic
-                    Pune, Government College of Engineering and Research Avasari
-                    Khurd, Government College of Engineering Karad, and
-                    Government Polytechnic Avasar.
+                  Through this initiative, we provide financial assistance and invaluable mentorship, aiming to bridge gaps and unlock opportunities for deserving individuals. We extend our support to students enrolled in esteemed institutions such as the College of Engineering Pune, Government Polytechnic Pune, Government College of Engineering and Research Avasari Khurd, Government College of Engineering Karad and Government Polytechnic Avasar.
                   </p>
 
                   <p className="last-paragraph">
@@ -249,7 +246,7 @@ const CommunityEductaions = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <li onClick={()=>handleClick(event,"Case-Studies")}>Case Studies</li>
+            <li onClick={(event)=>handleClick(event,"Case-Studies")}>Case Studies</li>
           </div>
         </div>
       </div>

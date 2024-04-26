@@ -29,7 +29,7 @@ const AnimatedMessage = ({ message }) => {
         className="heading-main-section-down"
         variants={containerVariants}
         initial="hidden"
-        whileInView="visible"
+        animate="visible"
       >
         {message.split(" ").map((word, index) => (
           <motion.span

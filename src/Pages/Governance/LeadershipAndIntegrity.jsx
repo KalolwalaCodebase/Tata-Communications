@@ -1,23 +1,27 @@
 import React,{useEffect} from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "./Governance.css";
-import { Link ,useLocation} from 'react-router-dom';
+import { Link ,useLocation,useNavigate} from 'react-router-dom';
 const LeadershipAndIntegrity = () => {
-  const handleClick = (event,id) => {
-    event.preventDefault(); // Prevent default anchor behavior
-  
+  const navigate = useNavigate();
+
+const handleClick = async (event, id) => {
+    event.preventDefault(); // Prevent default link behavior
     const targetElement = document.querySelector(`#${id}`);
     if (targetElement) {
       // Calculate the offset based on the current scroll position
       const offset = targetElement.getBoundingClientRect().top - 100;
-  
+
       // Scroll to the element with an offset
       window.scrollBy({
         top: offset,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
+
+      // Update URL
+      navigate(`${window.location.pathname}#${id}`);
     }
-  };
+  }
   const location = useLocation();
   useEffect(() => {
     const scrollToTarget = () => {
@@ -56,19 +60,11 @@ const LeadershipAndIntegrity = () => {
               <br />
               <br />
               <div className="upper-section-leadership-and-integrity">
-                At Tata Communications, the Board of Directors plays a key role
-                in navigating the company to achieve its long-standing business
-                goals, managing strategic executions, and protecting stakeholder
-                interests.
+              At Tata Communications, the Board of Directors plays a key role in navigating the Company to achieve its long-standing business goals, managing strategic executions, and protecting stakeholder interests.
               </div>
               <br />
               <div className="normal-paragraph-leadership-and-integrity">
-                The Board’s transparent approach to governance includes a
-                nomination process that prioritizes diversity, thus contributing
-                to a richer pool of decision-making perspectives. This
-                foundational strategy underlies the company’s operational,
-                strategic, and performance management, ensuring clear
-                accountability and embracing inclusive leadership practices.
+              The Board's transparent approach to governance includes a nomination process that prioritises diversity, thus contributing to a richer pool of decision-making perspectives. This foundational strategy underlines the company's operational, strategic and performance management, ensuring clear accountability and embracing inclusive leadership practices.
               </div>
               <div className="flexbox-board-of-director-image-photos">
                 <div className="board-of-director-images-container">
@@ -144,12 +140,11 @@ const LeadershipAndIntegrity = () => {
               <br />
               <br />
               <div className="upper-section-leadership-and-integrity">
-              The specialized committees, organized by the Board, are tasked with overseeing critical governance areas such as financial oversight, stakeholder engagement, corporate social responsibility (CSR), safety, and environmental sustainability.
+              The specialized committees, organized by the Board, are tasked with overseeing critical governance areas such as financial oversight, stakeholder engagement, corporate social responsibility (CSR), safety and sustainability.
               </div>
               <br />
               <div className="normal-paragraph-leadership-and-integrity">
-              These committees meticulously analyze relevant matters within their spheres of influence and provide well-thought-out recommendations for the Board's evaluation and endorsement. The Statutory Committees established by the Board consist of:
-              </div>
+              These committees meticulously analyse relevant matters within their spheres of influence and provide well-thought-out recommendations for the Board's evaluation and endorsement. The Statutory Committees established by the Board consist of:              </div>
               <img className="govn-board-committee-img" src="/govn-board-committee.png" alt="board commiteee images" />
             </div>
             <div id="Nominations-Evaluation-and-Performance" className="board-ofdirector-container">
@@ -158,7 +153,7 @@ const LeadershipAndIntegrity = () => {
               <br />
               
               <div className="normal-paragraph-leadership-and-integrity">
-              At our organization, we uphold a structured and systematic protocol for Board nominations, evaluations, and performance evaluations. Each nomination undergoes rigorous examination by the Nomination and Remuneration Committee to confirm its alignment with our strategic direction. Furthermore, the Board conducts annual assessments of its own performance, as well as that of its committees and individual Directors.  <br /> <br />            </div>
+              At our organisation, we uphold a structured and systematic protocol for Board nominations, evaluations and performance analysis. Each nomination undergoes rigorous examination by the Nomination and Remuneration Committee to confirm its alignment with our strategic direction. Furthermore, the Board conducts annual assessments of its own performance, as well as that of its committees and individual Directors. <br /> <br />            </div>
             </div>
             <div id="Remuneration-and-Conflict-of-Interest" className="board-ofdirector-container">
               <b className="heading-blue"> <br /> Remuneration and Conflict of Interest</b>
@@ -198,7 +193,7 @@ const LeadershipAndIntegrity = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <li onClick={()=>handleClick(event,"Board-of-Directors")}>Board of Directors</li>
+            <li onClick={(event)=>handleClick(event,"Board-of-Directors")}>Board of Directors</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -206,7 +201,7 @@ const LeadershipAndIntegrity = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <li onClick={()=>handleClick(event,"Board-Committees")}>Board Committees</li>
+            <li onClick={(event)=>handleClick(event,"Board-Committees")}>Board Committees</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -214,7 +209,7 @@ const LeadershipAndIntegrity = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <li onClick={()=>handleClick(event,"Nominations-Evaluation-and-Performance")}>Nominations, Evaluation and Performance</li>
+            <li onClick={(event)=>handleClick(event,"Nominations-Evaluation-and-Performance")}>Nominations, Evaluation and Performance</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -222,7 +217,7 @@ const LeadershipAndIntegrity = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <li onClick={()=>handleClick(event,"Remuneration-and-Conflict-of-Interest")}>Remuneration and Conflict of Interest</li>
+            <li onClick={(event)=>handleClick(event,"Remuneration-and-Conflict-of-Interest")}>Remuneration and Conflict of Interest</li>
           </div>
           <div className="quicklinks-button-div">
             <img

@@ -1,22 +1,26 @@
 import React, { useState } from 'react'
 import HeadBar from '../../Components/Headbar/HeadBar'
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate} from 'react-router-dom';
 export const PlanetWaterResourceManagement = () => {
-    const handleClick = (event,id) => {
-        //event.preventDefault(); // Prevent default anchor behavior
-      
+    const navigate = useNavigate();
+
+    const handleClick = async (event, id) => {
+        event.preventDefault(); // Prevent default link behavior
         const targetElement = document.querySelector(`#${id}`);
         if (targetElement) {
           // Calculate the offset based on the current scroll position
           const offset = targetElement.getBoundingClientRect().top - 100;
-      
+    
           // Scroll to the element with an offset
           window.scrollBy({
             top: offset,
-            behavior: 'smooth'
+            behavior: "smooth",
           });
+    
+          // Update URL
+          navigate(`${window.location.pathname}#${id}`);
         }
-      };
+      }
     const data = [
         {
             title: 'WATER RISK MANAGEMENT',
@@ -93,7 +97,7 @@ export const PlanetWaterResourceManagement = () => {
                 src="/quickLinkArrow.png"
                 alt=""
               />
-              <a onClick={() => handleClick(event, "Water-Resource-Management")}>
+              <a onClick={(event) => handleClick(event, "Water-Resource-Management")}>
               Water Resource Management
               </a>
             </div>
@@ -103,7 +107,7 @@ export const PlanetWaterResourceManagement = () => {
                 src="/quickLinkArrow.png"
                 alt=""
               />
-              <a onClick={() => handleClick(event, "Wastewater-management")}>
+              <a onClick={(event) => handleClick(event, "Wastewater-management")}>
               Wastewater management
               </a>
             </div>
@@ -143,7 +147,7 @@ export const PlanetWaterResourceManagement = () => {
                     <h1>
                         WATER MANAGEMENT
                     </h1>
-                    <h2>
+                    <h2 style={{color:"#7B8422"}}>
                         Water is indispensable for both our operations and the sustainable livelihoods of the communities where we operate. Recognising this, we uphold the commitment to ensure that our operations do not compromise the quality or availability of water resources.
                         <br />
                     </h2>

@@ -224,7 +224,7 @@ const DropdownComponent = ({ hoveredNavItem, onClose }) => {
         <div className="dropdown-comp-container-child" key={index}>
           <motion.img
             initial={{ opacity: 0, scale: 0.7 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             src={item.imgSrc}
             alt=""

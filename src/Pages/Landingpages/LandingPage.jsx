@@ -182,7 +182,7 @@ const LandingPage = ({ activeTab, setActivetab }) => {
               onClick={() => setActivetab("Sustainability")}
               to={"/Sustainability"}
             >
-              read more{" "}
+              Read more{" "}
             </Link>
             about our Sustainability Strategy
           </motion.p>
@@ -235,7 +235,7 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           ref={ref1}
           variants={containerVariants}
           initial="hidden"
-          animate={inView1 ? "visible" : "hidden"}
+          whileInView={inView1 ? "visible" : "hidden"}
         >
           {imageUrlarr.map((imageurl, id) => (
             <motion.div
@@ -303,7 +303,7 @@ const LandingPage = ({ activeTab, setActivetab }) => {
           {showPopup && (
             <motion.div className="video-popup"
               initial={{ opacity: 0, width: 0, borderRadius: "100%" }}
-              animate={{ opacity: 1, width: "100%", borderRadius: 0 }}
+              whileInView={{ opacity: 1, width: "100%", borderRadius: 0 }}
               exit={{ opacity: 0, width: 0, borderRadius: "100%", transition: { duration: 1 } }}
               transition={{ duration: 0.8, ease: "easeInOut" }}>
               <div className="video-popup-content">
@@ -412,7 +412,7 @@ Sustainable Development Goals
           <br />
           <Link to={'/Sustainability/sustainable-development-goals'} className="readmore-blue"> <motion.span initial={{ opacity: 0, y: "-100px" }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: easeInOut, delay: 0.2 }} >read more{">"}</motion.span> </Link>
+          transition={{ duration: 0.5, ease: easeInOut, delay: 0.2 }} >Read more{">"}</motion.span> </Link>
         </div>
       </motion.div>
       <div className="awards-wrapper-parent">

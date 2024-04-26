@@ -174,21 +174,24 @@ const CultivatingInnovation = () => {
             </div>
             <div id='Empowering-innovators' className="ci-sec3">
                 <h2 className="ci-sec3-h2">Empowering Innovators</h2>
+                <h6 className="ci-sec3-h6">tata communication’s <br />
+internal innovation programme</h6>
                 <h5 className="ci-sec3-h5">SHAPE THE FUTURE</h5>
-                <h6 className="ci-sec3-h6">UNLEASHING INTERNAL INNOVATION</h6>
+                
                 <div className="ci-sec3-row flex">
                     <div className="ci-sec3-row-col">
                         <h3>
-                            STF <br />
+                        ‘shape the future’
+                        <br />
                             DISRUPT
                         </h3>
-                        <div className="ci-sec3-col-divider"></div>
+                        <div className="ci-sec3-col-divider" ></div>
                         <p>
                             A cornerstone for fostering an innovative mindset, this program encourages employees to build new products and solutions, promising the incubation of groundbreaking ideas.
                         </p>
                     </div>
                     <div className="ci-sec3-row-divider"></div>
-                    <div className="ci-sec3-row-col">
+                    <div className="ci-sec3-row-col" style={{marginTop:"0",paddingTop:"0"}}>
                         <h3>
                             STF THINK-A-THON <br />
                             & STF SPRINTS
@@ -302,7 +305,7 @@ const CultivatingInnovation = () => {
             </div>
             <div className="ci-sec6">
                 <div className='ci-sec6-content flex'>
-                    <img src="/ci-sec6-img1.png" alt="" />
+                    <img src="/Governance001.png" alt="" />
                     <div className='ci-sec6-img1-card'>
                         <h4>
                             HARNESSING <br />

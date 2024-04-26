@@ -1,23 +1,27 @@
 import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 
 const PlanetWasteManagement = () => {
-    const handleClick = (event,id) => {
-        //event.preventDefault(); // Prevent default anchor behavior
-      
-        const targetElement = document.querySelector(`#${id}`);
-        if (targetElement) {
-          // Calculate the offset based on the current scroll position
-          const offset = targetElement.getBoundingClientRect().top - 100;
-      
-          // Scroll to the element with an offset
-          window.scrollBy({
-            top: offset,
-            behavior: 'smooth'
-          });
-        }
-      };
+  const navigate = useNavigate();
+
+  const handleClick = async (event, id) => {
+      event.preventDefault(); // Prevent default link behavior
+      const targetElement = document.querySelector(`#${id}`);
+      if (targetElement) {
+        // Calculate the offset based on the current scroll position
+        const offset = targetElement.getBoundingClientRect().top - 100;
+  
+        // Scroll to the element with an offset
+        window.scrollBy({
+          top: offset,
+          behavior: "smooth",
+        });
+  
+        // Update URL
+        navigate(`${window.location.pathname}#${id}`);
+      }
+    }
   return (
     <div>
       <HeadBar
@@ -52,7 +56,7 @@ const PlanetWasteManagement = () => {
                 src="/quickLinkArrow.png"
                 alt=""
               />
-              <a onClick={() => handleClick(event, "Waste-Categorisation")}>
+              <a onClick={(event) => handleClick(event, "Waste-Categorisation")}>
               Waste Categorisation
               </a>
             </div>
@@ -62,7 +66,7 @@ const PlanetWasteManagement = () => {
                 src="/quickLinkArrow.png"
                 alt=""
               />
-              <a onClick={() => handleClick(event, "NON-HAZARDOUS-WASTE")}>
+              <a onClick={(event) => handleClick(event, "NON-HAZARDOUS-WASTE")}>
               Non-Hazardous Waste
               </a>
             </div>
@@ -72,7 +76,7 @@ const PlanetWasteManagement = () => {
                 src="/quickLinkArrow.png"
                 alt=""
               />
-              <a onClick={() => handleClick(event, "Hazardous-Waste")}>
+              <a onClick={(event) => handleClick(event, "Hazardous-Waste")}>
               Hazardous Waste
               </a>
             </div>
@@ -107,7 +111,7 @@ const PlanetWasteManagement = () => {
 
       <div className="planet-wm-sec1 flex" style={{justifyContent:"flex-start"}}>
         <div className="planet-wm-sec1-text">
-          <h2>
+          <h2 style={{color:"#7B8422"}}>
           At the heart of our sustainability ethos lies a robust waste management system. As a Company focused on service provision, our waste production primarily consists of non-hazardous refuse from everyday operations and hazardous materials like E-waste and batteries from our service apparatus. <br />
           </h2>
           <br />
@@ -119,7 +123,7 @@ const PlanetWasteManagement = () => {
           Our strategy for waste management is centred on the principles of efficient recycling and the reduction of waste streams wherever feasible, highlighting our pledge to environmental guardianship. This strategy encompasses the composting of organic refuse, and we are actively developing plans to expand these initiatives and incorporate a circular economy approach into our business model, in line with our aspiration of achieving zero waste to landfill by the financial year 2027. We utilise an in-house automated system alongside facility-specific data logs to monitor and regulate waste, ensuring adherence to both national and regional regulations. We advocate for the uptake of sustainable practices in the disposal or recycling of end-of-life waste, collaborating with accredited partners. Through these measures, we have successfully averted the disposal of waste in landfills, significantly curtailing our ecological footprint.
           </p>
         </div>
-        <img src="/planet-wm-sec1-img.png" alt="" />
+        <img src="/planet003.png" alt="" />
       </div>
 
       <div id='Waste-Categorisation' className="planet-wm-sec2 flex">

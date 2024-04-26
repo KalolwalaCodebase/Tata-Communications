@@ -5,10 +5,10 @@ const Footer = () => {
     <div className='footer-main'>
     <div className='footer-social'>
       <div className='icons-footer'>
-      <img src="./in.svg" alt="" />
-      <img src="./x.svg" alt="" />
-      <img src="./insta.svg" alt="" />
-      <img src="./yt.svg" alt="" />
+        <a target='_blank' href="https://www.linkedin.com/company/tata-communication/"><img src="./in.svg" alt="" /></a>
+      <a target='_blank' href="https://twitter.com/tata_comm"><img src="./x.svg" alt="" /></a>
+      <a target='_blank' href="https://www.instagram.com/tata_comm/"><img src="./insta.svg" alt="" /></a>
+      <a target='_blank' href="https://www.youtube.com/user/tatacomms"> <img src="./yt.svg" alt="" /></a>
       </div>
     </div>
 

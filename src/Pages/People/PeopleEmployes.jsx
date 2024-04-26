@@ -5,24 +5,28 @@ import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
 import { motion } from 'framer-motion';
 import Textanimation2 from "../../Components/Animatedcounter/Textanimation2";
 import TextAnimation from "../../Components/Animatedcounter/TextAnimation";
-import { Link,useLocation } from 'react-router-dom';
+import { Link,useLocation,useNavigate } from 'react-router-dom';
 const PeopleEmployes = () => {
 
-  const handleClick = (event,id) => {
-    //event.preventDefault(); // Prevent default anchor behavior
+  const navigate = useNavigate();
+
+  const handleClick = async (event, id) => {
+      event.preventDefault(); // Prevent default link behavior
+      const targetElement = document.querySelector(`#${id}`);
+      if (targetElement) {
+        // Calculate the offset based on the current scroll position
+        const offset = targetElement.getBoundingClientRect().top - 100;
   
-    const targetElement = document.querySelector(`#${id}`);
-    if (targetElement) {
-      // Calculate the offset based on the current scroll position
-      const offset = targetElement.getBoundingClientRect().top - 100;
+        // Scroll to the element with an offset
+        window.scrollBy({
+          top: offset,
+          behavior: "smooth",
+        });
   
-      // Scroll to the element with an offset
-      window.scrollBy({
-        top: offset,
-        behavior: 'smooth'
-      });
+        // Update URL
+        navigate(`${window.location.pathname}#${id}`);
+      }
     }
-  };
   const location = useLocation();
   useEffect(() => {
     const scrollToTarget = () => {
@@ -49,7 +53,7 @@ const PeopleEmployes = () => {
       />
       <div className="climate-change-intro-container people-main-parent-container">
         <div className="climate-change-intro-paragraph-inside-container">
-          <motion.p initial={{x:"-100px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,type:"spring"}} className="paragraph-inside-climate-change people-paragraph-style1">
+          <motion.p initial={{x:"-100px",opacity:0}} animate={{x:0,opacity:1}} transition={{duration:1,type:"spring"}} className="paragraph-inside-climate-change people-paragraph-style1">
             We believe in fostering a dynamic and inclusive work environment
             where every employee is empowered to thrive and contribute to our
             collective success. As a global leader in digital infrastructure, we
@@ -57,7 +61,7 @@ const PeopleEmployes = () => {
             while maintaining a strong commitment to our values of integrity,
             excellence and diversity.
           </motion.p>
-          <motion.p initial={{x:"-100px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,type:"spring"}} className="paragraph-inside-climate-change people-paragraph-style2">
+          <motion.p initial={{x:"-100px",opacity:0}} animate={{x:0,opacity:1}} transition={{duration:1,type:"spring"}} className="paragraph-inside-climate-change people-paragraph-style2">
             As part of a dynamic team, we are driven by passion and
             collaboration. We prioritise the growth and well-being of our
             employees, offering ample opportunities for professional development
@@ -66,7 +70,7 @@ const PeopleEmployes = () => {
             world communicates.
           </motion.p>
         </div>
-        <motion.div initial={{y:"100px",opacity:0,scale:0.5}} whileInView={{y:0,opacity:1,scale:1}} transition={{duration:1.3,type:"spring"}} className="climate-change-intro-photos-inside-container">
+        <motion.div initial={{y:"100px",opacity:0,scale:0.5}} animate={{y:0,opacity:1,scale:1}} transition={{duration:1.3,type:"spring"}} className="climate-change-intro-photos-inside-container">
           <img
             className="intro-climate-image intro-people-image"
             src="/peopleemployee.jpeg"
@@ -76,7 +80,7 @@ const PeopleEmployes = () => {
       </div>
       <div className="planet-climate-last-section-parent">
         <div  className="main-section-climate-change">
-          <motion.div id="Diversity-and-Inclusion" initial={{y:"100px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1.5,type:"spring"}} className="description-main-section people-descriptions">
+          <motion.div id="Diversity-and-Inclusion" initial={{y:"100px",opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1.5,type:"spring"}} className="description-main-section people-descriptions">
             <img
               className="small-square-btn-png"
               src="/small-btn-alternative.svg"
@@ -108,7 +112,7 @@ const PeopleEmployes = () => {
                 >
                   <AnimatedCounter finalValue={26} />%
                 </b>
-                <motion.p initial={{y:"-10px",opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:1.3,type:"spring"}} className="small-size-paragraph">
+                <motion.p initial={{y:"-10px",opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1.3,type:"spring"}} className="small-size-paragraph">
                   Women Colleagues Hired <br />
                   in FY 2024 planted
                 </motion.p>
@@ -116,15 +120,15 @@ const PeopleEmployes = () => {
             </div>
           </div>
           <motion.div initial={{scale:0.5,opacity:0}} animate={{scale:1,opacity:1}} transition={{duration:2,type:"spring",}} className="image-people-environment-section-container">
-            <img src="/textgrouppeople1.svg" alt="" />
+            <img src="/Info.svg" alt="" />
           </motion.div>
           <div className="people-enviroment-section-third-container">
-            <motion.p  initial={{x:"-20px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1.3,type:"spring",delay:0.3}} className="paragraph-people-climate-1">
+            <motion.p  initial={{x:"-20px",opacity:0}} animate={{x:0,opacity:1}} transition={{duration:1.3,type:"spring",delay:0.3}} className="paragraph-people-climate-1">
               This aligns with our broader objective of fostering a culture of
               respect and equality where every employee feels valued and
               appreciated.
             </motion.p>
-            <motion.p  initial={{x:"20px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1.3,type:"spring",delay:0.3}} className="paragraph-people-climate-2">
+            <motion.p  initial={{x:"20px",opacity:0}} animate={{x:0,opacity:1}} transition={{duration:1.3,type:"spring",delay:0.3}} className="paragraph-people-climate-2">
               Therefore, our compensation packages are structured on the basis
               of merit, performance and experience, instead of being influenced
               by an individual's gender. The gender ratio of entry-level wages
@@ -132,8 +136,8 @@ const PeopleEmployes = () => {
             </motion.p>
           </div>
           <div className="people-environment-image-text-container">
-            <motion.img initial={{y:"100px",opacity:0,scale:0.5}} whileInView={{y:0,opacity:1,scale:1}} transition={{duration:1.3,type:"spring"}}   src="/people-environemnt-img04.jpeg" alt="" />
-            <motion.div id="Learning-and-Skill-Development" initial={{x:"100px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1.1,type:"spring"}}  className="text-environemt-image-text-container">
+            <motion.img initial={{y:"100px",opacity:0,scale:0.5}} animate={{y:0,opacity:1,scale:1}} transition={{duration:1.3,type:"spring"}}   src="/people-environemnt-img04.jpeg" alt="" />
+            <motion.div id="Learning-and-Skill-Development" initial={{x:"100px",opacity:0}} animate={{x:0,opacity:1}} transition={{duration:1.1,type:"spring"}}  className="text-environemt-image-text-container">
               <img
                 className="small-square-btn-png"
                 src="/small-btn-alternative.svg"
@@ -160,11 +164,11 @@ const PeopleEmployes = () => {
             </motion.div>
           </div>
 
-          <motion.div initial={{scale:0.9,opacity:0,y:"-10px"}} whileInView={{scale:1,opacity:1,y:0}} transition={{duration:2,type:"spring",delay:0.3}} className="image-people-environment-section-container">
+          <motion.div initial={{scale:0.9,opacity:0,y:"-10px"}} animate={{scale:1,opacity:1,y:0}} transition={{duration:2,type:"spring",delay:0.3}} className="image-people-environment-section-container">
             <img src="/Group 202.svg" alt="" />
           </motion.div>
           <div className="people-environment-section-learning-environment">
-            <motion.div initial={{opacity:0,y:"-30px"}} whileInView={{opacity:1,y:0}} transition={{duration:1.4,type:"spring",delay:0.3}} className="learning-environment-descriptions">
+            <motion.div initial={{opacity:0,y:"-30px"}} animate={{opacity:1,y:0}} transition={{duration:1.4,type:"spring",delay:0.3}} className="learning-environment-descriptions">
               <b className="heading-black">
                 Tata Communications Learning Academy (TCLA)
               </b>
@@ -185,7 +189,7 @@ const PeopleEmployes = () => {
               </p>
             </motion.div>
           </div>
-          <motion.div initial={{opacity:0.8,y:"40px"}} whileInView={{opacity:1,y:0}} transition={{duration:1.5,type:"spring",delay:0.3}} className="data-student-community-container people-data-set">
+          <motion.div initial={{opacity:0.8,y:"40px"}} animate={{opacity:1,y:0}} transition={{duration:1.5,type:"spring",delay:0.3}} className="data-student-community-container people-data-set">
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
               <AnimatedCounter finalValue={73} />,<AnimatedCounter finalValue={496}/>
@@ -219,10 +223,10 @@ const PeopleEmployes = () => {
               </p>
             </div>
           </motion.div>
-          <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1,type:"spring",delay:0.2}}  className="people-environment-specail-design-div">
+          <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1,type:"spring",delay:0.2}}  className="people-environment-specail-design-div">
             <div className="small-square-shape"></div>
             <motion.div   className="bigsquare-div-environment">
-              <motion.div initial={{y:"-40px",opacity:0}} whileInView={{opacity:1,y:0}} transition={{duration:1,type:"spring",delay:0.3}} className="learning-environment-descriptions">
+              <motion.div initial={{y:"-40px",opacity:0}} animate={{opacity:1,y:0}} transition={{duration:1,type:"spring",delay:0.3}} className="learning-environment-descriptions">
                 <b className="heading-black">
                   Tata Communications Learning Academy (TCLA)
                 </b>
@@ -258,7 +262,7 @@ const PeopleEmployes = () => {
               </motion.div>
             </motion.div>
           </motion.div>
-          <motion.div initial={{x:"-40px"}} whileInView={{x:0}} transition={{duration:1,type:"spring"}}  className="people-environment-section-learning-environment">
+          <motion.div initial={{x:"-40px"}} animate={{x:0}} transition={{duration:1,type:"spring"}}  className="people-environment-section-learning-environment">
             <div className="learning-environment-descriptions">
               <b className="heading-black">Learning Organisation (LO)</b>
               <p className="bigger-paragraph-people-descriptions">
@@ -275,7 +279,7 @@ const PeopleEmployes = () => {
               </p>
             </div>
           </motion.div>
-          <motion.div initial={{x:"40px"}} whileInView={{x:0}} transition={{duration:1,type:"spring"}} className="data-student-community-container people-data-set">
+          <motion.div initial={{x:"40px"}} animate={{x:0}} transition={{duration:1,type:"spring"}} className="data-student-community-container people-data-set">
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
                 <AnimatedCounter finalValue={42} />+
@@ -307,7 +311,7 @@ const PeopleEmployes = () => {
               </p>
             </div>
           </motion.div>
-          <motion.div initial={{scale:0.7,opacity:0.5}} whileInView={{scale:1,opacity:1}} transition={{duration:1,type:"spring"}} className="award-section-people-environment">
+          <motion.div initial={{scale:0.7,opacity:0.5}} animate={{scale:1,opacity:1}} transition={{duration:1,type:"spring"}} className="award-section-people-environment">
             <img
               className="small-square-btn-png"
               src="/small-btn-alternative.svg"
@@ -327,7 +331,7 @@ const PeopleEmployes = () => {
             </div>
           </motion.div>
           <div className="employee-engagment-surevey-people">
-            <motion.div initial={{x:"-40px",opacity:0.5}} whileInView={{x:0,opacity:1}} transition={{duration:1,type:"spring"}} className="employee-engagment-survey-descriptions">
+            <motion.div initial={{x:"-40px",opacity:0.5}} animate={{x:0,opacity:1}} transition={{duration:1,type:"spring"}} className="employee-engagment-survey-descriptions">
               <b className="heading-black">Employee Engagement Survey</b>
               <p className="smaller-paragraph-people-descriptions">
                 At Tata Communications, we conduct routine employee engagement
@@ -337,7 +341,7 @@ const PeopleEmployes = () => {
               </p>
             </motion.div>
 
-            <motion.div initial={{x:"40px",opacity:0.5}} whileInView={{x:0,opacity:1}} transition={{duration:1,type:"spring"}}  className="data-set-conatiner-below">
+            <motion.div initial={{x:"40px",opacity:0.5}} animate={{x:0,opacity:1}} transition={{duration:1,type:"spring"}}  className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
               <AnimatedCounter finalValue={87} />%
               </b>
@@ -347,7 +351,7 @@ const PeopleEmployes = () => {
             </motion.div>
           </div>
           <div className="people-environment-image-text-container">
-            <motion.div id="towards-zero-harm" initial={{x:"-40px",opacity:0.5}} whileInView={{x:0,opacity:1}} transition={{duration:1,type:"spring"}}  className="text-environemt-image-text-container">
+            <motion.div id="towards-zero-harm" initial={{x:"-40px",opacity:0.5}} animate={{x:0,opacity:1}} transition={{duration:1,type:"spring"}}  className="text-environemt-image-text-container">
               <img
                 className="small-square-btn-png"
                 src="/small-btn-alternative.svg"
@@ -367,9 +371,9 @@ const PeopleEmployes = () => {
                 hazards and risks at the workplace.{" "}
               </p>
             </motion.div>
-            <motion.img initial={{scale:0.5,opacity:0.5}} whileInView={{scale:1,opacity:1}} transition={{duration:1,type:"spring",delay:0.1}}  src="/employesurveypeople.jpeg" alt="" />
+            <motion.img initial={{scale:0.5,opacity:0.5}} animate={{scale:1,opacity:1}} transition={{duration:1,type:"spring",delay:0.1}}  src="/employesurveypeople.jpeg" alt="" />
           </div>
-          <motion.div initial={{y:"-90px"}} whileInView={{y:0}} transition={{duration:1.5,type:"spring"}}  className="people-environment-section-learning-environment">
+          <motion.div initial={{y:"-90px"}} animate={{y:0}} transition={{duration:1.5,type:"spring"}}  className="people-environment-section-learning-environment">
             <div className="learning-environment-descriptions">
               <b className="heading-black">OH&S Management System</b>
               <p className="bigger-paragraph-people-descriptions">
@@ -400,12 +404,12 @@ const PeopleEmployes = () => {
             </div>
           </motion.div>
           <div className="environment-people-svg-flex-container">
-            <motion.img initial={{scale:0.6,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.1}}  src="/environment-managmnetsytem01.svg" alt="" />
-            <motion.img initial={{scale:0.6,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.2}} src="/environment-managmnetsytem02.svg" alt="" />
-            <motion.img initial={{scale:0.6,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.3}} src="/environment-managmnetsytem03.svg" alt="" />
+            <motion.img initial={{scale:0.6,opacity:0}} animate={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.1}}  src="/environment-managmnetsytem01.svg" alt="" />
+            <motion.img initial={{scale:0.6,opacity:0}} animate={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.2}} src="/environment-managmnetsytem02.svg" alt="" />
+            <motion.img initial={{scale:0.6,opacity:0}} animate={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.3}} src="/environment-managmnetsytem03.svg" alt="" />
           </div>
           <div className="split-section-equal-people">
-            <motion.div initial={{x:"-50px"}} whileInView={{x:0}} transition={{duration:1.2,type:"spring"}} className="people-environment-section-learning-environment">
+            <motion.div initial={{x:"-50px"}} animate={{x:0}} transition={{duration:1.2,type:"spring"}} className="people-environment-section-learning-environment">
               <div className="learning-environment-descriptions">
                 <b className="heading-black">Leadership and Accountability</b>
                 <p className="bigger-paragraph-people-descriptions ohs-managment-system-desc">
@@ -418,7 +422,7 @@ const PeopleEmployes = () => {
               </div>
             </motion.div>
             <div  className="pink-bg-description-main">
-              <motion.div initial={{scale:0.8,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.1}} className="each-container-inside-pink-bg ">
+              <motion.div initial={{scale:0.8,opacity:0}} animate={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.1}} className="each-container-inside-pink-bg ">
                 <div className="static-stick-container">1.</div>
                 <div className="description-container-bg-pink border-top-right">
                   MD & CEO’s approval of the OHS Policy, release of safety
@@ -426,7 +430,7 @@ const PeopleEmployes = () => {
                   Safety objectives.
                 </div>
               </motion.div>
-              <motion.div initial={{scale:0.8,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.2}} className="each-container-inside-pink-bg ">
+              <motion.div initial={{scale:0.8,opacity:0}} animate={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.2}} className="each-container-inside-pink-bg ">
                 <div className="static-stick-container">2.</div>
                 <div className="description-container-bg-pink ">
                   The leadership team proposed and increased the remit of the
@@ -434,7 +438,7 @@ const PeopleEmployes = () => {
                   Sustainability elements{" "}
                 </div>
               </motion.div>
-              <motion.div initial={{scale:0.8,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.3}} className="each-container-inside-pink-bg ">
+              <motion.div initial={{scale:0.8,opacity:0}} animate={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.3}} className="each-container-inside-pink-bg ">
                 <div className="static-stick-container">3.</div>
                 <div className="description-container-bg-pink">
                   The establishment of a Global Safety Council (GSC) that
@@ -444,7 +448,7 @@ const PeopleEmployes = () => {
                   reviews and the sharing of best practices.{" "}
                 </div>
               </motion.div>
-              <motion.div initial={{scale:0.8,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.4}} className="each-container-inside-pink-bg ">
+              <motion.div initial={{scale:0.8,opacity:0}} animate={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.4}} className="each-container-inside-pink-bg ">
                 <div className="static-stick-container">4.</div>
                 <div className="description-container-bg-pink border-bottom-right">
                   Active participation of the leadership team in safety events
@@ -454,7 +458,7 @@ const PeopleEmployes = () => {
               </motion.div>
             </div>
           </div>
-          <motion.div initial={{x:"-100px"}} whileInView={{x:0}} transition={{duration:1,type:"spring"}} className="learning-environment-descriptions">
+          <motion.div initial={{x:"-100px"}} animate={{x:0}} transition={{duration:1,type:"spring"}} className="learning-environment-descriptions">
             <b className="heading-black">Health and Safety Risk Assessment</b>
             <p className="smaller-paragraph-people-descriptions">
               In addition to adhering to ISO 45001 standards, the Company has
@@ -469,14 +473,14 @@ const PeopleEmployes = () => {
               stakeholders.
             </p>
           </motion.div>
-          <motion.div initial={{scale:0.5,opacity:0}} whileInView={{scale:1,opacity:1}} transition={{duration:1.3,type:"spring"}} className="main-container-fire">
+          <motion.div initial={{scale:0.5,opacity:0}} animate={{scale:1,opacity:1}} transition={{duration:1.3,type:"spring"}} className="main-container-fire">
             <img src="/fire-people02.png" alt="" />
             <div className="fire-svg-long-container">
               <img src="/people-fire.svg" alt="" />
             </div>
           </motion.div>
           <div className="people-environment-section-learning-environment">
-            <motion.div initial={{x:"100px"}} whileInView={{x:0}} transition={{duration:1,type:"spring"}} className="learning-environment-descriptions">
+            <motion.div initial={{x:"100px"}} animate={{x:0}} transition={{duration:1,type:"spring"}} className="learning-environment-descriptions">
               <p className="smaller-paragraph-people-descriptions">
                 Each business unit bears the responsibility of identifying
                 hazardous activity and conducting thorough Hazard Identification
@@ -496,7 +500,7 @@ const PeopleEmployes = () => {
           </div>
           <div className="split-section-equal-people">
             <div className="people-environment-section-learning-environment">
-              <motion.div initial={{x:"-100px"}} whileInView={{x:0}} transition={{duration:1,type:"spring"}} className="learning-environment-descriptions">
+              <motion.div initial={{x:"-100px"}} animate={{x:0}} transition={{duration:1,type:"spring"}} className="learning-environment-descriptions">
                 <b className="heading-black">Our Health and Safety Performance</b>
                 <p className="bigger-paragraph-people-descriptions ohs-managment-system-desc">
                 We conduct safety audits and extensive training to improve health and safety performance. It has also helped to reduce Lost Time Injury Frequency Rate (LTI-FR) by XX% in comparison to the FY2023.
@@ -506,7 +510,7 @@ const PeopleEmployes = () => {
               </p>
               </motion.div>
             </div>
-            <motion.div initial={{scale:0.7,x:"100px"}} whileInView={{scale:1,x:0}} transition={{duration:1,type:"spring",delay:0.1}} className="graph-image-container">
+            <motion.div initial={{scale:0.7,x:"100px"}} animate={{scale:1,x:0}} transition={{duration:1,type:"spring",delay:0.1}} className="graph-image-container">
               <img src="/graph-environment.svg" alt="" />
             </motion.div>
           </div>
@@ -538,7 +542,7 @@ const PeopleEmployes = () => {
           </div>
          
         </div>
-        < motion.div initial={{x:"100px",opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:0.5,delay:0.3, type:"spring"}} className="quick-link-sections">
+        < motion.div initial={{x:"100px",opacity:0}} animate={{x:0,opacity:1}} transition={{duration:0.5,delay:0.3, type:"spring"}} className="quick-link-sections">
           <b style={{textTransform:"uppercase  "}} className="heading-links"><TextAnimation text={'Quick'}/>{" "}<TextAnimation text={'Links'}/></b>
           <br />
           <img src="/quick-link-underline.png" alt="" />
@@ -564,7 +568,7 @@ const PeopleEmployes = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <li onClick={()=>handleClick(event,"Diversity-and-Inclusion")} >Diversity and Inclusion</li>
+            <li onClick={(event)=>handleClick(event,"Diversity-and-Inclusion")} >Diversity and Inclusion</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -572,7 +576,7 @@ const PeopleEmployes = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <li onClick={()=>handleClick(event,"Learning-and-Skill-Development")}>Learning and Skill Development</li>
+            <li onClick={(event)=>handleClick(event,"Learning-and-Skill-Development")}>Learning and Skill Development</li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -580,7 +584,7 @@ const PeopleEmployes = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <li onClick={()=>handleClick(event,"towards-zero-harm")}>Towards Zero Harm</li>
+            <li onClick={(event)=>handleClick(event,"towards-zero-harm")}>Towards Zero Harm</li>
           </div>
           {/* <div className="quicklinks-button-div">
             <img

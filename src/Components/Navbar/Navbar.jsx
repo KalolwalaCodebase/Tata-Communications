@@ -62,6 +62,9 @@ const Navbar = ({ activeTab, setActivetab, hoveredNavItem, setHoveredNavItem }) 
       sessionStorage.setItem("activeTab", "Home");
     }
   }, []);
+  
+  
+
 
   // useEffect(() => {
   //   setActivetab(location.pathname.substring(1));

@@ -1,31 +1,35 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
-import { Link,useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const RiskandResilance = () => {
-  const handleClick = (event,id) => {
-    //event.preventDefault(); // Prevent default anchor behavior
-  
+  const navigate = useNavigate();
+
+const handleClick = async (event, id) => {
+    event.preventDefault(); // Prevent default link behavior
     const targetElement = document.querySelector(`#${id}`);
     if (targetElement) {
       // Calculate the offset based on the current scroll position
       const offset = targetElement.getBoundingClientRect().top - 100;
-  
+
       // Scroll to the element with an offset
       window.scrollBy({
         top: offset,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
+
+      // Update URL
+      navigate(`${window.location.pathname}#${id}`);
     }
-  };
+  }
   const location = useLocation();
   useEffect(() => {
     const scrollToTarget = () => {
       if (location.hash) {
-        console.log("here it is ",location.hash);
+        console.log("here it is ", location.hash);
         const targetElement = document.querySelector(location.hash);
         if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
+          targetElement.scrollIntoView({ behavior: "smooth" });
         }
       }
     };
@@ -38,7 +42,7 @@ const RiskandResilance = () => {
         icon={"/cardimg08.svg"}
         heading={"risk and rEsilience"}
         theme={"#123C61"}
-        headiconstyle={'#3B91DC'}
+        headiconstyle={"#3B91DC"}
       />
       <div className="main-conter-wrapper-main-section">
         <div className="main-scrollabale-container-leadership-integrity">
@@ -59,25 +63,22 @@ const RiskandResilance = () => {
             but also contribute positively to the well-being of the planet and
             future generations.
           </div>
+          <br />
+          <br />
+          <br />
           <div className="deep-background-description-leadership-and-integrity-container">
-            <div id="Enterprise-Risk-Management-Framework" className="board-ofdirector-container">
+            <div
+              id="Enterprise-Risk-Management-Framework"
+              className="board-ofdirector-container"
+            >
+              <br />
               <b className="heading-blue">
                 Enterprise risk management framework
               </b>
               <br />
               <br />
               <div className="normal-paragraph-leadership-and-integrity">
-                Our comprehensive risk management framework proactively
-                identifies potential threats and formulates strategic responses.
-                This approach guarantees streamlined operations, promotes
-                inclusivity, and secures our position as industry leaders. The
-                Risk Management Committee diligently monitors significant risks,
-                establishing appropriate controls and countermeasures. Moreover,
-                the Board's Enterprise Risk Management approach facilitates
-                early detection of risks, allowing for timely intervention.
-                Rigorous internal control audits are conducted to verify the
-                effectiveness of management practices and the reliability of
-                financial reporting
+              Our comprehensive risk management framework proactively identifies potential threats and formulates strategic responses. This approach guarantees streamlined operations, promotes inclusivity and secures our position as industry leaders. The Risk Management Committee diligently monitors significant risks, establishing appropriate controls and countermeasures. Moreover, the Board's Enterprise Risk Management approach facilitates early detection of risks, allowing for timely intervention. Rigorous internal control audits are conducted to verify the effectiveness of management practices and the reliability of financial reporting
               </div>
               <br />
               <div className="lower-section-leadership-and-integrity">
@@ -98,7 +99,9 @@ const RiskandResilance = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link>
+            <Link target="_blank" to={"/Sustainability/fy24-goals-&-progress"}>
+              Goals and Progress
+            </Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -106,7 +109,12 @@ const RiskandResilance = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link>
+            <Link
+              target="_blank"
+              to="/Governance/policies-and-procedures#Policies"
+            >
+              Policies
+            </Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -114,7 +122,13 @@ const RiskandResilance = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <li onClick={()=>handleClick(event,"Enterprise-Risk-Management-Framework")}>Enterprise Risk Management Framework</li>
+            <li
+              onClick={() =>
+                handleClick(event, "Enterprise-Risk-Management-Framework")
+              }
+            >
+              Enterprise Risk Management Framework
+            </li>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -122,7 +136,9 @@ const RiskandResilance = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <Link target="_blank" to="/gri-index">GRI index</Link>
+            <Link target="_blank" to="/gri-index">
+              GRI index
+            </Link>
           </div>
           <div className="quicklinks-button-div">
             <img
@@ -130,7 +146,13 @@ const RiskandResilance = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-           <Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link>
+            <Link
+              target="_blank"
+              to={"/Sustainability/sustainable-development-goals"}
+              href=""
+            >
+              SDG Linkage
+            </Link>
           </div>
         </div>
       </div>
@@ -144,9 +166,18 @@ const RiskandResilance = () => {
           </div>
           <div className="risk-res-table-content1">
             <h5>Environment Compliance and Sustainability</h5>
-            <p className="risk-table-sec1">Minimizing our environmental impact, maximizing resource efficiency, and enhancing the adoption of renewable energy are imperative. Compliance with environmental legislation is equally critical. Failure to uphold stringent environmental standards could adversely affect our brand reputation and result in financial repercussions.</p>
+            <p className="risk-table-sec1">
+            Minimising our environmental impact, maximising resource efficiency and enhancing the adoption of renewable energy are imperative. Compliance with environmental legislation is equally critical. Failure to uphold stringent environmental standards could adversely affect our brand reputation and result in financial repercussions.
+            </p>
             <h5>Human Resource Risk</h5>
-            <p >The swift pace of change in our industry necessitates the retention and recruitment of talent. A company’s failure to cultivate a workforce that is both experienced and technically proficient can adversely affect its financial future. Additionally, excessive turnover and extended onboarding periods for new hires or replacements can amplify risks.</p>
+            <p>
+              The swift pace of change in our industry necessitates the
+              retention and recruitment of talent. A company's failure to
+              cultivate a workforce that is both experienced and technically
+              proficient can adversely affect its financial future.
+              Additionally, excessive turnover and extended onboarding periods
+              for new hires or replacements can amplify risks.
+            </p>
           </div>
         </div>
         <div className="risk-res-col">
@@ -156,9 +187,17 @@ const RiskandResilance = () => {
             </h2>
           </div>
           <div className="risk-res-table-content2">
-
-            <p className="risk-table-sec1">Our dedication to reducing environmental impact is unwavering. Our Environmental Management System (EMS) aligns with the ISO 14001:2015 standards. We regularly review our EMS to ensure compliance with all applicable national and regional regulations. By setting clear environmental targets, we steer our company towards achieving our sustainability goals</p>
-            <p >A workforce enriched with technical skill and expertise is essential for our organization. Hence, we are devoted to securing and keeping individuals suited for specialized functions. We aim to create a nurturing atmosphere that encourages both professional and personal advancement, establishing a collaborative and inclusive culture that appreciates diversity and individual dignity. We also emphasize the growth and guidance of emerging talents, preparing them to navigate our organization to greater levels of accomplishment. Our proactive measures to ensure the well-being of our employees’ physical and mental health also signal a positive outlook for our team’s future.</p>
+            <p className="risk-table-sec1">
+              Our dedication to reducing environmental impact is unwavering. Our
+              Environmental Management System (EMS) aligns with the ISO
+              14001:2015 standards. We regularly review our EMS to ensure
+              compliance with all applicable national and regional regulations.
+              By setting clear environmental targets, we steer our company
+              towards achieving our sustainability goals
+            </p>
+            <p>
+            A workforce enriched with technical skill and expertise is essential for our organisation. Hence, we are devoted to securing and keeping individuals suited for specialised functions. We aim to create a nurturing atmosphere that encourages both professional and personal advancement, establishing a collaborative and inclusive culture that appreciates diversity and individual dignity. We also emphasise the growth and guidance of emerging talents, preparing them to navigate our organization to greater levels of accomplishment. Our proactive measures to ensure the well-being of our employees' physical and mental health also signal a positive outlook for our team's future.
+            </p>
           </div>
         </div>
 
@@ -169,13 +208,12 @@ const RiskandResilance = () => {
             </h2>
           </div>
           <div className="risk-res-table-content3">
-
             <ul className="risk-table-sec1">
               <li>Resource Management and environmental conservation</li>
               <br />
               <li>Climate Change</li>
             </ul>
-            <ul >
+            <ul>
               <li>Human capital development</li>
               <br />
               <li>Diversity and Inclusion</li>
@@ -186,7 +224,7 @@ const RiskandResilance = () => {
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 

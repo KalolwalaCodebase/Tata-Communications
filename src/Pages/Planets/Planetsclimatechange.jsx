@@ -11,7 +11,7 @@ import PlanetIntroducingEv from "./PlanetIntroducingEv";
 import { motion } from "framer-motion";
 import TextAnimation from "../../Components/Animatedcounter/TextAnimation";
 import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 const Planetsclimatechange = () => {
   const transationingObject = {
     heading: "Transitioning to Renewable Energy",
@@ -116,21 +116,25 @@ const Planetsclimatechange = () => {
       description: " of CO2e* for FY 2022-2023.",
     },
   ];
-  const handleClick = (event, id) => {
-    event.preventDefault(); // Prevent default anchor behavior
+  const navigate = useNavigate();
 
-    const targetElement = document.querySelector(`#${id}`);
-    if (targetElement) {
-      // Calculate the offset based on the current scroll position
-      const offset = targetElement.getBoundingClientRect().top - 100;
-
-      // Scroll to the element with an offset
-      window.scrollBy({
-        top: offset,
-        behavior: "smooth",
-      });
+  const handleClick = async (event, id) => {
+      event.preventDefault(); // Prevent default link behavior
+      const targetElement = document.querySelector(`#${id}`);
+      if (targetElement) {
+        // Calculate the offset based on the current scroll position
+        const offset = targetElement.getBoundingClientRect().top - 100;
+  
+        // Scroll to the element with an offset
+        window.scrollBy({
+          top: offset,
+          behavior: "smooth",
+        });
+  
+        // Update URL
+        navigate(`${window.location.pathname}#${id}`);
+      }
     }
-  };
   return (
     <div className="planets-climate-change-container">
       <HeadBar
@@ -163,7 +167,7 @@ const Planetsclimatechange = () => {
         <div className="climate-change-intro-photos-inside-container">
           <img
             className="intro-climate-image"
-            src="/energy-climate-change-banner.png"
+            src="/planet004.png"
             alt=""
           />
         </div>
@@ -183,7 +187,7 @@ const Planetsclimatechange = () => {
               backgroundColor: "#B0BC25", // Change background color based on isBlueHeading state
             }}
             initial={{ scale: 0.5, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
+            animate={{ scale: 1, opacity: 1 }}
             className="awards-green-title poppins-semibold"
           >
             <TextAnimation text={"our"} /> <TextAnimation text={"footprint"} />
@@ -230,7 +234,7 @@ const Planetsclimatechange = () => {
             >
               <motion.div
                 initial={{ opacity: 0.5, scale: 0.5, x: "-100px" }}
-                whileInView={{ opacity: 1, scale: 1, x: 1 }}
+                animate={{ opacity: 1, scale: 1, x: 1 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="ghg-intensity"
               >
@@ -238,7 +242,7 @@ const Planetsclimatechange = () => {
               </motion.div>
               <motion.div
                 initial={{ opacity: 0.5, scale: 0.5, x: "100px" }}
-                whileInView={{ opacity: 1, scale: 1.17, x: 1 }}
+                animate={{ opacity: 1, scale: 1.17, x: 1 }}
                 transition={{ duration: 0.6, ease: "easeInOut" }}
                 className="energy-intensity"
               >
@@ -251,7 +255,7 @@ const Planetsclimatechange = () => {
             >
               <motion.div
                 initial={{ opacity: 0.5, scale: 0.5, x: "-100px" }}
-                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                animate={{ opacity: 1, scale: 1, x: 0 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="ghg-intensity"
               >
@@ -259,7 +263,7 @@ const Planetsclimatechange = () => {
               </motion.div>
               <motion.div
                 initial={{ opacity: 0.5, scale: 0.5, x: "100px" }}
-                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                animate={{ opacity: 1, scale: 1, x: 0 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="energy-intensity"
               >
@@ -276,7 +280,7 @@ const Planetsclimatechange = () => {
             >
               <motion.div
                 initial={{ opacity: 0.5, scale: 0.5, x: "-100px" }}
-                whileInView={{ opacity: 1, scale: 1, x: 0 }}
+                animate={{ opacity: 1, scale: 1, x: 0 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="ghg-intensity"
               >
@@ -284,7 +288,7 @@ const Planetsclimatechange = () => {
               </motion.div>
               <motion.div
                 initial={{ opacity: 0.5, scale: 0.9, y: "100px" }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="energy-intensity"
               >
@@ -294,7 +298,7 @@ const Planetsclimatechange = () => {
           </div>
           <motion.div
             initial={{ opacity: 0.5, scale: 0.9, y: "50px" }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
             className="gresnnish-planet-environment-text-container"
           >
@@ -323,7 +327,7 @@ const Planetsclimatechange = () => {
           <div className="normal-text-climate-change-vision">
             <motion.p
               initial={{ opacity: 0.5, scale: 0.9, y: "50px" }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
               className="boiggrer-decription"
             >
@@ -333,7 +337,7 @@ const Planetsclimatechange = () => {
             </motion.p>
             <motion.p
               initial={{ opacity: 0.5, scale: 0.9, y: "50px" }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut", delay: 0.1 }}
               className="normal-text-planet-vision"
             >
@@ -350,7 +354,7 @@ const Planetsclimatechange = () => {
           <div className="text-center-climate-change-container">
             <motion.p
               initial={{ opacity: 0.5, scale: 0.9, y: "50px" }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
               className="bold-green-text"
             >
@@ -360,7 +364,7 @@ const Planetsclimatechange = () => {
             </motion.p>
             <motion.div
               initial={{ scale: 1, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
+              animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 1, ease: "easeInOut", delay: 0.8 }}
               className="underlined-green"
             ></motion.div>
@@ -371,7 +375,7 @@ const Planetsclimatechange = () => {
               <div className="mainContainer-focus-sectin div-focus1">
                 <motion.div
                   initial={{ x: "-100px" }}
-                  whileInView={{ x: 0 }}
+                  animate={{ x: 0 }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                   className="parent-child-component"
                 >
@@ -422,7 +426,7 @@ const Planetsclimatechange = () => {
               <div className="mainContainer-focus-sectin div-focus2">
                 <motion.div
                   initial={{ x: "-100px" }}
-                  whileInView={{ x: 0 }}
+                  animate={{ x: 0 }}
                   transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
                   className="parent-child-component"
                 >
@@ -470,7 +474,7 @@ const Planetsclimatechange = () => {
               <div className="mainContainer-focus-sectin div-focus1">
                 <motion.div
                   initial={{ x: "-100px" }}
-                  whileInView={{ x: 0 }}
+                  animate={{ x: 0 }}
                   transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
                   className="parent-child-component"
                 >
@@ -521,7 +525,7 @@ const Planetsclimatechange = () => {
               <div className="mainContainer-focus-sectin div-focus2">
                 <motion.div
                   initial={{ x: "-100px" }}
-                  whileInView={{ x: 0 }}
+                  animate={{ x: 0 }}
                   transition={{ duration: 0.8, ease: "easeInOut", delay: 0.3 }}
                   className="parent-child-component"
                 >
@@ -605,7 +609,7 @@ const Planetsclimatechange = () => {
                   backgroundColor: "#B0BC25", // Change background color based on isBlueHeading state
                 }}
                 initial={{ scale: 0.5, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
+                animate={{ scale: 1, opacity: 1 }}
                 className="awards-green-title poppins-semibold"
               >
                 <TextAnimation text={"Progress"} />{" "}
@@ -698,7 +702,7 @@ const Planetsclimatechange = () => {
                   backgroundColor: "#B0BC25", // Change background color based on isBlueHeading state
                 }}
                 initial={{ scale: 0.5, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
+                animate={{ scale: 1, opacity: 1 }}
                 className="awards-green-title poppins-semibold"
               >
                 <TextAnimation text={"Progress"} />{" "}
@@ -757,7 +761,7 @@ const Planetsclimatechange = () => {
                     backgroundColor: "#B0BC25", // Change background color based on isBlueHeading state
                   }}
                   initial={{ scale: 0.5, opacity: 0 }}
-                  whileInView={{ scale: 1, opacity: 1 }}
+                  animate={{ scale: 1, opacity: 1 }}
                   className="awards-green-title poppins-semibold"
                 >
                   <TextAnimation text={"Progress"} />{" "}
@@ -1062,7 +1066,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a onClick={() => handleClick(event, "Our-Footprint")}>
+            <a onClick={(event) => handleClick(event, "Our-Footprint")}>
               Our Footprint
             </a>
           </div>
@@ -1073,7 +1077,7 @@ const Planetsclimatechange = () => {
               alt=""
             />
             <a
-              onClick={() => handleClick(event, "Enhancing-Energy-Efficiency")}
+              onClick={(event) => handleClick(event, "Enhancing-Energy-Efficiency")}
             >
               Enhancing Energy Efficiency
             </a>
@@ -1085,7 +1089,7 @@ const Planetsclimatechange = () => {
               alt=""
             />
             <a
-              onClick={() =>
+              onClick={(event) =>
                 handleClick(event, "Transition-to-Renewable-Energy")
               }
             >
@@ -1098,7 +1102,7 @@ const Planetsclimatechange = () => {
               src="/quickLinkArrow.png"
               alt=""
             />
-            <a onClick={() => handleClick(event, "Customer-GHG-Avoidance")}>
+            <a onClick={(event) => handleClick(event, "Customer-GHG-Avoidance")}>
               Customer GHG Avoidance
             </a>
           </div>
@@ -1109,7 +1113,7 @@ const Planetsclimatechange = () => {
               alt=""
             />
             <a
-              onClick={() =>
+              onClick={(event) =>
                 handleClick(event,"Community-Carbon-Offset-Programmes")
               }
             >
@@ -1123,7 +1127,7 @@ const Planetsclimatechange = () => {
               alt=""
             />
             <a
-              onClick={() =>
+              onClick={(event) =>
                 handleClick(
                   event,
                   "Cutting-Down-on-Value-Chain-Based-Emissions"
@@ -1140,7 +1144,7 @@ const Planetsclimatechange = () => {
               alt=""
             />
             <a
-              onClick={() =>
+              onClick={(event) =>
                 handleClick(event, "Introducing-EVs-and-Cleaner-Fuel-Options")
               }
             >
@@ -1154,7 +1158,7 @@ const Planetsclimatechange = () => {
               alt=""
             />
             <a
-              onClick={() =>
+              onClick={(event) =>
                 handleClick(
                   event,
                   "Decarbonising-Diesel-Based-Scope-1-Emissions"
@@ -1171,7 +1175,7 @@ const Planetsclimatechange = () => {
               alt=""
             />
             <a
-              onClick={() =>
+              onClick={(event) =>
                 handleClick(
                   event,
                   "Driving-Climate-Action-Through-Collaboration"
@@ -1188,7 +1192,7 @@ const Planetsclimatechange = () => {
               alt=""
             />
             <a
-              onClick={() =>
+              onClick={(event) =>
                 handleClick(event, "Ensuring-Transparency-and-Accountability")
               }
             >

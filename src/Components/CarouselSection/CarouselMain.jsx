@@ -17,7 +17,7 @@ const CarouselMain = ({ setActivetab }) => {
 
           <motion.div
             initial={{ opacity: 0, x: "-100px" }}
-            whileInView={{ opacity: 1, x: "0%" }}
+            animate={{ opacity: 1, x: "0%" }}
             transition={{ duration: 0.2, ease: "easeIn", delay: 0.5 }}
             className="absolute-video-description"
           >
@@ -33,7 +33,7 @@ const CarouselMain = ({ setActivetab }) => {
             </p>
             <motion.div
               initial={{ opacity: 0, x: "-40px" }}
-              whileInView={{ opacity: 1, x: "1%" }}
+              animate={{ opacity: 1, x: "1%" }}
               transition={{ duration: 0.4, ease: "easeIn", delay: 0.5 }}
               className="carosoules-last-container"
             >
@@ -67,7 +67,7 @@ const CarouselMain = ({ setActivetab }) => {
 
           <motion.div
             initial={{ opacity: 0, x: "-40px" }}
-            whileInView={{ opacity: 1, x: "0%" }}
+            animate={{ opacity: 1, x: "0%" }}
             transition={{ duration: 0.2, ease: "easeIn", delay: 0.5 }}
             className="absolute-video-description"
           >
@@ -84,7 +84,7 @@ const CarouselMain = ({ setActivetab }) => {
             </p>
             <motion.div
               initial={{ opacity: 0, x: "-40px" }}
-              whileInView={{ opacity: 1, x: "1%" }}
+              animate={{ opacity: 1, x: "1%" }}
               transition={{ duration: 0.4, ease: "easeIn", delay: 0.5 }}
               className="carosoules-last-container"
             >
@@ -112,7 +112,7 @@ const CarouselMain = ({ setActivetab }) => {
 
           <motion.div
             initial={{ opacity: 0, x: "-40px" }}
-            whileInView={{ opacity: 1, x: "1%" }}
+            animate={{ opacity: 1, x: "1%" }}
             transition={{ duration: 0.2, ease: "easeIn", delay: 0.5 }}
             className="absolute-video-description"
           >
@@ -127,7 +127,7 @@ const CarouselMain = ({ setActivetab }) => {
             </p>
             <motion.div
               initial={{ opacity: 0, x: "-40px" }}
-              whileInView={{ opacity: 1, x: "1%" }}
+              animate={{ opacity: 1, x: "1%" }}
               transition={{ duration: 0.4, ease: "easeIn", delay: 0.5 }}
               className="carosoules-last-container"
             >
@@ -154,7 +154,7 @@ const CarouselMain = ({ setActivetab }) => {
             </video>
             <motion.div
               initial={{ opacity: 0, x: "-40px" }}
-              whileInView={{ opacity: 1, x: "0%" }}
+              animate={{ opacity: 1, x: "0%" }}
               transition={{ duration: 0.2, ease: "easeIn", delay: 0.5 }}
               className="absolute-video-description"
             >
@@ -190,7 +190,7 @@ const CarouselMain = ({ setActivetab }) => {
           </video>
           <motion.div
             initial={{ opacity: 0, x: "-100px" }}
-            whileInView={{ opacity: 1, x: "0%" }}
+            animate={{ opacity: 1, x: "0%" }}
             transition={{ duration: 0.2, ease: "easeIn", delay: 0.5 }}
             className="absolute-video-description"
           >
@@ -206,7 +206,7 @@ const CarouselMain = ({ setActivetab }) => {
             </p>
             <motion.div
               initial={{ opacity: 0, x: "-40px" }}
-              whileInView={{ opacity: 1, x: "1%" }}
+              animate={{ opacity: 1, x: "1%" }}
               transition={{ duration: 0.4, ease: "easeIn", delay: 0.5 }}
               className="carosoules-last-container"
             >
