@@ -100,7 +100,7 @@ const [btnId,setBtnId]=useState(1);
               </div>
               
               <div className="post-ec-compliance">
-                Post EC compliance July To<br/> December 2021-MoEF
+                Post EC compliance July To<br/> December 2021 - MoEF
               </div>
               
               <div className="post-ec-compliance">
@@ -140,7 +140,7 @@ const [btnId,setBtnId]=useState(1);
               
 
               <div className="post-ec-compliance">
-                Lorem ipsum dolor sit. <br/>December 2021-MoEF
+                Lorem ipsum dolor sit. <br/>December 2021 - MoEF
               </div>
               
               <div className="post-ec-compliance">
@@ -156,7 +156,7 @@ const [btnId,setBtnId]=useState(1);
               </div>
               
               <div className="post-ec-compliance">
-                Post EC compliance July To<br/> December 2021-MoEF
+                Post EC compliance July To<br/> December 2021 - MoEF
               </div>
               
               <div className="post-ec-compliance">
@@ -178,7 +178,7 @@ const [btnId,setBtnId]=useState(1);
               </div>
               
               <div className="post-ec-compliance">
-                Post EC compliance  July To<br/> December 2021-MoEF
+                Post EC compliance  July To<br/> December 2021 - MoEF
               </div>
               
             </div>
@@ -191,7 +191,7 @@ const [btnId,setBtnId]=useState(1);
               
 
               <div className="post-ec-compliance">
-                Post EC compliance July To <br/>December 2021-MoEF
+                Post EC compliance July To <br/>December 2021 - MoEF
               </div>
               
               
@@ -204,7 +204,7 @@ const [btnId,setBtnId]=useState(1);
               </div>
               
               <div className="post-ec-compliance">
-                Post EC compliance July To<br/> December 2021-MoEF
+                Post EC compliance July To<br/> December 2021 - MoEF
               </div>
               
               <div className="post-ec-compliance">
@@ -226,7 +226,7 @@ const [btnId,setBtnId]=useState(1);
               </div>
               
               <div className="post-ec-compliance">
-                Post EC compliance  July To<br/> December 2021-MoEF
+                Post EC compliance  July To<br/> December 2021 - MoEF
               </div>
               
               
@@ -241,7 +241,7 @@ const [btnId,setBtnId]=useState(1);
               
 
               <div className="post-ec-compliance">
-                Post EC compliance July To <br/>December 2021-MoEF
+                Post EC compliance July To <br/>December 2021 - MoEF
               </div>
               
               <div className="post-ec-compliance">
@@ -257,7 +257,7 @@ const [btnId,setBtnId]=useState(1);
               </div>
               
               <div className="post-ec-compliance">
-                Post EC compliance July To<br/> December 2021-MoEF
+                Post EC compliance July To<br/> December 2021 - MoEF
               </div>
               
               <div className="post-ec-compliance">

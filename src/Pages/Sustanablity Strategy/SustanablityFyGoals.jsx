@@ -67,7 +67,7 @@ const SustanablityDevlopmentGoals = () => {
                     status: 'Completed'
                 },
                 {
-                    value1: 'Achieve A Band in the Carbon Disclosure Project (CDP) by FY 2023',
+                    value1: `Achieve A Band in the Carbon Disclosure Project (CDP) by\nFY 2023`,
                     value2: `Achieved 'B' Score (management band) in CDP response 2022`,
                     status: 'Not Completed'
                 },
@@ -156,7 +156,7 @@ const SustanablityDevlopmentGoals = () => {
 
     return (
         <>
-            <HeadBar heading={'FY24 GOALS & PROGRESS'} icon={'/goals.svg'} theme={'#7A63AB'} />
+            <HeadBar heading={'FY23 GOALS & PROGRESS'} icon={'/goals.svg'} theme={'#7A63AB'} />
             <div className='bar-heading-parent' style={{ display: "flex", width: '100%', justifyContent: 'center', margin: "5% auto" }}>
             
             <h3 className='bar-heading-sec poppins-medium'>ESG GOALS AND PERFORMANCE AREAS</h3>

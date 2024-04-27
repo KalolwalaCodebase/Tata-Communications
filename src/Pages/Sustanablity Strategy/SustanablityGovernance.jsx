@@ -20,7 +20,7 @@ const SustanablityGovernance = () => {
                        <br />
                         <p className='poppins-light sus-p1'>To create a long-term stakeholder value and sustainable growth for our business by managing risks and embracing opportunities, implementing robust governance practices and optimisation of the economic, environmental and social performance.</p>
                         <p className='poppins-light sus-p2'>
-                            <b> Our Approach - </b>is based on a strong commitment to responsibly benefit society, our people, shareholders, communities, and other stakeholders. We aim to optimise economic value while meeting environmental and social standards
+                            <b> Our approach is based on a strong commitment to responsibly benefit society, our people, shareholders, communities and other stakeholders. We aim to optimise economic value while meeting environmental and social standards.</b>
                         </p>
                     </div>
                     <img className='cont1-sec1-img' src="/sus-gov-img.png" alt="" />
@@ -70,7 +70,7 @@ const SustanablityGovernance = () => {
                                 <h5>Priority Areas</h5>
                                 <ul>
                                     <li>Climate Change</li>
-                                    <li>SBTi., ICP & Climate <br /> Resilience Framework</li>
+                                    <li>SBTi, ICP & Climate <br /> Resilience Framework</li>
                                     <li>Customer GHG <br /> Savings</li>
                                     <li>Water Reduction & <br /> Neutrality</li>
                                     <li>Zero Waste to Landfill</li>
@@ -133,8 +133,7 @@ const SustanablityGovernance = () => {
                     </p>
 
                     <p className='poppins-light'>
-                        Besides, the MD & CEO chairs the Sustainable Development Committee (SDC) which meets on a quarterly basis along with other committees like Sub-Committee of SDC and Management Review Committees. Each of these committees have fair representation from cross functional representatives, workers/employee participation etc.
-                    </p>
+                    Besides, the MD & CEO chairs the Sustainable Development Committee (SDC) which meets on a quarterly basis along with other committees like Sub-Committee of SDC and Management Review Committees. Each of these committees have fair representation from cross functional representatives, workers, and employees.                    </p>
                 </div>
             </div>
             <div className="sus-gov-container4 poppins-light">
@@ -150,7 +149,7 @@ const SustanablityGovernance = () => {
                             <li>Board-led committee to review and monitor business risks and opportunities with reference to sustainability
                             </li>
                             <li>
-                                Encourage, assist, support and counsel management in developing short- and long-term goals, initiatives and standards pertaining to sustainability, OHS, climate change, resource conservation, employee engagement and development, sustainable supply chain management, and human rights (privacy and freedom of expression, etc.). and environment
+                            Encourage, assist, support and counsel management in developing short and long-term goals, initiatives and standards pertaining to sustainability, OHS, climate change, resource conservation, employee engagement and development, sustainable supply chain management, and human rights (privacy and freedom of expression). and environment
                             </li>
                             <li>
                                 Investigate, or cause to be investigated, any extraordinary negative sustainability, environment, and OHS performance which can impact 'Tata Communication' brand/reputation, as and where appropriate
@@ -190,7 +189,7 @@ const SustanablityGovernance = () => {
                                 CHRO and EOHS & Sustainability Head chairs the meeting (Quarterly)
                             </li>
                             <li>
-                                Involving cross functional representatives from EOHS, HR, CSR, Customer/product, SCM, International Operations and more
+                            Involving cross functional representatives from EOHS, HR, CSR, Customer/product, SCM, International Operations and more
                             </li>
                             <li>
                                 Oversees the progress on business sustainability and aspects related to stakeholders
@@ -211,7 +210,7 @@ const SustanablityGovernance = () => {
                                 EOHS & Sustainability Head chairs the meeting (Annually) as part of ISO 14001 and ISO 45001 Standard
                             </li>
                             <li>
-                                Involving Management Representative and cross functional representatives
+                            Involving Management Representative and cross functional representatives
                             </li>
                             <li>
                                 Review Company's Health & Safety and Environment management system, at planned intervals, to ensure its continuing suitability, adequacy and effectiveness

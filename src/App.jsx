@@ -55,7 +55,7 @@ function App() {
       Heading: "Planet",
       Video: "/Planetmainsection.mp4",
       Content:
-"At Tata Communications, we meticulously minimise our environmental footprint, aligning with global decarbonization efforts. Our sustainability goals prioritise climate change mitigation, embrace circular economy principles and aim to maximise stakeholder value. We operate with strict adherence to environmental standards, ensuring full compliance and avoiding any oversights."
+"At Tata Communications, we meticulously minimise our environmental footprint, aligning with global decarbonisation efforts. Our sustainability goals prioritise climate change mitigation, embrace circular economy principles and aim to maximise stakeholder value. We operate with strict adherence to environmental standards, ensuring full compliance and avoiding any oversights."
 ,contetntdown:  "Our commitment to environmental sustainability is evident in our comprehensive policies and procedures. We have implemented and certified the Environmental, Occupational Health, and Safety Management System (EOHS MS) across our major Indian facilities, adhering to ISO 14001:2015 and ISO 45001:2018. This framework helps us identify environmental and OH&S risks, seize opportunities and continually improve our performance. ", 
      },
     People: {

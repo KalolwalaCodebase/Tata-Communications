@@ -85,7 +85,7 @@ const DropdownComponent = ({ hoveredNavItem, onClose }) => {
                 [
                   { text: "Our Footprint", link: "/Planet/energy-&-climate-change#Our-Footprint" },
                   { text: "Enhancing Energy Efficiency", link: "/Planet/energy-&-climate-change#Enhancing-Energy-Efficiency" },
-                  { text: "Transition to Renewable Energy (RE)", link: "/Planet/energy-&-climate-change#Transition-to-Renewable-Energy" },
+                  { text: "Transition to Renewable Energy ", link: "/Planet/energy-&-climate-change#Transition-to-Renewable-Energy" },
                   { text: "Developing Green Solutions", link: "/Planet/energy-&-climate-change#Customer-GHG-Avoidance" },
                   { text: "Community Carbon Offset Programmes", link: "/Planet/energy-&-climate-change#Community-Carbon-Offset-Programmes" },
                   {

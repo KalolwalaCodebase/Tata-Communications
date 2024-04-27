@@ -304,7 +304,7 @@ const PeopleCustomers = () => {
                 >
                   A smart light controller allows for remote switching (on/off)
                   of lights with a dimming feature to optimise energy
-                  consumption{" "}
+                  consumption.{" "}
                 </motion.div>
               </div>
               <div className="each-card-container-our-ups">
@@ -347,7 +347,7 @@ const PeopleCustomers = () => {
                   streetlight and monitors light health, providing fault alerts
                   for immediate resolution in case of issues. In addition, the
                   solution includes features such as dead lamp notification,
-                  keeping track of lamp burn hours, auto-scheduling and
+                  keeping track of lamp burn hours, auto-scheduling and <br />
                   electricity theft.{" "}
                 </motion.div>
               </div>

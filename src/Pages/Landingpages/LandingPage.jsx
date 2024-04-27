@@ -169,7 +169,7 @@ const LandingPage = ({ activeTab, setActivetab }) => {
             Development Goals, the Tata Group Sustainability Strategy and our
             own assessment of critical concerns, it reflects our commitment to
             addressing diverse aspects such as social well-being, environmental
-            stewardship, community engagement and ethical governance.This
+            stewardship, community engagement and ethical governance. This
             comprehensive framework serves as the foundation for our growth,
             ensuring that our business remains resilient and positively impacts
             the world around us.
@@ -348,7 +348,7 @@ const LandingPage = ({ activeTab, setActivetab }) => {
               <br /> future-proof our solutions and enhancing our
               <br /> operations towards sustainable development.
             </motion.p>
-            <motion.h6 initial={{x:"-40px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut",type:"spring"}} className="poppins-bold"> Amur S Lakshminarayanan</motion.h6>
+            <motion.h6 initial={{x:"-40px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut",type:"spring"}} className="poppins-bold"> A.S. Lakshminarayanan</motion.h6>
             <motion.p initial={{x:"-40px"}} whileInView={{x:0}} transition={{duration:0.8,ease:"easeInOut",type:"spring"}} className="poppins-medium managing-director">
               Managing Director & CEO
             </motion.p>

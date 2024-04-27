@@ -56,7 +56,7 @@ const CarosuselSusta = () => {
                 },
                 {
                     heading: 'Climate Change',
-                    value: ['Increase RE Consumption from 18% (FY 2023) to 49% by FY 2025',
+                    value: [`Increase RE Consumption from 18% (FY 2023) to 49% by  FY 2025`,
                         '7% Year-Over-Year Energy Saving',
                         `Achieve 'A' band in Carbon Disclosure Project (CDP) 2024`]
                 }
@@ -86,7 +86,7 @@ const CarosuselSusta = () => {
                 {
                     heading: 'Corporate Governance',
                     value: [
-                        'Ensure transperant, balanced and timely disclosures yearly',
+                        'Ensure transparant, balanced and timely disclosures yearly',
                         'Agile, simplified, automated and well-monitored governance processes and compliance mechanism yearly',
                         'Continued risk assesment and scenario planning with appropriate mitigation strategies yearly']
                 },
@@ -142,7 +142,6 @@ const CarosuselSusta = () => {
                                                         <ul className='poppins-light data-li-card'>
                                                             {rowData.value.map((bullet, bulletIndex) => (
                                                                 <li key={bulletIndex}>{bullet}</li>
-
                                                             ))}
                                                         </ul>
 

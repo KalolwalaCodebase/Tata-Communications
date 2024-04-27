@@ -59,6 +59,7 @@ width: 100%;
     background: white;
     width: 100%;
     display: flex;
+     gap: 10px; 
     justify-content: flex-start;
     align-items: flex-start;
     padding: 3%;
@@ -67,18 +68,22 @@ width: 100%;
 }
 .paragraph-people-climate-1{
 color: #AD3088;
-font-size: 20px;
+font-family: Gotham;
+font-size: 30px;
 font-weight: 300;
-line-height: 36px;
+line-height: 42px;
 text-align: left;
-width: 60%;
+text-align: left;
+width: 58%;
 }
 .paragraph-people-climate-2{
 color:#606060;
-font-size: 15px;
-font-weight: 300;
-line-height: 22px;
+font-family: Gotham;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
 text-align: left;
+
 width: 40%;
 }
 .people-environment-image-text-container{

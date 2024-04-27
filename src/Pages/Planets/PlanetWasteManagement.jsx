@@ -138,12 +138,12 @@ const PlanetWasteManagement = () => {
           <div className="planet-wm-sec2-card-divider"></div>
           <ul>
             <li>
-              Elimination of non-recyclable <br />
+              Elimination of non-recyclable 
               material from the operations
             </li>
             <li>
-              Ensuring continuous vigilance <br />
-              on single-use plastics within the <br />
+              Ensuring continuous vigilance 
+              on single-use plastics within the
               campuses
             </li>
           </ul>
@@ -160,13 +160,13 @@ const PlanetWasteManagement = () => {
           <div className="planet-wm-sec2-card-divider"></div>
           <ul>
             <li>
-              100% recycling of recyclable, non- <br />
+              100% recycling of recyclable, non-
               hazardous waste
             </li>
             <li>
-              Maintaining 100% recycling for <br />
-              regulatory waste such as e-waste, <br />
-              battery waste and other hazardous <br />
+              Maintaining 100% recycling for 
+              regulatory waste such as e-waste,
+              battery waste and other hazardous 
               waste
             </li>
           </ul>
@@ -183,12 +183,12 @@ const PlanetWasteManagement = () => {
           <div className="planet-wm-sec2-card-divider"></div>
           <ul>
             <li>
-              Segregation of non-hazardous waste <br />
+              Segregation of non-hazardous waste 
               in 12 different waste streams
             </li>
             <li>
-              Awareness to employees and ground <br />
-              staff on waste management and <br />
+              Awareness to employees and ground
+              staff on waste management and 
               waste handling.
             </li>
           </ul>
@@ -274,13 +274,12 @@ const PlanetWasteManagement = () => {
             <br />
             <h1>187,263 kg</h1>
             <h6>
-              of hazardous waste <br />
-              generated in FY 24
+            of hazardous waste <br /> generated in FY2023
             </h6>
           </div>
           <img
             className="planet-wm-sec5-graph"
-            src="/planet-wm-sec5-graph.png"
+            src="/Map.svg"
             alt=""
           />
         </div>

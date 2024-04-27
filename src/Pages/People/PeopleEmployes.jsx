@@ -122,7 +122,7 @@ const PeopleEmployes = () => {
           <motion.div initial={{scale:0.5,opacity:0}} animate={{scale:1,opacity:1}} transition={{duration:2,type:"spring",}} className="image-people-environment-section-container">
             <img src="/Info.svg" alt="" />
           </motion.div>
-          <div className="people-enviroment-section-third-container">
+          <div className="flex people-enviroment-section-third-container">
             <motion.p  initial={{x:"-20px",opacity:0}} animate={{x:0,opacity:1}} transition={{duration:1.3,type:"spring",delay:0.3}} className="paragraph-people-climate-1">
               This aligns with our broader objective of fostering a culture of
               respect and equality where every employee feels valued and
@@ -192,36 +192,36 @@ const PeopleEmployes = () => {
           <motion.div initial={{opacity:0.8,y:"40px"}} animate={{opacity:1,y:0}} transition={{duration:1.5,type:"spring",delay:0.3}} className="data-student-community-container people-data-set">
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-              <AnimatedCounter finalValue={73} />,<AnimatedCounter finalValue={496}/>
+              <AnimatedCounter finalValue={130} />,<AnimatedCounter finalValue={713}/>
               </b>
               <p className="small-size-paragraph">
-                Total learning person days in FY2024
+              Total learning person days in FY2023
               </p>
             </div>
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-              <AnimatedCounter finalValue={2} />,<AnimatedCounter finalValue={326}/>
+              <AnimatedCounter finalValue={4} />,<AnimatedCounter finalValue={442}/>
               </b>
               <p className="small-size-paragraph">
-                Total Targeted Skill Development in FY2024
+              Total Targeted Skill Development in FY2023
               </p>
             </div>
             <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-              <AnimatedCounter finalValue={87} />
+              <AnimatedCounter finalValue={9} />.89
               </b>
               <p className="small-size-paragraph">
-                Net promoter score for L&D in FY2024
+              Average learning person days
               </p>
             </div>
-            <div className="data-set-conatiner-below">
+            {/* <div className="data-set-conatiner-below">
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
               <AnimatedCounter finalValue={7} />,<AnimatedCounter finalValue={290}/>
               </b>
               <p className="small-size-paragraph">
                 Repeat learners on TCLA in FY2024
               </p>
-            </div>
+            </div> */}
           </motion.div>
           <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1,type:"spring",delay:0.2}}  className="people-environment-specail-design-div">
             <div className="small-square-shape"></div>
@@ -251,11 +251,10 @@ const PeopleEmployes = () => {
                 >
                   <div className="data-set-conatiner-below">
                     <b className="big-size-data" style={{ color: "#9F0C73" }}>
-                    <AnimatedCounter finalValue={6} />,<AnimatedCounter finalValue={351}/>
+                    <AnimatedCounter finalValue={8} />,<AnimatedCounter finalValue={746}/>
                     </b>
                     <p className="small-size-paragraph">
-                      Total Certification Courses across all Categories in
-                      FY2024
+                    Certifications Completed in FY23 Across Skill Categories
                     </p>
                   </div>
                 </div>
@@ -279,37 +278,37 @@ const PeopleEmployes = () => {
               </p>
             </div>
           </motion.div>
-          <motion.div initial={{x:"40px"}} animate={{x:0}} transition={{duration:1,type:"spring"}} className="data-student-community-container people-data-set">
-            <div className="data-set-conatiner-below">
+          <motion.div initial={{x:"40px"}} animate={{x:0}} transition={{duration:1,type:"spring"}} className="data-student-community-container people-data-set" >
+            <div className="data-set-conatiner-below" style={{width:"20%"}}>
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-                <AnimatedCounter finalValue={42} />+
+                <AnimatedCounter finalValue={70} />
               </b>
-              <p className="small-size-paragraph">Subject matter experts</p>
+              <p className="small-size-paragraph">Sessions conducted</p>
             </div>
-            <div className="data-set-conatiner-below">
+            <div className="data-set-conatiner-below"  style={{width:"30%"}}>
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-              <AnimatedCounter finalValue={58} />
-              </b>
-              <p className="small-size-paragraph">
-                Learning Session Conducted in FY2024
-              </p>
-            </div>
-            <div className="data-set-conatiner-below">
-              <b className="big-size-data" style={{ color: "#9F0C73" }}>
-              <AnimatedCounter finalValue={4} />,<AnimatedCounter finalValue={349}/>+
+              <AnimatedCounter finalValue={4} />,<AnimatedCounter finalValue={249} />
               </b>
               <p className="small-size-paragraph">
-                Participants from Various Categories in FY2024
+              Participants over
               </p>
             </div>
-            <div className="data-set-conatiner-below">
+            <div className="data-set-conatiner-below"  style={{width:"40%"}}>
               <b className="big-size-data" style={{ color: "#9F0C73" }}>
-              <AnimatedCounter finalValue={7} />,<AnimatedCounter finalValue={501}/>.<AnimatedCounter finalValue={3} />
+              USD <AnimatedCounter finalValue={548} />,<AnimatedCounter finalValue={917}/>
+              </b>
+              <p className="small-size-paragraph">
+              (INR 4.41 Crores) Approx. saved by leveraging our internal experts
+              </p>
+            </div>
+            {/* <div className="data-set-conatiner-below">
+              <b className="big-size-data" style={{ color: "#9F0C73" }}>
+              <AnimatedCounter finalValue={7} />,<AnimatedCounter finalValue={501}/><AnimatedCounter finalValue={3} />
               </b>
               <p className="small-size-paragraph">
                 Learning person days in FY2024
               </p>
-            </div>
+            </div> */}
           </motion.div>
           <motion.div initial={{scale:0.7,opacity:0.5}} animate={{scale:1,opacity:1}} transition={{duration:1,type:"spring"}} className="award-section-people-environment">
             <img
@@ -333,6 +332,8 @@ const PeopleEmployes = () => {
           <div className="employee-engagment-surevey-people">
             <motion.div initial={{x:"-40px",opacity:0.5}} animate={{x:0,opacity:1}} transition={{duration:1,type:"spring"}} className="employee-engagment-survey-descriptions">
               <b className="heading-black">Employee Engagement Survey</b>
+              <br />
+              <br />
               <p className="smaller-paragraph-people-descriptions">
                 At Tata Communications, we conduct routine employee engagement
                 surveys to enhance employee experience. It enables us to gauge
@@ -413,10 +414,10 @@ const PeopleEmployes = () => {
               <div className="learning-environment-descriptions">
                 <b className="heading-black">Leadership and Accountability</b>
                 <p className="bigger-paragraph-people-descriptions ohs-managment-system-desc">
-                  Our leaders set a strong precedent for our ‘Zero Harm’
+                  Our leaders set a strong precedent for our 'Zero Harm'
                   objective. Our approach, outlining roles and responsibilities
-                  for leadership, is clearly defined in the EOHS – MS Apex
-                  Manual. Some of the key measures that reflect our leadership’s
+                  for leadership, is clearly defined in the EOHS - MS Apex
+                  Manual. Some of the key measures that reflect our leadership's
                   commitment to our Health & Safety Management system include:
                 </p>
               </div>
@@ -435,7 +436,7 @@ const PeopleEmployes = () => {
                 <div className="description-container-bg-pink ">
                   The leadership team proposed and increased the remit of the
                   existing Board-level CSR committee to add Safety and
-                  Sustainability elements{" "}
+                  Sustainability elements.{" "}
                 </div>
               </motion.div>
               <motion.div initial={{scale:0.8,opacity:0}} animate={{scale:1,opacity:1}} transition={{duration:0.8,type:"spring",delay:0.3}} className="each-container-inside-pink-bg ">
@@ -453,7 +454,7 @@ const PeopleEmployes = () => {
                 <div className="description-container-bg-pink border-bottom-right">
                   Active participation of the leadership team in safety events
                   like Safety Carnival, including the release of promotional
-                  videos{" "}
+                  videos.{" "}
                 </div>
               </motion.div>
             </div>
@@ -498,12 +499,12 @@ const PeopleEmployes = () => {
               </p>
             </motion.div>
           </div>
-          <div className="split-section-equal-people">
-            <div className="people-environment-section-learning-environment">
-              <motion.div initial={{x:"-100px"}} animate={{x:0}} transition={{duration:1,type:"spring"}} className="learning-environment-descriptions">
+          <div className="split-section-equal-people" style={{justifyContent:"space-between",padding:"3%"}}>
+            <div className="people-environment-section-learning-environment"  style={{width:"50%"}}>
+              <motion.div initial={{x:"-100px"}} animate={{x:0}} transition={{duration:1,type:"spring"}} className="learning-environment-descriptions" style={{width:"100%"}}>
                 <b className="heading-black">Our Health and Safety Performance</b>
                 <p className="bigger-paragraph-people-descriptions ohs-managment-system-desc">
-                We conduct safety audits and extensive training to improve health and safety performance. It has also helped to reduce Lost Time Injury Frequency Rate (LTI-FR) by XX% in comparison to the FY2023.
+                We conduct safety audits and extensive training to improve health and safety performance. It has also helped to reduce Lost Time Injury Frequency Rate (LTI-FR) by 5% in comparison to the previous fiscal year.
                 </p>
                 <p className="smaller-paragraph-people-descriptions">
                 Ensuring the well-being and safety of our employees and contractors remains our top priority. Single Points of Contact (SPOCs) carry out audits and investigate incidents diligently, promptly closing reported incidents. Lessons learned from these incidents are circulated to all internal stakeholders for comprehensive understanding.

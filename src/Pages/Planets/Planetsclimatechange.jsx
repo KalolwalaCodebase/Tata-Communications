@@ -2,12 +2,6 @@ import React from "react";
 import HeadBar from "../../Components/Headbar/HeadBar";
 import "../Community/Community.css";
 import "./Planets.css";
-import Accrodian from "../../Components/CustomeAccrodian/Accrodian";
-import PlanetTransioning from "./PlanetTransioning";
-import PlanetGreenSolutions from "./PlanetGreenSolutions";
-import PlanetCuttingDownSolution from "./PlanetCuttingDownSolution";
-import PlanetClimateLastThreeComponet from "./PlanetClimateLastThreeComponet";
-import PlanetIntroducingEv from "./PlanetIntroducingEv";
 import { motion } from "framer-motion";
 import TextAnimation from "../../Components/Animatedcounter/TextAnimation";
 import AnimatedCounter from "../../Components/Animatedcounter/Animatedcounter";
@@ -155,13 +149,13 @@ const Planetsclimatechange = () => {
             style={{ fontSize: "20px" }}
             className="paragraph-inside-climate-change"
           >
-            As a Company in ICT, we are heavily reliant on our energy supplies to run our operations 24X7. To meet this energy demand, we utilise various sources across geographies. These sources can be categorised into energy from diesel generators for backup, energy from national grids and renewable energy from public as well as private suppliers.  With the operational energy demand and our upstream and downstream operations, the associated GHG emissions are inherent part of our value chain. 
+            As a Company in ICT, we are heavily reliant on our energy supplies to run our operations 24X7. To meet this energy demand, we utilise various sources across geographies. These sources can be categorised into energy from diesel generators for backup, energy from national grids and renewable energy from public as well as private suppliers. With the operational energy demand and our upstream and downstream operations, the associated GHG emissions are inherent part of our value chain. 
           </p>
           <p
             style={{ fontSize: "20px" }}
             className="paragraph-inside-climate-change"
           >
-            Our comprehensive decarbonisation strategy seeks to reduce the GHG emissions across our value chain. Recognising the detrimental effects of climate change caused by greenhouse gas (GHG) emissions, we are committed to adopting operational enhancements that lower our GHG intensity. We have laid the foundation for targeted efforts to reduce our carbon footprint by meticulously tracking our GHG emissions, which include both Scope 1 and Scope 2 and 3 emissions, in accordance with the GHG Protocol Corporate Accounting and Reporting Standard and Corporate Value Chain (Scope 3) Accounting and Reporting Standard. The analysis and mitigation of Scope 3 emissions, involving emissions from employee commuting, business travel and other indirect activities, are also integral components of our strategy.
+            Our comprehensive decarbonisation strategy seeks to reduce the GHG emissions across our value chain. Recognising the detrimental effects of climate change caused by greenhouse gas (GHG) emissions, we are committed to adopting operational enhancements that lower our GHG intensity. We have laid the foundation for targeted efforts to reduce our carbon footprint by meticulously tracking our GHG emissions, which include both Scope 1, 2 and 3 emissions, in accordance with the GHG Protocol Corporate Accounting and Reporting Standard and Corporate Value Chain (Scope 3) Accounting and Reporting Standard. The analysis and mitigation of Scope 3 emissions, involving emissions from employee commuting, business travel and other indirect activities, are also integral components of our strategy.
           </p>
         </div>
         <div className="climate-change-intro-photos-inside-container">
@@ -213,7 +207,7 @@ const Planetsclimatechange = () => {
                 </b>
                 <p className="small-size-paragraph-environment">
                   Reduction in Scope 1 and <br /> Scope 2 Emissions from Base{" "}
-                  <br />
+      
                   Year 2020
                 </p>
               </div>
@@ -341,11 +335,7 @@ const Planetsclimatechange = () => {
               transition={{ duration: 1, ease: "easeInOut", delay: 0.1 }}
               className="normal-text-planet-vision"
             >
-              This strategy is informed by a comprehensive understanding of our
-              business's risks and opportunities. Within this framework, we've
-              identified eight climate action levers, spanning operational
-              enhancements and decarbonization initiatives across our value
-              chain.
+              This strategy is informed by a comprehensive understanding of our business's risks and opportunities. Within this framework, we've identified eight climate action levers, spanning operational enhancements and decarbonisation initiatives across our value chain.
               <br />
               <br />
               To mitigate the adverse impact of emerging climate risks on our operations, we've implemented best practice measures supported by internal carbon pricing mechanisms. Our commitment extends to transparently documenting our progress towards established objectives and strategies, while closely adhering to mandated disclosure and reporting frameworks. Through this holistic approach, we are resolutely dedicated to reducing our carbon footprint and contributing to a sustainable future for all.
@@ -641,26 +631,14 @@ const Planetsclimatechange = () => {
             </h3>
             <br />
             <p>
-              Our renewable energy portfolio is focused to bring cost
-              effectiveness with less volatile prices and compete with
-              conventional electricity tariffs. Keeping our future ambition to
-              become Net Zero and RE outlook, we plan targeted opportunities
-              with long term time horizons in mind.
+            Our renewable energy portfolio is focused to bring cost effectiveness with less volatile prices and compete with conventional electricity tariffs. Keeping our future ambition to become Net Zero and RE outlook, we plan targeted opportunities with long-term time horizons in mind.
               <br />
               <br />
             </p>
             <p>
-              Our current portfolio includes Power purchase agreements (PPA),
-              government green tariff schemes, Group captive models, solar
-              rooftops and Energy Attribute Certificates.
+            Our current portfolio includes Power purchase agreements (PPA), government green tariff schemes, Group captive models, solar rooftops and Energy Attribute Certificates.
             </p>
-            <p>
-              Our current portfolio includes Power purchase agreements (PPA),
-              government green tariff schemes, Group captive models, solar
-              rooftops and Energy Attribute Certificates. <br />
-              <br />
-              <br />
-            </p>
+            <br />
             <div className="p-ecc-bcc-wrap-main">
               <h4 style={{ color: "#3E3E3E", fontWeight: "800" }}>
                 Decarbonisation of Operations
@@ -1093,7 +1071,7 @@ const Planetsclimatechange = () => {
                 handleClick(event, "Transition-to-Renewable-Energy")
               }
             >
-              Transition to Renewable Energy (RE)
+              Transition to Renewable Energy 
             </a>
           </div>
           <div className="quicklinks-button-div">

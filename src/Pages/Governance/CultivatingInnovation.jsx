@@ -181,7 +181,7 @@ internal innovation programme</h6>
                 <div className="ci-sec3-row flex">
                     <div className="ci-sec3-row-col">
                         <h3>
-                        ‘shape the future’
+                        'shape the future’
                         <br />
                             DISRUPT
                         </h3>
@@ -305,7 +305,7 @@ internal innovation programme</h6>
             </div>
             <div className="ci-sec6">
                 <div className='ci-sec6-content flex'>
-                    <img src="/Governance001.png" alt="" />
+                    <img src="/Governance002.png" alt="" />
                     <div className='ci-sec6-img1-card'>
                         <h4>
                             HARNESSING <br />

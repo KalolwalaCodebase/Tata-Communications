@@ -140,7 +140,7 @@ export const PlanetWaterResourceManagement = () => {
         </div>
       </div>
 
-            <div  className='planet-wrm-sec1 flex'>
+            <div  className='planet-wrm-sec1 flex' style={{alignItems:"center"}}>
                 <div className='planet-wm-sec1-text'>
                     <img src="/small-square-btn.png" alt="" />
 
@@ -155,7 +155,7 @@ export const PlanetWaterResourceManagement = () => {
                         While our operations may not be water-intensive, we regard water management as a significant consideration for our Indian operations. Regular water-risk assessments are conducted to mitigate our water footprint, focusing on reducing freshwater reliance and implementing efficient recycling practices. We prioritise responsible water sourcing in line with our water management strategy, contributing positively to conservation efforts while sustaining business operations. With Aqueduct Water risk atlas 4.0, we have conducted water risk mapping exercise for our major Indian as well as international facilities. With this mapping, it is concluded that water risk is higher in Indian facilities compared to international ones.
                     </p>
                 </div>
-                <img src="/planet-wrm-header-img.png" alt="" />
+                <img height={'400px'} src="/planet-wrm-header-img.png" alt="" />
             </div>
             <div id='Water-Resource-Management' className='planet-wrm-sec2' style={{padding:"2%"}}>
                 <img src="/small-square-btn.png" alt="" />
