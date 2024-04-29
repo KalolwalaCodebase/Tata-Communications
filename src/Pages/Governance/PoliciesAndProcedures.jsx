@@ -91,7 +91,7 @@ export const PoliciesAndProcedures = () => {
               <ul>
                 <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/sustainability/occupational-health-safety-policy/">Occupational Health and Privacy Policy</a></li>
                 <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/policies/tata-communications-remuneration-policy/">Tata Communications Remuneration Policy</a></li>
-                <li><a target='_blank' href="/">Customer Privacy Policies</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/investors/governance/">Customer Privacy Policies</a></li>
               </ul>
               <ul>
                 <li><a target='_blank' href="https://gamma.tatacommunications.com/assets/wp-content/uploads/2023/12/supplier-code-of-conduct.pdf">Supplier Code of Conduct</a></li>
@@ -135,7 +135,7 @@ export const PoliciesAndProcedures = () => {
                 <li><a target='_blank'href="https://www.tatacommunications.com/policies/privacy/">Privacy</a></li>
               </ul>
               <ul>
-                <li><a target='_blank' href="/">Dignity at Workspace</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/investors/governance/">Dignity at Workspace</a></li>
                 <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/policies/anti-corruption/">Anti-Corruption Policy</a></li>
                 <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/policies/business-responsibility-policies/">Business responsibility policies</a></li>
               </ul>
