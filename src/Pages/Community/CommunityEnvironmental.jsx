@@ -28,15 +28,15 @@ const CommunityEnvironmental = () => {
     <div className="community-student-container">
        <HeadBar
         icon={"/Layer_1.png"}
-        heading={"EDUCATION"}
+        heading={"environment"}
         theme={"#38D1DA"}
         headiconstyle={'#8CD3DA'}
       />
       <div className="wrapper-student-container">
         <div className="slide-left-container">
-          <div className="Student-section-container-environment">
+          <div className="Student-section-container-environment" style={{background:"none"}}>
             <div className="section-one-photo-text-specail">
-              <p className="student-section-text">
+              <p className="student-section-text community-spc" style={{color:"#008189"}}>
                 At Tata Communications, combating climate change and protecting
                 the environment are our key priorities. Therefore, we are
                 focussed on creating a positive impact on the natural

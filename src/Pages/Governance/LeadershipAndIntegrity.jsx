@@ -140,7 +140,7 @@ const handleClick = async (event, id) => {
               <br />
               <br />
               <div className="upper-section-leadership-and-integrity">
-              The specialized committees, organized by the Board, are tasked with overseeing critical governance areas such as financial oversight, stakeholder engagement, corporate social responsibility (CSR), safety and sustainability.
+              The specialised committees, organised by the Board, are tasked with overseeing critical governance areas such as financial oversight, stakeholder engagement, corporate social responsibility (CSR), safety and sustainability.
               </div>
               <br />
               <div className="normal-paragraph-leadership-and-integrity">
@@ -164,7 +164,7 @@ const handleClick = async (event, id) => {
               </div>
             
               <div className="normal-paragraph-leadership-and-integrity">
-              Compensation is judiciously set based on the performance of both the individual and the company, as assessed by the Nomination and Remuneration Committee alongside the Board. Our conflict of interest policy guarantees that the Board’s decisions consistently align with the organization’s best interests. This methodical practice affirms our commitment to transparency, accountability, and active stakeholder participation in our governance processes—key factors for achieving sustainable development and creating enduring value.
+              Compensation is judiciously set based on the performance of both the individual and the company, as assessed by the Nomination and Remuneration Committee alongside the Board. Our conflict of interest policy guarantees that the Board's decisions consistently align with the organisation's best interests. This methodical practice affirms our commitment to transparency, accountability, and active stakeholder participation in our governance processes—key factors for achieving sustainable development and creating enduring value.
               </div>
             </div>
         </div>

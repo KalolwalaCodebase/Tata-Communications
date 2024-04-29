@@ -85,7 +85,7 @@ const handleClick = async (event, id) => {
                 In our Enterprise Risk Management (ERM) framework, we've
                 identified the most important risks related to sustainability
                 and ESG. Below, we've listed the main issues that are linked to
-                these risks.
+                these risks
               </div>
             </div>
           </div>
@@ -193,10 +193,10 @@ const handleClick = async (event, id) => {
               14001:2015 standards. We regularly review our EMS to ensure
               compliance with all applicable national and regional regulations.
               By setting clear environmental targets, we steer our company
-              towards achieving our sustainability goals
+              towards achieving our sustainability goals.
             </p>
             <p>
-            A workforce enriched with technical skill and expertise is essential for our organisation. Hence, we are devoted to securing and keeping individuals suited for specialised functions. We aim to create a nurturing atmosphere that encourages both professional and personal advancement, establishing a collaborative and inclusive culture that appreciates diversity and individual dignity. We also emphasise the growth and guidance of emerging talents, preparing them to navigate our organization to greater levels of accomplishment. Our proactive measures to ensure the well-being of our employees' physical and mental health also signal a positive outlook for our team's future.
+            A workforce enriched with technical skill and expertise is essential for our organisation. Hence, we are devoted to securing and keeping individuals suited for specialised functions. We aim to create a nurturing atmosphere that encourages both professional and personal advancement, establishing a collaborative and inclusive culture that appreciates diversity and individual dignity. We also emphasise the growth and guidance of emerging talents, preparing them to navigate our organisation to greater levels of accomplishment. Our proactive measures to ensure the well-being of our employees' physical and mental health also signal a positive outlook for our team's future.
             </p>
           </div>
         </div>

@@ -39,10 +39,7 @@ const CommunitySustinableLivehood = () => {
                 className="student-section-text-second"
                 style={{ color: "#008189" }}
               >
-                Empowering youth, rural communities, especially women and
-                Persons with Disabilities (PwD) by offering comprehensive
-                vocational, entrepreneurial and life skills training remains our
-                priority.
+                Empowering youth, rural communities, especially women and Persons with Disabilities (PwD) by offering comprehensive vocational, entrepreneurial and life skills training remains our priority. 
               </p>
               <p
                 className="student-section-text-second"
@@ -53,20 +50,7 @@ const CommunitySustinableLivehood = () => {
                   marginLeft: "10px",
                 }}
               >
-                Through this intervention our aim is to transform the Dhadgaon
-                block in Maharashtra into a catalyst for regional growth and
-                prosperity, employing a community-centric approach to
-                development. This entails the establishment of village
-                institutions (VIs) and the implementation of demand-driven and
-                market-oriented interventions. This multifaceted initiative
-                spans various sectors, including irrigation development, the
-                creation of agricultural clusters focusing on high-value and
-                precision farming, improvement of livestock management
-                practices, integration of technology in education, enhancement
-                of access to potable drinking water by strengthening water
-                sources, implementation of Community Based Nutrition initiatives
-                and the establishment of Village Institutions to drive rural
-                development initiatives forward.
+                Through sustained efforts, we strive to broaden their access to resources, embrace new technologies and utilise financial services, fostering their ability to participate and contribute to the economy.
               </p>
             </div>
             <div

@@ -13,7 +13,7 @@ const DevelopmentGoals = () => {
                     Leveraging the <strong>UN SDGs</strong> as crucial benchmarks, we plan initiatives, measure impact, and prioritize focus areas. Our strategies closely align with these goals as we serve as a digital ecosystem enabler. <br /> <br />
                     Recognizing the significance of contributing to global sustainability, we've prioritized and mapped direct and indirect SDGs based on risk, relevance, and our organizational contribution, and actively pursue their achievement.
                 </p>
-                <img src="/image-dev-goals.svg" alt="" />
+                <img src="/SustainabaleDvelopemntGoals.png" alt="" />
             </div>
            <div className="sdgwhell-parent-container">
            <Sdgwhells/>

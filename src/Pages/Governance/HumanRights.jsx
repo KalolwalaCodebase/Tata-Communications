@@ -66,6 +66,7 @@ export const HumanRights = () => {
             <div className='human-rights-container-main-sec3'>
                 <div className='human-rights-container-main-sec2-content'>
                     <h1>Policy Framework</h1>
+                    <br />
                     <p>
                         <b>PoSH charter -</b> Tata Communications and its subsidiaries strictly adhere to the requirements specified in the Sexual Harassment of Women at Workplace (Prevention, Prohibition, and Redressal) Act, 2013, as well as the regulations outlined under the PoSH Act. The PoSH Charter is designed to address the prevention, prohibition and redressal of sexual harassment incidents targeting women in the workplace in India. <br /><br />
                     </p>
@@ -87,7 +88,7 @@ export const HumanRights = () => {
                 </div>
                 <div className='human-rights-container-main-sec4-right'>
                     <h1>Zero</h1>
-                    <p>Human rights violation cases <br />
+                    <p>Human rights violation cases 
                         reported in FY2024</p>
                 </div>
             </div>
@@ -145,6 +146,7 @@ export const HumanRights = () => {
             </div>
             <div id='Vendor-and-third-party-compliance' className='human-rights-container-main-sec7 '>
                 <h2>Vendor and third-party compliance</h2>
+                <br />
                 <div className='hr-sec7-text flex'>
                     <p>
                         We remain committed to uphold the highest ethical standards for our people as well as other business partners. The Supplier Code of Conduct aligns with our corporate values and mandates adherence to ethical practices, respect for human rights, health and safety standards and environmental protection. Our due diligence framework for suppliers encompass the following:

@@ -19,11 +19,11 @@ const SustanablityCommitment = () => {
                 "Inclusion/Scope": "Scope 1, 2 & 3 Emissions",
             },
             {
-                "Specific Goal": "SBTI Goal - Reduce absolute scope 1 and 2 GHG Emissions 42% by FY2030",
-                "Target Year": "Reduce absolute scope 1 and 2 GHG Emissions by FY2030",
+                "Specific Goal": "SBTI Goal - Reduce Absolute Scope 1 and 2 GHG Emissions 42% by FY2030",
+                "Target Year": "Reduce Absolute Scope 1 and 2 GHG Emissions by FY2030",
                 "Base Year": "FY 2022",
                 "Boundary": "Global Operations",
-                "Inclusion/Scope": "Scope 1 and Scope 2 GHG emissions",
+                "Inclusion/Scope": "Scope 1 and Scope 2 GHG Emissions",
             },
         ],
         'WATER CONSUMPTION': [

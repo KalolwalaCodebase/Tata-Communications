@@ -90,6 +90,8 @@ const PeopleEmployes = () => {
             <b className="heading-main-section-climate-change people-heading-main">
               diversity and inclusion
             </b>
+            <br />
+            <br />
             <p className="bigger-paragraph-people-descriptions">
               At Tata Communications, we have implemented gender-neutral
               policies and procedures to ensure equal opportunities in the
@@ -290,7 +292,7 @@ const PeopleEmployes = () => {
               <AnimatedCounter finalValue={4} />,<AnimatedCounter finalValue={249} />
               </b>
               <p className="small-size-paragraph">
-              Participants over
+              Participants 
               </p>
             </div>
             <div className="data-set-conatiner-below"  style={{width:"40%"}}>
@@ -413,6 +415,7 @@ const PeopleEmployes = () => {
             <motion.div initial={{x:"-50px"}} animate={{x:0}} transition={{duration:1.2,type:"spring"}} className="people-environment-section-learning-environment">
               <div className="learning-environment-descriptions">
                 <b className="heading-black">Leadership and Accountability</b>
+                <br />
                 <p className="bigger-paragraph-people-descriptions ohs-managment-system-desc">
                   Our leaders set a strong precedent for our 'Zero Harm'
                   objective. Our approach, outlining roles and responsibilities
@@ -503,6 +506,7 @@ const PeopleEmployes = () => {
             <div className="people-environment-section-learning-environment"  style={{width:"50%"}}>
               <motion.div initial={{x:"-100px"}} animate={{x:0}} transition={{duration:1,type:"spring"}} className="learning-environment-descriptions" style={{width:"100%"}}>
                 <b className="heading-black">Our Health and Safety Performance</b>
+                <br />
                 <p className="bigger-paragraph-people-descriptions ohs-managment-system-desc">
                 We conduct safety audits and extensive training to improve health and safety performance. It has also helped to reduce Lost Time Injury Frequency Rate (LTI-FR) by 5% in comparison to the previous fiscal year.
                 </p>
@@ -570,6 +574,7 @@ const PeopleEmployes = () => {
               alt=""
             />
             <li onClick={(event)=>handleClick(event,"Diversity-and-Inclusion")} >Diversity and Inclusion</li>
+          
           </div>
           <div className="quicklinks-button-div">
             <img

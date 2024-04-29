@@ -71,8 +71,9 @@ const PeopleSupplychain = () => {
         </motion.div>
         <motion.div  initial={{y:"100px",opacity:0,scale:0.5}} animate={{y:0,opacity:1,scale:1}} transition={{duration:1.3,type:"spring"}}  className="climate-change-intro-photos-inside-container">
           <img
+         style={{height:"450px",width:"100%"}}
             className="intro-climate-image intro-people-image"
-            src="/peoplesupplychain.jpeg"
+            src="/peoplesupplychain.png"
             alt=""
           />
         </motion.div>
@@ -251,6 +252,8 @@ const PeopleSupplychain = () => {
             <b className="heading-main-section-climate-change people-heading-main">
             ESG Due Diligence
             </b>
+            <br />
+            <br />
             <div className="image-description-and-image-container">
               <motion.p  initial={{x:"-100px",opacity:0}} animate={{x:0,opacity:1}} transition={{duration:1,type:"spring",ease:"easeInOut"}}  className="description-mage-conatiner-supply-chain" style={{width:"100%"}}>
               To uphold the principles of responsible sourcing, we have instituted the Sustainable Supply Chain Framework (SSCF).

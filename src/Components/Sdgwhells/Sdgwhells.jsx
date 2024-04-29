@@ -24,7 +24,7 @@ const imageData = [
     heading: "QUALITY EDUCATION",
     color: "#C7243B",
     title: 'Empowering Education',
-    list: ["Enhance access to quality education for underserved communities", "Support educational infrastructure development in maginalised areas", "Foster Partnerships with educational institutions and stakeholders to maximise impact", "Promote learning opportunities for all individuals"],
+    list: ["Enhance access to quality education for underserved communities", "Support educational infrastructure development in maginalised areas", "Foster partnerships with educational institutions and stakeholders to maximise impact", "Promote learning opportunities for all individuals"],
     list2: ["Offer a diverse range of courses and training modules accesible to all employees to enhance their skills and knowledge", "Extend learning opportunities to community members through informative sessions and training programmes", ]
   },
   {
@@ -41,7 +41,7 @@ const imageData = [
     heading: "AFFORDABLE AND CLEAN ENERGY",
     color: "#F4B30C",
     title: 'Sustainable Energy Transition',
-    list: ["Allocate resources towards the development and utilization of renewable energy", "Implement energy saving measures and technologies accross operations", "Integrate innovative clean energy technologies and infrastructure solutions"],
+    list: ["Allocate resources towards the development and utilisation of renewable energy", "Implement energy saving measures and technologies accross operations", "Integrate innovative clean energy technologies and infrastructure solutions"],
     list2: ["Implement real-time monitoring systems to track energy consumption across facilities and operations", "Conduct training programmes and awareness campaigns to educate employees about energy conservation practices", "Collaborate with clean energy suppliers to support the development of clean energy infrastructure"]
   },
   {
@@ -57,7 +57,7 @@ const imageData = [
     heading: "INDUSTRY, INNOVATION AND INFRASTRUCTURE",
     color: "#F3713A",
     title: 'Driving Connectivity and Innovation',
-    list: ["FOcus on enhancing connectivity to promote innovation across all operations", "Develop innovative and ustainable solutions with scalable impact through collaboration with internal and external partners",],
+    list: ["Focus on enhancing connectivity to promote innovation across all operations", "Develop innovative and sustainable solutions with scalable impact through collaboration with internal and external partners",],
     list2: ["Collaborate with external partners, including research institutions abd universities to develop innovative solutions", "Implement pilot programmes to test and evaluate the effectiveness of energy optimisation technologies and solutions",]
   },
   {},

@@ -49,12 +49,17 @@ const EconomicPerformance = () => {
 
             <div className="ep-sec1">
                 <h2>Our Mission</h2>
-                <p>
-                    Through optimum utilisation of financial capital we seek to maximise shareholder value while maintaining a sharp focus on deploying sustainable solutions. Our ability to seize emerging opportunities and make strategic investments have enabled us to nurture business resilience. It has not only positioned us for continuous growth but also fortified our market leadership. <br /><br />
+                <p className='normal-text'>
+                Through optimum utilisation of financial capital we seek to maximise shareholder value while maintaining a sharp focus on deploying sustainable solutions. <br /><br />
                 </p>
-                <p>
-                    Our consistent financial performances have paved the path for sustained value creation. It has also reinforced the trust and confidence of stakeholders in our robust business model.
+                <p className='normal-text-economic-perfomance'>
+                Our ability to seize emerging opportunities and make strategic investments have enabled us to nurture business resilience. It has not only positioned us for continuous growth but also fortified our market leadership.
                 </p>
+                <p className='normal-text-economic-perfomance'>
+                Our consistent financial performances have paved the path for sustained value creation. It has also reinforced the trust and confidence of stakeholders in our robust business model.
+                </p>
+                <br />
+
                 <div className="ep-sec1-undersection">
                     <div id='Committed-to-Value-Creation' className="ep-sec1-undersection-row flex">
                         <div className='ep-sec1-undersection-row-text '>
@@ -101,7 +106,7 @@ const EconomicPerformance = () => {
                     <div className='ep-sec2-part-card'>
                         <img src="/ep-chart-tab-4.png" alt="" />
                         <p>
-                            Our financial strength enables ongoing investment in technology and innovative solutions. It has resulted in the development of advanced solutions that are tailored to elevate experiences and enhance customer satisfaction
+                            Our financial strength enables ongoing investment in technology and innovative solutions. It has resulted in the development of advanced solutions that are tailored to elevate experiences and enhance customer satisfaction.
                         </p>
                     </div>
                     <div className='ep-sec2-part-card'>

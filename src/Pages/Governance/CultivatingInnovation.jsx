@@ -163,6 +163,7 @@ const CultivatingInnovation = () => {
                         <h2>
                             Initiatives identified by CVIG in FY 2023
                         </h2>
+                        <br />
                         <h1>
                             90+
                         </h1>
@@ -174,14 +175,16 @@ const CultivatingInnovation = () => {
             </div>
             <div id='Empowering-innovators' className="ci-sec3">
                 <h2 className="ci-sec3-h2">Empowering Innovators</h2>
-                <h6 className="ci-sec3-h6">tata communication’s <br />
+                <br />
+                
+                <h6 className="ci-sec3-h6">tata communication's <br />
 internal innovation programme</h6>
                 <h5 className="ci-sec3-h5">SHAPE THE FUTURE</h5>
                 
                 <div className="ci-sec3-row flex">
                     <div className="ci-sec3-row-col">
                         <h3>
-                        'shape the future’
+                        'shape the future'
                         <br />
                             DISRUPT
                         </h3>
@@ -193,8 +196,8 @@ internal innovation programme</h6>
                     <div className="ci-sec3-row-divider"></div>
                     <div className="ci-sec3-row-col" style={{marginTop:"0",paddingTop:"0"}}>
                         <h3>
-                            STF THINK-A-THON <br />
-                            & STF SPRINTS
+                        'shape the future'
+                        Think-A-Thon & Sprints
                         </h3>
                         <div className="ci-sec3-col-divider"></div>
                         <p>
@@ -204,7 +207,7 @@ internal innovation programme</h6>
                 </div>
             </div>
             <div id='Assessment-and-engagement' className="ci-sec4">
-                <h5 className="ci-sec4-h5">ASSESMENT AND ENGAGEMENT</h5>
+                <h5 className="ci-sec4-h5">ASSESSMENT AND ENGAGEMENT</h5>
                 <div className='ci-flowchart-table-container'>
                     <div className='ci-flowchart-table'>
                         <div className='ci-flowchart-table-row1 flex'>
@@ -299,7 +302,7 @@ internal innovation programme</h6>
                         <li>Valiant Efforts</li>
                     </ul>
                     <p>
-                        This approach acknowledges the practical application of new ideas, the introduction of novel technologies, and the lessons learned from ambitious projects that didn't pan out as expected. By recognizing these diverse outcomes, InnoVista encourages a realistic and supportive environment for innovation at every stage, fostering a culture of continuous exploration and adaptation.
+                        This approach acknowledges the practical application of new ideas, the introduction of novel technologies, and the lessons learned from ambitious projects that didn't pan out as expected. By recognising these diverse outcomes, InnoVista encourages a realistic and supportive environment for innovation at every stage, fostering a culture of continuous exploration and adaptation.
                     </p>
                 </div>
             </div>

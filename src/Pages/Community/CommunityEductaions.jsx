@@ -130,7 +130,8 @@ const CommunityEductaions = () => {
                   <br />
                   <p className="frist-paragraph">
                     {" "}
-                    <span>Samarth </span> <br />
+                    <span>Samarth </span>
+                    <br />
                     We offer scholarship and mentorship programmes, designed to
                     support students from socially and economically marginalised
                     backgrounds with Affirmative Action, empowering them to

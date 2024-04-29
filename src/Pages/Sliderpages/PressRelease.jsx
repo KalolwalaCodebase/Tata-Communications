@@ -11,10 +11,10 @@ const PressRelease = () => {
         </b>
         <br />
         <p className="description-section-main-content">
-          <span className="links-text">Tata Communications,</span>
+          <span className="links-text">Tata Communications,</span>{" "}
           a global digital ecosystem enabler, today announces its commitment to
           be Net Zero by 2035 across its global operations. On this Earth Day
-          2023, Tata Communications aims to ‘Invest in our Planet’ in its drive
+          2023, Tata Communications aims to 'Invest in our Planet' in its drive
           to accelerate and make a stronger sustainability promise for the
           Earth.
           <br />

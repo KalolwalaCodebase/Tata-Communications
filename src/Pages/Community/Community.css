@@ -250,7 +250,7 @@ color: #2F2F2F;
 }
 .specailText{
  padding-top: 0;
- font-size: 20px;
+ font-size: 18px;
  font-weight: 300;
  line-height: 38px;
  color: #606060;
@@ -262,4 +262,12 @@ color: #2F2F2F;
 }
 .small-size-paragraph{
   font-weight: 600;
+}
+.community-spc{
+  font-family: Gotham;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px;
+text-align: left;
+
 }

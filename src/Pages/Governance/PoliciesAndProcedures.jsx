@@ -1,22 +1,41 @@
 import React,{useEffect} from 'react'
 import HeadBar from '../../Components/Headbar/HeadBar'
 import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 export const PoliciesAndProcedures = () => {
-    const location = useLocation();
-  useEffect(() => {
-    const scrollToTarget = () => {
-      if (location.hash) {
-        console.log("here it is ",location.hash);
-        const targetElement = document.querySelector(location.hash);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
+  const navigate = useNavigate();
+
+  const handleClick = async (event, id) => {
+      event.preventDefault(); // Prevent default link behavior
+      const targetElement = document.querySelector(`#${id}`);
+      if (targetElement) {
+        // Calculate the offset based on the current scroll position
+        const offset = targetElement.getBoundingClientRect().top - 100;
+  
+        // Scroll to the element with an offset
+        window.scrollBy({
+          top: offset,
+          behavior: "smooth",
+        });
+  
+        // Update URL
+        navigate(`${window.location.pathname}#${id}`);
       }
-    };
-    // Call scrollToTarget when the location changes
-    scrollToTarget();
-  }, [location]);
+    }
+    const location = useLocation();
+    useEffect(() => {
+      const scrollToTarget = () => {
+        if (location.hash) {
+          console.log("here it is ",location.hash);
+          const targetElement = document.querySelector(location.hash);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      };
+      // Call scrollToTarget when the location changes
+      scrollToTarget();
+    }, [location]);
   return (
     <div>
       <HeadBar
@@ -31,7 +50,7 @@ export const PoliciesAndProcedures = () => {
           <h4>QUICK LINKS</h4>
           <ul>
             <li><Link target="_blank" to={'/Sustainability/fy24-goals-&-progress'}>Goals and Progress</Link></li>
-            <li><Link target="_blank" to="/Governance/policies-and-procedures#Policies">Policies</Link></li>
+            <li><Link onClick={(event)=>handleClick(event,'Policies')} >Policies</Link></li>
             <li><Link target="_blank" to="/gri-index">GRI index</Link></li>
             <li><Link target="_blank" to={'/Sustainability/sustainable-development-goals'} href="">SDG Linkage</Link></li>
           </ul>
@@ -75,8 +94,8 @@ export const PoliciesAndProcedures = () => {
                 <li><a href="/">Customer Privacy Policies</a></li>
               </ul>
               <ul>
-                <li><a href="/">Supplier Code of Conduct</a></li>
-                <li><a href="/">Prevention of Sexual Harassment Charter</a></li>
+                <li><a href="https://www.tatacommunications.com/resource/corporate-resources/policies/tata-code-of-conduct-for-prevention-of-insider-trading-and-code-of-corporate-disclosure-practices/">Supplier Code of Conduct</a></li>
+                <li><a href="https://www.tatacommunications.com/resource/corporate-resources/policies/india-prevention-of-sexual-harassment-charter/">Prevention of Sexual Harassment Charter</a></li>
               </ul>
               <ul>
                 <li><a href="/">Sustainable Supply Chain Policy</a></li>
@@ -100,7 +119,7 @@ export const PoliciesAndProcedures = () => {
                 </h2>
               </div>
               <ul>
-                <li><a href="/">CSR Policy</a></li>
+                <li><a href="https://www.tatacommunications.com/resource/corporate-resources/policies/tata-communications-csr-policy/">CSR Policy</a></li>
               </ul>
             </div>
             <div className="pp-sec3-table-data-row4 flex">
