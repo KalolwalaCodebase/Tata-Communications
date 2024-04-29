@@ -167,7 +167,7 @@ const PeopleEmployes = () => {
           </div>
 
           <motion.div initial={{scale:0.9,opacity:0,y:"-10px"}} animate={{scale:1,opacity:1,y:0}} transition={{duration:2,type:"spring",delay:0.3}} className="image-people-environment-section-container">
-            <img src="/Group 202.svg" alt="" />
+            <img src="/PeopleEmployeeGroup.svg" alt="" />
           </motion.div>
           <div className="people-environment-section-learning-environment">
             <motion.div initial={{opacity:0,y:"-30px"}} animate={{opacity:1,y:0}} transition={{duration:1.4,type:"spring",delay:0.3}} className="learning-environment-descriptions">

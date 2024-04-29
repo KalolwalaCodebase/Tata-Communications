@@ -211,15 +211,14 @@ export const PlanetWaterResourceManagement = () => {
 
                     <div className="wrm-sec2-context2-imgs-row flex">
                         <img src="/planet-wrm-sec3-img1.png" alt="" />
-                        <img src="/planet-wrm-sec3-img2.png" alt="" />
+                        <img src="/PlanetWaterManagment01.png" alt="" />
 
 
                     </div>
 
                     <div className="wrm-sec2-context2-imgs-row flex">
-                        <img src="/planet-wrm-sec3-img1.png" alt="" />
-                        <img src="/planet-wrm-sec3-img2.png" alt="" />
-
+                        <img src="/PlanetWaterManagmnet003.png" alt="" />
+                        <img src="/PlanetWaterManagmnet004.png.png" alt="" />
 
                     </div>
 

@@ -269,7 +269,7 @@ const PeopleSupplychain = () => {
             </div>
           </div>
           <motion.div initial={{y:"100px",opacity:0,scale:0.5}} animate={{y:0,opacity:1,scale:1}} transition={{duration:1,type:"spring"}} className="image-container-supplychain-008">
-            <img src="/supplychainimg008.svg" alt="" />
+            <img src="/PeopleSupplyChain.svg" alt="" />
           </motion.div>
         </div>
 

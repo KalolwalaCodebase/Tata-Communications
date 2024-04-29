@@ -8,7 +8,7 @@ const SustaniblityDisclosures = ({activeTab}) => {
     ['ESG Addendum','/Disclosure02.svg','/Disclosure08.svg'],
      ['GRI index','/Disclosure03.svg','/Disclosure09.svg','/Gri-index'],
     ['BRSR','/Disclosure04.svg','/Disclosure10.svg','/Brsr'],
-    ['cdp disclosure','/Disclosure05.svg','/Disclosure11.svg']
+    ['cdp disclosure','/Disclosure05.svg','/Disclosure11.svg','https://www.cdp.net/en/responses/18284']
     ,['Assurance statement','/Disclosure06.svg','/Disclosure12.svg']];
   return (
     <div>

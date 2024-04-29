@@ -89,17 +89,17 @@ export const PoliciesAndProcedures = () => {
                 </h2>
               </div>
               <ul>
-                <li><a href="/">Occupational Health and Privacy Policy</a></li>
-                <li><a href="/">Tata Communications Remuneration Policy</a></li>
-                <li><a href="/">Customer Privacy Policies</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/sustainability/occupational-health-safety-policy/">Occupational Health and Privacy Policy</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/policies/tata-communications-remuneration-policy/">Tata Communications Remuneration Policy</a></li>
+                <li><a target='_blank' href="/">Customer Privacy Policies</a></li>
               </ul>
               <ul>
-                <li><a href="https://www.tatacommunications.com/resource/corporate-resources/policies/tata-code-of-conduct-for-prevention-of-insider-trading-and-code-of-corporate-disclosure-practices/">Supplier Code of Conduct</a></li>
-                <li><a href="https://www.tatacommunications.com/resource/corporate-resources/policies/india-prevention-of-sexual-harassment-charter/">Prevention of Sexual Harassment Charter</a></li>
+                <li><a target='_blank' href="https://gamma.tatacommunications.com/assets/wp-content/uploads/2023/12/supplier-code-of-conduct.pdf">Supplier Code of Conduct</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/policies/india-prevention-of-sexual-harassment-charter/">Prevention of Sexual Harassment Charter</a></li>
               </ul>
               <ul>
-                <li><a href="/">Sustainable Supply Chain Policy</a></li>
-                <li><a href="/">Board Diversity Policy</a></li>
+                <li><a target='_blank' href="https://gamma.tatacommunications.com/assets/wp-content/uploads/2022/02/Sustainable-Supply-Chain-Policy-2022.pdf">Sustainable Supply Chain Policy</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/policies/board-diversity-policy/">Board Diversity Policy</a></li>
               </ul>
             </div>
             <div className="pp-sec3-table-data-row2 flex">
@@ -109,7 +109,7 @@ export const PoliciesAndProcedures = () => {
                 </h2>
               </div>
               <ul>
-                <li><a href="/">Environment Policy</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/sustainability/environment-policy/">Environment Policy</a></li>
               </ul>
             </div>
             <div className="pp-sec3-table-data-row3 flex">
@@ -119,7 +119,7 @@ export const PoliciesAndProcedures = () => {
                 </h2>
               </div>
               <ul>
-                <li><a href="https://www.tatacommunications.com/resource/corporate-resources/policies/tata-communications-csr-policy/">CSR Policy</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/policies/tata-communications-csr-policy/">CSR Policy</a></li>
               </ul>
             </div>
             <div className="pp-sec3-table-data-row4 flex">
@@ -129,20 +129,20 @@ export const PoliciesAndProcedures = () => {
                 </h2>
               </div>
               <ul>
-                <li><a href="/">Tata Code of Conduct</a></li>
-                <li><a href="/">Fair Use Policy For Global SIP Connect</a></li>
-                <li><a href="/">Business and Human Rights Policy</a></li>
-                <li><a href="/">Privacy</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/policies/tata-code-of-conduct/">Tata Code of Conduct</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/policies/fair-use-policy-global-sip-connect/">Fair Use Policy For Global SIP Connect</a></li>
+                <li><a target='_blank' href="https://gamma.tatacommunications.com/assets/wp-content/uploads/2023/02/business-and-human-rights-policy.pdf">Business and Human Rights Policy</a></li>
+                <li><a target='_blank'href="https://www.tatacommunications.com/policies/privacy/">Privacy</a></li>
               </ul>
               <ul>
-                <li><a href="/">Dignity at Workspace</a></li>
-                <li><a href="/">Anti-Corruption Policy</a></li>
-                <li><a href="/">Business responsibility policies</a></li>
+                <li><a target='_blank' href="/">Dignity at Workspace</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/policies/anti-corruption/">Anti-Corruption Policy</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/policies/business-responsibility-policies/">Business responsibility policies</a></li>
               </ul>
               <ul>
-                <li><a href="/">Whistleblowers Policy</a></li>
-                <li><a href="/">Anti-Human Trafficking and Modern-Day Slavery Statement</a></li>
-                <li><a href="/">Network Shutdown Policy</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/policies/whistleblowers-policy-english/">Whistleblowers Policy</a></li>
+                <li><a target='_blank' href="https://www.tatacommunications.com/resource/corporate-resources/policies/anti-human-trafficking-and-modern-day-slavery-statement-for-fiscal-year-2022-23/">Anti-Human Trafficking and Modern-Day Slavery Statement</a></li>
+                <li><a target='_blank' href="https://gamma.tatacommunications.com/assets/wp-content/uploads/2021/06/TC-Network-Shutdown-Policy-June-10-2021.pdf">Network Shutdown Policy</a></li>
               </ul>
             </div>
           </div>
